@@ -46,7 +46,7 @@ var gulp = require('gulp'),// подключение галп
  
 //sass и css
 gulp.task('css', function () {
-  return gulp.src('app/sass/main.sass')//путь к папке с файлами, м которыми будем работать
+  return gulp.src(['app/sass/**/*.sass', 'app/sass/**/*.scss'])//путь к папке с файлами, м которыми будем работать
     .pipe(autoprefixer({
         browsers: ['last 15 versions']
     }))
@@ -68,7 +68,7 @@ gulp.task('html', function () {
 //автом вызов галп при любом изменении css-файлов
 gulp.task('watch', function () {
     gulp.watch('app/css/*css', ['css']) //следим за изменениями всех css, и при их изменении запускаем таск css
-	gulp.watch('app/sass/main.sass', ['css']) //следим за изменениями всех css, и при их изменении запускаем таск css
+	gulp.watch(['app/sass/**/*.sass', 'app/sass/**/*.scss'], ['css']) //следим за изменениями всех css, и при их изменении запускаем таск css
 	gulp.watch('app/index.html', ['html']);
 
 });
