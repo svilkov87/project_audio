@@ -1,0 +1,4 @@
+# no access
+# Ignore any file named foo.txt.
+
+node_modules
