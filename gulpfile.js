@@ -11,27 +11,35 @@ var gulp = require('gulp'),// подключение галп
 	connect = require('gulp-connect'),//соед с уд сервером
 	concat = require('gulp-concat'),//конкатенация
 	uglify = require('gulp-uglify'),
+	del = require('del'), // Подключаем библиотеку для удаления файлов и папок
+	imagemin = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
+	imageminJpegtran = require('imagemin-jpegtran'),//Compress JPEG images
+	imageminOptipng = require('imagemin-optipng'), //Compress PNG images
+	imageminSvgo = require('imagemin-svgo'),//Compress SVG images
+	pngquant = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
 	notify = require("gulp-notify");//уведомление о действии
 
 //livereload
 	gulp.task('connect', function() {
-  connect.server({
-    root: 'app',
-    livereload: true
-  });
-});
+	  connect.server({
+	    root: 'app',
+	    livereload: true
+	  });
+	});
+
 
 //jade
-gulp.task('jade', function(){
-	return gulp.src('app/jade/*.jade')
-	.pipe(jade({
-		pretty: true
-	}))
-	.pipe(gulp.dest('app/'));//куда выкладываем итоговый файл
-});
+// gulp.task('jade', function(){
+// 	return gulp.src('app/jade/*.jade')
+// 	.pipe(jade({
+// 		pretty: true
+// 	}))
+// 	.pipe(gulp.dest('app/'))//куда выкладываем итоговый файл
+// 	.pipe(connect.reload());
+// });
  
 //sass и css
-gulp.task('css', function () {
+gulp.task('sass', function () {
   return gulp.src(['app/sass/**/*.sass', 'app/sass/**/*.scss'])//путь к папке с файлами, м которыми будем работать
     .pipe(autoprefixer({
         browsers: ['last 15 versions']
@@ -39,11 +47,13 @@ gulp.task('css', function () {
     //.pipe(concatCss('bundle.css'))//название файла после конкат, если есть sass, то не нужен
     .pipe(sass())//sass
     .pipe(cleanCSS()) //минифицируем css
-    .pipe(rename('bundle.min.css'))//как назовем скомпилированный min- файл
+    .pipe(rename('libs.min.css'))//как назовем скомпилированный min- файл
     .pipe(gulp.dest('app/css'))//куда выкладываем итоговый файл
     .pipe(connect.reload());
     // .pipe(notify('Done!'));
 });
+
+//сжимаем библиотеки css
 
 //js
 gulp.task('scripts', function() {
@@ -60,22 +70,65 @@ gulp.task('html', function () {
 	.pipe(connect.reload());
 });
 
+
 //автом вызов галп при любом изменении css-файлов
 gulp.task('watch', function () {
-    gulp.watch('app/css/*css', ['css']) //следим за изменениями всех css, и при их изменении запускаем таск css
-	gulp.watch(['app/sass/**/*.sass', 'app/sass/**/*.scss'], ['css']) //следим за изменениями всех css, и при их изменении запускаем таск css
-	gulp.watch('app/jade/index.jade', ['jade']),
-	gulp.watch('app/libs/*.js', ['scripts']),
+    // gulp.watch('app/css/*css', ['css']) //следим за изменениями всех css, и при их изменении запускаем таск css
+	gulp.watch(['app/sass/**/*.sass', 'app/sass/**/*.scss'], ['sass']) //следим за изменениями всех css, и при их изменении запускаем таск css
+	// gulp.watch('app/jade/index.jade', ['jade'])
+	gulp.watch('app/libs/*.js', ['scripts'])
 	gulp.watch('app/index.html', ['html']);
-
 });
-//в продакшн
-// gulp.task('', function () {
 
+//удаление папки dist перед сборкой
+gulp.task('clean', function() {
+	return del.sync('dist'); // Удаляем папку dist перед сборкой
+});
+
+//оптимизация изображений
+// gulp.task('img', function() {
+// 	return gulp.src('app/img/**/*') // Берем все изображения из app
+// 		.pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
+// 			interlaced: true,
+// 			progressive: true,
+// 			svgoPlugins: [{removeViewBox: false}],
+// 			use: [pngquant()]
+// 		})))
+// 		.pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
 // });
 
+gulp.task('img', function() {
+    return gulp.src('app/img/**/*')
+        .pipe(imagemin({
+        	use: [imageminJpegtran()],
+        	use: [imageminOptipng()]
+        }))
+        .pipe(gulp.dest('dist/images'));
+	});
+
+//в продакшн
+gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
+
+	var buildCss = gulp.src(['app/css/libs.min.css'])
+	.pipe(gulp.dest('dist/css'));
+
+	var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
+	.pipe(gulp.dest('dist/fonts'));
+
+	var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
+	.pipe(gulp.dest('dist/js'));
+
+	var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
+	.pipe(gulp.dest('dist'));
+
+});
+
+gulp.task('clear', function (callback) {
+	return cache.clearAll();
+})
+
 //задачи по-умолчанию
-gulp.task('default', ['connect', 'watch', 'html', 'css', 'jade', 'scripts']);
+gulp.task('default', ['connect', 'watch','sass', 'html','scripts']);
 
 
 
