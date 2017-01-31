@@ -17,6 +17,7 @@ var gulp = require('gulp'),// подключение галп
 	imageminOptipng = require('imagemin-optipng'), //Compress PNG images
 	imageminSvgo = require('imagemin-svgo'),//Compress SVG images
 	pngquant = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
+	cache = require('gulp-cache'),//когда картинко много кэш
 	notify = require("gulp-notify");//уведомление о действии
 
 //livereload
@@ -85,26 +86,31 @@ gulp.task('clean', function() {
 	return del.sync('dist'); // Удаляем папку dist перед сборкой
 });
 
-//оптимизация изображений
-// gulp.task('img', function() {
-// 	return gulp.src('app/img/**/*') // Берем все изображения из app
-// 		.pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
-// 			interlaced: true,
-// 			progressive: true,
-// 			svgoPlugins: [{removeViewBox: false}],
-// 			use: [pngquant()]
-// 		})))
-// 		.pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
-// });
+//чистим кэш
+gulp.task('clear', function (callback) {
+	return cache.clearAll();
+})
 
+//оптимизация изображений
 gulp.task('img', function() {
-    return gulp.src('app/img/**/*')
-        .pipe(imagemin({
-        	use: [imageminJpegtran()],
-        	use: [imageminOptipng()]
-        }))
-        .pipe(gulp.dest('dist/images'));
-	});
+	return gulp.src('app/img/**/*') // Берем все изображения из app
+		.pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
+			interlaced: true,
+			progressive: true,
+			svgoPlugins: [{removeViewBox: false}],
+			use: [pngquant()]
+		})))
+		.pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
+});
+
+// gulp.task('img', function() {
+//     return gulp.src('app/img/**/*')
+//         .pipe(imagemin({
+//         	use: [imageminJpegtran()],
+//         	use: [imageminOptipng()]
+//         }))
+//         .pipe(gulp.dest('dist/images'));
+// 	});
 
 //в продакшн
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
@@ -122,10 +128,6 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 	.pipe(gulp.dest('dist'));
 
 });
-
-gulp.task('clear', function (callback) {
-	return cache.clearAll();
-})
 
 //задачи по-умолчанию
 gulp.task('default', ['connect', 'watch','sass', 'html','scripts']);

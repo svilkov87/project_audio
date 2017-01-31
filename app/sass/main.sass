@@ -1,11 +1,32 @@
+@import 'base/reset'
+@import 'base/variables'
+
 body
-	background: #ccc;
+	background: $bg_nav
+	font-family: sans-serif
+	font-size: 14px
+
 .nav
-	height: 60px;
-	background: #000;
-.main_wrapper
-	margin: 0 auto;
-	width: 50%;
+	height: 100px
+	background: $bg_nav
+	color: $color_nav
+
+	.logo_link
+		line-height: 100px
+		color: $color_nav
+
+.wrapp_header
+	height: 100%
+	background: $bg_wr_header
+
+	.header
+		background: $bg_header
+		margin: 0 auto
+		max-width: 600px
+		height: 250px
+
+
+
 
 
 
