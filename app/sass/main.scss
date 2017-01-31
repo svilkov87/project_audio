@@ -1,0 +1,59 @@
+@import 'base/variables';
+@import 'base/settings';
+@import 'base/mixins';
+
+body{
+	background: $bodybg;
+
+	.nav{
+		background: $navbg;
+		min-height: 100px;
+
+		.brand{
+			float: left;
+
+			.logo_link{
+				color: $navclr;
+				line-height: 100px;
+				text-transform: uppercase;
+				font-weight: bold;
+				&:hover{
+					color: $navlinkhov;
+					@include transition(.5s)
+				}
+			}
+		}
+		.menu{
+			float: right;
+			line-height: 75px;
+
+			ul{
+				line-height: 75px;
+				@include model_l{
+					display: none;
+				}
+
+			}
+
+			.menu-list{
+				float: left;
+				margin-left: 10px;
+				text-transform: uppercase;
+				font-weight: bold;
+
+			#active{
+				color: #fff;
+			}	
+
+				a{
+					color: $m_listclr;
+					&:hover{
+						color: $m_listclr_hv;
+						@include transition(.10s)
+					}
+				}
+			}
+		}
+	}
+}
+

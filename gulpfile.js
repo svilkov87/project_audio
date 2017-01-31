@@ -17,7 +17,7 @@ var gulp = require('gulp'),// подключение галп
 	imageminOptipng = require('imagemin-optipng'), //Compress PNG images
 	imageminSvgo = require('imagemin-svgo'),//Compress SVG images
 	pngquant = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
-	cache = require('gulp-cache'),//когда картинко много кэш
+	// cache = require('gulp-cache'),//когда картинко много кэш
 	notify = require("gulp-notify");//уведомление о действии
 
 //livereload
@@ -45,13 +45,11 @@ gulp.task('sass', function () {
     .pipe(autoprefixer({
         browsers: ['last 15 versions']
     }))
-    //.pipe(concatCss('bundle.css'))//название файла после конкат, если есть sass, то не нужен
-    .pipe(sass())//sass
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(cleanCSS()) //минифицируем css
     .pipe(rename('libs.min.css'))//как назовем скомпилированный min- файл
     .pipe(gulp.dest('app/css'))//куда выкладываем итоговый файл
     .pipe(connect.reload());
-    // .pipe(notify('Done!'));
 });
 
 //сжимаем библиотеки css
