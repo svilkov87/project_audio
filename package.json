@@ -9,6 +9,7 @@
   "author": "svilkov",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^3.5.2",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
