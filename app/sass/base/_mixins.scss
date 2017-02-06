@@ -5,6 +5,11 @@
   transition:         all $time ease;
 }
 
+@mixin bradius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
 //медиа-запросы
 @mixin large{
   @media only screen and (min-width: 1024px) {
