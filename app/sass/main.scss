@@ -5,303 +5,363 @@
 
 body {
   font-family: 'Open Sans Condensed', sans-serif;
-  background: $bodybg;
-  .bg_section {
-    background: #3a253b;
-    .nav {
-      background: $navbg;
-      height: 100px;
+  //background: $bodybg;
+}
+.bg_section {
+  background: #3a253b;
+}
+.nav {
+  background: $navbg;
+  height: 100px;
+  .brand {
+    float: left;
+    @include model_l {
+      margin-left: 15px;
+    }
+    @include tablet {
+      margin-left: 15px;
+    }
+    .logo_img {
+      width: 35px;
+      vertical-align: middle;
+    }
 
-      .brand {
-        float: left;
+    .logo_link {
+      color: $navclr;
+      line-height: 100px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-left: 10px;
+      font-size: 22px;
+      &:hover {
+        color: $navlinkhov;
+        @include transition(.5s)
+      }
+    }
+  }
+  #justify_nav {
+    display: none;
+    @include model_l {
+      display: block;
+      float: right;
+      color: #fff;
+      line-height: 100px;
+      font-size: 16px;
+      margin-right: 15px;
+    }
+
+  }
+  .menu {
+    float: right;
+    line-height: 75px;
+    @include model_l {
+      height: auto;
+      background: #fff;
+      margin-top: 101px;
+      text-align: left;
+      width: 100%;
+      float: none;
+      padding: 10px 15px;
+      display: none;
+      position: absolute;
+      z-index: 9999;
+      outline: 1px solid #ccc;
+    }
+    @include tablet {
+      margin-right: 15px;
+    }
+    #about_us {
+      color: #8c8ca4;
+      cursor: pointer;
+      &:hover i{
+        color: #ee1675;
+        @include transition(.5s);
+      }
+      &:hover a{
+        color: #ee1675;
+        @include transition(.5s);
+      }
+
+    }
+
+    ul {
+      line-height: 100px;
+      @include model_l {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+      }
+      i {
+        color: #8c8ca4;
+        margin-left: 10px;
         @include model_l {
-          margin-left: 15px;
-        }
-        @include tablet {
-          margin-left: 15px;
-        }
-        .logo_img {
-          width: 35px;
-          vertical-align: middle;
-        }
-
-        .logo_link {
-          color: $navclr;
-          line-height: 100px;
-          text-transform: uppercase;
-          font-weight: bold;
-          margin-left: 10px;
-          font-size: 22px;
-          &:hover {
-            color: $navlinkhov;
-            @include transition(.5s)
-          }
+          color: #000;
         }
       }
-      #justify_nav {
+
+    }
+
+    .about-ul {
+      @include large {
         display: none;
+        position: absolute;
+        top: 105px;
+        right: 50px;
+        background: rgb(255, 255, 255);
+        border-radius: 3px;
+        padding: 20px;
+        width: 350px;
+        z-index: 999;
+        border: 1px solid #cccccc;
+      }
+      @include model_l {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        border-top: 1px solid $brd_grey;
+      }
+      .about--li {
+        line-height: 30px;
+        text-transform: uppercase;
         @include model_l {
           display: block;
-          float: right;
-          color: #fff;
-          line-height: 100px;
-          font-size: 16px;
-          margin-right: 15px;
+          padding: 0;
+          text-transform: lowercase;
         }
-
-      }
-      .menu {
-        float: right;
-        line-height: 75px;
-        @include model_l {
-          height: auto;
-          background: #fff;
-          margin-top: 101px;
-          text-align: left;
-          width: 100%;
-          float: none;
-          padding: 10px 15px;
-          display: none;
-          position: absolute;
-          z-index: 9999;
-        }
-        @include tablet {
-          margin-right: 15px;
-        }
-
-        ul {
-          line-height: 100px;
-          @include model_l {
-            // line-height: 10px;
-            display: block;
-            margin: 0 auto;
-            padding: 0;
-          }
-          i {
-            color: #fff;
-            margin-left: 10px;
-            @include model_l {
-              color: #000;
-            }
-          }
-
-        }
-
-        .about-ul {
-          @include large {
-            display: none;
-            position: absolute;
-            top: 105px;
-            right: 50px;
-            background: rgb(255, 255, 255);
-            border-radius: 3px;
-            padding: 20px;
-            width: 350px;
-            z-index: 999;
-          }
-          @include model_l {
-            display: block;
-            margin: 0 auto;
-            padding: 0;
-            border-top: 1px solid $brd_grey;
-          }
-          .about--li {
-            line-height: 30px;
-            text-transform: uppercase;
-            @include model_l {
-              display: block;
-              padding: 0;
-              text-transform: lowercase;
-            }
-            &:hover {
-              color: #000;
-              padding-left: 10px;
-              @include transition(.5s);
-              background: rgba(121, 81, 116, 0.35);
-            }
-          }
-          .about--li > a {
-            color: #000;
-            font-weight: bold;
-            @include model_l {
-              display: block;
-              margin-left: 20px;
-              padding: 0;
-              color: #000;
-            }
-          }
-        }
-
-        .menu-list {
-          float: left;
-          margin-left: 10px;
-          text-transform: uppercase;
-          font-weight: bold;
-          @include model_l {
-            // height: 25px;
-            float: none;
-            line-height: 30px;
-            padding: 10px 0;
-            margin-left: 20px;
-          }
-
-          #active {
-            color: #fff;
-            @include model_l {
-              color: $pink_color;
-              &:hover {
-                color: #ccc;
-                @include transition(.10s);
-              }
-            }
-          }
-
-          a {
-            color: $m_listclr;
-            &:hover {
-              color: $m_listclr_hv;
-              @include transition(.10s)
-            }
-            @include model_l {
-              color: #000;
-              &:hover {
-                color: #ccc;
-                @include transition(.10s);
-              }
-            }
-          }
+        &:hover {
+          color: #000;
+          padding-left: 10px;
+          @include transition(.5s);
+          background: rgba(121, 81, 116, 0.35);
         }
       }
-    }
-    .wrapp_header {
-      height: 100vh;
-      background: #fff;
-      background-image: url(../img/oklqgsct8qs-matt-botsford.jpg);
-      background-size: cover;
-    }
-    .header {
-      // background: #ccc;
-      bottom: 0;
-      width: 250px;
-      height: 250px;
-      padding-top: 50px;
-      border-radius: 50%;
-      left: 0;
-      margin: auto;
-      position: absolute;
-      top: 0;
-      right: 0;
-      border: 1px solid rgba(220, 207, 207, 0.79);
-      background: rgba(255, 255, 255, 0.1);
-      .main_img {
-        margin: 0 auto;
-        display: block;
-        width: 170px;
-        @include model_l {
-          // top: -40px;
-        }
-      }
-      .voicing {
-        width: 150px;
-        // background: #FFF;
-        padding: 10px;
-        text-align: center;
-        text-transform: uppercase;
-        margin: 5px auto;
-      }
-
-      .youre {
-        width: 200px;
-        // background: #FFF;
-        padding: 10px;
-        text-align: center;
-        text-transform: uppercase;
-        margin: 5px auto;
-      }
-      .youre_dream {
-        width: 250px;
-        // background: #FFF;
-        padding: 10px;
-        text-align: center;
-        text-transform: uppercase;
-        margin: 0 auto;
-      }
-      h1 {
-        color: #fff;
-        font-size: 25px;
+      .about--li > a {
+        color: #000;
         font-weight: bold;
+        @include model_l {
+          display: block;
+          margin-left: 20px;
+          padding: 0;
+          color: #000;
+        }
       }
     }
-    #fa-angle-down {
-      color: #fff;
-      margin: 0 auto;
-      display: block;
+
+    .menu-list {
+      float: left;
+      margin-left: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      @include model_l {
+        float: none;
+        line-height: 30px;
+        padding: 10px 0;
+        margin-left: 20px;
+      }
+      #active {
+        color: #fff;
+        @include model_l {
+          color: $pink_color;
+          &:hover {
+            color: #ccc;
+            @include transition(.10s);
+          }
+        }
+      }
+
+      a {
+        color: $m_listclr;
+        font-size: 18px;
+        &:hover {
+          color: $m_listclr_hv;
+          @include transition(.10s)
+        }
+        @include model_l {
+          color: #000;
+          &:hover {
+            color: #ccc;
+            @include transition(.10s);
+          }
+        }
+      }
+    }
+  }
+}
+.wrapp_header {
+  height: 100vh;
+  background: #fff;
+  background-image: url(../img/oklqgsct8qs-matt-botsford.jpg);
+  background-size: cover;
+}
+.header {
+  // background: #ccc;
+  bottom: 0;
+  width: 250px;
+  height: 250px;
+  padding-top: 50px;
+  border-radius: 50%;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid rgba(220, 207, 207, 0.79);
+  background: rgba(255, 255, 255, 0.1);
+  .main_img {
+    margin: 0 auto;
+    display: block;
+    width: 170px;
+    @include model_l {
+      // top: -40px;
+    }
+  }
+  .voicing {
+    width: 150px;
+    // background: #FFF;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5px auto;
+  }
+
+  .youre {
+    width: 200px;
+    // background: #FFF;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5px auto;
+  }
+  .youre_dream {
+    width: 250px;
+    // background: #FFF;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+  h1 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+#fa-angle-down {
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-top: 110px;
+  font-size: 32px;
+  cursor: pointer;
+  &:hover {
+    color: #ccc;
+    @include transition(.5s);
+  }
+}
+#main_about {
+  min-height: 100vh;
+  background: #edebeb;
+  overflow: hidden;
+  padding-bottom: 50px;
+  .main_about_header {
+    text-align: center;
+    margin: 65px 0;
+    font-size: 25px;
+  }
+  .wrapp_items {
+    overflow: hidden;
+    margin-bottom: 50px;
+    .main_about_items {
+      padding: 5px;
+      background: #fff;
+      border: 1px solid rgba(190, 136, 204, 0.46);
+      .img_block {
+        text-align: center;
+      }
+      .img_block > img {
+        width: 150px;
+        //margin-bottom: 15px;
+        margin: 15px 0;
+      }
+    }
+    .main_block_desc {
       text-align: center;
-      margin-top: 110px;
-      font-size: 32px;
-      cursor: pointer;
+      font-size: 26px;
+      margin-bottom: 35px;
+      .mb{
+        font-size: 21px;
+        color: #918c8c;
+        padding: 5px 32px;
+        margin-top: 5px;
+      }
+    }
+  }
+  .main_wach_serv {
+    text-align: center;
+    .follow_serv {
+      padding: 10px;
+      background: #fff;
+      border: 1px solid #be88cc;
+      font-weight: bold;
+      color: #be88cc;
+      font-size: 20px;
+      @include bradius(3px);
       &:hover {
-        color: #ccc;
+        background: #be88cc;
+        color: #fff;
         @include transition(.5s);
       }
     }
   }
-  #main_about {
-    min-height: 100vh;
-    background: #fff;
+}
+//servises
+.header_serv {
+  margin: 25px 0;
+  text-align: center;
+  h1 {
+    font-size: 35px;
+  }
+}
+
+.body_serv {
+  padding-bottom: 25px;
+  overflow: hidden;
+  .body_serv_wrapp {
     overflow: hidden;
-    padding-bottom: 50px;
-    .main_about_header {
-      text-align: center;
-      margin: 65px 0;
-      font-size: 25px;
+    padding: 15px;
+    h1 {
+      color: deepskyblue;
+      text-transform: uppercase;
     }
-    .wrapp_items {
-      overflow: hidden;
-      margin-bottom: 50px;
-      .main_about_items {
-        .img_block {
-          text-align: center;
-        }
-        .img_block > img {
-          width: 150px;
-          margin-bottom: 15px;
-        }
-      }
-      .main_block_desc {
-        text-align: center;
-        font-size: 26px;
-        margin-bottom: 35px;
-        .mb{
-          font-size: 21px;
-          color: #918c8c;
-          padding: 5px 32px;
-          margin-top: 5px;
-        }
+    p, h1 {
+      font-size: 22px;
+    }
+    img {
+      width: 135px;
+      display: block;
+      margin: 0 auto;
+      @include model_l {
+        margin-bottom: 15px;
       }
     }
-    .main_wach_serv {
-      text-align: center;
-      .follow_serv {
-        //display: block;
-        padding: 10px;
-        //width: 130px;
-        border: 1px solid #be88cc;
-        font-weight: bold;
-        color: #be88cc;
-        font-size: 20px;
-        @include bradius(3px);
+  }
+}
+.footer {
+  background: #000;
+  padding: 15px;
+  .about-ul-footer{
+    .about--li-footer{
+      padding: 5px 0;
+      font-size: 18px;
+      text-transform: uppercase;
+      a{
+        color: #818080;
         &:hover {
-          background: #be88cc;
-          color: #fff;
+          color: #444343;
           @include transition(.5s);
         }
       }
     }
   }
-  .footer {
-    background: #000;
-    padding: 15px;
-  }
 }
-

@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 var gulp = require('gulp'),// подключение галп
 	sass = require('gulp-sass'),
@@ -28,17 +28,6 @@ var gulp = require('gulp'),// подключение галп
 	  });
 	});
 
-
-//jade
-// gulp.task('jade', function(){
-// 	return gulp.src('app/jade/*.jade')
-// 	.pipe(jade({
-// 		pretty: true
-// 	}))
-// 	.pipe(gulp.dest('app/'))//куда выкладываем итоговый файл
-// 	.pipe(connect.reload());
-// });
- 
 //sass и css
 gulp.task('sass', function () {
   return gulp.src(['app/sass/**/*.sass', 'app/sass/**/*.scss'])//путь к папке с файлами, м которыми будем работать
@@ -65,7 +54,7 @@ gulp.task('scripts', function() {
 
 //html
 gulp.task('html', function () {
-	gulp.src('app/index.html')	
+	gulp.src('app/*.html')
 	.pipe(connect.reload());
 });
 
@@ -76,7 +65,7 @@ gulp.task('watch', function () {
 	gulp.watch(['app/sass/**/*.sass', 'app/sass/**/*.scss'], ['sass']) //следим за изменениями всех css, и при их изменении запускаем таск css
 	// gulp.watch('app/jade/index.jade', ['jade'])
 	gulp.watch('app/libs/*.js', ['scripts'])
-	gulp.watch('app/index.html', ['html']);
+	gulp.watch('app/*.html', ['html']);
 });
 
 //удаление папки dist перед сборкой
