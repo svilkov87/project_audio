@@ -4,6 +4,22 @@
   -o-transition:      all $time ease;
   transition:         all $time ease;
 }
+@mixin clr {
+  &:after, &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+    *zoom: 1;
+  }
+}
+@mixin bsh($shadow){
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow:    $shadow;
+  box-shadow:         $shadow;
+  //box-shadow:         0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+}
 
 @mixin bradius($radius){
 	-webkit-border-radius: $radius;
@@ -18,7 +34,7 @@
 }
 
 @mixin tablet{
- @media only screen and (max-width: 768px) {
+ @media only screen and (min-width: 768px) {
   @content;
 }
 }

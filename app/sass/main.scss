@@ -120,6 +120,18 @@ body {
         padding: 0;
         border-top: 1px solid $brd_grey;
       }
+      @include tablet {
+        display: none;
+        position: absolute;
+        top: 105px;
+        right: 50px;
+        background: rgb(255, 255, 255);
+        border-radius: 3px;
+        padding: 20px;
+        width: 350px;
+        z-index: 999;
+        border: 1px solid #cccccc;
+      }
       .about--li {
         line-height: 30px;
         text-transform: uppercase;
@@ -129,7 +141,7 @@ body {
           text-transform: lowercase;
         }
         &:hover {
-          color: #000;
+          cursor: pointer;
           padding-left: 10px;
           @include transition(.5s);
           background: rgba(121, 81, 116, 0.35);
@@ -137,7 +149,13 @@ body {
       }
       .about--li > a {
         color: #000;
-        font-weight: bold;
+        font-weight: 700;
+        display: block;
+        width: 100%;
+        &:hover {
+          color: #fff;
+          @include transition(.5s);
+        }
         @include model_l {
           display: block;
           margin-left: 20px;
@@ -327,6 +345,12 @@ body {
 .body_serv {
   padding-bottom: 25px;
   overflow: hidden;
+  .audio_items{
+    .audio{
+      display: block;
+      margin: 0 auto;
+    }
+  }
   .body_serv_wrapp {
     overflow: hidden;
     padding: 15px;
@@ -343,6 +367,39 @@ body {
       margin: 0 auto;
       @include model_l {
         margin-bottom: 15px;
+      }
+    }
+  }
+}
+.wrapp_portf{
+  .header_portf{
+    @extend .header_serv;
+    h1 {
+      font-size: 35px;
+    }
+  }
+  .audio_items{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    .img_n_desc{
+      overflow: hidden;
+      height: auto;
+      img{
+        width: 100%;
+        @include tablet {
+          width: 200px;
+        }
+      }
+    }
+    .audio{
+      width: 100%;
+      display: block;
+      margin: 15px auto;
+    }
+    .port_head_desc{
+      h1{
+        margin-bottom: 5px;
       }
     }
   }
