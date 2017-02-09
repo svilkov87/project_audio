@@ -17,6 +17,41 @@
     </script>
 </head>
 <body>
+<!--modal-->
+<div id="myModlal" class="modal">
+    <div class="modal_content">
+        <span class="close">&times;</span>
+        <p>vsemroliki.ru</p>
+        <div class="col-md-8 col-md-offset-2">
+            <div class="row">
+                <div class="modal_header">
+                    <h1>Заказ услуги</h1>
+                </div>
+                <div class="modal_wrapp">
+                    <div class="modal_forms">
+                        <form action="">
+                            <div class="name">
+                                <span>Укажите Ваше имя и фамилию</span>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div class="s_name">
+                                <span>Адрес электронной почты или телефон(можно иное)</span>
+                                <input type="text" name="s_name" id="s_name">
+                            </div>
+                            <div class="theme">
+                                <span>Опишите интересующую Вас услугу</span>
+                                <textarea name="theme" id="modal_field" cols="30" rows="10"></textarea>
+                            </div>
+                            <button type="submit" name="enter" class="btn_modal">Заказать</button>
+                            <button type="submit" name="enter" class="btn_modal_err">Заказать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--modal-->
     <div class="nav">
         <div class="container">
             <div class="row">
@@ -35,7 +70,7 @@
                         <ul class="about-ul">
                             <li class="about--li"><a href="#">услуги</a></li>
                             <li class="about--li"><a href="portfolio.html">портфолио</a></li>
-                            <li class="about--li"><a href="#">как заказть</a></li>
+                            <li class="about--li" id="linkModal">как заказть</li>
                             <li class="about--li"><a href="#">акции</a></li>
                             <li class="about--li"><a href="#">контакты</a></li>
                         </ul>

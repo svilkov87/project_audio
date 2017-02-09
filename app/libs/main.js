@@ -10,9 +10,27 @@ $(document).ready(function(){
     $(".menu").fadeToggle(500);
   });
 
+//modal
+    var modal = document.getElementById('myModlal'),
+        btnModal = document.getElementById('linkModal'),
+        close = document.getElementsByClassName('close')[0];
+
+    btnModal.onclick = function () {
+        modal.style.display = "block";
+    }
+    close.onclick = function () {
+        modal.style.display = "none";
+    }
+    //закрытие модал, если юзер кликает на bg
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+
 
   // выпадающий поиск
-
   $("#stuff_menu_search").click(function(e){
     e.preventDefault();
     $(".stuff_menu_search_field").slideToggle(100);

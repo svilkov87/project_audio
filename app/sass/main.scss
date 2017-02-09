@@ -3,6 +3,89 @@
 @import 'base/mixins';
 @import 'base/reset';
 
+//modal
+.modal{
+  //display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(65, 65, 65, 0.54);
+  .modal_content{
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 15px;
+    width: 70%;
+    height: 480px;
+    .close{
+      float: right;
+      font-size: 20px;
+      cursor: pointer;
+      &:hover {
+        color: red;
+        @include transition(.5s)
+      }
+    }
+    .modal_header{
+      text-align: center;
+      padding: 10px 0;
+      h1{
+        font-size: 22px;
+      }
+    }
+    .modal_wrapp {
+      margin-top: 15px;
+      .modal_forms {
+        #name, #s_name {
+          width: 100%;
+          outline: none;
+          border: 1px solid rgba(204, 204, 204, 0.68);
+          height: 30px;
+          margin: 5px auto;
+          padding: 5px;
+          font-size: 17px;
+          color: #6e8096;
+          @include bradius(2px);
+        }
+        #modal_field {
+          width: 100%;
+          outline: none;
+          border: 1px solid rgba(204, 204, 204, 0.68);
+          height: 180px;
+          margin: 5px auto;
+          padding: 5px;
+          font-size: 17px;
+          color: #6e8096;
+          @include bradius(2px);
+        }
+        .btn_modal{
+          border: 1px solid #cec9c9;
+          width: 105px;
+          height: 35px;
+          background-color: #e1e1e3;
+          color: #000;
+          &:hover {
+            background-color: #cfcfd1;
+            color: #000;
+            @include transition(.3s)
+          }
+        }
+        .btn_modal_err{
+          display: none;
+          border: none;
+          width: 105px;
+          height: 35px;
+          background-color: #e37c73;
+          border-color: #ccc;
+          color: #000;
+        }
+      }
+    }
+  }
+}
 body {
   font-family: 'Open Sans Condensed', sans-serif;
   //background: $bodybg;
@@ -145,6 +228,13 @@ body {
           padding-left: 10px;
           @include transition(.5s);
           background: rgba(121, 81, 116, 0.35);
+        }
+      }
+      #linkModal{
+        color: #ee1675;
+        font-weight: bold;
+        &:hover {
+          color: #fff;
         }
       }
       .about--li > a {
