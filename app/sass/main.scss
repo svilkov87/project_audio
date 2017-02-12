@@ -5,7 +5,7 @@
 
 //modal
 .modal{
-  //display: none;
+  display: none;
   position: fixed;
   z-index: 9999;
   left: 0;
@@ -19,7 +19,8 @@
     margin: 5% auto;
     padding: 15px;
     width: 70%;
-    height: 480px;
+    height: auto;
+    overflow: hidden;
     .close{
       float: right;
       font-size: 20px;
@@ -38,7 +39,19 @@
     }
     .modal_wrapp {
       margin-top: 15px;
+      .err_block{
+        display: none;
+        padding: 10px;
+        border: 1px solid rgba(255, 0, 0, 0.46);
+        margin: 5px 0;
+        color: red;
+      }
       .modal_forms {
+        .name, .s_name, .theme{
+          margin-bottom: 15px;
+        span{
+          font-size: 20px;
+        }
         #name, #s_name {
           width: 100%;
           outline: none;
@@ -60,6 +73,7 @@
           font-size: 17px;
           color: #6e8096;
           @include bradius(2px);
+        }
         }
         .btn_modal{
           border: 1px solid #cec9c9;

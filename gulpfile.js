@@ -17,7 +17,7 @@ var gulp = require('gulp'),// подключение галп
 	imageminOptipng = require('imagemin-optipng'), //Compress PNG images
 	imageminSvgo = require('imagemin-svgo'),//Compress SVG images
 	pngquant = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
-	// cache = require('gulp-cache'),//когда картинко много кэш
+	cache = require('gulp-cache'),//когда картинко много кэш
 	notify = require("gulp-notify");//уведомление о действии
 
 //livereload
@@ -45,7 +45,7 @@ gulp.task('sass', function () {
 
 //js
 gulp.task('scripts', function() {
-  return gulp.src('app/libs/*.js')
+  return gulp.src('app/libs/main.js')
     .pipe(concat('all.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('app/js'))
@@ -105,8 +105,8 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 	var buildCss = gulp.src(['app/css/libs.min.css'])
 	.pipe(gulp.dest('dist/css'));
 
-	var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
-	.pipe(gulp.dest('dist/fonts'));
+	// var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
+	// .pipe(gulp.dest('dist/fonts'));
 
 	var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
 	.pipe(gulp.dest('dist/js'));

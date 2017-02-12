@@ -10,7 +10,50 @@ $(document).ready(function(){
     $(".menu").fadeToggle(500);
   });
 
-//modal
+  // выпадающий поиск
+  $("#stuff_menu_search").click(function(e){
+    e.preventDefault();
+    $(".stuff_menu_search_field").slideToggle(100);
+        // $(".stuff_menu_search_field").css("display" , "block");
+  });
+
+    // форма отправки заказа
+    $('.btn_modal').click(function(e){
+        e.preventDefault();
+        var name = $('#name').val(),
+            s_name = $('#s_name').val(),
+            field = $('#modal_field').val();
+
+        if( name == "" || s_name == "" || field == ""){
+            $('.err_block').css("display" , "block");
+        }
+        else {
+            $('.err_block').css("display" , "none");
+            $.ajax({
+                url: "../../ajax/upload.php",
+                type: "POST",
+                data: $('.myform').serialize(),
+                dataType: "html"
+            }).done(function(){
+                $('#myModlal').css("display" , "none");
+                // alert('data');
+            });
+        }
+        $('#name, #s_name, #modal_field').focus(function(){
+            $('.err_block').css("display" , "none");
+        });
+    });
+
+    //Плавный скролл до блока .div по клику на .scroll
+  //Документация: https://github.com/flesler/jquery.scrollTo
+  $("#fa-angle-down").click(function() {
+    $.scrollTo($("#main_about"), 800, {
+      offset: 0
+    });
+  });
+
+    
+    //modal
     var modal = document.getElementById('myModlal'),
         btnModal = document.getElementById('linkModal'),
         close = document.getElementsByClassName('close')[0];
@@ -27,23 +70,6 @@ $(document).ready(function(){
             modal.style.display = "none";
         }
     }
-
-
-
-  // выпадающий поиск
-  $("#stuff_menu_search").click(function(e){
-    e.preventDefault();
-    $(".stuff_menu_search_field").slideToggle(100);
-        // $(".stuff_menu_search_field").css("display" , "block");
-  });
-
-    //Плавный скролл до блока .div по клику на .scroll
-  //Документация: https://github.com/flesler/jquery.scrollTo
-  $("#fa-angle-down").click(function() {
-    $.scrollTo($("#main_about"), 800, {
-      offset: 0
-    });
-  });
 
 
   // показать кнопку наверх
