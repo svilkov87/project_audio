@@ -7,13 +7,13 @@
 .modal{
   display: none;
   position: fixed;
-  z-index: 9999;
+  z-index: 9999999;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(65, 65, 65, 0.54);
+  background-color: rgba(0, 0, 0, 0.73);
   .modal_content{
     background-color: #fefefe;
     margin: 5% auto;
@@ -39,6 +39,11 @@
     }
     .modal_wrapp {
       margin-top: 15px;
+      .modal_confirm{
+        text-align: center;
+        color: red;
+        display: none;
+      }
       .err_block{
         display: none;
         padding: 10px;
@@ -100,19 +105,159 @@
     }
   }
 }
+//test
+.one{
+  background: url("https://im1-tub-ru.yandex.net/i?id=b6e7ffca8964bc1f2d0ef651802d956d-l&n=13") no-repeat fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  .one-inner{
+    .one-header{
+      background: #fff;
+      height: 250px;
+      display: none;
+    }
+    .block-content{
+      height: 100vh;
+      .wrapp_content{
+        width: 60%;
+        height: 65vh;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        @include mobile_m{
+          width: 80%;
+        }
+        .block_serv_desc{
+          border: 1px solid #fff;
+          width: 50%;
+          margin: 0 auto;
+          color: #fff;
+          font-size: 30px;
+          text-align: center;
+          font-weight: bold;
+          @include mobile_s {
+            width: 100%;
+            font-size: 18px;
+          }
+          @include mobile_m{
+            width: 100%;
+            font-size: 18px;
+          }
+          @include mobile_l{
+            width: 100%;
+            font-size: 18px;
+          }
+        }
+      }
+
+      h1{
+        color: #fff;
+        text-align: center;
+        font-size: 575%;
+        display: block;
+        margin-bottom: 10%;
+        @include mobile_s {
+          font-size: 45px;
+          margin-bottom: 25%;
+        }
+        @include mobile_m{
+          font-size: 45px;
+          margin-bottom: 25%;
+        }
+        @include mobile_l{
+          font-size: 45px;
+          margin-bottom: 25%;
+        }
+      }
+    }
+    .one-footer{
+      background: #fff;
+      height: 35vh;
+    }
+  }
+}
+
+.two{
+  background: url("https://im0-tub-ru.yandex.net/i?id=0fb7a20b50799df6f81f82678dbb2bb5-l&n=13") no-repeat fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  .two-inner{
+    .two-header{
+      background: #fff;
+      height: 250px;
+      display: none;
+    }
+    .block-content{
+      //height: 100vh;
+      .wrapp_content{
+        width: 60%;
+        height: 65vh;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        .block_serv_desc{
+          border: 1px solid #fff;
+          width: 50%;
+          margin: 0 auto;
+          color: #fff;
+          font-size: 30px;
+          text-align: center;
+          font-weight: bold;
+          @include mobile_s {
+            width: 100%;
+            font-size: 18px;
+          }
+          @include mobile_m{
+            width: 100%;
+            font-size: 18px;
+          }
+          @include mobile_l{
+            width: 100%;
+            font-size: 18px;
+          }
+        }
+      }
+      h1{
+        color: #fff;
+        text-align: center;
+        font-size: 575%;
+        display: block;
+        margin-bottom: 10%;
+        @include mobile_s {
+          font-size: 45px;
+          margin-bottom: 25%;
+        }
+        @include mobile_m{
+          font-size: 45px;
+          margin-bottom: 25%;
+        }
+        @include mobile_l{
+          font-size: 45px;
+          margin-bottom: 25%;
+        }
+      }
+    }
+    .two-footer{
+      background: #fff;
+      height: 35vh;
+    }
+  }
+}
+
 body {
   font-family: 'Open Sans Condensed', sans-serif;
   //background: $bodybg;
 }
 .bg_section {
-  background: #3a253b;
+  //background: #3a253b;
 }
 .nav {
-  background: $navbg;
-  height: 100px;
+  //background: $navbg;
+  //height: 100px;
+  background: rgba(255, 255, 255, 0.47);
+  height: 75px;
+  border-bottom: 1px solid #ccc;
   .brand {
     float: left;
-    @include model_l {
+    @include mobile_l {
       margin-left: 15px;
     }
     @include tablet {
@@ -124,10 +269,16 @@ body {
     }
 
     .logo_link {
-      color: $navclr;
-      line-height: 100px;
+      //color: $navclr;
+      //line-height: 100px;
+      //text-transform: uppercase;
+      //font-weight: bold;
+      //margin-left: 10px;
+      //font-size: 22px;
+      color: #000;
+      line-height: 75px;
       text-transform: uppercase;
-      font-weight: bold;
+      font-weight: 700;
       margin-left: 10px;
       font-size: 22px;
       &:hover {
@@ -138,11 +289,11 @@ body {
   }
   #justify_nav {
     display: none;
-    @include model_l {
+    @include mobile_l {
       display: block;
       float: right;
-      color: #fff;
-      line-height: 100px;
+      color: #060606;
+      line-height: 75px;
       font-size: 16px;
       margin-right: 15px;
     }
@@ -151,10 +302,10 @@ body {
   .menu {
     float: right;
     line-height: 75px;
-    @include model_l {
+    @include mobile_l {
       height: auto;
       background: #fff;
-      margin-top: 101px;
+      margin-top: 75px;
       text-align: left;
       width: 100%;
       float: none;
@@ -182,8 +333,9 @@ body {
     }
 
     ul {
-      line-height: 100px;
-      @include model_l {
+      //line-height: 100px;
+      line-height: 75px;
+      @include mobile_l {
         display: block;
         margin: 0 auto;
         padding: 0;
@@ -191,7 +343,7 @@ body {
       i {
         color: #8c8ca4;
         margin-left: 10px;
-        @include model_l {
+        @include mobile_l {
           color: #000;
         }
       }
@@ -202,7 +354,7 @@ body {
       @include large {
         display: none;
         position: absolute;
-        top: 105px;
+        top: 80px;
         right: 50px;
         background: rgb(255, 255, 255);
         border-radius: 3px;
@@ -211,8 +363,8 @@ body {
         z-index: 999;
         border: 1px solid #cccccc;
       }
-      @include model_l {
-        display: block;
+      @include mobile_l {
+        display: none;
         margin: 0 auto;
         padding: 0;
         border-top: 1px solid $brd_grey;
@@ -220,7 +372,7 @@ body {
       @include tablet {
         display: none;
         position: absolute;
-        top: 105px;
+        top: 80px;
         right: 50px;
         background: rgb(255, 255, 255);
         border-radius: 3px;
@@ -232,7 +384,7 @@ body {
       .about--li {
         line-height: 30px;
         text-transform: uppercase;
-        @include model_l {
+        @include mobile_l {
           display: block;
           padding: 0;
           text-transform: lowercase;
@@ -250,6 +402,9 @@ body {
         &:hover {
           color: #fff;
         }
+        @include mobile_l {
+          margin-left: 20px;
+        }
       }
       .about--li > a {
         color: #000;
@@ -260,7 +415,7 @@ body {
           color: #fff;
           @include transition(.5s);
         }
-        @include model_l {
+        @include mobile_l {
           display: block;
           margin-left: 20px;
           padding: 0;
@@ -274,15 +429,15 @@ body {
       margin-left: 10px;
       text-transform: uppercase;
       font-weight: bold;
-      @include model_l {
+      @include mobile_l {
         float: none;
         line-height: 30px;
         padding: 10px 0;
         margin-left: 20px;
       }
       #active {
-        color: #fff;
-        @include model_l {
+        color: #000;
+        @include mobile_l {
           color: $pink_color;
           &:hover {
             color: #ccc;
@@ -298,7 +453,7 @@ body {
           color: $m_listclr_hv;
           @include transition(.10s)
         }
-        @include model_l {
+        @include mobile_l {
           color: #000;
           &:hover {
             color: #ccc;
@@ -312,7 +467,7 @@ body {
 .wrapp_header {
   height: 100vh;
   background: #fff;
-  background-image: url(../img/oklqgsct8qs-matt-botsford.jpg);
+  background-image: url(../img/turntable-1109588_1920.jpg);
   background-size: cover;
 }
 .header {
@@ -327,13 +482,13 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  border: 1px solid rgba(220, 207, 207, 0.79);
-  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: rgba(64, 63, 63, 0.28);
   .main_img {
     margin: 0 auto;
     display: block;
     width: 170px;
-    @include model_l {
+    @include mobile_l {
       // top: -40px;
     }
   }
@@ -369,12 +524,11 @@ body {
   }
 }
 #fa-angle-down {
-  color: #fff;
-  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.51);
+  margin: 110px auto 0;
   display: block;
   text-align: center;
-  margin-top: 110px;
-  font-size: 32px;
+  font-size: 52px;
   cursor: pointer;
   &:hover {
     color: #ccc;
@@ -469,12 +623,13 @@ body {
       width: 135px;
       display: block;
       margin: 0 auto;
-      @include model_l {
+      @include mobile_l {
         margin-bottom: 15px;
       }
     }
   }
 }
+//portfolio
 .wrapp_portf{
   .header_portf{
     @extend .header_serv;

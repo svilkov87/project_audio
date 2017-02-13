@@ -41,7 +41,7 @@ include("include/connection.php");
                 <div class="col-md-3 wow fadeIn" data-wow-delay=".3s">
                     <div class="main_about_items">
                         <div class="img_block">
-                            <img src="img/circular-clock.png">
+                            <img src="dist/img/circular-clock.png">
                         </div>
                         <div class="main_block_desc">
                             <span>Быстро</span>
@@ -54,7 +54,7 @@ include("include/connection.php");
                 <div class="col-md-3 wow fadeIn" data-wow-delay=".4s">
                     <div class="main_about_items">
                         <div class="img_block">
-                            <img src="img/sound-bars.png">
+                            <img src="dist/img/sound-bars.png">
                         </div>
                         <div class="main_block_desc">
                             <span>Профессионально</span>
@@ -67,7 +67,7 @@ include("include/connection.php");
                 <div class="col-md-3 wow fadeIn" data-wow-delay=".5s">
                     <div class="main_about_items">
                         <div class="img_block">
-                            <img src="img/tuxedo.png">
+                            <img src="dist/img/tuxedo.png">
                         </div>
                         <div class="main_block_desc">
                             <span>Креативно</span>
@@ -80,7 +80,7 @@ include("include/connection.php");
                 <div class="col-md-3 wow fadeIn" data-wow-delay=".5s">
                     <div class="main_about_items">
                         <div class="img_block">
-                            <img src="img/money-bag.png">
+                            <img src="dist/img/money-bag.png">
                         </div>
                         <div class="main_block_desc">
                             <span>Бюджетно</span>
@@ -92,7 +92,7 @@ include("include/connection.php");
                 </div>
             </div>
             <div class="main_wach_serv">
-                <a href="#" class="follow_serv">Посмотреть услуги</a>
+                <a href="servises.php" class="follow_serv">Посмотреть услуги</a>
             </div>
         </div>
     </section>

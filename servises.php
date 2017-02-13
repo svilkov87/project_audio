@@ -42,90 +42,45 @@ include("include/connection.php");
 <body>
 <?php include("include/modal.php"); ?>
 <?php include("include/nav.php"); ?>
-<div class="wrapp_serv">
-    <div class="container">
-        <div class="header_serv">
-            <h1>Наши услуги</h1>
+<section class="one">
+    <div class="one-inner">
+        <div class="one-header">
+            <p>hello</p>
         </div>
-        <div class="body_serv">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="body_serv_wrapp">
-                    <div class="col-md-4 wow fadeIn">
-                        <img src="dist/img/microphone.png" alt="">
-                    </div>
-                    <div class="col-md-8 wow fadeInRight">
-                        <h1>Service #1</h1>
-                        <p>
-                            Horem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
-                            asperiores autem cum dolor ex fuga illum iure, laborum nemo neque nulla numquam odit
-                            officiis
-                            perspiciatis quae qui quibusdam veritatis voluptatum.
-                        </p>
-                    </div>
-                </div>
-                <div class="body_serv_wrapp">
-                    <div class="col-md-4 wow fadeIn"  data-wow-delay=".1s">
-                        <img src="dist/img/microphone.png" alt="">
-                    </div>
-                    <div class="col-md-8 wow fadeInRight"  data-wow-delay=".1s">
-                        <h1>Service #2</h1>
-                        <p>
-                            Horem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
-                            asperiores autem cum dolor ex fuga illum iure, laborum nemo neque nulla numquam odit
-                            officiis
-                            perspiciatis quae qui quibusdam veritatis voluptatum.
-                        </p>
-                    </div>
-                </div>
-                <div class="body_serv_wrapp">
-                    <div class="col-md-4 wow fadeIn"  data-wow-delay=".2s">
-                        <img src="dist/img/microphone.png" alt="">
-                    </div>
-                    <div class="col-md-8 wow fadeInRight"  data-wow-delay=".2s">
-                        <h1>Service #3</h1>
-                        <p>
-                            Horem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
-                            asperiores autem cum dolor ex fuga illum iure, laborum nemo neque nulla numquam odit
-                            officiis
-                            perspiciatis quae qui quibusdam veritatis voluptatum.
-                        </p>
-                    </div>
-                </div>
-                <div class="body_serv_wrapp">
-                    <div class="col-md-4 wow fadeIn">
-                        <img src="dist/img/microphone.png" alt="">
-                    </div>
-                    <div class="col-md-8 wow fadeInRight">
-                        <h1>Service #4</h1>
-                        <p>
-                            Horem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
-                            asperiores autem cum dolor ex fuga illum iure, laborum nemo neque nulla numquam odit
-                            officiis
-                            perspiciatis quae qui quibusdam veritatis voluptatum.
-                        </p>
-                    </div>
-                </div>
-                <div class="body_serv_wrapp">
-                    <div class="col-md-4 wow fadeIn">
-                        <img src="dist/img/microphone.png" alt="">
-                    </div>
-                    <div class="col-md-8 wow fadeInRight">
-                        <h1>Service #5</h1>
-                        <p>
-                            Horem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
-                            asperiores autem cum dolor ex fuga illum iure, laborum nemo neque nulla numquam odit
-                            officiis
-                            perspiciatis quae qui quibusdam veritatis voluptatum.
-                        </p>
-                    </div>
+        <div class="block-content">
+            <div class="wrapp_content">
+                <h1>пример 1</h1>
+                <div class="block_serv_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur aut autem culpa delectus deleniti esse eveniet iste libero
+                    nam necessitatibus nulla odio odit perspiciatis quasi recusandae
+                    reprehenderit sed, sint.
                 </div>
             </div>
-            <div class="section_serv">
-
+            <div class="one-footer">
+                <p>hello</p>
             </div>
+        </div>
+</section>
+<section class="two">
+    <div class="two-inner">
+        <div class="two-header">
+            <p>hello</p>
+        </div>
+        <div class="block-content">
+            <div class="wrapp_content">
+                <h1>пример 2</h1>
+                <div class="block_serv_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur aut autem culpa delectus deleniti esse eveniet iste libero
+                    nam necessitatibus nulla odio odit perspiciatis quasi recusandae
+                    reprehenderit sed, sint.
+                </div>
+            </div>
+        </div>
+        <div class="two-footer">
+            <p>hello</p>
         </div>
     </div>
-</div>
+</section>
 <?php include("include/footer.php"); ?>
 <?php include("include/scripts.php"); ?>
 </body>

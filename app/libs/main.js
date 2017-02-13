@@ -9,14 +9,7 @@ $(document).ready(function(){
   $("#justify_nav").click(function(){
     $(".menu").fadeToggle(500);
   });
-
-  // выпадающий поиск
-  $("#stuff_menu_search").click(function(e){
-    e.preventDefault();
-    $(".stuff_menu_search_field").slideToggle(100);
-        // $(".stuff_menu_search_field").css("display" , "block");
-  });
-
+    
     // форма отправки заказа
     $('.btn_modal').click(function(e){
         e.preventDefault();
@@ -35,7 +28,9 @@ $(document).ready(function(){
                 data: $('.myform').serialize(),
                 dataType: "html"
             }).done(function(){
-                $('#myModlal').css("display" , "none");
+                // $('#myModlal').css("display" , "none");
+                $('.modal_forms').css("display" , "none");
+                $('.modal_confirm').css("display" , "block");
                 // alert('data');
             });
         }

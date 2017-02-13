@@ -38,9 +38,26 @@
   @content;
 }
 }
-
-@mixin model_l{
- @media only screen and (max-width: 480px) {
+@mixin laptop{
+ @media only screen and (max-width: 1024px) {
   @content;
 }
+}
+
+@mixin mobile_l{
+ @media only screen and (max-width: 425px) {
+  @content;
+}
+}
+
+@mixin mobile_m{
+  @media only screen and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin mobile_s{
+  @media only screen and (max-width: 320px) {
+    @content;
+  }
 }

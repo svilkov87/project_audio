@@ -12,6 +12,9 @@
                     <div class="err_block">
                         Не все поля заполнены
                     </div>
+                    <div class="modal_confirm">
+                        Спасибо!
+                    </div>
                     <div class="modal_forms">
                         <form action="" method="post" class="myform">
                             <div class="name">
