@@ -117,11 +117,213 @@
       display: none;
     }
     .block-content{
-      height: 100vh;
+      height: auto;
       .wrapp_content{
         width: 60%;
-        height: 65vh;
+        height: 100vh;
         margin: 0 auto;
+        padding-top: 100px;
+        //border: 1px solid #fff;
+        @include mobile_m{
+          width: 80%;
+        }
+        .block_serv_desc{
+          //border: 1px solid #fff;
+          width: 50%;
+          margin: 0 auto;
+          color: #fff;
+          font-size: 30px;
+          text-align: center;
+          font-weight: bold;
+          @include mobile_s {
+            width: 100%;
+            font-size: 18px;
+          }
+          @include mobile_m{
+            width: 100%;
+            font-size: 18px;
+          }
+          @include mobile_l{
+            width: 100%;
+            font-size: 18px;
+          }
+        }
+      }
+
+      h1{
+        color: #fff;
+        text-align: center;
+        font-size: 575%;
+        display: block;
+        margin-bottom: 10%;
+        @include mobile_s {
+          font-size: 45px;
+          margin-bottom: 25%;
+        }
+        @include mobile_m{
+          font-size: 45px;
+          margin-bottom: 25%;
+        }
+        @include mobile_l{
+          font-size: 45px;
+          margin-bottom: 25%;
+        }
+      }
+      .serv{
+        color: #fff;
+        text-align: center;
+        display: block;
+        font-size: 35px;
+        margin-top: 55px;
+        cursor: pointer;
+      }
+    }
+    .one-footer{
+      background: #fff;
+      height: 100vh;
+      .wrapp-footer{
+        //border: 1px solid #ccc;
+        width: 60%;
+        margin: 0 auto;
+        overflow: hidden;
+        height: 100vh;
+        .left-block-footer{
+          @include bradius(5px);
+          margin-top: 150px;
+          padding: 10px;
+          background-color: rgba(189, 223, 116, 0.36);
+          .left-block-head{
+            text-align: center;
+            h1{
+              font-size: 24px;
+              color: #000;
+            }
+          }
+          .img-wrapp-footer{
+            text-align: center;
+            .img-left-footer{
+              width: 150px;
+              padding: 10px;
+              background-color: #fff;
+              @include bradius(50%);
+            }
+          }
+          .footer-price{
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            font-size: 25px;
+            color: #b24040;
+            font-weight: bold;
+          }
+        }
+        .right-block-footer{
+          padding-top: 150px;
+          overflow: hidden;
+          span{
+            padding: 10px 0;
+            font-size: 19px;
+          }
+          .audio{
+            width: 100%;
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+.two{
+  background: url("https://im0-tub-ru.yandex.net/i?id=0fb7a20b50799df6f81f82678dbb2bb5-l&n=13") no-repeat fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  .two-inner{
+    .two-header{
+      background: #fff;
+      height: 250px;
+      display: none;
+    }
+    .block-content{
+      height: auto;
+      .wrapp_content{
+        width: 60%;
+        padding-top: 100px;
+        height: 100vh;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        .block_serv_desc{
+          border: 1px solid #fff;
+          width: 50%;
+          margin: 0 auto;
+          color: #fff;
+          font-size: 30px;
+          text-align: center;
+          font-weight: bold;
+          @include mobile_s {
+            width: 100%;
+            font-size: 18px;
+          }
+          @include mobile_m{
+            width: 100%;
+            font-size: 18px;
+          }
+          @include mobile_l{
+            width: 100%;
+            font-size: 18px;
+          }
+        }
+      }
+      h1{
+        color: #fff;
+        text-align: center;
+        font-size: 575%;
+        display: block;
+        margin-bottom: 10%;
+        @include mobile_s {
+          font-size: 45px;
+          margin-bottom: 25%;
+        }
+        @include mobile_m{
+          font-size: 45px;
+          margin-bottom: 25%;
+        }
+        @include mobile_l{
+          font-size: 45px;
+          margin-bottom: 25%;
+        }
+      }
+      .serv{
+        color: #fff;
+        text-align: center;
+        display: block;
+        font-size: 35px;
+        margin-top: 55px;
+        cursor: pointer;
+      }
+    }
+    .two-footer{
+      background: #fff;
+      height: 100vh;
+    }
+  }
+}
+.three{
+  background: url("https://im1-tub-ru.yandex.net/i?id=b6e7ffca8964bc1f2d0ef651802d956d-l&n=13") no-repeat fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  .three-inner{
+    .three-header{
+      background: #fff;
+      height: 250px;
+      display: none;
+    }
+    .block-content{
+      height: auto;
+      .wrapp_content{
+        width: 60%;
+        height: 100vh;
+        margin: 0 auto;
+        padding-top: 100px;
         border: 1px solid #fff;
         @include mobile_m{
           width: 80%;
@@ -168,76 +370,18 @@
           margin-bottom: 25%;
         }
       }
-    }
-    .one-footer{
-      background: #fff;
-      height: 35vh;
-    }
-  }
-}
-
-.two{
-  background: url("https://im0-tub-ru.yandex.net/i?id=0fb7a20b50799df6f81f82678dbb2bb5-l&n=13") no-repeat fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-  .two-inner{
-    .two-header{
-      background: #fff;
-      height: 250px;
-      display: none;
-    }
-    .block-content{
-      //height: 100vh;
-      .wrapp_content{
-        width: 60%;
-        height: 65vh;
-        margin: 0 auto;
-        border: 1px solid #fff;
-        .block_serv_desc{
-          border: 1px solid #fff;
-          width: 50%;
-          margin: 0 auto;
-          color: #fff;
-          font-size: 30px;
-          text-align: center;
-          font-weight: bold;
-          @include mobile_s {
-            width: 100%;
-            font-size: 18px;
-          }
-          @include mobile_m{
-            width: 100%;
-            font-size: 18px;
-          }
-          @include mobile_l{
-            width: 100%;
-            font-size: 18px;
-          }
-        }
-      }
-      h1{
+      .serv{
         color: #fff;
         text-align: center;
-        font-size: 575%;
         display: block;
-        margin-bottom: 10%;
-        @include mobile_s {
-          font-size: 45px;
-          margin-bottom: 25%;
-        }
-        @include mobile_m{
-          font-size: 45px;
-          margin-bottom: 25%;
-        }
-        @include mobile_l{
-          font-size: 45px;
-          margin-bottom: 25%;
-        }
+        font-size: 35px;
+        margin-top: 55px;
+        cursor: pointer;
       }
     }
-    .two-footer{
+    .three-footer{
       background: #fff;
-      height: 35vh;
+      height: 100vh;
     }
   }
 }
