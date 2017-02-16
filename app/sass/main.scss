@@ -3,6 +3,23 @@
 @import 'base/mixins';
 @import 'base/reset';
 
+//button_top
+#top {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  position: fixed;
+  z-index: 99999;
+  background-color: rgba(177, 177, 177, 0.86);
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+  color: #fff;
+}
+.fa-chevron-up {
+  padding: 15px;
+}
 //modal
 .modal{
   display: none;
@@ -107,7 +124,7 @@
 }
 //test
 .one{
-  background: url("https://im1-tub-ru.yandex.net/i?id=b6e7ffca8964bc1f2d0ef651802d956d-l&n=13") no-repeat fixed;
+  background: url("http://www.wallpaperinhd.net/file/9048/2880x1800/stretch/road-(1920x1200)-wallpaper-6.jpg") no-repeat fixed;
   -webkit-background-size: cover;
   background-size: cover;
   .one-inner{
@@ -123,12 +140,13 @@
         height: 100vh;
         margin: 0 auto;
         padding-top: 100px;
-        //border: 1px solid #fff;
         @include mobile_m{
           width: 80%;
         }
         .block_serv_desc{
-          //border: 1px solid #fff;
+          border: 1px solid #fff;
+          @include bradius(5px);
+          padding: 5px;
           width: 50%;
           margin: 0 auto;
           color: #fff;
@@ -151,11 +169,15 @@
       }
 
       h1{
-        color: #fff;
         text-align: center;
-        font-size: 575%;
+        font-size: 45px;
         display: block;
         margin-bottom: 10%;
+        background: rgba(255, 255, 255, 0.5);
+        color: rgba(0, 0, 0, 0.88);
+        padding: 15px 0;
+        @include bradius(5px);
+        text-transform: uppercase;
         @include mobile_s {
           font-size: 45px;
           margin-bottom: 25%;
@@ -190,6 +212,7 @@
         .left-block-footer{
           @include bradius(5px);
           margin-top: 150px;
+          border: 1px solid #aec9b3;
           padding: 10px;
           background-color: rgba(189, 223, 116, 0.36);
           .left-block-head{
@@ -204,6 +227,7 @@
             .img-left-footer{
               width: 150px;
               padding: 10px;
+              margin-bottom: 15px;
               background-color: #fff;
               @include bradius(50%);
             }
@@ -217,6 +241,22 @@
             font-weight: bold;
           }
         }
+        .wrapp-price{
+          text-align: center;
+          margin-top: 5px;
+          .footer-price{
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 2px;
+            background-color: #57b460;
+            text-transform: uppercase;
+            font-size: 24px;
+            &:hover {
+              background-color: #4e9c4e;
+              @include transition(.5s);
+            }
+          }
+        }
         .right-block-footer{
           padding-top: 150px;
           overflow: hidden;
@@ -225,8 +265,14 @@
             font-size: 19px;
           }
           .audio{
-            width: 100%;
-            margin: 10px 0;
+            width: 90%;
+            margin: 10px 5px;
+            outline: 1px solid rgba(174, 201, 179, 0.59);
+            &:hover {
+              cursor: pointer;
+              @include bsh(0px 0px 15px 0px rgba(50, 50, 50, 0.40));
+              @include transition(.5s);
+            }
           }
         }
       }
@@ -234,7 +280,7 @@
   }
 }
 .two{
-  background: url("https://im0-tub-ru.yandex.net/i?id=0fb7a20b50799df6f81f82678dbb2bb5-l&n=13") no-repeat fixed;
+  background: url("http://graphnet.ru/images/52248_kartinki-muzyka-mikrofon.jpg") no-repeat fixed;
   -webkit-background-size: cover;
   background-size: cover;
   .two-inner{
@@ -247,12 +293,16 @@
       height: auto;
       .wrapp_content{
         width: 60%;
-        padding-top: 100px;
         height: 100vh;
         margin: 0 auto;
-        border: 1px solid #fff;
+        padding-top: 100px;
+        @include mobile_m{
+          width: 80%;
+        }
         .block_serv_desc{
           border: 1px solid #fff;
+          @include bradius(5px);
+          padding: 5px;
           width: 50%;
           margin: 0 auto;
           color: #fff;
@@ -273,12 +323,17 @@
           }
         }
       }
+
       h1{
-        color: #fff;
         text-align: center;
-        font-size: 575%;
+        font-size: 45px;
         display: block;
         margin-bottom: 10%;
+        background: rgba(255, 255, 255, 0.5);
+        color: rgba(0, 0, 0, 0.88);
+        padding: 15px 0;
+        @include bradius(5px);
+        text-transform: uppercase;
         @include mobile_s {
           font-size: 45px;
           margin-bottom: 25%;
@@ -292,7 +347,7 @@
           margin-bottom: 25%;
         }
       }
-      .serv{
+      .serv2{
         color: #fff;
         text-align: center;
         display: block;
@@ -304,9 +359,87 @@
     .two-footer{
       background: #fff;
       height: 100vh;
+      .wrapp-footer{
+        //border: 1px solid #ccc;
+        width: 60%;
+        margin: 0 auto;
+        overflow: hidden;
+        height: 100vh;
+        .left-block-footer{
+          @include bradius(5px);
+          margin-top: 150px;
+          border: 1px solid #aec9b3;
+          padding: 10px;
+          background-color: rgba(189, 223, 116, 0.36);
+          .left-block-head{
+            text-align: center;
+            h1{
+              font-size: 24px;
+              background: rgba(255,255,255,.5);
+              color: rgba(0,0,0,.88);
+              padding: 15px 0;
+              margin-bottom: 15px;
+            }
+          }
+          .img-wrapp-footer{
+            text-align: center;
+            .img-left-footer{
+              width: 150px;
+              padding: 10px;
+              margin-bottom: 15px;
+              background-color: #fff;
+              @include bradius(50%);
+            }
+          }
+          .footer-price{
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            font-size: 25px;
+            color: #b24040;
+            font-weight: bold;
+          }
+        }
+        .wrapp-price{
+          text-align: center;
+          margin-top: 5px;
+          .footer-price{
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 2px;
+            background-color: #57b460;
+            text-transform: uppercase;
+            font-size: 24px;
+            &:hover {
+              background-color: #4e9c4e;
+              @include transition(.5s);
+            }
+          }
+        }
+        .right-block-footer{
+          padding-top: 150px;
+          overflow: hidden;
+          span{
+            padding: 10px 0;
+            font-size: 19px;
+          }
+          .audio{
+            width: 90%;
+            margin: 10px 5px;
+            outline: 1px solid rgba(174, 201, 179, 0.59);
+            &:hover {
+              cursor: pointer;
+              @include bsh(0px 0px 15px 0px rgba(50, 50, 50, 0.40));
+              @include transition(.5s);
+            }
+          }
+        }
+      }
     }
   }
 }
+
+
 .three{
   background: url("https://im1-tub-ru.yandex.net/i?id=b6e7ffca8964bc1f2d0ef651802d956d-l&n=13") no-repeat fixed;
   -webkit-background-size: cover;

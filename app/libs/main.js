@@ -9,7 +9,7 @@ $(document).ready(function(){
   $("#justify_nav").click(function(){
     $(".menu").fadeToggle(500);
   });
-    
+
     // форма отправки заказа
     $('.btn_modal').click(function(e){
         e.preventDefault();
@@ -43,6 +43,17 @@ $(document).ready(function(){
   //Документация: https://github.com/flesler/jquery.scrollTo
   $("#fa-angle-down").click(function() {
     $.scrollTo($("#main_about"), 800, {
+      offset: 0
+    });
+  });
+
+    $(".serv").click(function() {
+    $.scrollTo($(".one-footer"), 800, {
+      offset: 0
+    });
+  });
+    $(".serv2").click(function() {
+    $.scrollTo($(".two-footer"), 800, {
       offset: 0
     });
   });

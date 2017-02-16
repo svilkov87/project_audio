@@ -40,6 +40,7 @@ include("include/connection.php");
     <?php include("include/head.php"); ?>
 </head>
 <body>
+<?php include("include/button_top.php"); ?>
 <?php include("include/modal.php"); ?>
 <?php include("include/nav.php"); ?>
 <section class="one">
@@ -49,9 +50,10 @@ include("include/connection.php");
         </div>
         <div class="block-content">
             <div class="wrapp_content">
-                <h1>озвучка</h1>
+                <h1>озвучка, сценарий</h1>
                 <div class="block_serv_desc">
-                    Голос, без фоновой музыки
+                    <span>Голос без фоновой музыки,</span>
+                    <span>текст ролика</span>
                 </div>
                 <i class="fa fa-angle-down wow fadeIn serv" data-wow-delay="1s" aria-hidden="true" ></i>
             </div>
@@ -63,9 +65,12 @@ include("include/connection.php");
                                 <h1>примеры озвучек</h1>
                             </div>
                             <div class="img-wrapp-footer">
-                                <img src="dist/img/voice-recorder.png" alt="" class="img-left-footer">
+                                <img src="dist/img/voice-recorder.png" alt="hello" class="img-left-footer">
                             </div>
-                            <span class="footer-price">от 300р</span>
+                        </div>
+                        <div class="wrapp-price">
+                            <p class="footer-price">Сценарий: от 300р</p>
+                            <p class="footer-price">Озвучка: от 300р</p>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -87,6 +92,7 @@ include("include/connection.php");
                 </div>
             </div>
         </div>
+    </div>
 </section>
 <section class="two">
     <div class="two-inner">
@@ -95,34 +101,48 @@ include("include/connection.php");
         </div>
         <div class="block-content">
             <div class="wrapp_content">
-                <h1>cценарий</h1>
+                <h1>Ролик</h1>
                 <div class="block_serv_desc">
-                    Придумаем текст для вашего ролика
+                    <span>Простой,</span>
+                    <span>с эффектами,</span>
+                    <span>игровой</span>
                 </div>
-                <i class="fa fa-angle-down wow fadeIn serv" data-wow-delay="1s" aria-hidden="true" ></i>
+                <i class="fa fa-angle-down wow fadeIn serv2" data-wow-delay="1s" aria-hidden="true" ></i>
             </div>
         </div>
         <div class="two-footer">
-            <p>hello</p>
-        </div>
-    </div>
-</section>
-<section class="three">
-    <div class="three-inner">
-        <div class="three-header">
-            <p>hello</p>
-        </div>
-        <div class="block-content">
-            <div class="wrapp_content">
-                <h1>ролики</h1>
-                <div class="block_serv_desc">
-                    Наши радиоролики приятно слушать и они легко запоминаются
+            <div class="wrapp-footer">
+                <div class="col-md-6">
+                    <div class="left-block-footer">
+                        <div class="left-block-head">
+                            <h1>примеры роликов</h1>
+                        </div>
+                        <div class="img-wrapp-footer">
+                            <img src="dist/img/voice-recorder.png" alt="" class="img-left-footer">
+                        </div>
+                    </div>
+                    <div class="wrapp-price">
+                        <p class="footer-price">Сценарий: от 300р</p>
+                        <p class="footer-price">Озвучка: от 300р</p>
+                    </div>
                 </div>
-                <i class="fa fa-angle-down wow fadeIn serv" data-wow-delay="1s" aria-hidden="true" ></i>
+                <div class="col-md-6">
+                    <div class="right-block-footer">
+                        <span>Заказать аудиоролик для любого бизнеса</span>
+                        <audio controls class="audio">
+                            <source src="audio/Дима.mp3" type="audio/mp3">
+                        </audio>
+                        <span>Заказать аудиоролик для любого бизнеса</span>
+                        <audio controls class="audio">
+                            <source src="audio/Дима.mp3" type="audio/mp3">
+                        </audio>
+                        <span>Заказать аудиоролик для любого бизнеса</span>
+                        <audio controls class="audio">
+                            <source src="audio/Дима.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="three-footer">
-            <p>hello</p>
         </div>
     </div>
 </section>

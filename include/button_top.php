@@ -1,0 +1,1 @@
+<i class="fa fa-chevron-up" aria-hidden="true" id="top" style="display: inline;"></i>
