@@ -50,12 +50,20 @@ include("include/connection.php");
         </div>
         <div class="block-content">
             <div class="wrapp_content">
-                <h1>озвучка, сценарий</h1>
-                <div class="block_serv_desc">
-                    <span>Голос без фоновой музыки,</span>
-                    <span>текст ролика</span>
-                </div>
-                <i class="fa fa-angle-down wow fadeIn serv" data-wow-delay="1s" aria-hidden="true" ></i>
+                <ul class="cb-slideshow">
+                    <li><span>Image 01</span><div><h3>Преимущество 1</h3></div></li>
+                    <li><span>Image 02</span><div><h3>Преимущество 2</h3></div></li>
+                    <li><span>Image 03</span><div><h3>Преимущество 3</h3></div></li>
+                    <li><span>Image 04</span><div><h3>Преимущество 4</h3></div></li>
+                    <li><span>Image 05</span><div><h3>Преимущество 5</h3></div></li>
+                    <li><span>Image 06</span><div><h3>Преимущество 6</h3></div></li>
+                </ul>
+<!--                <h1>озвучка, сценарий</h1>-->
+<!--                <div class="block_serv_desc">-->
+<!--                    <span>Голос без фоновой музыки,</span>-->
+<!--                    <span>текст ролика</span>-->
+<!--                </div>-->
+<!--                <i class="fa fa-angle-down wow fadeIn serv" data-wow-delay="1s" aria-hidden="true" ></i>-->
             </div>
             <div class="one-footer">
                 <div class="wrapp-footer">

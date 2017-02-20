@@ -3,6 +3,8 @@
 @import 'base/mixins';
 @import 'base/reset';
 
+//слайдер
+
 //button_top
 #top {
   -webkit-border-radius: 50px;
@@ -127,6 +129,8 @@
   background: url("http://www.wallpaperinhd.net/file/9048/2880x1800/stretch/road-(1920x1200)-wallpaper-6.jpg") no-repeat fixed;
   -webkit-background-size: cover;
   background-size: cover;
+  background-position: center center;
+  margin-top: 75px;
   .one-inner{
     .one-header{
       background: #fff;
@@ -136,12 +140,239 @@
     .block-content{
       height: auto;
       .wrapp_content{
-        width: 60%;
-        height: 100vh;
+        //width: 60%;
+        height: 350px;
         margin: 0 auto;
         padding-top: 100px;
+        position: relative;
+        overflow: hidden;
         @include mobile_m{
           width: 80%;
+        }
+        .cb-slideshow,
+        .cb-slideshow:after {
+          /*position: fixed;*/
+          /*width: 100%;
+          height: 100%;
+          top: 0px;
+          left: 0px;
+          z-index: 0;*/
+        }
+        .cb-slideshow:after {
+          content: '';
+          background: transparent url(https://yandex.ru/images/today?size=1920x1080) repeat top left;
+        }
+        .cb-slideshow li span {
+          width: 100%;
+          height: 350px;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          color: transparent;
+          background-size: cover;
+          background-position: 50% 50%;
+          background-repeat: none;
+          opacity: 0;
+          z-index: 0;
+          -webkit-backface-visibility: hidden;
+          -webkit-animation: imageAnimation 36s linear infinite 0s;
+          -moz-animation: imageAnimation 36s linear infinite 0s;
+          -o-animation: imageAnimation 36s linear infinite 0s;
+          -ms-animation: imageAnimation 36s linear infinite 0s;
+          animation: imageAnimation 36s linear infinite 0s;
+        }
+        .cb-slideshow li div {
+          /*z-index: 1000;*/
+          position: absolute;
+          /*bottom: 30px;*/
+          left: 0px;
+          width: 100%;
+          text-align: center;
+          opacity: 0;
+          color: #fff;
+          -webkit-animation: titleAnimation 36s linear infinite 0s;
+          -moz-animation: titleAnimation 36s linear infinite 0s;
+          -o-animation: titleAnimation 36s linear infinite 0s;
+          -ms-animation: titleAnimation 36s linear infinite 0s;
+          animation: titleAnimation 36s linear infinite 0s;
+        }
+        .cb-slideshow li div h3 {
+          font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+          font-size: 16px;
+          padding: 0;
+          line-height: 500px;
+        }
+        .cb-slideshow li:nth-child(1) span {
+          background-image: url(http://www.luxury4play.com/wordpress/wp-content/uploads/2016/03/P16_0166_a5_rgb.jpg);
+          background-size: cover;
+        }
+        .cb-slideshow li:nth-child(2) span {
+          background-image: url(http://static.hdw.eweb4.com/media/wallpapers_dl/1/145/1443344-1920x1080-wallpapers-space.jpg);
+          -webkit-animation-delay: 6s;
+          -moz-animation-delay: 6s;
+          -o-animation-delay: 6s;
+          -ms-animation-delay: 6s;
+          animation-delay: 6s;
+        }
+        .cb-slideshow li:nth-child(3) span {
+          background-image: url(https://avatanplus.com/files/resources/original/57af5751ae45b15684ed1732.jpg);
+          -webkit-animation-delay: 12s;
+          -moz-animation-delay: 12s;
+          -o-animation-delay: 12s;
+          -ms-animation-delay: 12s;
+          animation-delay: 12s;
+        }
+        .cb-slideshow li:nth-child(4) span {
+          background-image: url(https://im3-tub-ru.yandex.net/i?id=4d2c19bf37d7ff64237c4611dbbea76a&n=33&h=215&w=382);
+          -webkit-animation-delay: 18s;
+          -moz-animation-delay: 18s;
+          -o-animation-delay: 18s;
+          -ms-animation-delay: 18s;
+          animation-delay: 18s;
+        }
+        .cb-slideshow li:nth-child(5) span {
+          background-image: url(http://www.wallpaperscharlie.com/wp-content/uploads/2016/06/Outer-Space-HD-Wallpapers-6-1024x640.jpg);
+          -webkit-animation-delay: 24s;
+          -moz-animation-delay: 24s;
+          -o-animation-delay: 24s;
+          -ms-animation-delay: 24s;
+          animation-delay: 24s;
+        }
+        .cb-slideshow li:nth-child(6) span {
+          background-image: url(https://www.walldevil.com/wallpapers/a54/desktop-wallpaper-wallpapers-background-space-computer.jpg);
+          -webkit-animation-delay: 30s;
+          -moz-animation-delay: 30s;
+          -o-animation-delay: 30s;
+          -ms-animation-delay: 30s;
+          animation-delay: 30s;
+        }
+        .cb-slideshow li:nth-child(2) div {
+          -webkit-animation-delay: 6s;
+          -moz-animation-delay: 6s;
+          -o-animation-delay: 6s;
+          -ms-animation-delay: 6s;
+          animation-delay: 6s;
+        }
+        .cb-slideshow li:nth-child(3) div {
+          -webkit-animation-delay: 12s;
+          -moz-animation-delay: 12s;
+          -o-animation-delay: 12s;
+          -ms-animation-delay: 12s;
+          animation-delay: 12s;
+        }
+        .cb-slideshow li:nth-child(4) div {
+          -webkit-animation-delay: 18s;
+          -moz-animation-delay: 18s;
+          -o-animation-delay: 18s;
+          -ms-animation-delay: 18s;
+          animation-delay: 18s;
+        }
+        .cb-slideshow li:nth-child(5) div {
+          -webkit-animation-delay: 24s;
+          -moz-animation-delay: 24s;
+          -o-animation-delay: 24s;
+          -ms-animation-delay: 24s;
+          animation-delay: 24s;
+        }
+        .cb-slideshow li:nth-child(6) div {
+          -webkit-animation-delay: 30s;
+          -moz-animation-delay: 30s;
+          -o-animation-delay: 30s;
+          -ms-animation-delay: 30s;
+          animation-delay: 30s;
+        }
+        /* Animation for the slideshow images */
+        @-webkit-keyframes imageAnimation {
+          0% { opacity: 0;
+            -webkit-animation-timing-function: ease-in; }
+          8% { opacity: 1;
+            -webkit-animation-timing-function: ease-out; }
+          17% { opacity: 1 }
+          25% { opacity: 0 }
+          100% { opacity: 0 }
+        }
+        @-moz-keyframes imageAnimation {
+          0% { opacity: 0;
+            -moz-animation-timing-function: ease-in; }
+          8% { opacity: 1;
+            -moz-animation-timing-function: ease-out; }
+          17% { opacity: 1 }
+          25% { opacity: 0 }
+          100% { opacity: 0 }
+        }
+        @-o-keyframes imageAnimation {
+          0% { opacity: 0;
+            -o-animation-timing-function: ease-in; }
+          8% { opacity: 1;
+            -o-animation-timing-function: ease-out; }
+          17% { opacity: 1 }
+          25% { opacity: 0 }
+          100% { opacity: 0 }
+        }
+        @-ms-keyframes imageAnimation {
+          0% { opacity: 0;
+            -ms-animation-timing-function: ease-in; }
+          8% { opacity: 1;
+            -ms-animation-timing-function: ease-out; }
+          17% { opacity: 1 }
+          25% { opacity: 0 }
+          100% { opacity: 0 }
+        }
+        @keyframes imageAnimation {
+          0% { opacity: 0;
+            animation-timing-function: ease-in; }
+          8% { opacity: 1;
+            animation-timing-function: ease-out; }
+          17% { opacity: 1 }
+          25% { opacity: 0 }
+          100% { opacity: 0 }
+        }
+        /* Animation for the title */
+        @-webkit-keyframes titleAnimation {
+          0% { opacity: 0 }
+          8% { opacity: 1 }
+          17% { opacity: 1 }
+          19% { opacity: 0 }
+          100% { opacity: 0 }
+        }
+        @-moz-keyframes titleAnimation {
+          0% { opacity: 0 }
+          8% { opacity: 1 }
+          17% { opacity: 1 }
+          19% { opacity: 0 }
+          100% { opacity: 0 }
+        }
+        @-o-keyframes titleAnimation {
+          0% { opacity: 0 }
+          8% { opacity: 1 }
+          17% { opacity: 1 }
+          19% { opacity: 0 }
+          100% { opacity: 0 }
+        }
+        @-ms-keyframes titleAnimation {
+          0% { opacity: 0 }
+          8% { opacity: 1 }
+          17% { opacity: 1 }
+          19% { opacity: 0 }
+          100% { opacity: 0 }
+        }
+        @keyframes titleAnimation {
+          0% { opacity: 0 }
+          8% { opacity: 1 }
+          17% { opacity: 1 }
+          19% { opacity: 0 }
+          100% { opacity: 0 }
+        }
+        /* Show at least something when animations not supported */
+        .no-cssanimations .cb-slideshow li span{
+          opacity: 1;
+        }
+
+        @media screen and (max-width: 1140px) {
+          .cb-slideshow li div h3 { font-size: 16px }
+        }
+        @media screen and (max-width: 600px) {
+          .cb-slideshow li div h3 { font-size: 16px }
         }
         .block_serv_desc{
           border: 1px solid #fff;
@@ -201,6 +432,251 @@
       }
     }
     .one-footer{
+      background: #fff;
+      height: 100vh;
+      .wrapp-footer{
+         //border: 1px solid #ccc;
+         width: 60%;
+         margin: 0 auto;
+         overflow: hidden;
+         height: 100vh;
+         .left-block-footer{
+           @include bradius(5px);
+           margin-top: 150px;
+           border: 1px solid #aec9b3;
+           padding: 10px;
+           background-color: rgba(189, 223, 116, 0.36);
+           .left-block-head{
+             text-align: center;
+             h1{
+               font-size: 24px;
+               color: #000;
+             }
+           }
+           .img-wrapp-footer{
+             text-align: center;
+             .img-left-footer{
+               width: 150px;
+               padding: 10px;
+               margin-bottom: 15px;
+               background-color: #fff;
+               @include bradius(50%);
+             }
+           }
+           .footer-price{
+             display: block;
+             text-align: center;
+             margin-top: 25px;
+             font-size: 25px;
+             color: #b24040;
+             font-weight: bold;
+           }
+         }
+         .wrapp-price{
+           text-align: center;
+           margin-top: 5px;
+           .footer-price{
+             color: #fff;
+             padding: 10px 0;
+             margin-top: 2px;
+             background-color: #57b460;
+             text-transform: uppercase;
+             font-size: 24px;
+             &:hover {
+               background-color: #4e9c4e;
+               @include transition(.5s);
+             }
+           }
+         }
+         .right-block-footer{
+           padding-top: 150px;
+           overflow: hidden;
+           span{
+             padding: 10px 0;
+             font-size: 19px;
+           }
+           .audio{
+             width: 90%;
+             margin: 10px 5px;
+             outline: 1px solid rgba(174, 201, 179, 0.59);
+             &:hover {
+               cursor: pointer;
+               @include bsh(0px 0px 15px 0px rgba(50, 50, 50, 0.40));
+               @include transition(.5s);
+             }
+           }
+         }
+       }
+    }
+  }
+}
+.two{
+  background: url("http://graphnet.ru/images/52248_kartinki-muzyka-mikrofon.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  //background-position: center center;
+  .two-inner{
+    .two-header{
+      background: #fff;
+      height: 250px;
+      display: none;
+    }
+    .block-content{
+      height: auto;
+      .wrapp_content{
+        width: 60%;
+        height: 100vh;
+        margin: 0 auto;
+        padding-top: 35px;
+        @include mobile_m{
+          width: 80%;
+        }
+        .block_serv_desc{
+          border: 1px solid #fff;
+          @include bradius(5px);
+          padding: 5px;
+          width: 50%;
+          margin: 0 auto;
+          color: #fff;
+          font-size: 30px;
+          text-align: center;
+          font-weight: bold;
+          @include mobile_s {
+            width: 100%;
+            font-size: 18px;
+          }
+          @include mobile_m{
+            width: 100%;
+            font-size: 18px;
+          }
+          @include mobile_l{
+            width: 100%;
+            font-size: 18px;
+          }
+        }
+        .block_desc{
+          width: 150px;
+          height: 150px;
+          @include bradius(50%);
+          margin: 45px auto;
+          color: #fff;
+          text-align: center;
+          background: rgba(186, 72, 176, 0.17);
+          font-size: 25px;
+          font-weight: bold;
+          &:hover{
+            background: rgba(148, 62, 139, 0.43);
+            border: 1px solid #ccc;
+            @include transition(.5s);
+          }
+          span{
+            line-height: 150px;
+          }
+        }
+        .left-block-footer{
+          @include bradius(5px);
+          margin-top: 25px;
+          border: 1px solid #aec9b3;
+          padding: 10px;
+          background-color: rgb(189, 223, 116);
+          .left-block-head{
+            text-align: center;
+            h1{
+              font-size: 24px;
+              background: rgba(255,255,255,.5);
+              color: rgba(0,0,0,.88);
+              padding: 15px 0;
+              margin-bottom: 15px;
+            }
+          }
+          .img-wrapp-footer{
+            text-align: center;
+            .img-left-footer{
+              width: 150px;
+              padding: 10px;
+              margin-bottom: 15px;
+              background-color: #fff;
+              @include bradius(50%);
+            }
+          }
+          .footer-price{
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            font-size: 25px;
+            color: #b24040;
+            font-weight: bold;
+          }
+        }
+        .wrapp-price{
+          text-align: center;
+          margin-top: 5px;
+          .footer-price{
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 2px;
+            background-color: #57b460;
+            text-transform: uppercase;
+            font-size: 24px;
+            &:hover {
+              background-color: #4e9c4e;
+              @include transition(.5s);
+            }
+          }
+        }
+        .right-block-footer{
+          padding-top: 25px;
+          overflow: hidden;
+          span{
+            padding: 10px 0;
+            font-size: 19px;
+          }
+          .audio{
+            width: 90%;
+            margin: 10px 5px;
+            outline: 1px solid rgba(174, 201, 179, 0.59);
+            &:hover {
+              cursor: pointer;
+              @include bsh(0px 0px 15px 0px rgba(50, 50, 50, 0.40));
+              @include transition(.5s);
+            }
+          }
+        }
+      }
+
+      h1{
+        text-align: center;
+        font-size: 45px;
+        display: block;
+        margin-bottom: 3%;
+        background: rgba(255, 255, 255, 0.5);
+        color: rgba(0, 0, 0, 0.88);
+        padding: 15px 0;
+        @include bradius(5px);
+        text-transform: uppercase;
+        @include mobile_s {
+          font-size: 45px;
+          margin-bottom: 25%;
+        }
+        @include mobile_m{
+          font-size: 45px;
+          margin-bottom: 25%;
+        }
+        @include mobile_l{
+          font-size: 45px;
+          margin-bottom: 25%;
+        }
+      }
+      .serv2{
+        color: #fff;
+        text-align: center;
+        display: block;
+        font-size: 35px;
+        margin-top: 55px;
+        cursor: pointer;
+      }
+    }
+    .two-footer{
       background: #fff;
       height: 100vh;
       .wrapp-footer{
@@ -279,245 +755,7 @@
     }
   }
 }
-.two{
-  background: url("http://graphnet.ru/images/52248_kartinki-muzyka-mikrofon.jpg") no-repeat fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-  .two-inner{
-    .two-header{
-      background: #fff;
-      height: 250px;
-      display: none;
-    }
-    .block-content{
-      height: auto;
-      .wrapp_content{
-        width: 60%;
-        height: 100vh;
-        margin: 0 auto;
-        padding-top: 100px;
-        @include mobile_m{
-          width: 80%;
-        }
-        .block_serv_desc{
-          border: 1px solid #fff;
-          @include bradius(5px);
-          padding: 5px;
-          width: 50%;
-          margin: 0 auto;
-          color: #fff;
-          font-size: 30px;
-          text-align: center;
-          font-weight: bold;
-          @include mobile_s {
-            width: 100%;
-            font-size: 18px;
-          }
-          @include mobile_m{
-            width: 100%;
-            font-size: 18px;
-          }
-          @include mobile_l{
-            width: 100%;
-            font-size: 18px;
-          }
-        }
-      }
 
-      h1{
-        text-align: center;
-        font-size: 45px;
-        display: block;
-        margin-bottom: 10%;
-        background: rgba(255, 255, 255, 0.5);
-        color: rgba(0, 0, 0, 0.88);
-        padding: 15px 0;
-        @include bradius(5px);
-        text-transform: uppercase;
-        @include mobile_s {
-          font-size: 45px;
-          margin-bottom: 25%;
-        }
-        @include mobile_m{
-          font-size: 45px;
-          margin-bottom: 25%;
-        }
-        @include mobile_l{
-          font-size: 45px;
-          margin-bottom: 25%;
-        }
-      }
-      .serv2{
-        color: #fff;
-        text-align: center;
-        display: block;
-        font-size: 35px;
-        margin-top: 55px;
-        cursor: pointer;
-      }
-    }
-    .two-footer{
-      background: #fff;
-      height: 100vh;
-      .wrapp-footer{
-        //border: 1px solid #ccc;
-        width: 60%;
-        margin: 0 auto;
-        overflow: hidden;
-        height: 100vh;
-        .left-block-footer{
-          @include bradius(5px);
-          margin-top: 150px;
-          border: 1px solid #aec9b3;
-          padding: 10px;
-          background-color: rgba(189, 223, 116, 0.36);
-          .left-block-head{
-            text-align: center;
-            h1{
-              font-size: 24px;
-              background: rgba(255,255,255,.5);
-              color: rgba(0,0,0,.88);
-              padding: 15px 0;
-              margin-bottom: 15px;
-            }
-          }
-          .img-wrapp-footer{
-            text-align: center;
-            .img-left-footer{
-              width: 150px;
-              padding: 10px;
-              margin-bottom: 15px;
-              background-color: #fff;
-              @include bradius(50%);
-            }
-          }
-          .footer-price{
-            display: block;
-            text-align: center;
-            margin-top: 25px;
-            font-size: 25px;
-            color: #b24040;
-            font-weight: bold;
-          }
-        }
-        .wrapp-price{
-          text-align: center;
-          margin-top: 5px;
-          .footer-price{
-            color: #fff;
-            padding: 10px 0;
-            margin-top: 2px;
-            background-color: #57b460;
-            text-transform: uppercase;
-            font-size: 24px;
-            &:hover {
-              background-color: #4e9c4e;
-              @include transition(.5s);
-            }
-          }
-        }
-        .right-block-footer{
-          padding-top: 150px;
-          overflow: hidden;
-          span{
-            padding: 10px 0;
-            font-size: 19px;
-          }
-          .audio{
-            width: 90%;
-            margin: 10px 5px;
-            outline: 1px solid rgba(174, 201, 179, 0.59);
-            &:hover {
-              cursor: pointer;
-              @include bsh(0px 0px 15px 0px rgba(50, 50, 50, 0.40));
-              @include transition(.5s);
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-
-.three{
-  background: url("https://im1-tub-ru.yandex.net/i?id=b6e7ffca8964bc1f2d0ef651802d956d-l&n=13") no-repeat fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-  .three-inner{
-    .three-header{
-      background: #fff;
-      height: 250px;
-      display: none;
-    }
-    .block-content{
-      height: auto;
-      .wrapp_content{
-        width: 60%;
-        height: 100vh;
-        margin: 0 auto;
-        padding-top: 100px;
-        border: 1px solid #fff;
-        @include mobile_m{
-          width: 80%;
-        }
-        .block_serv_desc{
-          border: 1px solid #fff;
-          width: 50%;
-          margin: 0 auto;
-          color: #fff;
-          font-size: 30px;
-          text-align: center;
-          font-weight: bold;
-          @include mobile_s {
-            width: 100%;
-            font-size: 18px;
-          }
-          @include mobile_m{
-            width: 100%;
-            font-size: 18px;
-          }
-          @include mobile_l{
-            width: 100%;
-            font-size: 18px;
-          }
-        }
-      }
-
-      h1{
-        color: #fff;
-        text-align: center;
-        font-size: 575%;
-        display: block;
-        margin-bottom: 10%;
-        @include mobile_s {
-          font-size: 45px;
-          margin-bottom: 25%;
-        }
-        @include mobile_m{
-          font-size: 45px;
-          margin-bottom: 25%;
-        }
-        @include mobile_l{
-          font-size: 45px;
-          margin-bottom: 25%;
-        }
-      }
-      .serv{
-        color: #fff;
-        text-align: center;
-        display: block;
-        font-size: 35px;
-        margin-top: 55px;
-        cursor: pointer;
-      }
-    }
-    .three-footer{
-      background: #fff;
-      height: 100vh;
-    }
-  }
-}
 
 body {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -527,11 +765,14 @@ body {
   //background: #3a253b;
 }
 .nav {
-  //background: $navbg;
-  //height: 100px;
-  background: rgba(255, 255, 255, 0.47);
+  @include transition(0.4);
   height: 75px;
   border-bottom: 1px solid #ccc;
+  position: fixed;
+  width: 100%;
+  margin-top: -75px;
+  background: #fff;
+  z-index: 99999;
   .brand {
     float: left;
     @include mobile_l {
@@ -741,6 +982,47 @@ body {
     }
   }
 }
+.nav.fixed {
+  @include transition(0.4s);
+  position: fixed;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  background: #fff;
+  z-index: 99;
+  .logo_link {
+    color: #000;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 10px;
+    font-size: 22px;
+    @include transition(0.4s);
+    &:hover {
+      color: $navlinkhov;
+      @include transition(.5s)
+    }
+  }
+  #justify_nav{
+    line-height: 50px;
+    @include transition(0.4s);
+  }
+  .menu{
+    @include transition(0.4s);
+    @include laptop{
+      margin-top: 50px;
+    }
+    ul{
+      line-height: 50px;
+      @include transition(0.4s);
+      .about-ul{
+
+        @include transition(0.4s);
+        top: 55px;
+      }
+    }
+  }
+}
 .wrapp_header {
   height: 100vh;
   background: #fff;
@@ -942,7 +1224,6 @@ body {
 }
 .footer {
   background: #000;
-  padding: 15px;
   .about-ul-footer{
     .about--li-footer{
       padding: 5px 0;
