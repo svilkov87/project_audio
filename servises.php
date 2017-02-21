@@ -66,35 +66,46 @@ include("include/connection.php");
 <!--                <i class="fa fa-angle-down wow fadeIn serv" data-wow-delay="1s" aria-hidden="true" ></i>-->
             </div>
             <div class="one-footer">
-                <div class="wrapp-footer">
-                    <div class="col-md-6">
-                        <div class="left-block-footer">
-                            <div class="left-block-head">
-                                <h1>примеры озвучек</h1>
-                            </div>
-                            <div class="img-wrapp-footer">
-                                <img src="dist/img/voice-recorder.png" alt="hello" class="img-left-footer">
-                            </div>
-                        </div>
-                        <div class="wrapp-price">
-                            <p class="footer-price">Сценарий: от 300р</p>
-                            <p class="footer-price">Озвучка: от 300р</p>
-                        </div>
+                <div class="container">
+                    <div class="serv-footer-head">
+                        <h3>Наши услуги</h3>
                     </div>
-                    <div class="col-md-6">
-                        <div class="right-block-footer">
-                            <span>Заказать аудиоролик для любого бизнеса</span>
-                            <audio controls class="audio">
-                                <source src="audio/Дима.mp3" type="audio/mp3">
-                            </audio>
-                            <span>Заказать аудиоролик для любого бизнеса</span>
-                            <audio controls class="audio">
-                                <source src="audio/Дима.mp3" type="audio/mp3">
-                            </audio>
-                            <span>Заказать аудиоролик для любого бизнеса</span>
-                            <audio controls class="audio">
-                                <source src="audio/Дима.mp3" type="audio/mp3">
-                            </audio>
+                    <div class="wrapp_serv">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="row">
+                                <div class="wrapp_blocks">
+                                    <div class="serv_heades">
+                                        <img class="img_previev" src="img/Privacy%20Filled-100.png" alt="">
+                                    </div>
+                                    <div class="wrapp_blocks_hidd">
+                                        <span>Озвучка</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="row">
+                                <div class="wrapp_blocks">
+                                    <div class="serv_heades">123</div>
+                                    <div class="wrapp_blocks_hidd"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="row">
+                                <div class="wrapp_blocks">
+                                    <div class="serv_heades">123</div>
+                                    <div class="wrapp_blocks_hidd"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="row">
+                                <div class="wrapp_blocks">
+                                    <div class="serv_heades">123</div>
+                                    <div class="wrapp_blocks_hidd"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
