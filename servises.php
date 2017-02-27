@@ -71,39 +71,100 @@ include("include/connection.php");
                         <h3>Наши услуги</h3>
                     </div>
                     <div class="wrapp_serv">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="row">
-                                <div class="wrapp_blocks">
-                                    <div class="serv_heades">
-                                        <img class="img_previev" src="img/Privacy%20Filled-100.png" alt="">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="row">
+                                    <div class="wrapp_blocks">
+                                        <div class="serv_heades">
+                                            <img class="img_previev" src="dist/img/Privacy%20Filled-100.png" alt="">
+                                        </div>
+                                        <div class="wrapp_blocks_hidd">
+                                            <span>Озвучка</span>
+                                            <div class="hidd_descr">
+                                                <p>Голос без фоновой музыки</p>
+                                                <p class="hidd_price">от 300р</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="wrapp_blocks_hidd">
-                                        <span>Озвучка</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="row">
+                                    <div class="wrapp_blocks">
+                                        <div class="serv_heades">
+                                            <img class="img_previev" src="dist/img/Privacy%20Filled-100.png" alt="">
+                                        </div>
+                                        <div class="wrapp_blocks_hidd">
+                                            <span>Сценарий</span>
+                                            <div class="hidd_descr">
+                                                <p>Придумываем текст ролика</p>
+                                                <p class="hidd_price">от 300р</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="row">
-                                <div class="wrapp_blocks">
-                                    <div class="serv_heades">123</div>
-                                    <div class="wrapp_blocks_hidd"></div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="row">
+                                    <div class="wrapp_blocks">
+                                        <div class="serv_heades">
+                                            <img class="img_previev" src="dist/img/Privacy%20Filled-100.png" alt="">
+                                        </div>
+                                        <div class="wrapp_blocks_hidd">
+                                            <span>Простой ролик</span>
+                                            <div class="hidd_descr">
+                                                <p>(голос на фоновой музыке)</p>
+                                                <p class="hidd_price">от 790 р</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="row">
-                                <div class="wrapp_blocks">
-                                    <div class="serv_heades">123</div>
-                                    <div class="wrapp_blocks_hidd"></div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="row">
+                                    <div class="wrapp_blocks">
+                                        <div class="serv_heades">
+                                            <img class="img_previev" src="dist/img/Privacy%20Filled-100.png" alt="">
+                                        </div>
+                                        <div class="wrapp_blocks_hidd">
+                                            <span>Ролик с эффектами</span>
+                                            <div class="hidd_descr">
+                                                <p>(голос на музыке + шумы и дополнительные звуки)</p>
+                                                <p class="hidd_price">от 890 р</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="row">
-                                <div class="wrapp_blocks">
-                                    <div class="serv_heades">123</div>
-                                    <div class="wrapp_blocks_hidd"></div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="row">
+                                    <div class="wrapp_blocks">
+                                        <div class="serv_heades">
+                                            <img class="img_previev" src="img/Privacy%20Filled-100.png" alt="">
+                                        </div>
+                                        <div class="wrapp_blocks_hidd">
+                                            <span>Озвучка на английском языке</span>
+                                            <div class="hidd_descr">
+                                                <p class="hidd_price">от 500 р</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="row">
+                                    <div class="wrapp_blocks">
+                                        <div class="serv_heades">
+                                            <img class="img_previev" src="dist/img/Privacy%20Filled-100.png" alt="">
+                                        </div>
+                                        <div class="wrapp_blocks_hidd">
+                                            <span>Вокал</span>
+                                            <div class="hidd_descr">
+                                                <p>(записываем уникальный вокал)</p>
+                                                <p class="hidd_price">от 500 р</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

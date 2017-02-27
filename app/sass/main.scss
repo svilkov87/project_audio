@@ -126,7 +126,7 @@
 }
 //test
 .one{
-  background: url("http://www.wallpaperinhd.net/file/9048/2880x1800/stretch/road-(1920x1200)-wallpaper-6.jpg") no-repeat fixed;
+  //background: url("http://www.wallpaperinhd.net/file/9048/2880x1800/stretch/road-(1920x1200)-wallpaper-6.jpg") no-repeat fixed;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
@@ -438,8 +438,9 @@
       }
     }
     .one-footer{
-      background: #fff;
-      height: 100vh;
+      background: #edebeb;
+      height: auto;
+      padding: 15px 0;
       .wrapp-footer{
          //border: 1px solid #ccc;
          width: 60%;
@@ -515,18 +516,24 @@
        }
       .serv-footer-head{
         text-align: center;
-        padding: 15px;
         text-transform: uppercase;
         font-size: 24px;
+        h3{
+          display: inline-block;
+          background: #fff;
+          padding: 5px 25px;
+          border: 1px solid #ccc;
+        }
       }
       .wrapp_serv{
         overflow: hidden;
         .wrapp_blocks{
           height: 250px;
           border: 1px solid #ccc;
+          background: #fff;
           position: relative;
           overflow: hidden;
-          margin: 0 5px;
+          margin: 10px 5px;
           cursor: pointer;
           &:hover .wrapp_blocks_hidd{
             top: 0;
@@ -552,7 +559,7 @@
               text-transform: uppercase;
               display: block;
               text-align: center;
-              margin: 10px;
+              margin: 15px;
               font-size: 24px;
             }
             .hidd_descr{
@@ -560,10 +567,15 @@
               text-align: center;
               font-size: 19px;
               .hidd_price{
-                margin-top: 15px;
-                color: #000;
-                font-weight: bold;
-                text-transform: uppercase;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+                background: #65db65;
+                color: white;
               }
             }
           }
@@ -1046,6 +1058,7 @@ body {
 }
 .nav.fixed {
   @include transition(0.4s);
+  @include bsh(0px 0px 13px 0px rgba(255, 255, 255, 0.95));
   position: fixed;
   height: 50px;
   line-height: 50px;
@@ -1072,7 +1085,7 @@ body {
   .menu{
     @include transition(0.4s);
     @include laptop{
-      margin-top: 50px;
+      //margin-top: 50px;
     }
     ul{
       line-height: 50px;
