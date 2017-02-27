@@ -2,7 +2,6 @@
 
 var gulp = require('gulp'),// подключение галп
 	sass = require('gulp-sass'),
-	jade = require('gulp-jade'),
 	//concatCss = require('gulp-concat-css'),//присоединяем все файлы css в один
 	rename = require('gulp-rename'),//переименовываем конкат и миниф файл
 	cleanCSS = require('gulp-clean-css'),//минифицируем
@@ -11,7 +10,6 @@ var gulp = require('gulp'),// подключение галп
 	connect = require('gulp-connect'),//соед с уд сервером
 	concat = require('gulp-concat'),//конкатенация
 	uglify = require('gulp-uglify'),
-	del = require('del'), // Подключаем библиотеку для удаления файлов и папок
 	imagemin = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
 	imageminJpegtran = require('imagemin-jpegtran'),//Compress JPEG images
 	imageminOptipng = require('imagemin-optipng'), //Compress PNG images
