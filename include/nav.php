@@ -14,11 +14,9 @@
                         <i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i>
                     </li>
                     <ul class="about-ul">
-                        <li class="about--li"><a href="../servises.php">услуги</a></li>
-                        <li class="about--li"><a href="../portfolio.php">портфолио</a></li>
-                        <li class="about--li" id="linkModal">как заказть</li>
-                        <li class="about--li"><a href="#">акции</a></li>
-                        <li class="about--li"><a href="#">контакты</a></li>
+                        <li class="about--li"><a href="../servises.php">Услуги</a></li>
+                        <li class="about--li" id="linkModal">Как заказть</li>
+                        <li class="about--li"><a href="#">Специальные предложения</a></li>
                     </ul>
                 </ul>
             </div>

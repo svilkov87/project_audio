@@ -375,10 +375,18 @@
         }
 
         @media screen and (max-width: 1140px) {
-          .cb-slideshow li div h3 { font-size: 16px }
+          .cb-slideshow li div h3 { 
+            font-size: 25px;
+            font-weight: bold;
+            text-transform: uppercase; 
+          }
         }
         @media screen and (max-width: 600px) {
-          .cb-slideshow li div h3 { font-size: 16px }
+          .cb-slideshow li div h3 { 
+            font-size: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
         }
         .block_serv_desc{
           border: 1px solid #fff;
@@ -570,6 +578,12 @@
               padding: 35px 25px;
               text-align: center;
               font-size: 19px;
+              .p_desc{
+                font-size: 24px;
+                display: inline-block;
+                padding: 12px;
+                border: 1px solid #ccc;
+              }
               .hidd_price{
                 display: block;
                 position: absolute;
@@ -589,7 +603,7 @@
   }
 }
 .two{
-  background: url("http://graphnet.ru/images/52248_kartinki-muzyka-mikrofon.jpg") no-repeat center center fixed;
+  background: url("http://hotelatagra.com/wp-content/uploads/night-club-wallpaper-by-photomontage-on-deviantART.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   background-size: cover;
   //background-position: center center;
@@ -603,12 +617,9 @@
       height: auto;
       .wrapp_content{
         width: 60%;
-        height: 100vh;
+        height: auto;
         margin: 0 auto;
-        padding-top: 35px;
-        @include mobile_m{
-          width: 80%;
-        }
+        padding: 35px;
         .block_serv_desc{
           border: 1px solid #fff;
           @include bradius(5px);
@@ -760,16 +771,16 @@
     }
     .two-footer{
       background: #fff;
-      height: 100vh;
+      height: auto;
       .wrapp-footer{
-        //border: 1px solid #ccc;
         width: 60%;
         margin: 0 auto;
         overflow: hidden;
-        height: 100vh;
+        height: auto;
+        padding: 35px 0;
         .left-block-footer{
           @include bradius(5px);
-          margin-top: 150px;
+          // margin-top: 150px;
           border: 1px solid #aec9b3;
           padding: 10px;
           background-color: rgba(189, 223, 116, 0.36);
@@ -816,7 +827,6 @@
           }
         }
         .right-block-footer{
-          padding-top: 150px;
           overflow: hidden;
           .wrapp_audio{
             padding: 7px;
@@ -853,7 +863,7 @@ body {
   //background: $bodybg;
 }
 .bg_section {
-  //background: #3a253b;
+  margin-top: 75px;
 }
 .nav {
   @include transition(0.4);
@@ -1315,14 +1325,17 @@ body {
   }
 }
 .footer {
-  background: #000;
+  background-color: #bbb;
+  height: 100px;
   .about-ul-footer{
     .about--li-footer{
       padding: 5px 0;
       font-size: 18px;
       text-transform: uppercase;
+      float: right;
+      margin: 10px 5px;
       a{
-        color: #818080;
+        color: #000;
         &:hover {
           color: #444343;
           @include transition(.5s);

@@ -192,21 +192,21 @@ include("include/connection.php");
         </div>
         <div class="two-footer">
             <div class="wrapp-footer">
-                <div class="col-md-6">
+<!--                 <div class="col-md-6">
                     <div class="left-block-footer">
                         <div class="left-block-head">
                             <h1>примеры роликов</h1>
                         </div>
                         <div class="img-wrapp-footer">
-                            <img src="dist/img/voice-recorder.png" alt="" class="img-left-footer">
+                            <img src="img/voice-recorder.png" alt="" class="img-left-footer">
                         </div>
                     </div>
                     <div class="wrapp-price">
                         <p class="footer-price">Сценарий: от 300р</p>
                         <p class="footer-price">Озвучка: от 300р</p>
                     </div>
-                </div>
-                <div class="col-md-6">
+                </div> -->
+                <div class="col-md-8 col-md-offset-2">
                     <div class="right-block-footer">
                         <div class="wrapp_audio">
                             <span>Заказать аудиоролик для любого бизнеса</span>
