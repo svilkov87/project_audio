@@ -499,11 +499,15 @@
            padding-top: 150px;
            overflow: hidden;
            span{
-             padding: 10px 0;
-             font-size: 19px;
+             padding: 10px;
+             font-size: 26px;
+             margin-bottom: 14px;
+             font-weight: bold;
+             display: inline-block;
+             border: 1px solid #ccc;
            }
            .audio{
-             width: 90%;
+             width: 95%;
              margin: 10px 5px;
              outline: 1px solid rgba(174, 201, 179, 0.59);
              &:hover {
@@ -700,13 +704,17 @@
         }
         .right-block-footer{
           padding-top: 25px;
-          overflow: hidden;
+          //overflow: hidden;
           span{
-            padding: 10px 0;
-            font-size: 19px;
+            padding: 10px;
+            font-size: 26px;
+            margin-bottom: 14px;
+            font-weight: bold;
+            display: inline-block;
+            border: 1px solid #ccc;
           }
           .audio{
-            width: 90%;
+            width: 95%;
             margin: 10px 5px;
             outline: 1px solid rgba(174, 201, 179, 0.59);
             &:hover {
@@ -810,18 +818,27 @@
         .right-block-footer{
           padding-top: 150px;
           overflow: hidden;
-          span{
-            padding: 10px 0;
-            font-size: 19px;
-          }
-          .audio{
-            width: 90%;
-            margin: 10px 5px;
-            outline: 1px solid rgba(174, 201, 179, 0.59);
-            &:hover {
-              cursor: pointer;
-              @include bsh(0px 0px 15px 0px rgba(50, 50, 50, 0.40));
-              @include transition(.5s);
+          .wrapp_audio{
+            padding: 7px;
+            border: 1px solid #ccc;
+            span{
+              padding: 10px;
+              width: 100%;
+              font-size: 26px;
+              margin-bottom: 14px;
+              font-weight: 700;
+              display: inline-block;
+              border: 1px solid #ccc;
+            }
+            .audio{
+              width: 100%;
+              //margin: 10px 5px;
+              outline: 1px solid rgba(174, 201, 179, 0.59);
+              &:hover {
+                cursor: pointer;
+                @include bsh(0px 0px 15px 0px rgba(50, 50, 50, 0.40));
+                @include transition(.5s);
+              }
             }
           }
         }

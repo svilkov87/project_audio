@@ -208,18 +208,24 @@ include("include/connection.php");
                 </div>
                 <div class="col-md-6">
                     <div class="right-block-footer">
-                        <span>Заказать аудиоролик для любого бизнеса</span>
-                        <audio controls class="audio">
-                            <source src="audio/Дима.mp3" type="audio/mp3">
-                        </audio>
-                        <span>Заказать аудиоролик для любого бизнеса</span>
-                        <audio controls class="audio">
-                            <source src="audio/Дима.mp3" type="audio/mp3">
-                        </audio>
-                        <span>Заказать аудиоролик для любого бизнеса</span>
-                        <audio controls class="audio">
-                            <source src="audio/Дима.mp3" type="audio/mp3">
-                        </audio>
+                        <div class="wrapp_audio">
+                            <span>Заказать аудиоролик для любого бизнеса</span>
+                            <audio controls class="audio">
+                                <source src="audio/Дима.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="wrapp_audio">
+                            <span>Заказать аудиоролик для любого бизнеса</span>
+                            <audio controls class="audio">
+                                <source src="audio/Дима.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div class="wrapp_audio">
+                            <span>Заказать аудиоролик для любого бизнеса</span>
+                            <audio controls class="audio">
+                                <source src="audio/Дима.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
                     </div>
                 </div>
             </div>
