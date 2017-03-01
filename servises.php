@@ -71,96 +71,97 @@ include("include/connection.php");
                         <h3>Наши услуги</h3>
                     </div>
                     <div class="wrapp_serv">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="col-md-6 col-sm-6">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="col-md-4 col-sm-4">
                                 <div class="row">
                                     <div class="wrapp_blocks">
                                         <div class="serv_heades">
-                                            <img class="img_previev" src="dist/img/Privacy%20Filled-100.png" alt="">
+                                            <img class="img_previev" src="dist/img/Microphone Filled-100.png" alt="">
                                         </div>
                                         <div class="wrapp_blocks_hidd">
                                             <span>Озвучка</span>
                                             <div class="hidd_descr">
-                                                <p>Голос без фоновой музыки</p>
+                                                <p class="p_desc">Голос без фоновой музыки</p>
                                                 <p class="hidd_price">от 300р</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6">
+                            <div class="col-md-4 col-sm-4">
                                 <div class="row">
                                     <div class="wrapp_blocks">
                                         <div class="serv_heades">
-                                            <img class="img_previev" src="dist/img/Privacy%20Filled-100.png" alt="">
+                                            <img class="img_previev" src="dist/img/Blog_Filled-50.png" alt="">
                                         </div>
                                         <div class="wrapp_blocks_hidd">
                                             <span>Сценарий</span>
                                             <div class="hidd_descr">
-                                                <p>Придумываем текст ролика</p>
+                                                <p class="p_desc">Придумываем текст ролика</p>
                                                 <p class="hidd_price">от 300р</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6">
+                            <div class="col-md-4 col-sm-4">
                                 <div class="row">
                                     <div class="wrapp_blocks">
                                         <div class="serv_heades">
-                                            <img class="img_previev" src="dist/img/Privacy%20Filled-100.png" alt="">
+                                            <img class="img_previev" src="dist/img/Survey Filled-100.png" alt="">
                                         </div>
                                         <div class="wrapp_blocks_hidd">
                                             <span>Простой ролик</span>
                                             <div class="hidd_descr">
-                                                <p>(голос на фоновой музыке)</p>
+                                                <p class="p_desc">(голос на фоновой музыке)</p>
                                                 <p class="hidd_price">от 790 р</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6">
+                            <div class="col-md-4 col-sm-4">
                                 <div class="row">
                                     <div class="wrapp_blocks">
                                         <div class="serv_heades">
-                                            <img class="img_previev" src="dist/img/Privacy%20Filled-100.png" alt="">
+                                            <img class="img_previev" src="dist/img/Saturation Filled-100.png" alt="">
                                         </div>
                                         <div class="wrapp_blocks_hidd">
                                             <span>Ролик с эффектами</span>
                                             <div class="hidd_descr">
-                                                <p>(голос на музыке + шумы и дополнительные звуки)</p>
+                                                <p class="p_desc">(голос на музыке + шумы и дополнительные звуки)</p>
                                                 <p class="hidd_price">от 890 р</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6">
+                            <div class="col-md-4 col-sm-4">
                                 <div class="row">
                                     <div class="wrapp_blocks">
                                         <div class="serv_heades">
-                                            <img class="img_previev" src="img/Privacy%20Filled-100.png" alt="">
+                                            <img class="img_previev" src="dist/img/Great%20Britain%20Filled-100.png" alt="">
                                         </div>
                                         <div class="wrapp_blocks_hidd">
                                             <span>Озвучка на английском языке</span>
                                             <div class="hidd_descr">
+                                                <p class="p_desc">Do y speak in English?</p>
                                                 <p class="hidd_price">от 500 р</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6">
+                            <div class="col-md-4 col-sm-4">
                                 <div class="row">
                                     <div class="wrapp_blocks">
                                         <div class="serv_heades">
-                                            <img class="img_previev" src="dist/img/Privacy%20Filled-100.png" alt="">
+                                            <img class="img_previev" src="dist/img/Voice Recognition Scan Filled-100.png" alt="">
                                         </div>
                                         <div class="wrapp_blocks_hidd">
                                             <span>Вокал</span>
                                             <div class="hidd_descr">
-                                                <p>(записываем уникальный вокал)</p>
+                                                <p class="p_desc">(записываем уникальный вокал)</p>
                                                 <p class="hidd_price">от 500 р</p>
                                             </div>
                                         </div>
@@ -181,47 +182,58 @@ include("include/connection.php");
         </div>
         <div class="block-content">
             <div class="wrapp_content">
-                <h1>Ролик</h1>
+                <h1>примеры работ</h1>
                 <div class="block_serv_desc">
-                    <span>Простой,</span>
-                    <span>с эффектами,</span>
-                    <span>игровой</span>
+                    <span>Более 1000 реализованных проектов</span>
                 </div>
-                <i class="fa fa-angle-down wow fadeIn serv2" data-wow-delay="1s" aria-hidden="true" ></i>
             </div>
         </div>
         <div class="two-footer">
             <div class="wrapp-footer">
-<!--                 <div class="col-md-6">
-                    <div class="left-block-footer">
-                        <div class="left-block-head">
-                            <h1>примеры роликов</h1>
-                        </div>
-                        <div class="img-wrapp-footer">
-                            <img src="img/voice-recorder.png" alt="" class="img-left-footer">
-                        </div>
-                    </div>
-                    <div class="wrapp-price">
-                        <p class="footer-price">Сценарий: от 300р</p>
-                        <p class="footer-price">Озвучка: от 300р</p>
-                    </div>
-                </div> -->
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="right-block-footer">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="col-md-4 col-sm-6">
                         <div class="wrapp_audio">
-                            <span>Заказать аудиоролик для любого бизнеса</span>
+                            <span>Тестовый пример ролика</span>
                             <audio controls class="audio">
                                 <source src="audio/Дима.mp3" type="audio/mp3">
                             </audio>
                         </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
                         <div class="wrapp_audio">
-                            <span>Заказать аудиоролик для любого бизнеса</span>
+                            <span>Тестовый пример ролика</span>
                             <audio controls class="audio">
                                 <source src="audio/Дима.mp3" type="audio/mp3">
                             </audio>
                         </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
                         <div class="wrapp_audio">
-                            <span>Заказать аудиоролик для любого бизнеса</span>
+                            <span>Тестовый пример ролика</span>
+                            <audio controls class="audio">
+                                <source src="audio/Дима.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="wrapp_audio">
+                            <span>Тестовый пример ролика</span>
+                            <audio controls class="audio">
+                                <source src="audio/Дима.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="wrapp_audio">
+                            <span>Тестовый пример ролика</span>
+                            <audio controls class="audio">
+                                <source src="audio/Дима.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="wrapp_audio">
+                            <span>Тестовый пример ролика</span>
                             <audio controls class="audio">
                                 <source src="audio/Дима.mp3" type="audio/mp3">
                             </audio>
@@ -231,6 +243,7 @@ include("include/connection.php");
             </div>
         </div>
     </div>
+    <!--</div>-->
 </section>
 <?php include("include/footer.php"); ?>
 <?php include("include/scripts.php"); ?>

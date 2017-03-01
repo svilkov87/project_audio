@@ -140,15 +140,11 @@
     .block-content{
       height: auto;
       .wrapp_content{
-        //width: 60%;
         height: 350px;
         margin: 0 auto;
         padding-top: 100px;
         position: relative;
         overflow: hidden;
-        @include mobile_m{
-          width: 80%;
-        }
         .cb-slideshow,
         .cb-slideshow:after {
           /*position: fixed;*/
@@ -199,7 +195,7 @@
         }
         .cb-slideshow li div h3 {
           font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-          font-size: 16px;
+          font-size: 25px;
           padding: 0;
           line-height: 350px;
         }
@@ -446,9 +442,9 @@
       }
     }
     .one-footer{
-      background: #edebeb;
+      //background: url("../img/farmer.png");
       height: auto;
-      padding: 15px 0;
+      padding: 35px 0;
       .wrapp-footer{
          //border: 1px solid #ccc;
          width: 60%;
@@ -542,17 +538,25 @@
         .wrapp_blocks{
           height: 250px;
           border: 1px solid #ccc;
-          background: #fff;
+          background: #f6f6f6;
           position: relative;
           overflow: hidden;
           margin: 10px 5px;
           cursor: pointer;
+          @include bradius(5px);
           &:hover .wrapp_blocks_hidd{
             top: 0;
             @include transition(0.4s);
           }
           .img_previev{
-            margin-top: 25px;
+            margin-top: 10px;
+            padding: 30px;
+            border: 1px solid rgba(204, 204, 204, 0.41);
+            background: #fff;
+            border-radius: 3%;
+            -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+            box-shadow: 7px 7px 5px 0px rgba(115, 110, 115, 0.11);
           }
           .serv_heades{
             text-align: center;
@@ -616,7 +620,7 @@
     .block-content{
       height: auto;
       .wrapp_content{
-        width: 60%;
+        width: 80%;
         height: auto;
         margin: 0 auto;
         padding: 35px;
@@ -773,7 +777,6 @@
       background: #fff;
       height: auto;
       .wrapp-footer{
-        width: 60%;
         margin: 0 auto;
         overflow: hidden;
         height: auto;
@@ -826,19 +829,19 @@
             }
           }
         }
-        .right-block-footer{
-          overflow: hidden;
           .wrapp_audio{
+            margin-bottom: 10px;
             padding: 7px;
             border: 1px solid #ccc;
+            @include bradius(5px);
             span{
               padding: 10px;
               width: 100%;
-              font-size: 26px;
+              font-size: 22px;
               margin-bottom: 14px;
-              font-weight: 700;
               display: inline-block;
-              border: 1px solid #ccc;
+              text-transform: uppercase;
+              color: #000;
             }
             .audio{
               width: 100%;
@@ -846,12 +849,11 @@
               outline: 1px solid rgba(174, 201, 179, 0.59);
               &:hover {
                 cursor: pointer;
-                @include bsh(0px 0px 15px 0px rgba(50, 50, 50, 0.40));
+                @include bsh(0px 0px 15px 0px rgba(50, 50, 50, 0.90));
                 @include transition(.5s);
               }
             }
           }
-        }
       }
     }
   }
@@ -905,6 +907,12 @@ body {
         @include transition(.5s)
       }
     }
+    .logo_reg{
+      color: #000;
+      text-transform: uppercase;
+      margin-left: 10px;
+      font-size: 22px;
+    }
   }
   #justify_nav {
     display: none;
@@ -924,7 +932,7 @@ body {
     @include mobile_l {
       height: auto;
       background: #fff;
-      margin-top: 75px;
+      margin-top: 50px;
       text-align: left;
       width: 100%;
       float: none;
@@ -941,11 +949,11 @@ body {
       color: #8c8ca4;
       cursor: pointer;
       &:hover i{
-        color: #ee1675;
+        color:#1cb9e3;
         @include transition(.5s);
       }
       &:hover a{
-        color: #ee1675;
+        color: #1cb9e3;
         @include transition(.5s);
       }
 
@@ -1016,8 +1024,9 @@ body {
         }
       }
       #linkModal{
-        color: #ee1675;
-        font-weight: bold;
+        //color: #ee1675;
+        color: #1cb9e3;
+        font-size: 22px;
         &:hover {
           color: #fff;
         }
@@ -1027,9 +1036,9 @@ body {
       }
       .about--li > a {
         color: #000;
-        font-weight: 700;
         display: block;
         width: 100%;
+        font-size: 22px;
         &:hover {
           color: #fff;
           @include transition(.5s);
@@ -1047,7 +1056,7 @@ body {
       float: left;
       margin-left: 10px;
       text-transform: uppercase;
-      font-weight: bold;
+      font-size: 22px;
       @include mobile_l {
         float: none;
         line-height: 30px;
@@ -1067,7 +1076,8 @@ body {
 
       a {
         color: $m_listclr;
-        font-size: 18px;
+        font-size: 22px;
+        text-decoration: none;
         &:hover {
           color: $m_listclr_hv;
           @include transition(.10s)
@@ -1198,7 +1208,6 @@ body {
 }
 #main_about {
   min-height: 100vh;
-  background: #edebeb;
   overflow: hidden;
   padding-bottom: 50px;
   .main_about_header {
@@ -1325,22 +1334,47 @@ body {
   }
 }
 .footer {
-  background-color: #bbb;
-  height: 100px;
-  .about-ul-footer{
-    .about--li-footer{
-      padding: 5px 0;
-      font-size: 18px;
-      text-transform: uppercase;
-      float: right;
-      margin: 10px 5px;
-      a{
-        color: #000;
-        &:hover {
-          color: #444343;
-          @include transition(.5s);
+  background-color: #e6ebec;
+  height: auto;
+  .block_footer{
+    overflow: hidden;
+    //padding: 15px 0;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    .about-ul-footer{
+      float: left;
+      .about--li-footer{
+        padding: 7px 0;
+        font-size: 18px;
+        text-transform: uppercase;
+        //float: right;
+        margin-right: 5px;
+        a{
+          color: #545454;
+          &:hover {
+            color: #444343;
+            @include transition(.5s);
+          }
         }
       }
+    }
+  }
+  hr{
+    margin: 0 auto !important;
+    border-top: 1px dashed #c0c0c0 !important;
+  }
+  .link_vk{
+    padding: 25px 0;
+    img{
+      width: 35px;
+    }
+  }
+  .dev{
+    padding: 25px 0;
+    text-align: center;
+    span{
+      padding: 15px 0;
+      display: block;
     }
   }
 }

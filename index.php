@@ -19,7 +19,7 @@ include("include/connection.php");
 <?php include("include/modal.php"); ?>
 <div class="bg_section">
     <?php include("include/nav.php"); ?>
-    <div class="wrapp_header wow fadeIn" data-wow-delay="1.5s"></div>
+    <div class="wrapp_header wow fadeIn" data-wow-delay=".1s"></div>
     <div class="header wow fadeIn">
         <div class="voicing wow fadeInDown">
             <h1>Озвучка</h1>
@@ -45,9 +45,6 @@ include("include/connection.php");
                         </div>
                         <div class="main_block_desc">
                             <span>Быстро</span>
-                            <div class="mb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                adipisci
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -58,9 +55,6 @@ include("include/connection.php");
                         </div>
                         <div class="main_block_desc">
                             <span>Профессионально</span>
-                            <div class="mb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                adipisci
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -71,9 +65,6 @@ include("include/connection.php");
                         </div>
                         <div class="main_block_desc">
                             <span>Креативно</span>
-                            <div class="mb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                adipisci
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -84,9 +75,6 @@ include("include/connection.php");
                         </div>
                         <div class="main_block_desc">
                             <span>Бюджетно</span>
-                            <div class="mb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                adipisci
-                            </div>
                         </div>
                     </div>
                 </div>
