@@ -16,21 +16,34 @@ include("include/connection.php");
     <?php include("include/head.php"); ?>
 </head>
 <body>
+
 <?php include("include/modal.php"); ?>
+<?php include("include/modal_price.php"); ?>
 <div class="bg_section">
     <?php include("include/nav.php"); ?>
-    <div class="wrapp_header wow fadeIn" data-wow-delay=".1s"></div>
-    <div class="header wow fadeIn">
-        <div class="voicing wow fadeInDown">
-            <h1>Озвучка</h1>
+    <div class="wrapp_header wow fadeIn" data-wow-delay="1.5s">
+        <div class="flip">
+            <div class="flipper">
+                <div class="front wow fadeIn">
+                    <div class="voicing wow fadeInDown">
+                        <h1>Озвучка</h1>
+                    </div>
+                    <div class="youre wow fadeInRight">
+                        <h1>Для тех</h1>
+                    </div>
+                    <div class="youre_dream wow fadeInLeft">
+                        <h1>кто не хочет усложнять</h1>
+                    </div>
+                    <i class="fa fa-angle-down wow fadeIn" data-wow-delay="1s" id="fa-angle-down" aria-hidden="true"></i>
+                </div>
+                <div class="back">
+                    <div class="voicing" id="linkPrice">
+                        <h1>Посмотреть прайс-лист</h1>
+                        <img src="dist/img/Purchase%20Order-100.png">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="youre wow fadeInRight">
-            <h1>Для вашего</h1>
-        </div>
-        <div class="youre_dream wow fadeInLeft">
-            <h1>Бизнеса</h1>
-        </div>
-        <i class="fa fa-angle-down wow fadeIn" data-wow-delay="1s" id="fa-angle-down" aria-hidden="true"></i>
     </div>
     <section id="main_about">
         <div class="container">
@@ -38,7 +51,7 @@ include("include/connection.php");
                 <h1>Озвучка, запись и монтаж аудиороликов</h1>
             </div>
             <div class="wrapp_items">
-                <div class="col-md-3 wow fadeIn" data-wow-delay=".3s">
+                <div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="main_about_items">
                         <div class="img_block">
                             <img src="dist/img/circular-clock.png">
@@ -48,17 +61,7 @@ include("include/connection.php");
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 wow fadeIn" data-wow-delay=".4s">
-                    <div class="main_about_items">
-                        <div class="img_block">
-                            <img src="dist/img/sound-bars.png">
-                        </div>
-                        <div class="main_block_desc">
-                            <span>Профессионально</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 wow fadeIn" data-wow-delay=".5s">
+                <div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay=".4s">
                     <div class="main_about_items">
                         <div class="img_block">
                             <img src="dist/img/tuxedo.png">
@@ -68,7 +71,7 @@ include("include/connection.php");
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 wow fadeIn" data-wow-delay=".5s">
+                <div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay=".5s">
                     <div class="main_about_items">
                         <div class="img_block">
                             <img src="dist/img/money-bag.png">

@@ -77,7 +77,6 @@ $(document).ready(function(){
         }
     }
 
-
   // показать кнопку наверх
   $(window).scroll(function() {
     if ($(this).scrollTop() > 350){
@@ -110,3 +109,21 @@ $(document).ready(function(){
     });
 
 });
+
+//modalPrice
+var linkPrice = document.getElementById('linkPrice'),
+    myPrice = document.getElementById('myPrice'),
+    closePrice = document.getElementsByClassName('closePrice')[0];
+
+linkPrice.onclick = function () {
+    myPrice.style.display = "block";
+}
+closePrice.onclick = function () {
+    myPrice.style.display = "none";
+}
+//закрытие модал, если юзер кликает на bg
+window.onclick = function (event) {
+    if (event.target == myPrice) {
+        myPrice.style.display = "none";
+    }
+}

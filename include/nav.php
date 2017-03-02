@@ -16,7 +16,7 @@
                     </li>
                     <ul class="about-ul">
                         <li class="about--li"><a href="../servises.php">Услуги</a></li>
-                        <li class="about--li" id="linkModal">Как заказть</li>
+                        <li class="about--li" id="linkModal">Связаться с нами</li>
                         <li class="about--li"><a href="#">Специальные предложения</a></li>
                         <li class="about--li"><a href="#">Личный кабинет</a></li>
                     </ul>

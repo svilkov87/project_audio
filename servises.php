@@ -181,17 +181,19 @@ include("include/connection.php");
             <p>hello</p>
         </div>
         <div class="block-content">
-            <div class="wrapp_content">
-                <h1>примеры работ</h1>
-                <div class="block_serv_desc">
-                    <span>Более 1000 реализованных проектов</span>
+            <div class="container">
+                <div class="wrapp_content">
+                    <h1>примеры работ</h1>
+                    <div class="block_serv_desc">
+                        <span>Более 1000 реализованных проектов</span>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="two-footer">
             <div class="wrapp-footer">
                 <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <div class="wrapp_audio">
                             <span>Тестовый пример ролика</span>
                             <audio controls class="audio">
@@ -199,7 +201,7 @@ include("include/connection.php");
                             </audio>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <div class="wrapp_audio">
                             <span>Тестовый пример ролика</span>
                             <audio controls class="audio">
@@ -207,7 +209,7 @@ include("include/connection.php");
                             </audio>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <div class="wrapp_audio">
                             <span>Тестовый пример ролика</span>
                             <audio controls class="audio">
@@ -215,7 +217,7 @@ include("include/connection.php");
                             </audio>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <div class="wrapp_audio">
                             <span>Тестовый пример ролика</span>
                             <audio controls class="audio">
@@ -223,7 +225,7 @@ include("include/connection.php");
                             </audio>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <div class="wrapp_audio">
                             <span>Тестовый пример ролика</span>
                             <audio controls class="audio">
@@ -231,7 +233,7 @@ include("include/connection.php");
                             </audio>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <div class="wrapp_audio">
                             <span>Тестовый пример ролика</span>
                             <audio controls class="audio">

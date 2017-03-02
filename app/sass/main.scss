@@ -124,6 +124,109 @@
     }
   }
 }
+
+//modalPrice
+#myPrice{
+  display: none;
+  position: fixed;
+  z-index: 9999999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.18);
+  .price_content{
+    background-color: #fefefe;
+    margin: 8% auto;
+    padding: 15px;
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+    .closePrice{
+      float: right;
+      font-size: 20px;
+      cursor: pointer;
+      &:hover {
+        color: red;
+        @include transition(.5s)
+      }
+    }
+    .modal_header{
+      text-align: center;
+      padding: 10px 0;
+      h1{
+        font-size: 22px;
+      }
+    }
+    .modal_wrapp {
+      margin-top: 15px;
+      .modal_confirm{
+        text-align: center;
+        color: red;
+        display: none;
+      }
+      .err_block{
+        display: none;
+        padding: 10px;
+        border: 1px solid rgba(255, 0, 0, 0.46);
+        margin: 5px 0;
+        color: red;
+      }
+      .modal_forms {
+        .name, .s_name, .theme{
+          margin-bottom: 15px;
+          span{
+            font-size: 20px;
+          }
+          #name, #s_name {
+            width: 100%;
+            outline: none;
+            border: 1px solid rgba(204, 204, 204, 0.68);
+            height: 30px;
+            margin: 5px auto;
+            padding: 5px;
+            font-size: 17px;
+            color: #6e8096;
+            @include bradius(2px);
+          }
+          #modal_field {
+            width: 100%;
+            outline: none;
+            border: 1px solid rgba(204, 204, 204, 0.68);
+            height: 180px;
+            margin: 5px auto;
+            padding: 5px;
+            font-size: 17px;
+            color: #6e8096;
+            @include bradius(2px);
+          }
+        }
+        .btn_modal{
+          border: 1px solid #cec9c9;
+          width: 105px;
+          height: 35px;
+          background-color: #e1e1e3;
+          color: #000;
+          &:hover {
+            background-color: #cfcfd1;
+            color: #000;
+            @include transition(.3s)
+          }
+        }
+        .btn_modal_err{
+          display: none;
+          border: none;
+          width: 105px;
+          height: 35px;
+          background-color: #e37c73;
+          border-color: #ccc;
+          color: #000;
+        }
+      }
+    }
+  }
+}
 //test
 .one{
   //background: url("http://www.wallpaperinhd.net/file/9048/2880x1800/stretch/road-(1920x1200)-wallpaper-6.jpg") no-repeat fixed;
@@ -620,10 +723,9 @@
     .block-content{
       height: auto;
       .wrapp_content{
-        width: 80%;
         height: auto;
         margin: 0 auto;
-        padding: 35px;
+        padding: 35px 0;
         .block_serv_desc{
           border: 1px solid #fff;
           @include bradius(5px);
@@ -1140,74 +1242,128 @@ body {
   background: #fff;
   background-image: url(../img/turntable-1109588_1920.jpg);
   background-size: cover;
-}
-.header {
-  // background: #ccc;
-  bottom: 0;
-  width: 250px;
-  height: 250px;
-  padding-top: 50px;
-  border-radius: 50%;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  background: rgba(64, 63, 63, 0.28);
-  .main_img {
-    margin: 0 auto;
-    display: block;
-    width: 170px;
-    @include mobile_l {
-      // top: -40px;
+  .flip{
+    perspective: 1000;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    &:hover .flipper {
+      transform: rotateY(180deg);
+    }
+    .flipper {
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      position: relative;
+      .front{
+        z-index: 2;
+        backface-visibility: hidden;
+        bottom: 0;
+        width: 300px;
+        height: 300px;
+        padding-top: 65px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 1px solid rgba(0, 0, 0, .2);
+        background: rgba(64, 63, 63, .28);
+        .main_img {
+          margin: 0 auto;
+          display: block;
+          width: 170px;
+          @include mobile_l {
+            // top: -40px;
+          }
+        }
+        .voicing {
+          width: 150px;
+          // background: #FFF;
+          padding: 10px;
+          text-align: center;
+          text-transform: uppercase;
+          margin: 5px auto;
+        }
+
+        .youre {
+          width: 200px;
+          // background: #FFF;
+          padding: 10px;
+          text-align: center;
+          text-transform: uppercase;
+          margin: 5px auto;
+        }
+        .youre_dream {
+          width: 250px;
+          // background: #FFF;
+          padding: 10px;
+          text-align: center;
+          text-transform: uppercase;
+          margin: 0 auto;
+        }
+        h1 {
+          color: #fff;
+          font-size: 25px;
+          font-weight: bold;
+        }
+      }
+      #fa-angle-down {
+        color: rgba(0, 0, 0, 0.51);
+        margin: 110px auto 0;
+        display: block;
+        text-align: center;
+        font-size: 52px;
+        cursor: pointer;
+        &:hover {
+          color: #ccc;
+          @include transition(.5s);
+        }
+      }
+      .back {
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        bottom: 0;
+        width: 300px;
+        height: 300px;
+        padding-top: 65px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 1px solid rgba(0, 0, 0, .2);
+        background: rgba(34, 34, 34, 0.61);
+        .voicing {
+          cursor: pointer;
+          width: 150px;
+          // background: #FFF;
+          padding: 10px;
+          text-align: center;
+          text-transform: uppercase;
+          margin: 5px auto;
+        }
+        h1 {
+          color: #fff;
+          font-size: 25px;
+          font-weight: bold;
+        }
+        img{
+          margin-top: 10px;
+        }
+      }
     }
   }
-  .voicing {
-    width: 150px;
-    // background: #FFF;
-    padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 5px auto;
-  }
+}
 
-  .youre {
-    width: 200px;
-    // background: #FFF;
-    padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 5px auto;
-  }
-  .youre_dream {
-    width: 250px;
-    // background: #FFF;
-    padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0 auto;
-  }
-  h1 {
-    color: #fff;
-    font-size: 25px;
-    font-weight: bold;
-  }
-}
-#fa-angle-down {
-  color: rgba(0, 0, 0, 0.51);
-  margin: 110px auto 0;
-  display: block;
-  text-align: center;
-  font-size: 52px;
-  cursor: pointer;
-  &:hover {
-    color: #ccc;
-    @include transition(.5s);
-  }
-}
+
 #main_about {
-  min-height: 100vh;
+  height: auto;
   overflow: hidden;
   padding-bottom: 50px;
   .main_about_header {
@@ -1221,7 +1377,6 @@ body {
     .main_about_items {
       padding: 5px;
       background: #fff;
-      border: 1px solid rgba(190, 136, 204, 0.46);
       .img_block {
         text-align: center;
       }
@@ -1299,40 +1454,7 @@ body {
     }
   }
 }
-//portfolio
-.wrapp_portf{
-  .header_portf{
-    @extend .header_serv;
-    h1 {
-      font-size: 35px;
-    }
-  }
-  .audio_items{
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    .img_n_desc{
-      overflow: hidden;
-      height: auto;
-      img{
-        width: 100%;
-        @include tablet {
-          width: 200px;
-        }
-      }
-    }
-    .audio{
-      width: 100%;
-      display: block;
-      margin: 15px auto;
-    }
-    .port_head_desc{
-      h1{
-        margin-bottom: 5px;
-      }
-    }
-  }
-}
+
 .footer {
   background-color: #e6ebec;
   height: auto;
