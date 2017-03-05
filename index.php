@@ -1,10 +1,14 @@
 <?php
 include("include/connection.php");
-//
-//## проверка ошибок
-//error_reporting(E_ALL | E_STRICT);
-//ini_set('display_errors', TRUE);
-//ini_set('display_startup_errors', TRUE);
+session_start();
+## проверка ошибок
+error_reporting(E_ALL | E_STRICT);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
+
+    echo "<pre>";
+    var_dump($_SESSION);
+    echo "</pre>";
 
 ?>
 
@@ -16,7 +20,6 @@ include("include/connection.php");
     <?php include("include/head.php"); ?>
 </head>
 <body>
-
 <?php include("include/modal.php"); ?>
 <?php include("include/modal_price.php"); ?>
 <div class="bg_section">
@@ -26,7 +29,7 @@ include("include/connection.php");
             <div class="flipper">
                 <div class="front wow fadeIn">
                     <div class="voicing wow fadeInDown">
-                        <h1>Озвучка</h1>
+                        <h1>Недорогая&nbsp;Озвучка</h1>
                     </div>
                     <div class="youre wow fadeInRight">
                         <h1>Для тех</h1>
@@ -34,7 +37,6 @@ include("include/connection.php");
                     <div class="youre_dream wow fadeInLeft">
                         <h1>кто не хочет усложнять</h1>
                     </div>
-                    <i class="fa fa-angle-down wow fadeIn" data-wow-delay="1s" id="fa-angle-down" aria-hidden="true"></i>
                 </div>
                 <div class="back">
                     <div class="voicing" id="linkPrice">
@@ -43,6 +45,7 @@ include("include/connection.php");
                     </div>
                 </div>
             </div>
+            <i class="fa fa-angle-down wow fadeIn" data-wow-delay="1s" id="fa-angle-down" aria-hidden="true"></i>
         </div>
     </div>
     <section id="main_about">

@@ -110,6 +110,7 @@ $(document).ready(function(){
 
 });
 
+
 //modalPrice
 var linkPrice = document.getElementById('linkPrice'),
     myPrice = document.getElementById('myPrice'),

@@ -4,7 +4,7 @@
             <div class="brand">
 <!--                <img src="dist/img/sound-waves.png" class="logo_img">-->
                 <a href="../index.php" class="logo_link">Vsemroliki.ru</a>
-                <a href="../reg.php" class="logo_reg">Регистрация</a>
+                <span class="logo_mail">info@vsemroliki.ru</span>
             </div>
             <i class="fa fa-align-justify" id="justify_nav" aria-hidden="true"></i>
             <div class="menu">
@@ -19,6 +19,7 @@
                         <li class="about--li" id="linkModal">Связаться с нами</li>
                         <li class="about--li"><a href="#">Специальные предложения</a></li>
                         <li class="about--li"><a href="#">Личный кабинет</a></li>
+                        <li class="about--li"><a href="../reg.php">Регистрация</a></li>
                     </ul>
                 </ul>
             </div>

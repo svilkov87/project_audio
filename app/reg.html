@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <meta name="description" content="IMPOVAR" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <script type="text/javascript" src="libs/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+</head>
+<body>
+<i class="fa fa-chevron-up" aria-hidden="true" id="top" style="display: inline;"></i>
+<!--modal-->
+<div id="myModlal" class="modal">
+    <div class="modal_content">
+        <span class="close">&times;</span>
+        <p>vsemroliki.ru</p>
+        <div class="col-md-8 col-md-offset-2">
+            <div class="row">
+                <div class="modal_header">
+                    <h1>Заказ услуги</h1>
+                </div>
+                <div class="modal_wrapp">
+                    <div class="err_block">
+                        Не все поля заполнены
+                    </div>
+                    <div class="modal_confirm">
+                        Спасибо!
+                    </div>
+                    <div class="modal_forms">
+                        <form action="">
+                            <div class="name">
+                                <span>Укажите Ваше имя и фамилию</span>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div class="s_name">
+                                <span>Адрес электронной почты или телефон(можно иное)</span>
+                                <input type="text" name="s_name" id="s_name">
+                            </div>
+                            <div class="theme">
+                                <span>Опишите интересующую Вас услугу</span>
+                                <textarea name="theme" id="modal_field" cols="30" rows="10"></textarea>
+                            </div>
+                            <button type="submit" name="enter" class="btn_modal">Заказать</button>
+                            <button type="submit" name="enter" class="btn_modal_err">Заказать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--modal-->
+<div class="nav">
+    <div class="container">
+        <div class="row">
+            <div class="brand">
+                <a href="index.html" class="logo_link">Vsemroliki.ru</a>
+                <a href="reg.html" class="logo_reg">info@vsemroliki.ru</a>
+            </div>
+            <i class="fa fa-align-justify" id="justify_nav" aria-hidden="true"></i>
+            <div class="menu">
+                <ul>
+                    <li class="menu-list"><a href="#" id="active">Главная</a></li>
+                    <li class="menu-list" id="about_us">
+                        <a href="#">О проекте</a>
+                        <i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i>
+                    </li>
+                    <ul class="about-ul">
+                        <li class="about--li"><a href="servises.html">услуги</a></li>
+                        <li class="about--li" id="linkModal">связаться с нами</li>
+                        <li class="about--li"><a href="#">специальные предложения</a></li>
+                        <li class="about--li"><a href="#">личный кабинет</a></li>
+                        <li class="about--li"><a href="reg.html">Регистрация</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="block_reg">
+    <div class="container">
+        <div class="row">
+            <div class="settings_wrapper">
+                <div class="settings_block_header">
+                    <span class="sett_header">Регистрация</span>
+                </div>
+                <div class="reg_wrapper">
+                    <div class="reg_forms">
+                        <form method="post" class="form_of_reg">
+                            <p class="errors_reg"></p>
+                            <p class="p_forms_reg">
+                                <label for="login">Имя</label><br>
+                                <input type="text" name="username" id="username" class="reg_inputs" autocomplete="on">
+                            </p>
+                            <p class="p_forms_reg">
+                                <label for="login">Логин</label><br>
+                                <input type="text" name="login" id="login" class="reg_inputs" autocomplete="on">
+                            </p>
+                            <p class="p_forms_reg">
+                                <label for="email">Email</label><br>
+                                <input type="text" name="email" id="email" class="reg_inputs">
+                            </p>
+                            <p class="p_forms_reg">
+                                <label for="password">Пароль</label><br>
+                                <input type="password" name="password" id="password" class="reg_inputs">
+                            </p>
+                            <p class="p_forms_reg">
+                                <label for="e_password">Повторите пароль</label><br>
+                                <input type="password" name="e_password" id="e_password" class="reg_inputs">
+                            </p>
+                            <div class="button_n_reg">
+                                <button class="btn_default" type="submit" name="do_signup">Зарегистрироваться</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="block_footer">
+            <div class="col-md-4 col-sm-4">
+                <div class="row">
+                    <ul class="about-ul-footer">
+                        <li class="about--li-footer"><a href="#">услуги</a></li>
+                        <li class="about--li-footer"><a href="#">как заказть</a></li>
+                        <li class="about--li-footer"><a href="#">Спецпредложения</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="col-md-4 col-sm-4">
+            <div class="row">
+                <div class="link_vk">
+                    <a href="https://vk.com/vsemroliki">
+                        <img src="img/vkontakte.png" alt="">
+                    </a>
+                    <a href="https://vk.com/vsemroliki">
+                        <img src="img/linkedin.png" alt="">
+                    </a>
+                    <a href="https://vk.com/vsemroliki">
+                        <img src="img/twitter.png" alt="">
+                    </a>
+                    <a href="https://vk.com/vsemroliki">
+                        <img src="img/facebook.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <div class="row">
+                <div class="dev">
+                    <span>разработка:&nbsp;svilkov87@mail.ru</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--[if lt IE 9]-->
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<!--[endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+<script src="libs/main.js"></script>
+</body>
+</html>

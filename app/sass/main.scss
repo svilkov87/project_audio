@@ -3,7 +3,7 @@
 @import 'base/mixins';
 @import 'base/reset';
 
-//слайдер
+
 
 //button_top
 #top {
@@ -297,9 +297,10 @@
           animation: titleAnimation 36s linear infinite 0s;
         }
         .cb-slideshow li div h3 {
-          font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+          //font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
           font-size: 25px;
           padding: 0;
+          text-transform: uppercase;
           line-height: 350px;
         }
         .cb-slideshow li:nth-child(1) span {
@@ -323,7 +324,7 @@
           animation-delay: 12s;
         }
         .cb-slideshow li:nth-child(4) span {
-          background-image: url(https://im3-tub-ru.yandex.net/i?id=4d2c19bf37d7ff64237c4611dbbea76a&n=33&h=215&w=382);
+          background-image: url(http://universe-beauty.com/albums/userpics/1/3/amazing-digital-space-art-img34.jpg);
           -webkit-animation-delay: 18s;
           -moz-animation-delay: 18s;
           -o-animation-delay: 18s;
@@ -1009,11 +1010,11 @@ body {
         @include transition(.5s)
       }
     }
-    .logo_reg{
+    .logo_mail{
       color: #000;
       text-transform: uppercase;
       margin-left: 10px;
-      font-size: 22px;
+      font-size: 16px;
     }
   }
   #justify_nav {
@@ -1237,6 +1238,7 @@ body {
     }
   }
 }
+
 .wrapp_header {
   height: 100vh;
   background: #fff;
@@ -1281,8 +1283,6 @@ body {
           }
         }
         .voicing {
-          width: 150px;
-          // background: #FFF;
           padding: 10px;
           text-align: center;
           text-transform: uppercase;
@@ -1309,18 +1309,6 @@ body {
           color: #fff;
           font-size: 25px;
           font-weight: bold;
-        }
-      }
-      #fa-angle-down {
-        color: rgba(0, 0, 0, 0.51);
-        margin: 110px auto 0;
-        display: block;
-        text-align: center;
-        font-size: 52px;
-        cursor: pointer;
-        &:hover {
-          color: #ccc;
-          @include transition(.5s);
         }
       }
       .back {
@@ -1358,9 +1346,20 @@ body {
         }
       }
     }
+    #fa-angle-down {
+      color: rgba(0, 0, 0, 0.51);
+      margin: 160px auto;
+      display: block;
+      text-align: center;
+      font-size: 52px;
+      cursor: pointer;
+      &:hover {
+        color: #ccc;
+        @include transition(.5s);
+      }
+    }
   }
 }
-
 
 #main_about {
   height: auto;
@@ -1454,6 +1453,81 @@ body {
     }
   }
 }
+
+//registration
+.block_reg{
+  margin-top: 75px;
+  height: auto;
+  padding: 25px 0;
+  .settings_wrapper{
+    width: 60%;
+    margin: 0 auto;
+    .settings_block_header{
+      width: 50%;
+      margin: 0 auto;
+      padding: 10px 0;
+      .sett_header{
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+    .reg_forms{
+      width: 50%;
+      margin: 0 auto;
+      .errors_reg{
+        padding: 5px;
+        color: #d18484;
+        margin-bottom: 10px;
+      }
+      .p_forms_reg{
+        margin-bottom: 10px;
+        .reg_inputs{
+          width: 100%;
+          border: none;
+          outline: 0;
+          border-bottom: 1px solid #ccc;
+          padding: 0.5em;
+        }
+      }
+      .btn_default{
+        border: 1px solid #cec9c9;
+        height: 35px;
+        background-color: #e1e1e3;
+        color: #000;
+      }
+    }
+  }
+}
+
+//succ reg
+.block_succ{
+  margin-top: 75px;
+  height: auto;
+  padding: 150px 0;
+  .succ_wrapper {
+    width: 60%;
+    margin: 0 auto;
+    .succ_block_header{
+      text-align: center;
+      .sett_header{
+        font-size: 22px;
+      }
+    }
+    .enter_lk{
+      text-align: center;
+      margin-top: 45px;
+      a{
+        text-decoration: none;
+        border: 1px solid #ccc;
+        padding: 5px;
+
+      }
+    }
+  }
+}
+
+
+
 
 .footer {
   background-color: #e6ebec;

@@ -51,12 +51,24 @@ include("include/connection.php");
         <div class="block-content">
             <div class="wrapp_content">
                 <ul class="cb-slideshow">
-                    <li><span>Image 01</span><div><h3>Преимущество 1</h3></div></li>
-                    <li><span>Image 02</span><div><h3>Преимущество 2</h3></div></li>
-                    <li><span>Image 03</span><div><h3>Преимущество 3</h3></div></li>
-                    <li><span>Image 04</span><div><h3>Преимущество 4</h3></div></li>
-                    <li><span>Image 05</span><div><h3>Преимущество 5</h3></div></li>
-                    <li><span>Image 06</span><div><h3>Преимущество 6</h3></div></li>
+                    <li><span>Image 01</span>
+                        <div><h3>озвучка от 300р</h3></div>
+                    </li>
+                    <li><span>Image 02</span>
+                        <div><h3>ролики от 790р</h3></div>
+                    </li>
+                    <li><span>Image 03</span>
+                        <div><h3>автоответчики 500р</h3></div>
+                    </li>
+                    <li><span>Image 04</span>
+                        <div><h3>озвучка от 300р</h3></div>
+                    </li>
+                    <li><span>Image 05</span>
+                        <div><h3>ролики от 790р</h3></div>
+                    </li>
+                    <li><span>Image 06</span>
+                        <div><h3>автоответчики 500р</h3></div>
+                    </li>
                 </ul>
 <!--                <h1>озвучка, сценарий</h1>-->
 <!--                <div class="block_serv_desc">-->
@@ -192,8 +204,8 @@ include("include/connection.php");
         </div>
         <div class="two-footer">
             <div class="wrapp-footer">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-6 col-sm-6">
+                <div class="container">
+                    <div class="col-md-4 col-sm-6">
                         <div class="wrapp_audio">
                             <span>Тестовый пример ролика</span>
                             <audio controls class="audio">
@@ -201,7 +213,7 @@ include("include/connection.php");
                             </audio>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-4 col-sm-6">
                         <div class="wrapp_audio">
                             <span>Тестовый пример ролика</span>
                             <audio controls class="audio">
@@ -209,7 +221,7 @@ include("include/connection.php");
                             </audio>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-4 col-sm-6">
                         <div class="wrapp_audio">
                             <span>Тестовый пример ролика</span>
                             <audio controls class="audio">
@@ -217,7 +229,7 @@ include("include/connection.php");
                             </audio>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-4 col-sm-6">
                         <div class="wrapp_audio">
                             <span>Тестовый пример ролика</span>
                             <audio controls class="audio">
@@ -225,7 +237,7 @@ include("include/connection.php");
                             </audio>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-4 col-sm-6">
                         <div class="wrapp_audio">
                             <span>Тестовый пример ролика</span>
                             <audio controls class="audio">
@@ -233,7 +245,7 @@ include("include/connection.php");
                             </audio>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-4 col-sm-6">
                         <div class="wrapp_audio">
                             <span>Тестовый пример ролика</span>
                             <audio controls class="audio">

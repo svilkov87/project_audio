@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9e479c1-a546-4a9a-8470-8493d6e1e412" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/portfolio.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/servises.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/portfolio.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/libs.min.css" afterPath="$PROJECT_DIR$/app/css/libs.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/all.min.js" afterPath="$PROJECT_DIR$/app/js/all.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/main.js" afterPath="$PROJECT_DIR$/app/libs/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/main.scss" afterPath="$PROJECT_DIR$/app/sass/main.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/test.html" afterPath="$PROJECT_DIR$/app/test.html" />
@@ -36,13 +38,50 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="18" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1488484715602" expanded="false" signature="2730:3108" placeholder="..." />
+                <marker date="1488735922957" expanded="false" signature="2805:3183" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="success_reg.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/success_reg.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lk.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lk.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <marker date="1488736008322" expanded="true" signature="590:624" placeholder="SELECT * FRO... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="success_reg.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/success_reg.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="101" selection-end-column="6" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -51,87 +90,42 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/sass/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="1342" column="25" selection-start-line="1342" selection-start-column="25" selection-end-line="1342" selection-end-column="25" />
+            <state relative-caret-position="351">
+              <caret line="1497" column="5" selection-start-line="1497" selection-start-column="5" selection-end-line="1497" selection-end-column="5" />
               <folding>
-                <element signature="e#126#377#0" expanded="false" />
-                <element signature="e#393#413#0" expanded="false" />
-                <element signature="e#428#2620#0" expanded="false" />
-                <element signature="e#4902#19696#0" expanded="false" />
-                <element signature="e#33113#33299#0" expanded="false" />
-                <element signature="e#33321#33505#0" expanded="false" />
-                <element signature="e#33517#33607#0" expanded="false" />
-                <element signature="e#33637#33901#0" expanded="false" />
-                <element signature="e#34576#34666#0" expanded="false" />
+                <element signature="e#117#368#0" expanded="false" />
+                <element signature="e#384#404#0" expanded="false" />
+                <element signature="e#419#2611#0" expanded="false" />
+                <element signature="e#2634#4881#0" expanded="false" />
+                <element signature="e#4893#19724#0" expanded="false" />
+                <element signature="e#19729#26401#0" expanded="false" />
+                <element signature="e#26409#26487#0" expanded="false" />
+                <element signature="e#26500#26523#0" expanded="false" />
+                <element signature="e#26529#31116#0" expanded="false" />
+                <element signature="e#31128#31913#0" expanded="false" />
+                <element signature="e#31929#34686#0" expanded="false" />
+                <element signature="e#33088#33274#0" expanded="false" />
+                <element signature="e#33296#33480#0" expanded="false" />
+                <element signature="e#33492#33582#0" expanded="false" />
+                <element signature="e#33603#34414#0" expanded="false" />
+                <element signature="e#34265#34355#0" expanded="false" />
+                <element signature="e#34700#35745#0" expanded="false" />
+                <element signature="e#35770#35845#0" expanded="false" />
+                <element signature="e#35858#36311#0" expanded="false" />
+                <element signature="e#37610#38410#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
-              <folding>
-                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="34" selection-end-column="6" />
-              <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1488485139023" expanded="true" signature="4471:4963" placeholder="..." />
-                <marker date="1488485139023" expanded="true" signature="4491:4963" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/libs/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="128" column="1" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -147,14 +141,21 @@
         <option value="$PROJECT_DIR$/app/servises.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/include/footer.php" />
-        <option value="$PROJECT_DIR$/servises.php" />
-        <option value="$PROJECT_DIR$/app/test.html" />
-        <option value="$PROJECT_DIR$/include/nav.php" />
-        <option value="$PROJECT_DIR$/app/libs/main.js" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/app/sass/main.scss" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/include/modal_price.php" />
+        <option value="$PROJECT_DIR$/app/libs/main.js" />
+        <option value="$PROJECT_DIR$/servises.php" />
+        <option value="$PROJECT_DIR$/include/nav.php" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/test.html" />
+        <option value="$PROJECT_DIR$/app/reg.html" />
+        <option value="$PROJECT_DIR$/reg.php" />
+        <option value="$PROJECT_DIR$/succsess_reg.php" />
+        <option value="$PROJECT_DIR$/app/succsess_reg.html" />
+        <option value="$PROJECT_DIR$/app/success_reg.html" />
+        <option value="$PROJECT_DIR$/app/sass/main.scss" />
+        <option value="$PROJECT_DIR$/success_reg.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/lk.php" />
       </list>
     </option>
   </component>
@@ -234,20 +235,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="include" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="audio_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="audio_project" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -263,6 +250,7 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -311,12 +299,12 @@
       <updated>1486573787917</updated>
       <workItem from="1486573789292" duration="15336000" />
       <workItem from="1486649097293" duration="8867000" />
-      <workItem from="1488218228037" duration="42559000" />
+      <workItem from="1488218228037" duration="57827000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66762000" />
+    <option name="totallyTimeSpent" value="82030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="245" y="15" width="1049" height="719" extended-state="0" />
@@ -359,32 +347,31 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/servises.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="70" column="72" selection-start-line="70" selection-start-column="72" selection-end-line="70" selection-end-column="72" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
           <folding>
-            <element signature="e#126#377#0" expanded="false" />
-            <element signature="e#393#413#0" expanded="false" />
-            <element signature="e#428#2620#0" expanded="false" />
-            <element signature="e#4902#19696#0" expanded="false" />
-            <element signature="e#33113#33299#0" expanded="false" />
-            <element signature="e#33321#33505#0" expanded="false" />
-            <element signature="e#33517#33607#0" expanded="false" />
-            <element signature="e#33637#33901#0" expanded="false" />
-            <element signature="e#34576#34666#0" expanded="false" />
+            <element signature="e#117#368#0" expanded="false" />
+            <element signature="e#384#404#0" expanded="false" />
+            <element signature="e#419#2611#0" expanded="false" />
+            <element signature="e#2634#4881#0" expanded="false" />
+            <element signature="e#4893#19724#0" expanded="false" />
+            <element signature="e#19729#26401#0" expanded="false" />
+            <element signature="e#26409#26487#0" expanded="false" />
+            <element signature="e#26500#26523#0" expanded="false" />
+            <element signature="e#26529#31116#0" expanded="false" />
+            <element signature="e#31128#31913#0" expanded="false" />
+            <element signature="e#31929#34686#0" expanded="false" />
+            <element signature="e#33088#33274#0" expanded="false" />
+            <element signature="e#33296#33480#0" expanded="false" />
+            <element signature="e#33492#33582#0" expanded="false" />
+            <element signature="e#33603#34414#0" expanded="false" />
+            <element signature="e#34265#34355#0" expanded="false" />
+            <element signature="e#34700#35745#0" expanded="false" />
+            <element signature="e#35770#35845#0" expanded="false" />
+            <element signature="e#35858#36311#0" expanded="false" />
+            <element signature="e#37610#38410#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -433,11 +420,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -446,15 +429,26 @@
         <state relative-caret-position="340">
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
-            <element signature="e#126#377#0" expanded="false" />
-            <element signature="e#393#413#0" expanded="false" />
-            <element signature="e#428#2620#0" expanded="false" />
-            <element signature="e#4902#19696#0" expanded="false" />
-            <element signature="e#33113#33299#0" expanded="false" />
-            <element signature="e#33321#33505#0" expanded="false" />
-            <element signature="e#33517#33607#0" expanded="false" />
-            <element signature="e#33637#33901#0" expanded="false" />
-            <element signature="e#34576#34666#0" expanded="false" />
+            <element signature="e#117#368#0" expanded="false" />
+            <element signature="e#384#404#0" expanded="false" />
+            <element signature="e#419#2611#0" expanded="false" />
+            <element signature="e#2634#4881#0" expanded="false" />
+            <element signature="e#4893#19724#0" expanded="false" />
+            <element signature="e#19729#26401#0" expanded="false" />
+            <element signature="e#26409#26487#0" expanded="false" />
+            <element signature="e#26500#26523#0" expanded="false" />
+            <element signature="e#26529#31116#0" expanded="false" />
+            <element signature="e#31128#31913#0" expanded="false" />
+            <element signature="e#31929#34686#0" expanded="false" />
+            <element signature="e#33088#33274#0" expanded="false" />
+            <element signature="e#33296#33480#0" expanded="false" />
+            <element signature="e#33492#33582#0" expanded="false" />
+            <element signature="e#33603#34414#0" expanded="false" />
+            <element signature="e#34265#34355#0" expanded="false" />
+            <element signature="e#34700#35745#0" expanded="false" />
+            <element signature="e#35770#35845#0" expanded="false" />
+            <element signature="e#35858#36311#0" expanded="false" />
+            <element signature="e#37610#38410#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -534,23 +528,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/servises.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="70" column="72" selection-start-line="70" selection-start-column="72" selection-end-line="70" selection-end-column="72" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -578,14 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
@@ -594,14 +568,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp56281/domains/vsemroliki.svtest.ru/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/modal_price.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/libs/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="124" column="41" selection-start-line="124" selection-start-column="41" selection-end-line="124" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="50" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/servises.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="248" column="10" selection-start-line="248" selection-start-column="10" selection-end-line="248" selection-end-column="10" />
+        <state relative-caret-position="249">
+          <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="39" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -612,11 +616,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1488727474921" expanded="true" signature="4797:5289" placeholder="..." />
+            <marker date="1488727474921" expanded="true" signature="4817:5289" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+        <state relative-caret-position="391">
+          <caret line="87" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="350" selection-end-column="0" />
           <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -641,79 +674,180 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/libs/main.js">
+    <entry file="file://$PROJECT_DIR$/app/reg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="92" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/succsess_reg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp40362/domains/grandpovar.ru/reg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="214" selection-end-column="28" />
+          <folding>
+            <element signature="e#6298#6564#0#PHP" expanded="false" />
+            <element signature="n#p#2;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#p#3;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#p#4;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#p#5;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#p#6;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1484433757000" expanded="true" signature="920:967" placeholder="SELECT COUNT... users" />
+            <marker date="1484433757000" expanded="true" signature="1406:1453" placeholder="SELECT COUNT... users" />
+            <marker date="1484433757000" expanded="true" signature="2348:2532" placeholder="INSERT INTO users" />
+            <marker date="1484433757000" expanded="true" signature="3043:3084" placeholder="SELECT id FR... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/succsess_reg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp42856/domains/grandpovar.ru/success_reg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="74" selection-end-column="14" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#html#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/success_reg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="101" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reg.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
-          <caret line="128" column="1" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp56281/domains/vsemroliki.svtest.ru/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+          <caret line="143" column="22" selection-start-line="143" selection-start-column="22" selection-end-line="143" selection-end-column="22" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1488484715602" expanded="false" signature="2730:3108" placeholder="..." />
+            <element signature="e#4546#4828#0#PHP" expanded="false" />
+            <marker date="1488732193757" expanded="true" signature="914:961" placeholder="SELECT COUNT... users" />
+            <marker date="1488732193757" expanded="true" signature="1400:1447" placeholder="SELECT COUNT... users" />
+            <marker date="1488732193757" expanded="true" signature="2270:2432" placeholder="INSERT INTO users" />
+            <marker date="1488732193757" expanded="true" signature="2899:2940" placeholder="SELECT id FR... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp17211/domains/grandpovar.ru/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <marker date="1484431406000" expanded="true" signature="327:361" placeholder="SELECT * FRO... users" />
+            <marker date="1484431406000" expanded="true" signature="731:807" placeholder="SELECT COUNT... article" />
+            <marker date="1484431406000" expanded="true" signature="1042:1088" placeholder="SELECT * FRO... article" />
+            <marker date="1484431406000" expanded="true" signature="1325:1377" placeholder="SELECT * FRO... article" />
+            <marker date="1484431406000" expanded="true" signature="1567:1622" placeholder="SELECT * FRO... category" />
+            <marker date="1484431406000" expanded="true" signature="1856:1910" placeholder="SELECT * FRO... main_category" />
+            <marker date="1484431406000" expanded="true" signature="2054:2134" placeholder="SELECT * FRO... article" />
+            <marker date="1484431406000" expanded="true" signature="2309:2370" placeholder="SELECT COUNT... forum_questions" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp18354/domains/grandpovar.ru/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="126" selection-end-column="1" />
+          <folding>
+            <element signature="e#213#4228#0#PHP" expanded="false" />
+            <marker date="1484433039000" expanded="true" signature="611:645" placeholder="SELECT * FRO... users" />
+            <marker date="1484433039000" expanded="true" signature="2330:2604" placeholder="UPDATE `user... " />
+            <marker date="1484433039000" expanded="true" signature="3186:3261" placeholder="UPDATE `comm... " />
+            <marker date="1484433039000" expanded="true" signature="3596:3688" placeholder="UPDATE `foru... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="1342" column="25" selection-start-line="1342" selection-start-column="25" selection-end-line="1342" selection-end-column="25" />
+        <state relative-caret-position="351">
+          <caret line="1497" column="5" selection-start-line="1497" selection-start-column="5" selection-end-line="1497" selection-end-column="5" />
           <folding>
-            <element signature="e#126#377#0" expanded="false" />
-            <element signature="e#393#413#0" expanded="false" />
-            <element signature="e#428#2620#0" expanded="false" />
-            <element signature="e#4902#19696#0" expanded="false" />
-            <element signature="e#33113#33299#0" expanded="false" />
-            <element signature="e#33321#33505#0" expanded="false" />
-            <element signature="e#33517#33607#0" expanded="false" />
-            <element signature="e#33637#33901#0" expanded="false" />
-            <element signature="e#34576#34666#0" expanded="false" />
+            <element signature="e#117#368#0" expanded="false" />
+            <element signature="e#384#404#0" expanded="false" />
+            <element signature="e#419#2611#0" expanded="false" />
+            <element signature="e#2634#4881#0" expanded="false" />
+            <element signature="e#4893#19724#0" expanded="false" />
+            <element signature="e#19729#26401#0" expanded="false" />
+            <element signature="e#26409#26487#0" expanded="false" />
+            <element signature="e#26500#26523#0" expanded="false" />
+            <element signature="e#26529#31116#0" expanded="false" />
+            <element signature="e#31128#31913#0" expanded="false" />
+            <element signature="e#31929#34686#0" expanded="false" />
+            <element signature="e#33088#33274#0" expanded="false" />
+            <element signature="e#33296#33480#0" expanded="false" />
+            <element signature="e#33492#33582#0" expanded="false" />
+            <element signature="e#33603#34414#0" expanded="false" />
+            <element signature="e#34265#34355#0" expanded="false" />
+            <element signature="e#34700#35745#0" expanded="false" />
+            <element signature="e#35770#35845#0" expanded="false" />
+            <element signature="e#35858#36311#0" expanded="false" />
+            <element signature="e#37610#38410#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/modal_price.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="18" />
           <folding>
-            <element signature="n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1488735922957" expanded="false" signature="2805:3183" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/success_reg.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="34" selection-end-column="6" />
+        <state relative-caret-position="187">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lk.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1488485139023" expanded="true" signature="4471:4963" placeholder="..." />
-            <marker date="1488485139023" expanded="true" signature="4491:4963" placeholder="..." />
+            <marker date="1488736008322" expanded="true" signature="590:624" placeholder="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>
