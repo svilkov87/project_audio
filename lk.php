@@ -30,9 +30,9 @@ if (!empty($_GET)) {
     }
 }
 
-echo "<pre>";
-var_dump($_SESSION);
-echo "</pre>";
+// echo "<pre>";
+// var_dump($_SESSION);
+// echo "</pre>";
 
 ?>
 
@@ -44,10 +44,7 @@ echo "</pre>";
     <?php include("include/head.php"); ?>
 </head>
 <body>
-<?php include("include/modal.php"); ?>
-<?php include("include/modal_price.php"); ?>
-<?php include("include/nav.php"); ?>
-<div class="block_succ">
+<!-- <div class="block_succ">
     <div class="container">
         <div class="row">
             <div class="succ_wrapper">
@@ -55,7 +52,34 @@ echo "</pre>";
             </div>
         </div>
     </div>
+</div> -->
+<section class="lk_section">
+    <div class="col-md-3">
+        <div class="row">
+            <div class="lk_sidebar">
+                <div class="lk_head_sidebar">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    <span class="hello">
+                        info@vsemroliki.ru
+                    </span>
+                </div>
+                <div class="lk_body_sidebar">
+                    <ul>
+                        <li class="lk_sb_list"><a href="">мои заказы</a></li>
+                        <li class="lk_sb_list"><a href="">бонусы</a></li>
+                        <li class="lk_sb_list"><a href="">вопросы</a></li>
+                        <li class="lk_sb_list"><a href="">настройки</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="col-md-9">
+    <div class="lk_content"></div>
 </div>
+
+    
+</section>
 
 <?php include("include/footer.php"); ?>
 <?php include("include/scripts.php"); ?>

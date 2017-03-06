@@ -5,6 +5,11 @@ $(document).ready(function(){
     $(".about-ul").slideToggle(100);
   });
 
+    //выпадающий доп меню в лк (навигация)
+  $("#showNav").click(function(){
+    $(".lk_ul_child").slideToggle(100);
+  });
+
 // выпадающее меню
   $("#justify_nav").click(function(){
     $(".menu").fadeToggle(500);
