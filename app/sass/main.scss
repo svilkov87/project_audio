@@ -1579,8 +1579,11 @@ body {
   overflow: hidden;
   background: #f5f8fd;
   .close{
-    margin-left: -200px;
+    margin-left: -190px;
     @include transition(.3s);
+    @include mobile_s{
+      @include bsh(none);
+    }
   }
   .lk_sidebar{
     float: left;
@@ -1602,22 +1605,24 @@ body {
       position: fixed;
       z-index: 22;
       background: #ccc;
+      @include bsh(8px 1px 25px 0px rgba(50, 50, 50, 0.05));
     }
     .li_head_nav{
-      height: 35px;
+      height: 50px;
       background: #7990bb;
       width: 240px;
       .hello{
         color: #fff;
-        line-height: 35px;
+        line-height: 50px;
         float: left;
         margin-left: 20px;
+        text-transform: uppercase;
       }
       i{
         color: #fff;
-        line-height: 35px;
+        line-height: 50px;
         float: right;
-        width: 35px;
+        width: 50px;
         text-align: center;
         cursor: pointer;
         &:hover{
@@ -1629,7 +1634,7 @@ body {
       width: 240px;
       height: 100vh;
       background: #fff;
-      border-right: 1px solid #ccc;
+      border-right: 1px solid #e8e8e8;
       }
       .lk_ul_main{
         display: block;
@@ -1651,7 +1656,11 @@ body {
           a{
             text-decoration: none;
             color: #000;
-            // color: #8a8686;
+          }
+          span{
+            float: right;
+            font-size: 17px;
+            line-height: initial;
           }
           .lk_ul_child{
             width: 100%;
@@ -1682,17 +1691,17 @@ body {
       margin-left: 0;
     }
     .lk_nav{
-      height: 35px;
+      height: 50px;
       padding: 0 10px;
       overflow: hidden;
       background: #7990bb;
       i{
         color: #fff;
-        line-height: 35px;
+        line-height: 50px;
       }
       span{
         color: #fff;
-        line-height: 35px;
+        line-height: 50px;
         text-transform: uppercase;
         @include mobile_s{
           display: none;
@@ -1710,21 +1719,97 @@ body {
       height: 100vh;
       overflow: hidden;
       background: #f1f5f9;
-      .content-title{
+      .lk_content_head{
+        padding: 5px;
+        background: #fff;
+        @include bsh(1px 1px 1px 1px rgba(236, 236, 236, 0.95));
+      }
+      .content_title{
+        text-transform: uppercase;
+      }
+      .page-title-alt {
+        margin-bottom: 23px;
+        margin-top: 10px;
+        color: #000;
         text-transform: uppercase;
       }
       .block_test{
-        margin: 15px 5px;
-        height: 100px;
+        padding: 5px;
+        margin: 5px 0;
+        overflow: hidden;
         background: #fff;
         @include bsh(1px 1px 1px 1px rgba(236, 236, 236, 0.95));
+        h4{
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          padding: 3px 10px;
+        }
+        .order_number{
+          margin-bottom: 10px;
+          .p_numb{
+            padding: 5px 0;
+            text-transform: uppercase;
+          }
+          .data_numb{
+            color: #23527c;
+          }
+        }
+      }
+      .order_discount{
+        height: 93px;
+        text-align: center;
+        padding: 20% 0;
+        margin: 5px 0;
+        overflow: hidden;
+        background: #fff;
+        @include bsh(1px 1px 1px 1px rgba(236, 236, 236, 0.95));
+        @include mobile_l{
+          height: auto;
+          text-align: center;
+          padding: 5px;
+        }
+        @include tablet_max{
+          height: auto;
+          text-align: center;
+          padding: 5px;
+        }
       }
     }
   }
     .wr_left{
-    margin-left: 20px;
+    margin-left: 40px;
     @include transition(.3s);
   }
+//auth
+.auth_block{
+  margin-top: 50px;
+  h4{
+    text-transform: uppercase;
+  }
+    .errors_reg{
+      padding: 5px;
+      color: #d18484;
+      margin-bottom: 10px;
+    }
+    .p_forms_reg{
+      margin-bottom: 10px;
+      .reg_inputs{
+        width: 100%;
+        border: none;
+        outline: 0;
+        border-bottom: 1px solid #ccc;
+        padding: 0.5em;
+      }
+    }
+    .btn_default{
+      border: 1px solid #cec9c9;
+      height: 35px;
+      padding: 5px 35px;
+      background-color: #e1e1e3;
+      color: #000;
+    }
+}
+
 
 
 
