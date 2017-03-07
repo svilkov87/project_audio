@@ -10,6 +10,12 @@ $(document).ready(function(){
     $(".lk_ul_child").slideToggle(100);
   });
 
+  //убрать садбар
+    $("#close_sb").click(function(){
+    $(".lk_sidebar").toggleClass('close');
+    $(".lk_wrapp_content").toggleClass('wr_left');
+  });
+
 // выпадающее меню
   $("#justify_nav").click(function(){
     $(".menu").fadeToggle(500);

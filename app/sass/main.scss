@@ -3,8 +3,6 @@
 @import 'base/mixins';
 @import 'base/reset';
 
-
-
 //button_top
 #top {
   -webkit-border-radius: 50px;
@@ -1579,32 +1577,59 @@ body {
 .lk_section{
   height: 100vh;
   overflow: hidden;
-  .lk_nav{
-    padding: 10px 40px;
-    overflow: hidden;
-    background: #7990bb;
-    .hello,i{
-      color: #fff;
-    }
-    .hello{
-      text-transform: uppercase;
-    }
-    .right_nav_block{
-      float: right;
-      span{
-        color: #fff;
-      }
-    }
+  background: #f5f8fd;
+  .close{
+    margin-left: -200px;
+    @include transition(.3s);
   }
   .lk_sidebar{
-    width: 100%;
+    float: left;
+    width: auto;
     height: 100vh;
-    border: 1px solid #ccc;
     background: #ebeff2;
+    @include transition(.3s);
+    @include mobile_l{
+      position: fixed;
+      z-index: 22;
+      background: #ccc;
+    }
+    @include mobile_m{
+      position: fixed;
+      z-index: 22;
+      background: #ccc;
+    }
+    @include mobile_s{
+      position: fixed;
+      z-index: 22;
+      background: #ccc;
+    }
+    .li_head_nav{
+      height: 35px;
+      background: #7990bb;
+      width: 240px;
+      .hello{
+        color: #fff;
+        line-height: 35px;
+        float: left;
+        margin-left: 20px;
+      }
+      i{
+        color: #fff;
+        line-height: 35px;
+        float: right;
+        width: 35px;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+          background: #6481a5;
+        }
+      }
+    }
     .lk_body_sidebar{
       width: 240px;
       height: 100vh;
       background: #fff;
+      border-right: 1px solid #ccc;
       }
       .lk_ul_main{
         display: block;
@@ -1614,18 +1639,19 @@ body {
           color: #36404a;
           display: block;
           padding: 12px 20px;
+          &:hover{
+              padding-left: 25px;
+              @include transition(.5s);
+            }
           .fa{
-            font-size: 12px;
+            font-size: 17px;
+            margin-right: 5px;
+            color: #8a8686;
           }
           a{
             text-decoration: none;
             color: #000;
-            display: block;
-            &:hover{
-              color: red;
-              padding-left: 3px;
-              @include transition(.5s);
-            }
+            // color: #8a8686;
           }
           .lk_ul_child{
             width: 100%;
@@ -1645,6 +1671,59 @@ body {
         }
       }
     }
+  }
+  .lk_wrapp_content{
+    margin-left: 240px;
+    @include transition(.3s);
+    @include mobile_l{
+      margin-left: 0;
+    }
+    @include mobile_m{
+      margin-left: 0;
+    }
+    .lk_nav{
+      height: 35px;
+      padding: 0 10px;
+      overflow: hidden;
+      background: #7990bb;
+      i{
+        color: #fff;
+        line-height: 35px;
+      }
+      span{
+        color: #fff;
+        line-height: 35px;
+        text-transform: uppercase;
+        @include mobile_s{
+          display: none;
+        }
+      }
+      .right_nav_block{
+        float: right;
+        span{
+          color: #fff;
+        }
+      }
+    }
+    .lk_content_body{
+      margin-top: 10px;
+      height: 100vh;
+      overflow: hidden;
+      background: #f1f5f9;
+      .content-title{
+        text-transform: uppercase;
+      }
+      .block_test{
+        margin: 15px 5px;
+        height: 100px;
+        background: #fff;
+        @include bsh(1px 1px 1px 1px rgba(236, 236, 236, 0.95));
+      }
+    }
+  }
+    .wr_left{
+    margin-left: 20px;
+    @include transition(.3s);
   }
 
 
