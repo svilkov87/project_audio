@@ -17,7 +17,35 @@
     </script>
 </head>
 <body>
-<div class="container">
+<div class="nav">
+    <div class="container">
+        <div class="row">
+            <div class="brand">
+                <!--<img src="img/sound-waves.png" class="logo_img">-->
+                <a href="index.html" class="logo_link">Vsemroliki.ru</a>
+                <a href="reg.html" class="logo_mail">info@vsemroliki.ru</a>
+            </div>
+            <i class="fa fa-align-justify" id="justify_nav" aria-hidden="true"></i>
+            <div class="menu">
+                <ul>
+                    <li class="menu-list"><a href="#" id="active">Главная</a></li>
+                    <li class="menu-list" id="about_us">
+                        <a href="#">О проекте</a>
+                        <i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i>
+                    </li>
+                    <ul class="about-ul">
+                        <li class="about--li"><a href="servises.html">услуги</a></li>
+                        <li class="about--li" id="linkModal">связаться с нами</li>
+                        <li class="about--li"><a href="#">спеециальные предложения</a></li>
+                        <li class="about--li"><a href="lk.html">личный кабинет</a></li>
+                        <li class="about--li"><a href="reg.html">регистрация</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" style="margin-top: 75px;">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <div class="auth_block">
@@ -35,14 +63,54 @@
                         <input type="password" name="password" id="password" class="reg_inputs">
                     </p>
                     <div class="button_n_reg">
-                        <button class="btn_default" type="submit" name="do_signup">Войти</button>
+                        <button class="btn_default" type="submit" name="do_auth">Войти</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
-
+<div class="footer">
+    <div class="container">
+        <div class="block_footer">
+            <div class="col-md-4 col-sm-4">
+                <div class="row">
+                    <ul class="about-ul-footer">
+                        <li class="about--li-footer"><a href="#">услуги</a></li>
+                        <li class="about--li-footer"><a href="#">как заказть</a></li>
+                        <li class="about--li-footer"><a href="#">Спецпредложения</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="col-md-4 col-sm-4">
+            <div class="row">
+                <div class="link_vk">
+                    <a href="https://vk.com/vsemroliki">
+                        <img src="img/vkontakte.png" alt="">
+                    </a>
+                    <a href="https://vk.com/vsemroliki">
+                        <img src="img/linkedin.png" alt="">
+                    </a>
+                    <a href="https://vk.com/vsemroliki">
+                        <img src="img/twitter.png" alt="">
+                    </a>
+                    <a href="https://vk.com/vsemroliki">
+                        <img src="img/facebook.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <div class="row">
+                <div class="dev">
+                    <span>разработка:&nbsp;svilkov87@mail.ru</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!--[if lt IE 9]-->
 <script src="libs/html5shiv/es5-shim.min.js"></script>
 <script src="libs/html5shiv/html5shiv.min.js"></script>

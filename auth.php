@@ -17,20 +17,18 @@ if (isset($_POST['do_auth'])) {
     $str->execute();
     $user_data = $str->fetch(PDO::FETCH_ASSOC);
 
-
     if ($user_data['password'] == $e_password) {
         $_SESSION['email'] = $e_email;
         $_SESSION['user_id'] = $user_data['id'];
         header("Location: lk.php?id=".$_SESSION['user_id']);
-    } else {
+    }
+    else {
         $WorngAuthData = "Неверные данные";
     }
-
-    echo "<pre>";
-    var_dump($user_data);
-    echo "</pre>";
 }
-
+//echo "<pre>";
+//var_dump($user_data);
+//echo "</pre>";
 ?>
 
 <!DOCTYPE html>
@@ -41,7 +39,9 @@ if (isset($_POST['do_auth'])) {
     <?php include("include/head.php");?>
 </head>
 <body>
-<div class="container">
+<?php include("include/modal.php"); ?>
+<?php include("include/nav.php"); ?>
+<div class="container" style="margin-top: 75px;">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <div class="auth_block">
@@ -66,6 +66,7 @@ if (isset($_POST['do_auth'])) {
         </div>
     </div>
 </div>
+<?php include("include/footer.php"); ?>
 
 <!--[if lt IE 9]-->
 <script src="libs/html5shiv/es5-shim.min.js"></script>

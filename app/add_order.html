@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет</title>
+    <meta name="description" content="IMPOVAR" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <script type="text/javascript" src="libs/wow.min.js"></script>
+</head>
+<body>
+<i class="fa fa-chevron-up" aria-hidden="true" id="top" style="display: inline;"></i>
+<section class="lk_section">
+    <div class="lk_sidebar">
+        <div class="li_head_nav">
+            <span class="hello">
+               Личный кабинет
+           </span>
+            <i class="fa fa-align-justify" id="close_sb" aria-hidden="true"></i>
+        </div>
+        <div class="lk_body_sidebar">
+            <ul class="lk_ul_main">
+                <li class="lk_sb_list">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <a href="">мои заказы</a>
+                    <span>2</span>
+                </li>
+                <li class="lk_sb_list">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <a href="">бонусы</a>
+                    <span>1</span>
+                </li>
+                <li class="lk_sb_list">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    <a href="">вопросы</a></li>
+                <li class="lk_sb_list">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    <a href="">настройки</a></li>
+                <li class="lk_sb_list">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <a href="">правила размещения</a></li>
+                <li class="lk_sb_list"><a href="#" id="showNav">навигация
+                    <i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i>
+                </a>
+                    <ul class="lk_ul_child">
+                        <li class="nav_sb_list"><a href="">главная</a></li>
+                        <li class="nav_sb_list"><a href="">услуги</a></li>
+                        <li class="nav_sb_list"><a href="">договор оферта</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /sbar -->
+    <div class="lk_wrapp_content">
+        <div class="lk_nav">
+            <div class="left_nav_block">
+                <a href="add_order.html" class="add_order">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                    <span>Новый заказ</span>
+                </a>
+                <a href="#" class="add_order">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    <span>Задать вопрос</span>
+                </a>
+            </div>
+            <div class="right_nav_block">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <span>Info@vsemroliki.ru</span>
+            </div>
+        </div>
+        <div class="lk_content_body">
+            <div class="col-md-12">
+                <div class="col-md-10">
+                    <div class="block_order">
+                        <div class="order_header">
+                            <h4>Новая заявка</h4>
+                        </div>
+                        <div class="order_body">
+                            <form method="post" class="form_order">
+                                <div class="head_order_body">
+                                    <h4>Тема заказа</h4>
+                                    <p>На какую тему будет озвучка? (Например: "Озвучка ролика для рекламы детского
+                                        питания")</p><br>
+                                    <input type="text" name="theme_order" placeholder="Вводите тему...">
+                                </div>
+                                <div class="content_order_body">
+                                    <h4>Детали заказа</h4>
+                                    <p>Пожалуйста, опишите в подробностях свой вопрос, чтобы получить более точный ответ.</p><br>
+                                    <textarea type="textarea" name="details_order" placeholder="Детали заявки..."></textarea>
+                                </div>
+                                <button class="btn_default" type="submit" name="do_order">Отправить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--[if lt IE 9]-->
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<!--[endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+<script src="libs/main.js"></script>
+</body>
+</html>
