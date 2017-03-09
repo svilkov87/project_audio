@@ -64,7 +64,9 @@ if (!isset($_SESSION['email'])) {
                 <div class="col-md-8">
                     <!--<div class="row">-->
                     <div class="block_test">
+                        <a href="full_question.php?id=<?php echo $item['id'];?>&user=<?php echo $_SESSION['user_id'];?>">
                         <h4><?php echo $item['title'];?></h4>
+                        </a>
                         <div class="question_desc">
                             <p class="data_numb"><?php echo $item['text'];?></p>
                         </div>
