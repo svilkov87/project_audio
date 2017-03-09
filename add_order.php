@@ -8,17 +8,29 @@ ini_set('display_startup_errors', TRUE);
 
 //отправка новой заявки
 if (isset($_POST['do_order'])) {
+    $time = time();
+    $date = date('d.m.Y', $time);
+    $fastTwo = substr($_SESSION['email'], 0, 2);
+    $numberOrder = $fastTwo.time();
+    $price = "уточняется";
+    $status = "принят";
     $theme_order = $_POST['theme_order'];
     $details_order = $_POST['details_order'];
-    $insert = $pdo->prepare("INSERT INTO `orders_lk` SET title=:title, text=:text, user_id=:user_id");
+    $insert = $pdo->prepare("INSERT INTO `orders_lk` SET title=:title, text=:text, date=:date, user_id=:user_id, number_order=:number_order, price=:price, status=:status");
     $insert->bindParam(':title', $theme_order);
     $insert->bindParam(':text', $details_order);
+    $insert->bindParam(':date', $date);
+    $insert->bindParam(':number_order', $numberOrder);
+    $insert->bindParam(':price', $price);
+    $insert->bindParam(':status', $status);
     $insert->bindParam(':user_id', $_SESSION['user_id']);
     $insert->execute();
+    header("Location: lk.php?id=".$_SESSION['user_id']);
+    exit;
 }
-echo "<pre>";
-var_dump($_SESSION);
-echo "</pre>";
+// echo "<pre>";
+// var_dump($_SESSION);
+// echo "</pre>";
 
 ?>
 
@@ -34,22 +46,7 @@ echo "</pre>";
 <section class="lk_section">
     <?php include("include/lk_sidebar.php"); ?>
     <div class="lk_wrapp_content">
-        <div class="lk_nav">
-            <div class="left_nav_block">
-                <a href="add_order.php" class="add_order">
-                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                    <span>Новый заказ</span>
-                </a>
-                <a href="#" class="add_order">
-                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                    <span>Задать вопрос</span>
-                </a>
-            </div>
-            <div class="right_nav_block">
-                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                <span>Info@vsemroliki.ru</span>
-            </div>
-        </div>
+    <?php include("include/lk_nav.php"); ?>
         <div class="lk_content_body">
             <div class="col-md-12">
                 <div class="col-md-10">

@@ -1,14 +1,8 @@
 <?php
-
 ## проверка ошибок
 error_reporting(E_ALL | E_STRICT);
 ini_set('display_errors', TRUE);
 ini_set('display_startup_errors', TRUE);
-//Выбираем кол-во заявок, чей аккаунт
-//$st = $pdo->prepare('SELECT * FROM `orders` WHERE id=:id');
-//$st->bindParam(':id', $id, PDO::PARAM_INT);
-//$st->execute();
-//$orders = $st->fetchAll();
 
 //считаем все заявки клиента
 $stmt = $pdo->prepare('SELECT * FROM `orders_lk` WHERE user_id=:user_id');
@@ -16,6 +10,13 @@ $stmt->bindParam(':user_id', $_SESSION['user_id'], PDO::PARAM_INT);
 $stmt->execute();
 $orders = $stmt->fetchAll();
 $numberOfOrders = count($orders);
+
+//считаем все вопросы клиента
+$stmt = $pdo->prepare('SELECT * FROM `topics` WHERE user_id=:user_id');
+$stmt->bindParam(':user_id', $_SESSION['user_id'], PDO::PARAM_INT);
+$stmt->execute();
+$topics = $stmt->fetchAll();
+$numberOfTopics = count($topics);
 
 //echo "<pre>";
 //var_dump($numberOfOrders);
@@ -34,7 +35,7 @@ $numberOfOrders = count($orders);
         <ul class="lk_ul_main">
             <li class="lk_sb_list">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                <a href="">мои заказы</a>
+                <a href="lk.php?id=<?php echo $_SESSION['user_id']; ?>">мои заказы</a>
                 <span><?php echo $numberOfOrders;?></span>
             </li>
             <li class="lk_sb_list">
@@ -44,7 +45,9 @@ $numberOfOrders = count($orders);
             </li>
             <li class="lk_sb_list">
                 <i class="fa fa-question-circle" aria-hidden="true"></i>
-                <a href="">вопросы</a></li>
+                <a href="questions.php?id=<?php echo $_SESSION['user_id']; ?>">вопросы</a>
+                <span><?php echo $numberOfTopics;?></span>
+                </li>
             <li class="lk_sb_list">
                 <i class="fa fa-cog" aria-hidden="true"></i>
                 <a href="">настройки</a></li>
