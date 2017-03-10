@@ -39,8 +39,6 @@ if (isset($_POST['do_auth'])) {
     <?php include("include/head.php");?>
 </head>
 <body>
-<?php include("include/modal.php"); ?>
-<?php include("include/nav.php"); ?>
 <div class="container" style="margin-top: 75px;">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
@@ -66,8 +64,6 @@ if (isset($_POST['do_auth'])) {
         </div>
     </div>
 </div>
-<?php include("include/footer.php"); ?>
-
 <!--[if lt IE 9]-->
 <script src="libs/html5shiv/es5-shim.min.js"></script>
 <script src="libs/html5shiv/html5shiv.min.js"></script>
