@@ -10,27 +10,31 @@ if (!empty($_GET)) {
     $id = intval($_GET['id']);
      //если зло вручную поставит другой id пользвателя, то он не попадет на чужую страницу с ответами
     if ($id === 0 OR $id != $_SESSION['user_id']) {
-        die('Ошибка сжатия чёрной дыры');
-        // header("Location: auth.php");
-        // exit;
+        // die('Ошибка сжатия чёрной дыры');
+        header("Location: auth.php");
+        exit;
     }
 
     //отправка новой заявки
     if (isset($_POST['add_topic'])) {
         $title = $_POST['theme_question'];
         $text = $_POST['details_question'];
+        $time = time();
+        $date = date('d.m.Y H:i', $time);
         $insert = $pdo->prepare("
             INSERT INTO `topics`
             SET 
             title=:title,
             text=:text,
+            date=:date,
             user_id=:user_id
             ");
         $insert->bindParam(':title', $title);
+        $insert->bindParam(':date', $date);
         $insert->bindParam(':text', $text);
         $insert->bindParam(':user_id', $_SESSION['user_id']);
         $insert->execute();
-        header("Location: question.php?id=".$_SESSION['user_id']);
+        header("Location: questions.php?id=".$_SESSION['user_id']);
         exit;
     }
 }

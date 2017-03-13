@@ -11,7 +11,7 @@ if (!empty($_GET)) {
     $id = intval($_GET['id']);
      //если зло вручную поставит другой id пользвателя, то он не попадет на чужую страницу с ответами
     if ($id === 0 OR $id != $_SESSION['user_id']) {
-        die('Ошибка сжатия чёрной дыры');
+        // die('Ошибка сжатия чёрной дыры');
         header("Location: auth.php");
         exit;
     }
@@ -37,8 +37,9 @@ if (!isset($_SESSION['email'])) {
 //        header("Location: http://".$_SERVER['HTTP_HOST']."/auth.php");
     exit;
 }
+
 // echo "<pre>";
-// var_dump($questions);
+// var_dump($date);
 // echo "</pre>";
 ?>
 
@@ -70,6 +71,7 @@ if (!isset($_SESSION['email'])) {
                         <div class="question_desc">
                             <p class="data_numb"><?php echo $item['text'];?></p>
                         </div>
+                        <div class="quest_date_time"><?php echo $item['date'];?></div>
                     </div>
                 </div>
                 <?php endforeach;?>

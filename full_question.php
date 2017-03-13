@@ -19,7 +19,7 @@ if (!empty($_GET)) {
 
     //если зло вручную поставит другой id пользвателя, то он не попадет на чужую страницу с ответами
     if ($id === 0 || $userGet != $_SESSION['user_id']) {
-        die('Ошибка сжатия чёрной дыры');
+        // die('Ошибка сжатия чёрной дыры');
         header("Location: auth.php");
         exit;
     }
@@ -35,8 +35,12 @@ if (!empty($_GET)) {
     if (isset($_POST['do_full_answer'])) {
 //        $dialog_id = $userGet + 7;
         $answer = $_POST['answer_dialog'];
-        $insert = $pdo->prepare("INSERT INTO `dialogs` SET text=:text, dialog_id=:dialog_id");
+        $time = time();
+        $date = date('d.m.Y H:i', $time);
+        $insert = $pdo->prepare("INSERT INTO `dialogs` SET text=:text, date_time=:date_time, user=:user, dialog_id=:dialog_id");
         $insert->bindParam(':text', $answer);
+        $insert->bindParam(':user', $_SESSION['email']);
+        $insert->bindParam(':date_time', $date);
         $insert->bindParam(':dialog_id', $dialog_id);
         $insert->execute();
         header("Location: full_question.php?id=".$id."&user=".$userGet);
@@ -98,7 +102,9 @@ if (!isset($_SESSION['email'])) {
                     <?php endforeach; ?>
                     <div class="full_q_field">
                         <?php foreach ($GoMessage as $item): ?>
-                        <p><?php echo $item['text']; ?></p>
+                            <p class="user_name_q"><?php echo $item['user'];?></p>
+                            <span class="date_time"><?php echo $item['date_time']; ?></span><br>
+                            <p><?php echo $item['text']; ?></p>
                         <?php endforeach; ?>
                     </div>
                     <div class="full_forms">

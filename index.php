@@ -10,10 +10,6 @@ ini_set('display_startup_errors', TRUE);
 //    var_dump($_SESSION);
 //    echo "</pre>";
 
-//echo "<pre>";
-//var_dump($_SERVER['HTTP_HOST']);
-//echo "</pre>";
-
 ?>
 
 <!DOCTYPE html>

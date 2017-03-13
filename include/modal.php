@@ -22,7 +22,7 @@
                                 <input type="text" name="name" id="name">
                             </div>
                             <div class="s_name">
-                                <span>Адрес электронной почты или телефон(можно иное)</span>
+                                <span>Адрес электронной почты(обязательно)</span>
                                 <input type="text" name="s_name" id="s_name">
                             </div>
                             <div class="theme">

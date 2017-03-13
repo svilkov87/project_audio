@@ -64,7 +64,7 @@ if (isset($_POST['do_order'])) {
                                 </div>
                                 <div class="content_order_body">
                                     <h4>Детали заказа</h4>
-                                    <p>Пожалуйста, опишите в подробностях свой вопрос, чтобы получить более точный ответ.</p><br>
+                                    <p>Пожалуйста, опишите в подробностях свой заказ</p><br>
                                     <textarea type="textarea" name="details_order" placeholder="Детали заявки..."></textarea>
                                 </div>
                                 <button class="btn_default" type="submit" name="do_order">Отправить заявку</button>

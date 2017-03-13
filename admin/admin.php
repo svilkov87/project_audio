@@ -10,7 +10,7 @@ if (!empty($_GET)) {
 
     $id = intval($_GET['id']);
     if ($id === 0 OR $id != $_SESSION['user_id']) {
-        die('Ошибка сжатия чёрной дыры');
+        // die('Ошибка сжатия чёрной дыры');
         header("Location: index.php");
         exit;
     }
