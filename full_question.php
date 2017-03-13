@@ -102,9 +102,12 @@ if (!isset($_SESSION['email'])) {
                     <?php endforeach; ?>
                     <div class="full_q_field">
                         <?php foreach ($GoMessage as $item): ?>
-                            <p class="user_name_q"><?php echo $item['user'];?></p>
-                            <span class="date_time"><?php echo $item['date_time']; ?></span><br>
-                            <p><?php echo $item['text']; ?></p>
+                            <div class="mess_wrap">
+                                <p class="user_name_q"><?php echo $item['user']; ?></p>
+                                <span class="date_time"><?php echo $item['date_time']; ?></span>
+                                <br>
+                                <p class="answers_full_text"><?php echo $item['text']; ?></p>
+                            </div>
                         <?php endforeach; ?>
                     </div>
                     <div class="full_forms">

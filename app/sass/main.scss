@@ -1952,9 +1952,17 @@ body {
   }
   .full_q_field{
     height: 210px;
-    background: #f8f6f6;
     padding: 15px;
     overflow: auto;
+    .user_name_q{
+      font-weight: 700;
+      color: #7990BB;
+    }
+    .answers_full_text{
+      font-size: 18px;
+      margin-left: 5px;
+      margin-bottom: 20px;
+    }
     p{
       padding: 5px 0;
       display: inline-block;
@@ -1982,6 +1990,35 @@ body {
       margin: 15px;
     }
   }
+}
+
+::-webkit-scrollbar-button {
+  background-image:url('');
+  background-repeat:no-repeat;
+  width: 2px;
+  height: 0px
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  border-radius: 2px;
+  background-color:#ccc;
+  box-shadow:0px 1px 1px #fff inset;
+}
+
+::-webkit-resizer{
+  background-image:url('');
+  background-repeat:no-repeat;
+  width: 2px;
+  height: 0px
+}
+
+::-webkit-scrollbar{
+  width: 3px;
 }
 
 

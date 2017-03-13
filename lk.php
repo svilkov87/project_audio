@@ -11,7 +11,6 @@ if (!empty($_GET)) {
     $id = intval($_GET['id']);
      //если зло вручную поставит другой id пользвателя, то он не попадет на чужую страницу с ответами
     if ($id === 0 OR $id != $_SESSION['user_id']) {
-        die('Ошибка сжатия чёрной дыры');
         header("Location: auth.php");
         exit;
     }
