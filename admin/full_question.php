@@ -69,7 +69,7 @@ if (!empty($_GET)) {
         $m_nameto = ""; // Кому
         $m_namefrom = "VSEMROLIKI.RU"; // Поле От в письме
         $subj = "Новый комментарий";
-        $tmsg = 'У Вас есть непрочитанные сообщения. Проверьте админ-панель.';
+        $tmsg = 'У Вас есть непрочитанные сообщения. Проверьте Ваш аккаунт.';
         $m_from = 'svilkov00@yandex.ru'; // от кого
         $m_reply = 'svilkov00@yandex.ru'; // адрес для обратного ответа
         $mail1 = phpmailer($subj, $tmsg, $m_to, $m_nameto, $m_namefrom, $m_from, $m_reply, $m_hostmail, $m_port, $m_password, $m_secure);

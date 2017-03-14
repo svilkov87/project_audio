@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9e479c1-a546-4a9a-8470-8493d6e1e412" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/admin.php" afterPath="$PROJECT_DIR$/admin/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/all_questions.php" afterPath="$PROJECT_DIR$/admin/all_questions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/full_question.php" afterPath="$PROJECT_DIR$/admin/full_question.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/libs.min.css" afterPath="$PROJECT_DIR$/app/css/libs.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lk.html" afterPath="$PROJECT_DIR$/app/lk.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/base/_variables.scss" afterPath="$PROJECT_DIR$/app/sass/base/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/main.scss" afterPath="$PROJECT_DIR$/app/sass/main.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/full_question.php" afterPath="$PROJECT_DIR$/full_question.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/admin_sidebar.php" afterPath="$PROJECT_DIR$/include/admin_sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/lk_nav.php" afterPath="$PROJECT_DIR$/include/lk_nav.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lk.php" afterPath="$PROJECT_DIR$/lk.php" />
     </list>
     <ignored path="audio_project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,62 +24,7 @@
     <favorites_list name="audio_project" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="admin_lk_nav.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/include/admin_lk_nav.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-              <folding>
-                <marker date="1489528514796" expanded="true" signature="425:568" placeholder="UPDATE `dial... " />
-                <marker date="1489528514796" expanded="true" signature="857:923" placeholder="SELECT isrea... dialogs" />
-                <marker date="1489528514796" expanded="true" signature="1113:1159" placeholder="..." />
-                <marker date="1489528514796" expanded="true" signature="1345:1368" placeholder="..." />
-                <marker date="1489528514796" expanded="true" signature="1426:1789" placeholder="..." />
-                <marker date="1489528514796" expanded="true" signature="1668:1782" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lk_nav.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/lk_nav.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="2" selection-end-line="41" selection-end-column="16" />
-              <folding>
-                <marker date="1489530015348" expanded="true" signature="423:566" placeholder="UPDATE `dial... " />
-                <marker date="1489530015348" expanded="true" signature="847:913" placeholder="SELECT isrea... dialogs" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_sidebar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/admin_sidebar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
-              <folding>
-                <marker date="1489525763471" expanded="true" signature="262:294" placeholder="SELECT COUNT... orders_lk" />
-                <marker date="1489525763471" expanded="true" signature="393:435" placeholder="SELECT COUNT... users" />
-                <marker date="1489525763471" expanded="true" signature="523:566" placeholder="SELECT COUNT... topics" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/sass/main.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="1721" column="32" selection-start-line="1721" selection-start-column="32" selection-end-line="1721" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -136,8 +70,6 @@
         <option value="$PROJECT_DIR$/lk.php" />
         <option value="$PROJECT_DIR$/app/sass/base/_variables.scss" />
         <option value="$PROJECT_DIR$/admin/all_questions.php" />
-        <option value="$PROJECT_DIR$/admin/full_question.php" />
-        <option value="$PROJECT_DIR$/full_question.php" />
         <option value="$PROJECT_DIR$/admin/index.php" />
         <option value="$PROJECT_DIR$/admin/admin.php" />
         <option value="$PROJECT_DIR$/include/admin_sidebar.php" />
@@ -145,6 +77,8 @@
         <option value="$PROJECT_DIR$/include/admin_lk_nav.php" />
         <option value="$PROJECT_DIR$/app/sass/main.scss" />
         <option value="$PROJECT_DIR$/include/lk_nav.php" />
+        <option value="$PROJECT_DIR$/admin/full_question.php" />
+        <option value="$PROJECT_DIR$/full_question.php" />
       </list>
     </option>
   </component>
@@ -214,20 +148,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="audio_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="audio_project" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="include" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -292,19 +212,19 @@
       <workItem from="1488818737380" duration="5299000" />
       <workItem from="1488908911763" duration="27732000" />
       <workItem from="1489082517085" duration="9372000" />
-      <workItem from="1489431650399" duration="20221000" />
+      <workItem from="1489431650399" duration="20397000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145398000" />
+    <option name="totallyTimeSpent" value="145574000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="245" y="9" width="1049" height="719" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21334681" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21334681" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -721,21 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/full_question.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <marker date="1489523140735" expanded="true" signature="360:395" placeholder="SELECT * FRO... topics" />
-            <marker date="1489523140735" expanded="true" signature="594:636" placeholder="SELECT * FRO... topics" />
-            <marker date="1489523140735" expanded="true" signature="969:1003" placeholder="SELECT * FRO... users" />
-            <marker date="1489523140735" expanded="true" signature="1392:1620" placeholder="INSERT INTO dialogs" />
-            <marker date="1489523140735" expanded="true" signature="1392:1648" placeholder="INSERT INTO dialogs" />
-            <marker date="1489523140735" expanded="true" signature="2935:3002" placeholder="SELECT * FRO... dialogs" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/all_questions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -754,20 +659,6 @@
             <marker date="1489525763471" expanded="true" signature="262:294" placeholder="SELECT COUNT... orders_lk" />
             <marker date="1489525763471" expanded="true" signature="393:435" placeholder="SELECT COUNT... users" />
             <marker date="1489525763471" expanded="true" signature="523:566" placeholder="SELECT COUNT... topics" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/full_question.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
-          <folding>
-            <marker date="1489523235182" expanded="true" signature="356:391" placeholder="SELECT * FRO... topics" />
-            <marker date="1489523235182" expanded="true" signature="822:856" placeholder="SELECT * FRO... users" />
-            <marker date="1489523235182" expanded="true" signature="1252:1487" placeholder="INSERT INTO `dialogs`... " />
-            <marker date="1489523235182" expanded="true" signature="1252:1515" placeholder="INSERT INTO dialogs" />
-            <marker date="1489523235182" expanded="true" signature="2777:2844" placeholder="SELECT * FRO... dialogs" />
           </folding>
         </state>
       </provider>
@@ -802,11 +693,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/main.scss">
+    <entry file="file://$PROJECT_DIR$/include/admin_lk_nav.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="1721" column="32" selection-start-line="1721" selection-start-column="32" selection-end-line="1721" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="93">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <marker date="1489528514796" expanded="true" signature="425:568" placeholder="UPDATE `dial... " />
+            <marker date="1489528514796" expanded="true" signature="857:923" placeholder="SELECT isrea... dialogs" />
+            <marker date="1489528514796" expanded="true" signature="1113:1159" placeholder="..." />
+            <marker date="1489528514796" expanded="true" signature="1345:1368" placeholder="..." />
+            <marker date="1489528514796" expanded="true" signature="1426:1789" placeholder="..." />
+            <marker date="1489528514796" expanded="true" signature="1668:1782" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -821,17 +719,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/admin_lk_nav.php">
+    <entry file="file://$PROJECT_DIR$/app/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="335">
+          <caret line="1721" column="32" selection-start-line="1721" selection-start-column="32" selection-end-line="1721" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/full_question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="69" column="75" selection-start-line="69" selection-start-column="75" selection-end-line="69" selection-end-column="75" />
           <folding>
-            <marker date="1489528514796" expanded="true" signature="425:568" placeholder="UPDATE `dial... " />
-            <marker date="1489528514796" expanded="true" signature="857:923" placeholder="SELECT isrea... dialogs" />
-            <marker date="1489528514796" expanded="true" signature="1113:1159" placeholder="..." />
-            <marker date="1489528514796" expanded="true" signature="1345:1368" placeholder="..." />
-            <marker date="1489528514796" expanded="true" signature="1426:1789" placeholder="..." />
-            <marker date="1489528514796" expanded="true" signature="1668:1782" placeholder="..." />
+            <marker date="1489530726952" expanded="true" signature="356:391" placeholder="SELECT * FRO... topics" />
+            <marker date="1489530726952" expanded="true" signature="822:856" placeholder="SELECT * FRO... users" />
+            <marker date="1489530726952" expanded="true" signature="1252:1487" placeholder="INSERT INTO `dialogs`... " />
+            <marker date="1489530726952" expanded="true" signature="1252:1515" placeholder="INSERT INTO dialogs" />
+            <marker date="1489530726952" expanded="true" signature="2778:2845" placeholder="SELECT * FRO... dialogs" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/full_question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="71" column="74" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
+          <folding>
+            <marker date="1489530670304" expanded="true" signature="360:395" placeholder="SELECT * FRO... topics" />
+            <marker date="1489530670304" expanded="true" signature="594:636" placeholder="SELECT * FRO... topics" />
+            <marker date="1489530670304" expanded="true" signature="969:1003" placeholder="SELECT * FRO... users" />
+            <marker date="1489530670304" expanded="true" signature="1392:1620" placeholder="INSERT INTO dialogs" />
+            <marker date="1489530670304" expanded="true" signature="1392:1648" placeholder="INSERT INTO dialogs" />
+            <marker date="1489530670304" expanded="true" signature="2934:3001" placeholder="SELECT * FRO... dialogs" />
           </folding>
         </state>
       </provider>
