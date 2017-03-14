@@ -60,7 +60,7 @@ if (!isset($_SESSION['email'])) {
                 <!--<p class="page-title-alt">У вас нет ни одного заказа</p>-->
                 <!--&lt;!&ndash;</div>&ndash;&gt;-->
                 <?php foreach ($ordersDataClient as $item):?>
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <!--<div class="row">-->
                     <div class="block_test">
                         <h4><?php echo $item['title'];?></h4>
@@ -89,13 +89,13 @@ if (!isset($_SESSION['email'])) {
                                     <p class="data_numb"><?php echo $item['status'];?></p>
                                 </div>
                             </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="order_number">
+                                    <p class="p_numb">скидка</p>
+                                    <p class="data_numb">0%</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="order_discount">
-                        <p class="p_discount">Скидка</p>
-                        <p class="data_discount">0%</p>
                     </div>
                 </div>
                 <?php endforeach;?>

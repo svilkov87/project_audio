@@ -34,9 +34,9 @@ if (!empty($_GET)) {
 
     
     $dialog_id = $id * 7;
+    $notRead = 1;
     //отправка новго сообщения
     if (isset($_POST['do_full_answer'])) {
-//        $dialog_id = $userGet + 7;
         $time = time();
         $date = date('d.m.Y H:i', $time);
         $answer = $_POST['answer_dialog'];
@@ -46,13 +46,21 @@ if (!empty($_GET)) {
         SET 
         text=:text,
         date_time=:date_time,
-        user=:user,
-        dialog_id=:dialog_id
+        user_mail=:user_mail,
+        user_id=:user_id,
+        to_user=:to_user,
+        isread=:isread,
+        dialog_id=:dialog_id,
+        topic_id=:topic_id
         ");
         $insert->bindParam(':text', $answer);
-        $insert->bindParam(':user', $_SESSION['email']);
+        $insert->bindParam(':user_mail', $_SESSION['email']);
+        $insert->bindParam(':user_id', $_SESSION['user_id']);
+        $insert->bindParam(':to_user', $userGet);
+        $insert->bindParam(':isread', $notRead);
         $insert->bindParam(':date_time', $date);
         $insert->bindParam(':dialog_id', $dialog_id);
+        $insert->bindParam(':topic_id', $id);
         $insert->execute();
 
         //уведомление на почту клиенту $userForEmail
@@ -103,28 +111,9 @@ else{
 <?php include ("../include/admin_sidebar.php");?>
     <!-- /sbar -->
     <div class="lk_wrapp_content">
-        <div class="lk_nav">
-            <div class="left_nav_block">
-                <a href="add_order.html" class="add_order">
-                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                    <span>Новый заказ</span>
-                </a>
-                <a href="#" class="add_order">
-                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                    <span>Задать вопрос</span>
-                </a>
-            </div>
-            <div class="right_nav_block">
-                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                <span>Info@vsemroliki.ru</span>
-            </div>
-        </div>
+        <?php include ("../include/admin_lk_nav.php");?>
         <div class="lk_content_body">
             <div class="col-md-8">
-                <!--<div class="lk_content_head">-->
-                <!--&lt;!&ndash;<h4 class="content_title">Заказы</h4>&ndash;&gt;-->
-                <!--<p class="page-title-alt">У вас нет ни одного заказа</p>-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
                 <div class="full_q_wrapp">
                     <?php foreach ($fullQuestion as $item): ?>
                         <div class="full_q_header">
@@ -137,7 +126,7 @@ else{
                     <div class="full_q_field">
                         <?php foreach ($GoMessage as $item): ?>
                             <div class="mess_wrap">
-                                <p class="user_name_q"><?php echo $item['user']; ?></p>
+                                <p class="user_name_q"><?php echo $item['user_mail']; ?></p>
                                 <span class="date_time"><?php echo $item['date_time']; ?></span>
                                 <br>
                                 <p class="answers_full_text"><?php echo $item['text']; ?></p>

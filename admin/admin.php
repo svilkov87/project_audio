@@ -2,28 +2,22 @@
 include ("../include/connection.php");
 session_start();
 ## проверка ошибок
-error_reporting(E_ALL | E_STRICT);
-ini_set('display_errors', TRUE);
-ini_set('display_startup_errors', TRUE);
+//error_reporting(E_ALL | E_STRICT);
+//ini_set('display_errors', TRUE);
+//ini_set('display_startup_errors', TRUE);
 
-if (!empty($_GET)) {
-
-    $id = intval($_GET['id']);
-    if ($id === 0 OR $id != $_SESSION['user_id']) {
-        // die('Ошибка сжатия чёрной дыры');
-        header("Location: index.php");
-        exit;
-    }
-}
-else{
-    header("Location: index.php");
-}
-    //Выбираем заказы клиента для вставки в контент
-    $st = $pdo->prepare('SELECT * FROM `orders_lk` WHERE user_id=:user_id ORDER BY id DESC');
-    $st->bindParam(':user_id', $id, PDO::PARAM_INT);
-    $st->execute();
-    $ordersDataClient = $st->fetchAll();
-
+//if (!empty($_GET)) {
+//
+//    $id = intval($_GET['id']);
+//    if ($id === 0 OR $id != $_SESSION['user_id']) {
+//        // die('Ошибка сжатия чёрной дыры');
+//        header("Location: index.php");
+//        exit;
+//    }
+//}
+//else{
+//    header("Location: index.php");
+//}
     //выбор всех заказов от зареганых клиентов
     $st = $pdo->query('SELECT * FROM `orders_lk` ORDER BY id DESC  ');
     $allOrders = $st->fetchAll();
@@ -33,8 +27,13 @@ if (!isset($_SESSION['email'])) {
     exit;
 }
 // echo "<pre>";
-// var_dump($_SESSION);
+// var_dump($allUnreadMess);
 // echo "</pre>";
+
+//echo "<pre>";
+//var_dump($_SESSION);
+//echo "</pre>";
+
 ?>
 
 <!DOCTYPE html>
@@ -50,34 +49,13 @@ if (!isset($_SESSION['email'])) {
 <?php include ("../include/admin_sidebar.php");?>
     <!-- /sbar -->
     <div class="lk_wrapp_content">
-        <div class="lk_nav">
-            <div class="left_nav_block">
-                <a href="add_order.html" class="add_order">
-                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                    <span>Новый заказ</span>
-                </a>
-                <a href="#" class="add_order">
-                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                    <span>Задать вопрос</span>
-                </a>
-            </div>
-            <div class="right_nav_block">
-                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                <span>Info@vsemroliki.ru</span>
-            </div>
-        </div>
+        <?php include ("../include/admin_lk_nav.php");?>
         <div class="lk_content_body">
             <div class="col-md-12">
-            <!--<div class="lk_content_head">-->
-                <!--&lt;!&ndash;<h4 class="content_title">Заказы</h4>&ndash;&gt;-->
-                <!--<p class="page-title-alt">У вас нет ни одного заказа</p>-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
             <?php foreach ($allOrders as $item) :?>
                 <div class="col-md-12">
-                    <!--<div class="row">-->
                     <div class="block_test">
                         <h4><?php echo $item['title']?></h4>
-                        <!-- <span>svilkov872@mail.ru</span> -->
                         <div class="order_data_slide">
                             <div class="col-md-2 col-sm-6">
                                 <div class="order_number">

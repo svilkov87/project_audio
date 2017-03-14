@@ -29,7 +29,7 @@ $countTopic = $pdo->query('SELECT COUNT(*) FROM `topics` WHERE id != 7')->fetchC
             <ul class="lk_ul_main">
                 <li class="lk_sb_list">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    <a href="admin.php?id=7">заказы</a>
+                    <a href="admin.php">заказы</a>
                     <span><?php echo $countOrdersLk; ?></span>
                 </li>
                 <li class="lk_sb_list">

@@ -31,17 +31,34 @@ if (!empty($_GET)) {
     $profile_data = $st->fetchAll();
 
     $dialog_id = $id * 7;
+    $notRead = 1;
+    $toUser = 7;
     //отправка новго сообщения
     if (isset($_POST['do_full_answer'])) {
-       // $dialog_id = $userGet + 7;
         $answer = $_POST['answer_dialog'];
         $time = time();
         $date = date('d.m.Y H:i', $time);
-        $insert = $pdo->prepare("INSERT INTO `dialogs` SET text=:text, date_time=:date_time, user=:user, dialog_id=:dialog_id");
+        $insert = $pdo->prepare("
+        INSERT INTO 
+        `dialogs` 
+        SET 
+        text=:text, 
+        date_time=:date_time, 
+        user_mail=:user_mail, 
+        user_id=:user_id, 
+        to_user=:to_user, 
+        isread=:isread, 
+        dialog_id=:dialog_id,
+        topic_id=:topic_id
+        ");
         $insert->bindParam(':text', $answer);
-        $insert->bindParam(':user', $_SESSION['email']);
+        $insert->bindParam(':user_mail', $_SESSION['email']);
+        $insert->bindParam(':user_id', $_SESSION['user_id']);
+        $insert->bindParam(':to_user', $toUser);
+        $insert->bindParam(':isread', $notRead);
         $insert->bindParam(':date_time', $date);
         $insert->bindParam(':dialog_id', $dialog_id);
+        $insert->bindParam(':topic_id', $id);
         $insert->execute();
 
         //        уведомление на почту
@@ -50,7 +67,7 @@ if (!empty($_GET)) {
         $m_nameto = ""; // Кому
         $m_namefrom = "VSEMROLIKI.RU"; // Поле От в письме
         $subj = "Новый комментарий";
-        $tmsg = 'У Вас есть непрочитанные сообщения. Проверьте админ-панель.';
+        $tmsg = 'У Вас есть непрочитанные сообщения. Проверьте Ваш аккаунт.';
         $m_from = 'svilkov00@yandex.ru'; // от кого
         $m_reply = 'svilkov00@yandex.ru'; // адрес для обратного ответа
         $mail1 = phpmailer($subj, $tmsg, $m_to, $m_nameto, $m_namefrom, $m_from, $m_reply, $m_hostmail, $m_port, $m_password, $m_secure);
@@ -81,7 +98,7 @@ if (!isset($_SESSION['email'])) {
     exit;
 }
 // echo "<pre>";
-// var_dump($fullQuestion);
+// var_dump($_SESSION);
 // echo "</pre>";
 ?>
 
@@ -115,7 +132,7 @@ if (!isset($_SESSION['email'])) {
                     <div class="full_q_field">
                         <?php foreach ($GoMessage as $item): ?>
                             <div class="mess_wrap">
-                                <p class="user_name_q"><?php echo $item['user']; ?></p>
+                                <p class="user_name_q"><?php echo $item['user_mail']; ?></p>
                                 <span class="date_time"><?php echo $item['date_time']; ?></span>
                                 <br>
                                 <p class="answers_full_text"><?php echo $item['text']; ?></p>

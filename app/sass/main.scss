@@ -1616,7 +1616,7 @@ body {
     }
     .li_head_nav{
       height: 50px;
-      background: #7990bb;
+      background: $lk_bg_nav;
       width: 240px;
       .hello{
         color: #fff;
@@ -1633,7 +1633,8 @@ body {
         text-align: center;
         cursor: pointer;
         &:hover{
-          background: #6481a5;
+          //background: #6481a5;
+          background: $lk_bg_nav_hover;
         }
       }
     }
@@ -1703,7 +1704,7 @@ body {
       height: 50px;
       padding: 0 10px;
       overflow: hidden;
-      background: #7990bb;
+      background: $lk_bg_nav;
       .left_nav_block{
         float: left;
         a{
@@ -1711,7 +1712,20 @@ body {
           display: inline-block;
           padding: 0 10px;
             &:hover{
-              background: #6481a5;
+              background: $lk_bg_nav_hover;
+          }
+        }
+        .unread_mess{
+          text-align: center;
+          padding: 0 10px;
+          cursor: pointer;
+          display: inline-block;
+          .fa-envelope{
+            font-size: 18px;
+            //width: 50px;
+          }
+          &:hover{
+            background: $lk_bg_nav_hover;
           }
         }
       }

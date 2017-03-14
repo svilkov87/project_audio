@@ -32,22 +32,7 @@ if (!isset($_SESSION['email']) && $_SESSION['user_id'] != 7) {
 <?php include ("../include/admin_sidebar.php");?>
     <!-- /sbar -->
     <div class="lk_wrapp_content">
-        <div class="lk_nav">
-            <div class="left_nav_block">
-                <a href="add_order.html" class="add_order">
-                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                    <span>Новый заказ</span>
-                </a>
-                <a href="#" class="add_order">
-                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                    <span>Задать вопрос</span>
-                </a>
-            </div>
-            <div class="right_nav_block">
-                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                <span>Info@vsemroliki.ru</span>
-            </div>
-        </div>
+        <?php include ("../include/admin_lk_nav.php");?>
         <div class="lk_content_body">
             <div class="col-md-12">
             <!--<div class="lk_content_head">-->

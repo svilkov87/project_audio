@@ -22,7 +22,7 @@ if(isset($_POST['enter'])){
         if($user_data['password'] == $e_password){
             $_SESSION['email'] = $e_email;
             $_SESSION['user_id'] = $user_id;
-            header("Location: admin.php?id=".$_SESSION['user_id']);
+            header("Location: admin.php");
             exit;
         }
             else{echo '
