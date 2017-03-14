@@ -26,6 +26,13 @@ if (!empty($_GET)) {
         exit;
     }
 
+    //выбираем юзера, которому отправляем уведомление на почту
+    $st = $pdo->prepare('SELECT * FROM `users` WHERE id=:id');
+    $st->bindParam(':id', $userGet, PDO::PARAM_INT);
+    $st->execute();
+    $userForEmail = $st->fetchAll();
+
+    
     $dialog_id = $id * 7;
     //отправка новго сообщения
     if (isset($_POST['do_full_answer'])) {
@@ -47,6 +54,18 @@ if (!empty($_GET)) {
         $insert->bindParam(':date_time', $date);
         $insert->bindParam(':dialog_id', $dialog_id);
         $insert->execute();
+
+        //уведомление на почту клиенту $userForEmail
+        require_once("../phpmailer/phpmailer/mailfunc.php");
+        $m_to = $userForEmail[0]['email']; // кому - ящик (из формы)
+        $m_nameto = ""; // Кому
+        $m_namefrom = "VSEMROLIKI.RU"; // Поле От в письме
+        $subj = "Новый комментарий";
+        $tmsg = 'У Вас есть непрочитанные сообщения. Проверьте админ-панель.';
+        $m_from = 'svilkov00@yandex.ru'; // от кого
+        $m_reply = 'svilkov00@yandex.ru'; // адрес для обратного ответа
+        $mail1 = phpmailer($subj, $tmsg, $m_to, $m_nameto, $m_namefrom, $m_from, $m_reply, $m_hostmail, $m_port, $m_password, $m_secure);
+
         header("Location: full_question.php?id=".$id."&user=".$userGet);
         exit;
     }
@@ -60,7 +79,7 @@ if (!empty($_GET)) {
 
 
 // echo "<pre>";
-// var_dump($GoMessage);
+// var_dump($userForEmail);
 // echo "</pre>";
 }
 else{

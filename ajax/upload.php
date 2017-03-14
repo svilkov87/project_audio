@@ -7,9 +7,9 @@ ini_set('display_startup_errors', TRUE);
 
 
 //
-    $name = $_POST['name'];
-    $contacts = $_POST['s_name'];
-    $theme = $_POST['theme'];
+$name = $_POST['name'];
+$contacts = $_POST['s_name'];
+$theme = $_POST['theme'];
 $insert = $pdo->prepare("INSERT INTO `orders` SET user_data=:user_data, contacts=:contacts, theme=:theme");
 $insert->bindParam(':user_data', $name);
 $insert->bindParam(':contacts', $contacts);

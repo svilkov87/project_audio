@@ -33,7 +33,7 @@ if (!empty($_GET)) {
     $dialog_id = $id * 7;
     //отправка новго сообщения
     if (isset($_POST['do_full_answer'])) {
-//        $dialog_id = $userGet + 7;
+       // $dialog_id = $userGet + 7;
         $answer = $_POST['answer_dialog'];
         $time = time();
         $date = date('d.m.Y H:i', $time);
@@ -43,6 +43,18 @@ if (!empty($_GET)) {
         $insert->bindParam(':date_time', $date);
         $insert->bindParam(':dialog_id', $dialog_id);
         $insert->execute();
+
+        //        уведомление на почту
+        require_once("phpmailer/phpmailer/mailfunc.php");
+        $m_to = 'svilkov87@mail.ru'; // кому - ящик (из формы)
+        $m_nameto = ""; // Кому
+        $m_namefrom = "VSEMROLIKI.RU"; // Поле От в письме
+        $subj = "Новый комментарий";
+        $tmsg = 'У Вас есть непрочитанные сообщения. Проверьте админ-панель.';
+        $m_from = 'svilkov00@yandex.ru'; // от кого
+        $m_reply = 'svilkov00@yandex.ru'; // адрес для обратного ответа
+        $mail1 = phpmailer($subj, $tmsg, $m_to, $m_nameto, $m_namefrom, $m_from, $m_reply, $m_hostmail, $m_port, $m_password, $m_secure);
+
         header("Location: full_question.php?id=".$id."&user=".$userGet);
         exit;
     }
@@ -111,9 +123,9 @@ if (!isset($_SESSION['email'])) {
                         <?php endforeach; ?>
                     </div>
                     <div class="full_forms">
-                        <form method="post" class="form_order">
-                            <textarea type="textarea" name="answer_dialog" placeholder="Напишите сообщение..."></textarea>
-                            <button class="btn_default" type="submit" name="do_full_answer">Ответить</button>
+                        <form method="post" class="form_message">
+                            <textarea type="textarea" id="field_upload" name="answer_dialog" placeholder="Напишите сообщение..."></textarea>
+                            <button class="btn_default" id = "uspload_mess" type="submit" name="do_full_answer">Ответить</button>
                         </form>
                     </div>
                 </div>
