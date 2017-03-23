@@ -25,25 +25,15 @@ ini_set('display_startup_errors', TRUE);
 <div class="bg_section">
     <?php include("include/nav.php"); ?>
     <div class="wrapp_header wow fadeIn" data-wow-delay="1.5s">
-        <div class="flip">
-            <div class="flipper">
-                <div class="front wow fadeIn">
-                    <div class="voicing wow fadeInDown">
-                        <h1>Недорогая&nbsp;Озвучка</h1>
-                    </div>
-                    <div class="youre wow fadeInRight">
-                        <h1>Для тех</h1>
-                    </div>
-                    <div class="youre_dream wow fadeInLeft">
-                        <h1>кто не хочет усложнять</h1>
-                    </div>
-                </div>
-                <div class="back">
-                    <div class="voicing" id="linkPrice">
-                        <h1>Посмотреть прайс-лист</h1>
-                        <img src="dist/img/Purchase%20Order-100.png">
-                    </div>
-                </div>
+        <div class="front wow fadeIn">
+            <div class="voicing wow fadeInDown">
+                <h1>Недорогая&nbsp;Озвучка</h1>
+            </div>
+            <div class="youre wow fadeInRight">
+                <h1>Для тех</h1>
+            </div>
+            <div class="youre_dream wow fadeInLeft">
+                <h1>кто не хочет усложнять</h1>
             </div>
             <i class="fa fa-angle-down wow fadeIn" data-wow-delay="1s" id="fa-angle-down" aria-hidden="true"></i>
         </div>

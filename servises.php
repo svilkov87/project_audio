@@ -197,7 +197,7 @@ include("include/connection.php");
                 <div class="wrapp_content">
                     <h1>примеры работ</h1>
                     <div class="block_serv_desc">
-                        <span>Более 1000 реализованных проектов</span>
+                        <span>Более 100 реализованных проектов</span>
                     </div>
                 </div>
             </div>

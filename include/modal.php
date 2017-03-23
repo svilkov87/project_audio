@@ -6,7 +6,7 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="row">
                 <div class="modal_header">
-                    <h1>Заказ услуги</h1>
+                    <h1>Связаться с нами</h1>
                 </div>
                 <div class="modal_wrapp">
                     <div class="err_block">
@@ -29,8 +29,7 @@
                                 <span>Опишите интересующую Вас услугу</span>
                                 <textarea name="theme" id="modal_field" cols="30" rows="10"></textarea>
                             </div>
-                            <button type="submit" name="enter" class="btn_modal">Заказать</button>
-<!--                            <button type="submit" name="enter" class="btn_modal_err">Заказать</button>-->
+                            <button type="submit" name="enter" class="btn_modal">Отправить запрос</button>
                         </form>
                     </div>
                 </div>

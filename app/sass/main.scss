@@ -99,8 +99,7 @@
         }
         .btn_modal{
           border: 1px solid #cec9c9;
-          width: 105px;
-          height: 35px;
+          padding: 10px 15px;
           background-color: #e1e1e3;
           color: #000;
           &:hover {
@@ -1249,34 +1248,19 @@ body {
   background: #fff;
   background-image: url(../img/turntable-1109588_1920.jpg);
   background-size: cover;
-  .flip{
-    perspective: 1000;
-    top: 50%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    position: absolute;
-    &:hover .flipper {
-      transform: rotateY(180deg);
-    }
-    .flipper {
-      transition: 0.6s;
-      transform-style: preserve-3d;
-      position: relative;
+  overflow: hidden;
+  position: relative;
       .front{
-        z-index: 2;
-        backface-visibility: hidden;
-        bottom: 0;
         width: 300px;
         height: 300px;
         padding-top: 65px;
         -webkit-border-radius: 50%;
         border-radius: 50%;
-        left: 0;
-        margin: auto;
         position: absolute;
-        top: 0;
+        left: 0;
         right: 0;
+        margin: auto;
+        top: 20%;
         border: 1px solid rgba(0, 0, 0, .2);
         background: rgba(64, 63, 63, .28);
         .main_img {
@@ -1293,7 +1277,6 @@ body {
           text-transform: uppercase;
           margin: 5px auto;
         }
-
         .youre {
           width: 200px;
           // background: #FFF;
@@ -1315,56 +1298,21 @@ body {
           font-size: 25px;
           font-weight: bold;
         }
-      }
-      .back {
-        backface-visibility: hidden;
-        transform: rotateY(180deg);
-        bottom: 0;
-        width: 300px;
-        height: 300px;
-        padding-top: 65px;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        left: 0;
-        margin: auto;
-        position: absolute;
-        top: 0;
-        right: 0;
-        border: 1px solid rgba(0, 0, 0, .2);
-        background: rgba(34, 34, 34, 0.61);
-        .voicing {
-          cursor: pointer;
-          width: 150px;
-          // background: #FFF;
-          padding: 10px;
+        #fa-angle-down {
+          color: rgba(0, 0, 0, 0.51);
+          display: block;
           text-align: center;
-          text-transform: uppercase;
-          margin: 5px auto;
-        }
-        h1 {
-          color: #fff;
-          font-size: 25px;
-          font-weight: bold;
-        }
-        img{
-          margin-top: 10px;
-        }
-      }
-    }
-    #fa-angle-down {
-      color: rgba(0, 0, 0, 0.51);
-      margin: 160px auto;
-      display: block;
-      text-align: center;
-      font-size: 52px;
-      cursor: pointer;
-      &:hover {
-        color: #ccc;
-        @include transition(.5s);
+          font-size: 52px;
+          margin-top: 90px;
+          cursor: pointer;
+          &:hover {
+            color: #ccc;
+            @include transition(.5s);
+          }
       }
     }
   }
-}
+
 
 #main_about {
   height: auto;
@@ -2006,33 +1954,5 @@ body {
   }
 }
 
-::-webkit-scrollbar-button {
-  background-image:url('');
-  background-repeat:no-repeat;
-  width: 2px;
-  height: 0px
-}
-
-::-webkit-scrollbar-track {
-  background-color: #fff;
-}
-
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 5px;
-  border-radius: 2px;
-  background-color:#ccc;
-  box-shadow:0px 1px 1px #fff inset;
-}
-
-::-webkit-resizer{
-  background-image:url('');
-  background-repeat:no-repeat;
-  width: 2px;
-  height: 0px
-}
-
-::-webkit-scrollbar{
-  width: 3px;
-}
 
 
