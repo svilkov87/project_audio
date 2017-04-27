@@ -4,6 +4,13 @@
   -o-transition:      all $time ease;
   transition:         all $time ease;
 }
+@mixin translY($px){
+  -o-transform: translateY($px);
+  -ms-transform: translateY($px);
+  -moz-transform: translateY($px);
+  -webkit-transform: translateY($px);
+  transform: translateY($px);
+}
 @mixin clr {
   &:after, &:before {
     content: " ";

@@ -5,11 +5,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/libs.min.css" afterPath="$PROJECT_DIR$/app/css/libs.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/main.js" afterPath="$PROJECT_DIR$/app/libs/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/base/_mixins.scss" afterPath="$PROJECT_DIR$/app/sass/base/_mixins.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/main.scss" afterPath="$PROJECT_DIR$/app/sass/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/footer.php" afterPath="$PROJECT_DIR$/include/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/modal.php" afterPath="$PROJECT_DIR$/include/modal.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/servises.php" afterPath="$PROJECT_DIR$/servises.php" />
     </list>
     <ignored path="audio_project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,22 +30,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/sass/main.scss">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="218" selection-end-column="14" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1493326121492" expanded="false" signature="9764:10118" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+              <caret line="78" column="14" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
               <folding>
-                <element signature="e#26608#31199#0" expanded="false" />
-                <element signature="e#31421#31671#0" expanded="false" />
-                <element signature="e#31686#31745#0" expanded="false" />
-                <element signature="e#31753#31994#0" expanded="false" />
-                <element signature="e#32538#32694#0" expanded="false" />
-                <element signature="e#32712#32843#0" expanded="false" />
-                <element signature="e#32859#33045#0" expanded="false" />
-                <element signature="e#33067#33251#0" expanded="false" />
-                <element signature="e#33263#33353#0" expanded="false" />
+                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/libs/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/sass/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="1382" column="28" selection-start-line="1382" selection-start-column="28" selection-end-line="1382" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_mixins.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/sass/base/_mixins.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,7 +122,6 @@
         <option value="$PROJECT_DIR$/app/servises.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/include/modal_price.php" />
-        <option value="$PROJECT_DIR$/app/libs/main.js" />
         <option value="$PROJECT_DIR$/app/test.html" />
         <option value="$PROJECT_DIR$/app/reg.html" />
         <option value="$PROJECT_DIR$/reg.php" />
@@ -84,7 +132,6 @@
         <option value="$PROJECT_DIR$/include/nav.php" />
         <option value="$PROJECT_DIR$/app/auth.html" />
         <option value="$PROJECT_DIR$/auth.php" />
-        <option value="$PROJECT_DIR$/app/sass/base/_mixins.scss" />
         <option value="$PROJECT_DIR$/app/add_order.html" />
         <option value="$PROJECT_DIR$/add_order.php" />
         <option value="$PROJECT_DIR$/include/lk_sidebar.php" />
@@ -101,12 +148,14 @@
         <option value="$PROJECT_DIR$/include/lk_nav.php" />
         <option value="$PROJECT_DIR$/admin/full_question.php" />
         <option value="$PROJECT_DIR$/full_question.php" />
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/servises.php" />
         <option value="$PROJECT_DIR$/include/modal.php" />
-        <option value="$PROJECT_DIR$/app/sass/main.scss" />
         <option value="$PROJECT_DIR$/include/footer.php" />
+        <option value="$PROJECT_DIR$/app/libs/main.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/sass/base/_mixins.scss" />
+        <option value="$PROJECT_DIR$/app/sass/main.scss" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -157,6 +206,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -185,13 +235,52 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="include" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="audio_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="audio_project" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="audio_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="audio_project" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -256,19 +345,20 @@
       <workItem from="1489082517085" duration="9372000" />
       <workItem from="1489431650399" duration="21015000" />
       <workItem from="1490295784275" duration="1488000" />
-      <workItem from="1490302863213" duration="4131000" />
+      <workItem from="1490302863213" duration="5392000" />
+      <workItem from="1493315621946" duration="10886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151811000" />
+    <option name="totallyTimeSpent" value="163958000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="245" y="9" width="1049" height="719" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2214358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22548029" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -306,38 +396,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dist/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-988">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/pometki_serezhe.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp56281/domains/vsemroliki.svtest.ru/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/pometki_serezhe.txt" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp56281/domains/vsemroliki.svtest.ru/index.php" />
     <entry file="file://$PROJECT_DIR$/include/modal_price.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/libs/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="124" column="41" selection-start-line="124" selection-start-column="41" selection-end-line="124" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -349,21 +413,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/succsess_reg.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp40362/domains/grandpovar.ru/reg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="214" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp40362/domains/grandpovar.ru/reg.php" />
     <entry file="file://$PROJECT_DIR$/app/succsess_reg.html" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp42856/domains/grandpovar.ru/success_reg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="74" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp42856/domains/grandpovar.ru/success_reg.php" />
     <entry file="file://$PROJECT_DIR$/reg.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -371,20 +423,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp17211/domains/grandpovar.ru/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp18354/domains/grandpovar.ru/settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="126" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp17211/domains/grandpovar.ru/profile.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp18354/domains/grandpovar.ru/settings.php" />
     <entry file="file://$PROJECT_DIR$/success_reg.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -413,14 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/base/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/nav.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -442,50 +474,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp37996/domains/grandpovar.ru/admin/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="92" />
-          <folding>
-            <marker date="1484411279000" expanded="true" signature="310:370" placeholder="SELECT * FRO... article" />
-            <marker date="1484411279000" expanded="true" signature="466:496" placeholder="SELECT COUNT... article" />
-            <marker date="1484411279000" expanded="true" signature="590:638" placeholder="SELECT COUNT... article" />
-            <marker date="1484411279000" expanded="true" signature="737:767" placeholder="SELECT COUNT... article" />
-            <marker date="1484411279000" expanded="true" signature="850:878" placeholder="SELECT COUNT... users" />
-            <marker date="1484411279000" expanded="true" signature="960:991" placeholder="SELECT COUNT... comments" />
-            <marker date="1484411279000" expanded="true" signature="1064:1093" placeholder="SELECT max(i... article" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp53575/domains/grandpovar.ru/myanswers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1390">
-          <caret line="85" column="42" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
-          <folding>
-            <marker date="1484843203000" expanded="true" signature="624:658" placeholder="SELECT * FRO... users" />
-            <marker date="1484843203000" expanded="true" signature="942:1064" placeholder="SELECT * FRO... comments" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp55026/domains/grandpovar.ru/full_topic_theme.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="34" />
-          <folding>
-            <marker date="1484840518000" expanded="true" signature="402:446" placeholder="SELECT * FRO... forum_questions" />
-            <marker date="1484840518000" expanded="true" signature="705:757" placeholder="SELECT `watc... forum_questions" />
-            <marker date="1484840518000" expanded="true" signature="960:1018" placeholder="UPDATE `foru... " />
-            <marker date="1484840518000" expanded="true" signature="1213:1249" placeholder="SELECT * FRO... users" />
-            <marker date="1484840518000" expanded="true" signature="1410:1476" placeholder="SELECT * FRO... comments" />
-            <marker date="1484840518000" expanded="true" signature="2053:2441" placeholder="INSERT INTO `comments`... " />
-            <marker date="1484840518000" expanded="true" signature="3255:3312" placeholder="SELECT COUNT... comments" />
-            <marker date="1484840518000" expanded="true" signature="3548:3673" placeholder="UPDATE `foru... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp37996/domains/grandpovar.ru/admin/admin.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp53575/domains/grandpovar.ru/myanswers.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp55026/domains/grandpovar.ru/full_topic_theme.php" />
     <entry file="file://$PROJECT_DIR$/topic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-947">
@@ -497,18 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="84" column="28" selection-start-line="84" selection-start-column="28" selection-end-line="97" selection-end-column="35" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#2;n#ul#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#3;n#ul#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#4;n#ul#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -551,10 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
           <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
-          <folding>
-            <marker date="1489513010353" expanded="true" signature="512:546" placeholder="SELECT * FRO... users" />
-            <marker date="1489513010353" expanded="true" signature="776:841" placeholder="SELECT * FRO... orders_lk" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -565,27 +540,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp10693/domains/grandpovar.ru/include/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="172" column="6" selection-start-line="172" selection-start-column="6" selection-end-line="172" selection-end-column="79" />
-          <folding>
-            <element signature="e#222#351#0#PHP" expanded="false" />
-            <element signature="e#539#757#0#PHP" expanded="false" />
-            <element signature="e#1052#2879#0#PHP" expanded="false" />
-            <element signature="e#2297#2879#0#PHP" expanded="false" />
-            <element signature="e#7570#8828#0#PHP" expanded="false" />
-            <marker date="1484473060000" expanded="false" signature="237:344" placeholder="SELECT COUNT... comments" />
-            <marker date="1484473060000" expanded="true" signature="785:864" placeholder="SELECT COUNT... comments" />
-            <marker date="1484473060000" expanded="true" signature="2059:2137" placeholder="UPDATE `comm... " />
-            <marker date="1484473060000" expanded="true" signature="2420:2516" placeholder="UPDATE `comm... " />
-            <marker date="1484473060000" expanded="true" signature="7705:7768" placeholder="SELECT * FRO... users" />
-            <marker date="1484473060000" expanded="true" signature="8926:8977" placeholder="SELECT * FRO... article" />
-            <marker date="1484473060000" expanded="true" signature="9119:9178" placeholder="SELECT * FRO... forum_questions" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp10693/domains/grandpovar.ru/include/nav.php" />
     <entry file="file://$PROJECT_DIR$/admin/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -593,17 +548,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp13005/domains/grandpovar.ru/edit_topic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-          <folding>
-            <marker date="1484070075000" expanded="true" signature="409:454" placeholder="SELECT * FRO... forum_questions" />
-            <marker date="1484070075000" expanded="true" signature="946:1125" placeholder="UPDATE `foru... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp13005/domains/grandpovar.ru/edit_topic.php" />
     <entry file="file://$PROJECT_DIR$/admin/admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -643,14 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <marker date="1489528514796" expanded="true" signature="425:568" placeholder="UPDATE `dial... " />
-            <marker date="1489528514796" expanded="true" signature="857:923" placeholder="SELECT isrea... dialogs" />
-            <marker date="1489528514796" expanded="true" signature="1113:1159" placeholder="..." />
-            <marker date="1489528514796" expanded="true" signature="1345:1368" placeholder="..." />
-            <marker date="1489528514796" expanded="true" signature="1426:1789" placeholder="..." />
-            <marker date="1489528514796" expanded="true" signature="1668:1782" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -672,7 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,9 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-739">
           <caret line="199" column="39" selection-start-line="199" selection-start-column="39" selection-end-line="199" selection-end-column="39" />
-          <folding>
-            <element signature="n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -690,21 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="69" column="75" selection-start-line="69" selection-start-column="75" selection-end-line="69" selection-end-column="75" />
-          <folding>
-            <marker date="1489530726952" expanded="true" signature="356:391" placeholder="SELECT * FRO... topics" />
-            <marker date="1489530726952" expanded="true" signature="822:856" placeholder="SELECT * FRO... users" />
-            <marker date="1489530726952" expanded="true" signature="1252:1487" placeholder="INSERT INTO `dialogs`... " />
-            <marker date="1489530726952" expanded="true" signature="1252:1515" placeholder="INSERT INTO dialogs" />
-            <marker date="1489530726952" expanded="true" signature="2778:2845" placeholder="SELECT * FRO... dialogs" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -712,34 +630,73 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="80" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/libs/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/base/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="1382" column="28" selection-start-line="1382" selection-start-column="28" selection-end-line="1382" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+        <state relative-caret-position="80">
+          <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="218" selection-end-column="14" />
           <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1493326121492" expanded="false" signature="9764:10118" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/main.scss">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <caret line="78" column="14" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
           <folding>
-            <element signature="e#26608#31199#0" expanded="false" />
-            <element signature="e#31421#31671#0" expanded="false" />
-            <element signature="e#31686#31745#0" expanded="false" />
-            <element signature="e#31753#31994#0" expanded="false" />
-            <element signature="e#32538#32694#0" expanded="false" />
-            <element signature="e#32712#32843#0" expanded="false" />
-            <element signature="e#32859#33045#0" expanded="false" />
-            <element signature="e#33067#33251#0" expanded="false" />
-            <element signature="e#33263#33353#0" expanded="false" />
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

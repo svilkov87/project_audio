@@ -135,7 +135,7 @@
   background-color: rgba(0, 0, 0, 0.18);
   .price_content{
     background-color: #fefefe;
-    margin: 8% auto;
+    margin: 1% auto;
     padding: 15px;
     width: 40%;
     height: auto;
@@ -237,7 +237,6 @@
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
-  margin-top: 75px;
   .one-inner{
     .one-header{
       background: #fff;
@@ -981,7 +980,6 @@ body {
   border-bottom: 1px solid #f0efef;;
   position: fixed;
   width: 100%;
-  margin-top: -75px;
   background: #fff;
   z-index: 99999;
   .brand {
@@ -1244,14 +1242,13 @@ body {
   }
 }
 .wrapp_head{
-  height: 450px;
+  //height: 450px;
   .wrapp_header {
-    height: 100vh;
+    height: 550px;
     background: #fff;
-    // background-image: url(../img/turntable-1109588_1920.jpg) center center no-repeat fixed;
+     background-image: url(../img/turntable-1109588_1920.jpg) center center no-repeat fixed;
     background-size: cover;
-    background-image: url(../img/turntable-1109588_1920.jpg);
-
+    //background-image: url(../img/turntable-1109588_1920.jpg);
     overflow: hidden;
     .front{
       width: 300px;
@@ -1326,6 +1323,7 @@ body {
             opacity: 0;
             background: #fff;
             text-align: center;
+            @include bradius(50%);
             @include transition(.4s);
             .p1{
               font-size: 15px;
@@ -1365,18 +1363,30 @@ body {
     margin: 65px 0;
     font-size: 25px;
   }
+  .hello_there{
+    overflow: hidden;
+    margin-bottom: 35px;
+    font-size: 22px;
+    text-align: justify;
+  }
   .wrapp_items {
     overflow: hidden;
     margin-bottom: 50px;
+    padding: 50px 0;
+    background: url(../img/turntable-1109588_1920.jpg) center center no-repeat fixed;
     .main_about_items {
       padding: 5px;
       background: #fff;
+      margin-bottom: 20px;
+      @include transition(0.3s);
+      &:hover {
+        @include translY(-20px);
+      }
       .img_block {
         text-align: center;
       }
       .img_block > img {
-        width: 150px;
-        //margin-bottom: 15px;
+        width: 100px;
         margin: 15px 0;
       }
     }

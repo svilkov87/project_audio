@@ -4,10 +4,12 @@ $(document).ready(function(){
   $(window).scroll(function(){
     var st = $(this).scrollTop();
 
-    console.log(st);
-    $(".front").css({
-      "transform" : "translate(0%, " + st + "%"
+    // console.log(st);
+
+    $(".wrapp_head").css({
+        "transform" : "translate(0%, " + st /50 + "%"
     });
+
   });
 
   //выпадающий блок "о нас"
@@ -133,7 +135,7 @@ $(document).ready(function(){
 
 
 //modalPrice
-var linkPrice = document.getElementById('linkPrice'),
+var linkPrice = document.getElementsByClassName('price_block')[0],
     myPrice = document.getElementById('myPrice'),
     closePrice = document.getElementsByClassName('closePrice')[0];
 
