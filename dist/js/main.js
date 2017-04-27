@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+  // параллакс
+  $(window).scroll(function(){
+    var st = $(this).scrolltop();
+    $(".front").css({
+      "transform" : "translate(0%, " + st + "%";
+    });
+  });
+
   //выпадающий блок "о нас"
   $("#about_us").click(function(){
     $(".about-ul").slideToggle(100);

@@ -44,9 +44,9 @@ gulp.task('sass', function () {
 //js
 gulp.task('scripts', function() {
   return gulp.src('app/libs/main.js')
-    .pipe(concat('all.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('app/js'))
+    // .pipe(concat('all.min.js'))
+    // .pipe(uglify())
+    // .pipe(gulp.dest('app/js'))
     .pipe(connect.reload());
 });
 

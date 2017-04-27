@@ -1248,8 +1248,10 @@ body {
   .wrapp_header {
     height: 100vh;
     background: #fff;
-    background-image: url(../img/turntable-1109588_1920.jpg) center center no-repeat fixed;;
+    // background-image: url(../img/turntable-1109588_1920.jpg) center center no-repeat fixed;
     background-size: cover;
+    background-image: url(../img/turntable-1109588_1920.jpg);
+
     overflow: hidden;
     .front{
       width: 300px;
@@ -1302,6 +1304,7 @@ body {
           background: #fff;
           cursor: pointer;
           @include bradius(50%);
+          border: 1px solid rgba(0, 0, 0, .2);
           &:hover .block_hov{
             opacity: 1;
           }
@@ -1327,10 +1330,12 @@ body {
             .p1{
               font-size: 15px;
               margin-top: 27px;
+              font-weight: bold;
             }
             .p2{
               font-size: 15px;
               margin-top: 5px;
+              font-weight: bold;
             }
           }
         }
