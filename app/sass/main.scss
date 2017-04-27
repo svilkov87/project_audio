@@ -973,6 +973,7 @@ body {
 }
 .bg_section {
   margin-top: 75px;
+  // position: fixed;
 }
 .nav {
   @include transition(0.4);
@@ -1242,35 +1243,30 @@ body {
     }
   }
 }
-
-.wrapp_header {
-  height: 100vh;
-  background: #fff;
-  background-image: url(../img/turntable-1109588_1920.jpg);
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-      .front{
-        width: 300px;
-        height: 300px;
-        padding-top: 65px;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: 20%;
-        border: 1px solid rgba(0, 0, 0, .2);
-        background: rgba(64, 63, 63, .28);
-        .main_img {
-          margin: 0 auto;
-          display: block;
-          width: 170px;
-          @include mobile_l {
-            // top: -40px;
-          }
-        }
+.wrapp_head{
+  height: 450px;
+  .wrapp_header {
+    height: 100vh;
+    background: #fff;
+    background-image: url(../img/turntable-1109588_1920.jpg) center center no-repeat fixed;;
+    background-size: cover;
+    overflow: hidden;
+    .front{
+      width: 300px;
+      height: 300px;
+      padding-top: 65px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 20%;
+      border: 1px solid rgba(0, 0, 0, .2);
+      background: rgba(64, 63, 63, .28);
+      .front_inner{
+        position: relative;
+        height: inherit;
         .voicing {
           padding: 10px;
           text-align: center;
@@ -1279,7 +1275,6 @@ body {
         }
         .youre {
           width: 200px;
-          // background: #FFF;
           padding: 10px;
           text-align: center;
           text-transform: uppercase;
@@ -1287,7 +1282,6 @@ body {
         }
         .youre_dream {
           width: 250px;
-          // background: #FFF;
           padding: 10px;
           text-align: center;
           text-transform: uppercase;
@@ -1297,6 +1291,48 @@ body {
           color: #fff;
           font-size: 25px;
           font-weight: bold;
+        }
+        .price_block{
+          width: 90px;
+          height: 90px;
+          display: inline-block;
+          position: absolute;
+          overflow: hidden;
+          right: 0;
+          background: #fff;
+          cursor: pointer;
+          @include bradius(50%);
+          &:hover .block_hov{
+            opacity: 1;
+          }
+          .price_block_inner{
+            position: relative;
+            .price_icon{
+              width: 50px;
+              position: absolute;
+              top: 20px; 
+              right: 0;
+              left: 0;
+              margin: auto;
+            }
+          }
+          .block_hov{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background: #fff;
+            text-align: center;
+            @include transition(.4s);
+            .p1{
+              font-size: 15px;
+              margin-top: 27px;
+            }
+            .p2{
+              font-size: 15px;
+              margin-top: 5px;
+            }
+          }
         }
         #fa-angle-down {
           color: rgba(0, 0, 0, 0.51);
@@ -1309,10 +1345,11 @@ body {
             color: #ccc;
             @include transition(.5s);
           }
+        }
       }
     }
   }
-
+}
 
 #main_about {
   height: auto;
