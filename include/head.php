@@ -2,11 +2,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans+Condensed:300" rel="stylesheet">
-<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="dist/css/animate.css">
-<link rel="stylesheet" href="dist/css/libs.min.css">
-<script type="text/javascript" src="libs/wow.min.js"></script>
+<link rel="stylesheet" href="app/libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="app/css/bootstrap.min.css">
+<link rel="stylesheet" href="app/css/animate.css">
+<link rel="stylesheet" href="app/css/main-ea0bd5a22b.css">
+<script type="text/javascript" src="app/libs/wow.min.js"></script>
 <script type="text/javascript">
     new WOW().init();
 </script>

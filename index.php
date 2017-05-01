@@ -81,41 +81,65 @@ ini_set('display_startup_errors', TRUE);
             <div class="container">
                 <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay=".3s">
                     <div class="main_about_items">
-                        <div class="img_block">
-                            <img src="dist/img/Clock-96.png">
+                        <div class="items_top">
+                            <div class="img_block">
+                                <img src="dist/img/Clock-96.png">
+                            </div>
+                            <div class="main_block_desc">
+                                <span>Быстро</span>
+                            </div>
                         </div>
-                        <div class="main_block_desc">
-                            <span>Быстро</span>
+                        <div class="items_bottom">
+                            <p>item1</p>
+                            <p>item2</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay=".4s">
                     <div class="main_about_items">
-                        <div class="img_block">
-                            <img src="dist/img/Christmas%20Star-96.png">
+                        <div class="items_top">
+                            <div class="img_block">
+                                <img src="dist/img/Christmas%20Star-96.png">
+                            </div>
+                            <div class="main_block_desc">
+                                <span>Креативно</span>
+                            </div>
                         </div>
-                        <div class="main_block_desc">
-                            <span>Креативно</span>
+                        <div class="items_bottom">
+                            <p>item1</p>
+                            <p>item2</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay=".5s">
                     <div class="main_about_items">
-                        <div class="img_block">
-                            <img src="dist/img/Money%20Box-96.png">
+                        <div class="items_top">
+                            <div class="img_block">
+                                <img src="dist/img/Money%20Box-96.png">
+                            </div>
+                            <div class="main_block_desc">
+                                <span>Бюджетно</span>
+                            </div>
                         </div>
-                        <div class="main_block_desc">
-                            <span>Бюджетно</span>
+                        <div class="items_bottom">
+                            <p>item1</p>
+                            <p>item2</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay=".6s">
                     <div class="main_about_items">
-                        <div class="img_block">
-                            <img src="dist/img/Microphone-96%20(1).png">
+                        <div class="items_top">
+                            <div class="img_block">
+                                <img src="dist/img/Microphone-96%20(1).png">
+                            </div>
+                            <div class="main_block_desc">
+                                <span>Профессионально</span>
+                            </div>
                         </div>
-                        <div class="main_block_desc">
-                            <span>Профессионально</span>
+                        <div class="items_bottom">
+                            <p>item1</p>
+                            <p>item2</p>
                         </div>
                     </div>
                 </div>

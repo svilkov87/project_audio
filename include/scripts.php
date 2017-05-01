@@ -6,4 +6,4 @@
 <!--[endif]-->
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>
 <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
-<script src="dist/js/main.js"></script>
+<script src="app/libs/main.js"></script>
