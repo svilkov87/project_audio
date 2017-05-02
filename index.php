@@ -128,6 +128,8 @@ ini_set('display_startup_errors', TRUE);
     <section id="main_about">
         <div class="container">
             <div class="main_about_header">
+                <p class="corot">коротко о том</p>
+                <p class="what_we_do">что мы делаем</p>
                 <h1>Озвучка, запись и монтаж аудиороликов</h1>
             </div>
             <div class="hello_there">

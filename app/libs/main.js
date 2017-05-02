@@ -17,11 +17,11 @@ $(document).ready(function(){
     e.preventDefault();
     $(".side_fixed").addClass('fixed_go_left');
     $(".filter_bg").css({
-      'filter'         : 'blur(2px)',
-      '-webkit-filter' : 'blur(2px)',
-      '-moz-filter'    : 'blur(2px)',
-      '-o-filter'      : 'blur(2px)',
-      '-ms-filter'     : 'blur(2px)'
+      'filter'         : 'blur(3px)',
+      '-webkit-filter' : 'blur(3px)',
+      '-moz-filter'    : 'blur(3px)',
+      '-o-filter'      : 'blur(3px)',
+      '-ms-filter'     : 'blur(3px)'
     });
     $(".x").click(function(){
         $(".side_fixed").removeClass('fixed_go_left');

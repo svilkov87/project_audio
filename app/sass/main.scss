@@ -1026,9 +1026,13 @@ body {
 .filter_bg{
   @include transition(0.3s);
 .wrapp_head{
-
-    background-size: cover;
-    background-image: url(../img/turntable-1109588_1920.jpg);
+  height: 600px;
+  overflow: hidden;
+  background-image: url(../img/turntable-1109588_1920.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
   .nav {
     @include transition(0.4);
     height: 75px;
@@ -1049,12 +1053,6 @@ body {
       }
 
       .logo_link {
-        //color: $navclr;
-        //line-height: 100px;
-        //text-transform: uppercase;
-        //font-weight: bold;
-        //margin-left: 10px;
-        //font-size: 22px;
         color: $navclr;
         line-height: 75px;
         text-transform: uppercase;
@@ -1126,13 +1124,13 @@ body {
           padding: 0;
         }
         i {
-          color: #8c8ca4;
+          color: #fff;
+          font-size: 18px;
           margin-left: 10px;
           @include mobile_l {
             color: #000;
           }
         }
-
       }
 
       .about-ul {
@@ -1252,10 +1250,10 @@ body {
     height: 50px;
     line-height: 50px;
     width: 100%;
-    background: #fff;
+    background: $navclr_fixed;
     z-index: 99;
     .logo_link {
-      color: #000;
+      color: $nav_font_fixed;
       line-height: 50px;
       text-transform: uppercase;
       font-weight: 700;
@@ -1273,7 +1271,7 @@ body {
     }
     .brand{
       .logo_link, .logo_mail{
-        color: #000;
+        color: $nav_font_fixed !important;
       }
     }
     .menu{
@@ -1290,8 +1288,9 @@ body {
     }
   }
   .wrapp_header {
-    height: 600px;
-    // background: #a3ff72;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
     background-size: cover;
     background-image: url(../img/turntable-1109588_1920.jpg);
     overflow: hidden;
@@ -1306,8 +1305,8 @@ body {
       right: 0;
       margin: auto;
       top: 20%;
-      border: 1px solid rgba(255, 255, 255, 0.51);
-      background: rgba(0, 0, 0, 0.18);
+      border: 1px solid rgba(156, 156, 156, 0.7);
+      background: rgba(0, 0, 0, 0.4);
       .front_inner{
         position: relative;
         height: inherit;
@@ -1383,14 +1382,14 @@ body {
           }
         }
         #fa-angle-down {
-          color: #fff;
+          color: #696969;
           display: block;
           text-align: center;
           font-size: 52px;
           margin-top: 90px;
           cursor: pointer;
           &:hover {
-            color: #ccc;
+            color: rgb(156, 156, 156);
             @include transition(.5s);
           }
         }
@@ -1400,12 +1399,30 @@ body {
 }
 
 #main_about {
-  height: auto;
+  height: 600px;
   overflow: hidden;
+  background: #f5f5f5;
   .main_about_header {
     text-align: center;
     font-size: 25px;
     padding: 25px;
+    .what_we_do{
+      //color: #07aaa5;
+      margin-bottom: 10px;
+      font-size: 35px;
+      font-weight: lighter;
+      text-transform: uppercase;
+    }
+    .corot{
+      margin-bottom: 10px;
+      color: #07aaa5;
+      font-weight: lighter;
+      text-transform: uppercase;
+    }
+    h1{
+      color: #a9a9a9;
+      font-weight: lighter;
+    }
   }
   .hello_there{
     overflow: hidden;
@@ -1413,7 +1430,7 @@ body {
     text-align: justify;
     margin: 25px 0;
     .main_about_items {
-      // position: relative;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
       @include transition(0.3s);
       &:hover .items_bottom{
@@ -1425,6 +1442,7 @@ body {
       .items_top{
         position: relative;
         background: #fff;
+        width: 100%;
         overflow: hidden;
         margin-bottom: 10px;
         .img_block {
@@ -1440,8 +1458,8 @@ body {
         padding: 10px;
         top: 0;
         right: 0;
+        left: 0;
         opacity: 0;
-        width: 100%;
         height: 100%;
         text-align: center;
         background: rgba(0,0,0, .9);
