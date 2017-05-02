@@ -47,6 +47,7 @@ gulp.task('rev', function () {
         .pipe(sass())
         .pipe(cleanCSS()) //минифицируем css
         .pipe(rev())
+        // .pipe(connect.reload())
         .pipe(gulp.dest('app/css/'))
         .pipe(rev.manifest())
         .pipe(gulp.dest('app/manifests/'));

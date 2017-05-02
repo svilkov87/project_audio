@@ -13,11 +13,21 @@ $(document).ready(function(){
   // });
 
     //выпадающий блок "о нас"
-  $("#about_us").hover(function(){
+  $("#about_us").click(function(e){
+    e.preventDefault();
     $(".side_fixed").addClass('fixed_go_left');
+    $(".filter_bg").css({
+      'filter'         : 'blur(2px)',
+      '-webkit-filter' : 'blur(2px)',
+      '-moz-filter'    : 'blur(2px)',
+      '-o-filter'      : 'blur(2px)',
+      '-ms-filter'     : 'blur(2px)'
+    });
     $(".x").click(function(){
-        // $(".fixed_go_lef").css({'right' : '-400px'});
         $(".side_fixed").removeClass('fixed_go_left');
+        $(".filter_bg").css({
+          "filter": "none"
+        });
     });
   });
 
@@ -63,7 +73,7 @@ $(document).ready(function(){
         var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
         var color2 = "rgb("+r2+","+g2+","+b2+")";
 
-        $('.wrapp_header').css({
+        $('.wrapp_items').css({
             background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
             background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
 

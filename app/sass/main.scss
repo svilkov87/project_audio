@@ -976,11 +976,27 @@
   right: -400px;
   border-left: 1px solid #fff;
   @include transition(.3s);
+  @include mobile_s {
+    width: 150px;
+  }
   .x{
     position: absolute;
     top: 15px;
     right: 15px;
     cursor: pointer;
+  }
+  .side_logo{
+    display: block;
+    padding: 15px;
+    color: #000;
+  }
+  .ul_side{
+    .li_side{
+      a{
+        display: block;
+        padding: 15px;
+      }
+    }
   }
 }
 .fixed_go_left{
@@ -991,10 +1007,14 @@
 }
 .side_fixed_b{
   display: none;
-  height: 100vh;
-  width: 100%;
   position: absolute;
-  background: rgba(68, 68, 68, 0.44);
+  z-index: 999999999999999999999999999999999999999999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+ // background: rgba(68, 68, 68, 0.44);
   @include transition(0.3s);
 }
 
@@ -1002,13 +1022,13 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
   //background: $bodybg;
 }
-.bg_section {
-  margin-top: 75px;
-  // position: fixed;
-}
-
+//begin filter bg
+.filter_bg{
+  @include transition(0.3s);
 .wrapp_head{
 
+    background-size: cover;
+    background-image: url(../img/turntable-1109588_1920.jpg);
   .nav {
     @include transition(0.4);
     height: 75px;
@@ -1269,12 +1289,11 @@ body {
       }
     }
   }
-  //height: 450px;
   .wrapp_header {
     height: 600px;
-    background: #a3ff72;
+    // background: #a3ff72;
     background-size: cover;
-    //background-image: url(../img/turntable-1109588_1920.jpg);
+    background-image: url(../img/turntable-1109588_1920.jpg);
     overflow: hidden;
     .front{
       width: 300px;
@@ -1288,7 +1307,7 @@ body {
       margin: auto;
       top: 20%;
       border: 1px solid rgba(255, 255, 255, 0.51);
-      background: rgba(255, 255, 255, 0.18);
+      background: rgba(0, 0, 0, 0.18);
       .front_inner{
         position: relative;
         height: inherit;
@@ -1377,13 +1396,90 @@ body {
         }
       }
     }
+  }
+}
+
+#main_about {
+  height: auto;
+  overflow: hidden;
+  .main_about_header {
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+  }
+  .hello_there{
+    overflow: hidden;
+    font-size: 22px;
+    text-align: justify;
+    margin: 25px 0;
+    .main_about_items {
+      // position: relative;
+      margin-bottom: 20px;
+      @include transition(0.3s);
+      &:hover .items_bottom{
+        opacity: 1;
+      }
+      &:hover .items_bottom >p{
+        padding-top: 40px;
+      }
+      .items_top{
+        position: relative;
+        background: #fff;
+        overflow: hidden;
+        margin-bottom: 10px;
+        .img_block {
+          text-align: center;
+        }
+        .img_block > img {
+          width: 100px;
+          margin: 15px 0;
+        }
+      }
+      .items_bottom{
+        position: absolute;
+        padding: 10px;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background: rgba(0,0,0, .9);
+        @include transition(0.9s);
+        p{
+          padding-top: 0;
+          color: #fff;
+          @include transition(0.6s);
+        }
+      }
+      .main_block_desc {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 35px;
+        .mb{
+          font-size: 21px;
+          color: #918c8c;
+          padding: 5px 32px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+  .wrapp_items {
+    overflow: hidden;
+    margin-bottom: 50px;
+    padding: 50px 0;
+    height: auto;
+    // background: url(../img/turntable-1109588_1920.jpg) center center no-repeat fixed;
     .bx_head{
-      height: 600px;
+      height: 300px;
       .bx_li{
-        height: 600px;
+        height: 300px;
         .bx_block{
-          margin: 20% auto;
+          margin: 10% auto;
           width: 450px;
+          text-align: center;
           .bx_par{
             color: #fff;
             font-size: 32px;
@@ -1421,73 +1517,6 @@ body {
       }
     }
   }
-}
-
-#main_about {
-  height: auto;
-  overflow: hidden;
-  .main_about_header {
-    text-align: center;
-    font-size: 25px;
-    padding: 25px;
-  }
-  .hello_there{
-    overflow: hidden;
-    font-size: 22px;
-    text-align: justify;
-    margin: 25px 0;
-  }
-}
-  .wrapp_items {
-    overflow: hidden;
-    margin-bottom: 50px;
-    padding: 50px 0;
-    height: auto;
-    background: url(../img/turntable-1109588_1920.jpg) center center no-repeat fixed;
-    .main_about_items {
-      position: relative;
-      margin-bottom: 20px;
-      @include transition(0.3s);
-      &:hover{
-        @include translY(-20px);
-      }
-      &:hover .items_bottom{
-        opacity: 1;
-      }
-      .items_top{
-        background: #fff;
-        overflow: hidden;
-        margin-bottom: 10px;
-        .img_block {
-          text-align: center;
-        }
-        .img_block > img {
-          width: 100px;
-          margin: 15px 0;
-        }
-      }
-      .items_bottom{
-        position: absolute;
-        padding: 10px;
-        opacity: 0;
-        width: 100%;
-        background: #ffffff;
-        @include transition(0.9s);
-      }
-      .main_block_desc {
-        text-align: center;
-        font-size: 26px;
-        margin-bottom: 35px;
-        .mb{
-          font-size: 21px;
-          color: #918c8c;
-          padding: 5px 32px;
-          margin-top: 5px;
-        }
-      }
-      }
-  }
-
 
 .main_wach_serv {
   text-align: center;
@@ -1507,6 +1536,8 @@ body {
     }
   }
 }
+}
+//end filter_bg
 //servises
 .header_serv {
   margin: 25px 0;
