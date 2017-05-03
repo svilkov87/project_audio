@@ -6,12 +6,13 @@
 	<meta name="description" content="IMPOVAR" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans+Condensed:300" rel="stylesheet">-->
 	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
     <script src="libs/jquery/jquery-1.11.1.min.js"></script>
-    <link rel="stylesheet" href="css/main-69bd474df0.css">
+    <link rel="stylesheet" href="css/main-944b54401b.css">
     <script src="libs/jquery.bxslider/jquery.bxslider.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -27,20 +28,6 @@
                 pause: 3000,            // время между сменой слайдов в м-сек
                 speed: 500           // длительность перехода слайда в м-сек
 //                useCSS: false           // CSS переходы
-            });
-
-//            news
-            $('.bx_news').bxSlider({
-                mode: 'vertical',
-                tickerHover: false,
-                responsive: true,
-                controls: false,
-                auto: true,
-                speed: 2000,
-                pause: 6000,
-                minSlides: 2,
-                pager: false,
-                slideMargin: 5
             });
         });
     </script>
@@ -128,54 +115,51 @@
     <i class="fa fa-times x" aria-hidden="true"></i>
     <a href="#" class="side_logo">vsemroliki</a>
     <ul class="ul_side">
-        <li class="li_side"><a href="">test items</a></li>
-        <li class="li_side"><a href="">test items</a></li>
-        <li class="li_side"><a href="">test items</a></li>
-        <li class="li_side"><a href="">test items</a></li>
+        <li class="li_side"><a href="#">Главная</a></li>
+        <li class="li_side"><a href="#">Примеры работ</a></li>
+        <li class="li_side" id="linkModal"><a href="#">Связаться с нами</a></li>
+        <li class="li_side"><a href="#">Акции</a></li>
+        <li class="li_side"><a href="#">Личный кабинет</a></li>
+        <li class="li_side"><a href="#">Регистрация</a></li>
     </ul>
 </div>
 <div class="side_fixed_b"></div>
 <!-- /modal -->
 <div class="filter_bg">
-    <section class="wrapp_head">
-        <div class="nav">
-            <div class="container">
-                <div class="row">
-                    <div class="brand">
-                        <a href="index.html" class="logo_link">Vsemroliki.ru</a>
-                        <a href="reg.html" class="logo_mail">info@vsemroliki.ru</a>
-                    </div>
-                    <i class="fa fa-align-justify" id="justify_nav" aria-hidden="true"></i>
-                    <div class="menu">
-                        <ul>
-                            <li class="menu-list"><a href="#" id="active">Главная</a></li>
-                            <li class="menu-list" id="about_us">
-                                <a href="#">О проекте</a>
-                                <i class="fa fa-chevron-right" aria-hidden="true"></i>                                <ul class="about-ul">
-                                <ul class="about-ul">
-                                    <li class="about--li"><a href="test.html">услуги</a></li>
-                                    <li class="about--li" id="linkModal">связаться с нами</li>
-                                    <li class="about--li"><a href="#">спеециальные предложения</a></li>
-                                    <li class="about--li"><a href="lk.html">личный кабинет</a></li>
-                                    <li class="about--li"><a href="reg.html">регистрация</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+    <div class="nav">
+        <div class="container">
+            <div class="row">
+                <div class="brand">
+                    <a href="index.html" class="logo_link">Vsemroliki.ru</a>
+                    <a href="reg.html" class="logo_mail">info@vsemroliki.ru</a>
+                </div>
+                <i class="fa fa-chevron-right about_us" id="fa_menu" aria-hidden="true"></i>
+                <div class="menu">
+                    <ul>
+                        <li class="menu-list">
+                            <a href="#" id="active">Главная</a></li>
+                        <li class="menu-list about_us">
+                            <a href="#">О проекте</a>
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </div>
+    <section class="wrapp_head">
+
         <div class="wrapp_header wow fadeIn" data-wow-delay="0.2s">
             <div class="front wow fadeIn">
                 <div class="front_inner">
                     <div class="voicing wow fadeInDown" data-wow-delay="0.4s">
-                        <h1>Недорогая&nbsp;Озвучка</h1>
+                        <p>Недорогая&nbsp;Озвучка</p>
                     </div>
                     <div class="youre wow fadeInRight" data-wow-delay="0.4s">
-                        <h1>Для тех</h1>
+                        <p>Для тех</p>
                     </div>
                     <div class="youre_dream wow fadeInLeft" data-wow-delay="0.4s">
-                        <h1>кто не хочет усложнять</h1>
+                        <p>кто не хочет усложнять</p>
                     </div>
                     <div class="price_block wow fadeInUp" data-wow-delay="1.2s">
                         <div class="price_block_inner">
@@ -195,87 +179,157 @@
     <section id="main_about">
         <div class="container">
             <div class="main_about_header">
-                <p class="corot">коротко о том</p>
-                <p class="what_we_do">что мы делаем</p>
-                <h1>Озвучка, запись и монтаж аудиороликов</h1>
+                <p class="corot wow fadeInDown" data-wow-delay=".4s">коротко о том</p>
+                <p class="what_we_do wow fadeInDown" data-wow-delay=".5s">что мы делаем</p>
+                <h1 class="wow fadeInDown" data-wow-delay=".6s">Озвучка, запись и монтаж аудиороликов</h1>
             </div>
-            <div class="hello_there">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.4s">
-                            <div class="main_about_items">
-                                <div class="items_top">
-                                    <div class="img_block">
-                                        <img src="img/Clock-96.png">
-                                    </div>
-                                    <div class="main_block_desc">
-                                        <span>Быстро</span>
-                                    </div>
-                                </div>
-                                <div class="items_bottom">
-                                    <p>слоган</p>
-                                </div>
-                                <div class="items_b_bottom">
-                                    <p>описание</p>
-                                </div>
-                            </div>
+            <div class="row">
+                <div class="we_do">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="we_image wow fadeInLeft" data-wow-delay="0.6s">
+                            <img src="img/headphone-1868612_1920.jpg" alt="alt">
+                        </div>
                     </div>
-                    <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">
-                            <div class="main_about_items">
-                                <div class="items_top">
-                                    <div class="img_block">
-                                        <img src="img/Christmas%20Star-96.png">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="we_items wow fadeInRight" data-wow-delay="0.6s">
+                            <ul class="we_ul">
+                                <li class="we_li">
+                                    <img class="img_previev" src="img/Microphone Filled-100.png" alt="">
+                                    <div class="p_head">Озвучка роликов</div>
+                                    <div class="p_desc">Голос без фоновой музыки</div>
+                                    <div class="we_bott">
+                                        <span class="span_price">от 300р</span>
+                                        <a href="#" class="go_examples">примеры</a>
                                     </div>
-                                    <div class="main_block_desc">
-                                        <span>Креативно</span>
+                                </li>
+                                <li class="we_li">
+                                    <img class="img_previev" src="img/Blog_Filled-50.png" alt="">
+                                    <div class="p_head">Сценарии</div>
+                                    <div class="p_desc">Придумываем текст ролика</div>
+                                    <div class="we_bott">
+                                        <span class="span_price">от 300р</span>
+                                        <a href="#" class="go_examples">примеры</a>
                                     </div>
-                                </div>
-                                <div class="items_bottom">
-                                    <p>слоган</p>
-                                </div>
-                                <div class="items_b_bottom">
-                                    <p>описание</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.8s">
-                            <div class="main_about_items">
-                                <div class="items_top">
-                                    <div class="img_block">
-                                        <img src="img/Money%20Box-96.png">
+                                </li>
+                                <li class="we_li">
+                                    <img class="img_previev" src="img/Survey Filled-100.png" alt="alt">
+                                    <div class="p_head">Простой ролик</div>
+                                    <div class="p_desc">Голос на фоне музыки</div>
+                                    <div class="we_bott">
+                                        <span class="span_price">от 790р</span>
+                                        <a href="#" class="go_examples">примеры</a>
                                     </div>
-                                    <div class="main_block_desc">
-                                        <span>Бюджетно</span>
+                                </li>
+                                <li class="we_li">
+                                    <img class="img_previev" src="img/Saturation Filled-100.png" alt="">
+                                    <div class="p_head">Ролик с эффектами</div>
+                                    <div class="p_desc">голос на музыке + шумы и дополнительные звуки</div>
+                                    <div class="we_bott">
+                                        <span class="span_price">от 890р</span>
+                                        <a href="#" class="go_examples">примеры</a>
                                     </div>
-                                </div>
-                                <div class="items_bottom">
-                                    <p>слоган</p>
-                                </div>
-                                <div class="items_b_bottom">
-                                    <p>описание</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="1s">
-                            <div class="main_about_items">
-                                <div class="items_top">
-                                    <div class="img_block">
-                                        <img src="img/Microphone-96%20(1).png">
+                                </li>
+                                <li class="we_li">
+                                    <img class="img_previev" src="img/Great%20Britain%20Filled-100.png" alt="">
+                                    <div class="p_head">Озвучка на английском языке</div>
+                                    <div class="p_desc">Do y speak in English?</div>
+                                    <div class="we_bott">
+                                        <span class="span_price">от 500р</span>
+                                        <a href="#" class="go_examples">примеры</a>
                                     </div>
-                                    <div class="main_block_desc">
-                                        <span>Профессионально</span>
+                                </li>
+                                <li class="we_li">
+                                    <img class="img_previev" src="img/Voice Recognition Scan Filled-100.png" alt="">
+                                    <div class="p_head">Вокал</div>
+                                    <div class="p_desc">записываем уникальный вокал</div>
+                                    <div class="we_bott">
+                                        <span class="span_price">от 500р</span>
+                                        <a href="#" class="go_examples">примеры</a>
                                     </div>
-                                </div>
-                                <div class="items_bottom">
-                                    <p>слоган</p>
-                                </div>
-                                <div class="items_b_bottom">
-                                    <p>описание</p>
-                                </div>                                
-                            </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <!--<div class="hello_there">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.4s">-->
+                        <!--<div class="main_about_items">-->
+                            <!--<div class="items_top">-->
+                                <!--<div class="img_block">-->
+                                    <!--<img src="img/Clock-96.png">-->
+                                <!--</div>-->
+                                <!--<div class="main_block_desc">-->
+                                    <!--<span>Быстро</span>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="items_bottom">-->
+                                <!--<p>слоган</p>-->
+                            <!--</div>-->
+                            <!--<div class="items_b_bottom">-->
+                                <!--<p>описание</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">-->
+                        <!--<div class="main_about_items">-->
+                            <!--<div class="items_top">-->
+                                <!--<div class="img_block">-->
+                                    <!--<img src="img/Christmas%20Star-96.png">-->
+                                <!--</div>-->
+                                <!--<div class="main_block_desc">-->
+                                    <!--<span>Креативно</span>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="items_bottom">-->
+                                <!--<p>слоган</p>-->
+                            <!--</div>-->
+                            <!--<div class="items_b_bottom">-->
+                                <!--<p>описание</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.8s">-->
+                        <!--<div class="main_about_items">-->
+                            <!--<div class="items_top">-->
+                                <!--<div class="img_block">-->
+                                    <!--<img src="img/Money%20Box-96.png">-->
+                                <!--</div>-->
+                                <!--<div class="main_block_desc">-->
+                                    <!--<span>Бюджетно</span>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="items_bottom">-->
+                                <!--<p>слоган</p>-->
+                            <!--</div>-->
+                            <!--<div class="items_b_bottom">-->
+                                <!--<p>описание</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="1s">-->
+                        <!--<div class="main_about_items">-->
+                            <!--<div class="items_top">-->
+                                <!--<div class="img_block">-->
+                                    <!--<img src="img/Microphone-96%20(1).png">-->
+                                <!--</div>-->
+                                <!--<div class="main_block_desc">-->
+                                    <!--<span>Профессионально</span>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="items_bottom">-->
+                                <!--<p>слоган</p>-->
+                            <!--</div>-->
+                            <!--<div class="items_b_bottom">-->
+                                <!--<p>описание</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+    </section>
     <div class="wrapp_items">
         <ul class="bx_head">
             <li class="bx_li">
