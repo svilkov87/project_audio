@@ -20,6 +20,7 @@ ini_set('display_startup_errors', TRUE);
     <?php include("include/head.php"); ?>
     <script src="libs/jquery/jquery-1.11.1.min.js"></script>
     <script src="libs/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <link href="libs/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
     <script>
         $(document).ready(function(){
             $('.bx_head').bxSlider({
@@ -33,25 +34,9 @@ ini_set('display_startup_errors', TRUE);
                 pager: false,
                 pause: 3000,            // время между сменой слайдов в м-сек
                 speed: 500           // длительность перехода слайда в м-сек
-//                useCSS: false           // CSS переходы
-            });
-
-//            news
-            $('.bx_news').bxSlider({
-                mode: 'vertical',
-                tickerHover: false,
-                responsive: true,
-                controls: false,
-                auto: true,
-                speed: 2000,
-                pause: 6000,
-                minSlides: 2,
-                pager: false,
-                slideMargin: 5
             });
         });
-    </script>
-    <link href="libs/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
+</script>
 </head>
 <body>
 <?php include("include/modal.php"); ?>
@@ -83,7 +68,7 @@ ini_set('display_startup_errors', TRUE);
                             <li class="menu-list"><a href="#" id="active">Главная</a></li>
                             <li class="menu-list" id="about_us">
                                 <a href="#">О проекте</a>
-                                <i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i>
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>                                <ul class="about-ul">
 
                                 <ul class="about-ul">
                                     <li class="about--li"><a href="test.html">услуги</a></li>
@@ -112,7 +97,7 @@ ini_set('display_startup_errors', TRUE);
                     </div>
                     <div class="price_block wow fadeInUp" data-wow-delay="1.2s">
                         <div class="price_block_inner">
-                            <img src="img/Check File-96.png" alt="alt" class="price_icon">
+                            <img src="dist/img/Check File-96.png" alt="alt" class="price_icon">
                         </div>
                         <div class="block_hov">
                             <p class="p1">посмотреть</p>
@@ -133,12 +118,12 @@ ini_set('display_startup_errors', TRUE);
                 <h1>Озвучка, запись и монтаж аудиороликов</h1>
             </div>
             <div class="hello_there">
-                <div class="container">
+                <!-- <div class="container"> -->
                     <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.4s">
                         <div class="main_about_items">
                             <div class="items_top">
                                 <div class="img_block">
-                                    <img src="img/Clock-96.png">
+                                    <img src="dist/img/Clock-96.png">
                                 </div>
                                 <div class="main_block_desc">
                                     <span>Быстро</span>
@@ -147,13 +132,16 @@ ini_set('display_startup_errors', TRUE);
                             <div class="items_bottom">
                                 <p>слоган</p>
                             </div>
+                            <div class="items_b_bottom">
+                                <p>описание</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">
                         <div class="main_about_items">
                             <div class="items_top">
                                 <div class="img_block">
-                                    <img src="img/Christmas%20Star-96.png">
+                                    <img src="dist/img/Christmas%20Star-96.png">
                                 </div>
                                 <div class="main_block_desc">
                                     <span>Креативно</span>
@@ -161,6 +149,9 @@ ini_set('display_startup_errors', TRUE);
                             </div>
                             <div class="items_bottom">
                                 <p>слоган</p>
+                            </div>
+                            <div class="items_b_bottom">
+                                <p>описание</p>
                             </div>
                         </div>
                     </div>
@@ -177,6 +168,9 @@ ini_set('display_startup_errors', TRUE);
                             <div class="items_bottom">
                                 <p>слоган</p>
                             </div>
+                            <div class="items_b_bottom">
+                                <p>описание</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="1s">
@@ -192,9 +186,12 @@ ini_set('display_startup_errors', TRUE);
                             <div class="items_bottom">
                                 <p>слоган</p>
                             </div>
+                            <div class="items_b_bottom">
+                                <p>описание</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
     </section>
