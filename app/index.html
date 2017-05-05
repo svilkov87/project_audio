@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
     <script src="libs/jquery/jquery-1.11.1.min.js"></script>
-    <link rel="stylesheet" href="css/main-944b54401b.css">
+    <link rel="stylesheet" href="css/main-747825ce3e.css">
     <script src="libs/jquery.bxslider/jquery.bxslider.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -25,7 +25,7 @@
                 infiniteLoop: true,     // показывать первый слайд за последним
                 auto: true,             // сделать автоматический переход
                 pager: false,
-                pause: 3000,            // время между сменой слайдов в м-сек
+                pause: 4200,            // время между сменой слайдов в м-сек
                 speed: 500           // длительность перехода слайда в м-сек
 //                useCSS: false           // CSS переходы
             });
@@ -34,6 +34,18 @@
     <link href="libs/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
 </head>
 <body>
+<div class="loader fourth">
+    <div id="loader">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
 <!--price-->
 <div id="myPrice" class="modalPrice">
     <div class="price_content">
@@ -176,7 +188,7 @@
             </div>
         </div>
     </section>
-    <section id="main_about">
+    <section class="main_about">
         <div class="container">
             <div class="main_about_header">
                 <p class="corot wow fadeInDown" data-wow-delay=".4s">коротко о том</p>
@@ -330,39 +342,49 @@
             <!--</div>-->
         </div>
     </section>
-    <div class="wrapp_items">
+    <section class="wrapp_advantages">
+        <div class="container">
+            <div class="adv_title">
+                <p>Наши преимущества</p>
+            </div>
+        </div>
         <ul class="bx_head">
             <li class="bx_li">
                 <div class="bx_block">
-                    <p class="bx_par">Добро пожаловать к нам</p>
+                    <p class="bx_par">Быстро</p>
                     <div class="buttons-group">
-                        <a href="" class="bx_link">перейти1</a>
-                        <a href="" class="bx_link_order">перейти</a>
+                        <p class="bx_link">- Создание ролика за 3 дня -</p>
                     </div>
                 </div>
             </li>
             <li class="bx_li">
                 <div class="bx_block">
-                    <p class="bx_par">Добро пожаловать к Варьке</p>
+                    <p class="bx_par">Креативно</p>
                     <div class="buttons-group">
-                        <a href="" class="bx_link">перейти1</a>
-                        <a href="" class="bx_link_order">перейти</a>
+                        <p class="bx_link">- Всегда следуем тренду -</p>
                     </div>
                 </div>
             </li>
             <li class="bx_li">
                 <div class="bx_block">
-                    <p class="bx_par">Добро пожаловать к Паше</p>
+                    <p class="bx_par">Бюджетно</p>
                     <div class="buttons-group">
-                        <a href="" class="bx_link">перейти1</a>
-                        <a href="" class="bx_link_order">перейти</a>
+                        <p class="bx_link">- Наши цены ниже, чем по рынку -</p>
+                    </div>
+                </div>
+            </li>
+            <li class="bx_li">
+                <div class="bx_block">
+                    <p class="bx_par">Профессионально</p>
+                    <div class="buttons-group">
+                        <p class="bx_link">- Вы получаете продук абсолютного качества -</p>
                     </div>
                 </div>
             </li>
         </ul>
-    </div>
+    </section>
     <div class="main_wach_serv">
-        <a href="test.html" class="follow_serv">Посмотреть услуги</a>
+        <a href="test.html" class="follow_serv">Посмотреть примеры</a>
     </div>
     <div class="footer">
         <div class="container">

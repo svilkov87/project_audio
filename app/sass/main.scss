@@ -4,6 +4,396 @@
 @import 'base/reset';
 
 
+/* ========================== loader =========================== */
+.loader{
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom: 0;
+  z-index:1100000000000;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+#loader {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  width: 90px;
+}
+#loader ul {
+  margin: 0;
+  list-style: none;
+  width: 90px;
+  position: relative;
+  padding: 0;
+  height: 10px;
+}
+#loader ul li:nth-child(odd){
+  background-color: #74a534;
+}
+#loader ul li:nth-child(even){
+  background-color:  #07aaa5;
+}
+#loader ul li {
+  position: absolute;
+  width: 2px;
+  height: 0;
+
+  bottom: 0;
+}
+@-webkit-keyframes sequence1 {
+  0% {
+    height: 10px;
+  }
+  50% {
+    height: 50px;
+  }
+  100% {
+    height: 10px;
+  }
+}
+@keyframes sequence1 {
+  0% {
+    height: 10px;
+  }
+  50% {
+    height: 50px;
+  }
+  100% {
+    height: 10px;
+  }
+}
+@-webkit-keyframes sequence2 {
+  0% {
+    height: 20px;
+  }
+  50% {
+    height: 65px;
+  }
+  100% {
+    height: 20px;
+  }
+}
+@keyframes sequence2 {
+  0% {
+    height: 20px;
+  }
+  50% {
+    height: 65px;
+  }
+  100% {
+    height: 20px;
+  }
+}
+#loader li:nth-child(1) {
+  left: 0;
+  -webkit-animation: sequence1 1s ease infinite ;
+  animation: sequence1 1s ease infinite ;
+}
+#loader li:nth-child(2) {
+  left: 15px;
+  -webkit-animation: sequence2 1s ease infinite 0.1s;
+  animation: sequence2 1s ease infinite 0.1s;
+}
+#loader li:nth-child(3) {
+  left: 30px;
+  -webkit-animation: sequence1 1s ease-in-out infinite 0.2s;
+  animation: sequence1 1s ease-in-out infinite 0.2s;
+}
+#loader li:nth-child(4) {
+  left: 45px;
+  -webkit-animation: sequence2 1s ease-in infinite 0.3s;
+  animation: sequence2 1s ease-in infinite 0.3s;
+}
+#loader li:nth-child(5) {
+  left: 60px;
+  -webkit-animation: sequence1 1s ease-in-out infinite 0.4s;
+  animation: sequence1 1s ease-in-out infinite 0.4s;
+}
+#loader li:nth-child(6) {
+  left: 75px;
+  -webkit-animation: sequence2 1s ease infinite 0.5s;
+  animation: sequence2 1s ease infinite 0.5s;
+}
+
+
+
+
+@keyframes cssload-invert {
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes cssload-invert {
+  100% {
+    -webkit-transform: rotate(180deg);
+  }
+}
+
+@keyframes cssload-ball1 {
+  12% {
+    -webkit-transform: none;
+    transform: none;
+  }
+  26% {
+    -webkit-transform: translateX(25%) scale(1, 0.8);
+    transform: translateX(25%) scale(1, 0.8);
+  }
+  40% {
+    -webkit-transform: translateX(50%) scale(0.8, 0.8);
+    transform: translateX(50%) scale(0.8, 0.8);
+  }
+  60% {
+    -webkit-transform: translateX(50%) scale(0.8, 0.8);
+    transform: translateX(50%) scale(0.8, 0.8);
+  }
+  74% {
+    -webkit-transform: translate(50%, 25%) scale(0.6, 0.8);
+    transform: translate(50%, 25%) scale(0.6, 0.8);
+  }
+  88% {
+    -webkit-transform: translate(50%, 50%) scale(0.6, 0.6);
+    transform: translate(50%, 50%) scale(0.6, 0.6);
+  }
+  100% {
+    -webkit-transform: translate(50%, 50%) scale(0.6, 0.6);
+    transform: translate(50%, 50%) scale(0.6, 0.6);
+  }
+}
+
+@-webkit-keyframes cssload-ball1 {
+  12% {
+    -webkit-transform: none;
+  }
+  26% {
+    -webkit-transform: translateX(25%) scale(1, 0.8);
+  }
+  40% {
+    -webkit-transform: translateX(50%) scale(0.8, 0.8);
+  }
+  60% {
+    -webkit-transform: translateX(50%) scale(0.8, 0.8);
+  }
+  74% {
+    -webkit-transform: translate(50%, 25%) scale(0.6, 0.8);
+  }
+  88% {
+    -webkit-transform: translate(50%, 50%) scale(0.6, 0.6);
+  }
+  100% {
+    -webkit-transform: translate(50%, 50%) scale(0.6, 0.6);
+  }
+}
+
+@keyframes cssload-ball2 {
+  12% {
+    -webkit-transform: none;
+    transform: none;
+  }
+  26% {
+    -webkit-transform: translateX(25%) scale(1, 0.8);
+    transform: translateX(25%) scale(1, 0.8);
+  }
+  40% {
+    -webkit-transform: translateX(50%) scale(0.8, 0.8);
+    transform: translateX(50%) scale(0.8, 0.8);
+  }
+  60% {
+    -webkit-transform: translateX(50%) scale(0.8, 0.8);
+    transform: translateX(50%) scale(0.8, 0.8);
+  }
+  74% {
+    -webkit-transform: translate(50%, -25%) scale(0.6, 0.8);
+    transform: translate(50%, -25%) scale(0.6, 0.8);
+  }
+  88% {
+    -webkit-transform: translate(50%, -50%) scale(0.6, 0.6);
+    transform: translate(50%, -50%) scale(0.6, 0.6);
+  }
+  100% {
+    -webkit-transform: translate(50%, -50%) scale(0.6, 0.6);
+    transform: translate(50%, -50%) scale(0.6, 0.6);
+  }
+}
+
+@-webkit-keyframes cssload-ball2 {
+  12% {
+    -webkit-transform: none;
+  }
+  26% {
+    -webkit-transform: translateX(25%) scale(1, 0.8);
+  }
+  40% {
+    -webkit-transform: translateX(50%) scale(0.8, 0.8);
+  }
+  60% {
+    -webkit-transform: translateX(50%) scale(0.8, 0.8);
+  }
+  74% {
+    -webkit-transform: translate(50%, -25%) scale(0.6, 0.8);
+  }
+  88% {
+    -webkit-transform: translate(50%, -50%) scale(0.6, 0.6);
+  }
+  100% {
+    -webkit-transform: translate(50%, -50%) scale(0.6, 0.6);
+  }
+}
+
+@keyframes cssload-ball3 {
+  12% {
+    -webkit-transform: none;
+    transform: none;
+  }
+  26% {
+    -webkit-transform: translateX(-25%) scale(1, 0.8);
+    transform: translateX(-25%) scale(1, 0.8);
+  }
+  40% {
+    -webkit-transform: translateX(-50%) scale(0.8, 0.8);
+    transform: translateX(-50%) scale(0.8, 0.8);
+  }
+  60% {
+    -webkit-transform: translateX(-50%) scale(0.8, 0.8);
+    transform: translateX(-50%) scale(0.8, 0.8);
+  }
+  74% {
+    -webkit-transform: translate(-50%, 25%) scale(0.6, 0.8);
+    transform: translate(-50%, 25%) scale(0.6, 0.8);
+  }
+  88% {
+    -webkit-transform: translate(-50%, 50%) scale(0.6, 0.6);
+    transform: translate(-50%, 50%) scale(0.6, 0.6);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 50%) scale(0.6, 0.6);
+    transform: translate(-50%, 50%) scale(0.6, 0.6);
+  }
+}
+
+@-webkit-keyframes cssload-ball3 {
+  12% {
+    -webkit-transform: none;
+  }
+  26% {
+    -webkit-transform: translateX(-25%) scale(1, 0.8);
+  }
+  40% {
+    -webkit-transform: translateX(-50%) scale(0.8, 0.8);
+  }
+  60% {
+    -webkit-transform: translateX(-50%) scale(0.8, 0.8);
+  }
+  74% {
+    -webkit-transform: translate(-50%, 25%) scale(0.6, 0.8);
+  }
+  88% {
+    -webkit-transform: translate(-50%, 50%) scale(0.6, 0.6);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 50%) scale(0.6, 0.6);
+  }
+}
+
+@keyframes cssload-ball4 {
+  12% {
+    -webkit-transform: none;
+    transform: none;
+  }
+  26% {
+    -webkit-transform: translateX(-25%) scale(1, 0.8);
+    transform: translateX(-25%) scale(1, 0.8);
+  }
+  40% {
+    -webkit-transform: translateX(-50%) scale(0.8, 0.8);
+    transform: translateX(-50%) scale(0.8, 0.8);
+  }
+  60% {
+    -webkit-transform: translateX(-50%) scale(0.8, 0.8);
+    transform: translateX(-50%) scale(0.8, 0.8);
+  }
+  74% {
+    -webkit-transform: translate(-50%, -25%) scale(0.6, 0.8);
+    transform: translate(-50%, -25%) scale(0.6, 0.8);
+  }
+  88% {
+    -webkit-transform: translate(-50%, -50%) scale(0.6, 0.6);
+    transform: translate(-50%, -50%) scale(0.6, 0.6);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(0.6, 0.6);
+    transform: translate(-50%, -50%) scale(0.6, 0.6);
+  }
+}
+
+@-webkit-keyframes cssload-ball4 {
+  12% {
+    -webkit-transform: none;
+  }
+  26% {
+    -webkit-transform: translateX(-25%) scale(1, 0.8);
+  }
+  40% {
+    -webkit-transform: translateX(-50%) scale(0.8, 0.8);
+  }
+  60% {
+    -webkit-transform: translateX(-50%) scale(0.8, 0.8);
+  }
+  74% {
+    -webkit-transform: translate(-50%, -25%) scale(0.6, 0.8);
+  }
+  88% {
+    -webkit-transform: translate(-50%, -50%) scale(0.6, 0.6);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(0.6, 0.6);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* for index 2 only */
+.loader.second{
+  background:-webkit-gradient(linear, 0% 0%, 100% 0%, from(#d635d6), to(#ff364f));
+}
+.loader.second #loader ul li{
+  background-color: #FFFFFF;
+}
+/* for index 2 only */
+/* ========================== loader =========================== */
+/* for index 3 only */
+.loader.third{
+  background:-webkit-gradient(linear, 0% 0%, 100% 0%, from(#43a1d8), to(#3ce850))
+}
+.loader.third #loader ul li{
+  background-color: #FFFFFF;
+}
+/* for index 4 only */
+/* ========================== loader =========================== */
+/* for index 4 only */
+.loader.fourth{
+
+  background:-webkit-gradient(linear, 0% 0%, 100% 0%, from(#eb8416), to(#ed2371))
+}
+.loader.fourth #loader ul li{
+  background-color: #FFFFFF;
+}
+/* for index 4 only */
+/* ========================== loader =========================== */
+
 //button_top
 #top {
   -webkit-border-radius: 50px;
@@ -294,7 +684,7 @@ body {
 //begin filter bg
 .filter_bg{
   @include transition(0.3s);
-  .nav {
+.nav {
     @include transition(0.4);
     height: 75px;
     position: fixed;
@@ -514,7 +904,7 @@ body {
       }
     }
   }
-  .nav.fixed {
+.nav.fixed {
     @include transition(0.4s);
     @include bsh(0px 0px 13px 0px rgba(255, 255, 255, 0.95));
     position: fixed;
@@ -652,11 +1042,13 @@ body {
               font-size: 15px;
               margin-top: 27px;
               font-weight: bold;
+              color: #000;
             }
             .p2{
               font-size: 15px;
               margin-top: 5px;
               font-weight: bold;
+              color: #000;
             }
           }
         }
@@ -676,8 +1068,7 @@ body {
     }
   }
 }
-
-#main_about {
+.main_about {
   height: auto;
   overflow: hidden;
   padding: 50px 0;
@@ -711,13 +1102,16 @@ body {
           margin-right: 10px;
         }
         .p_head{
-          margin-bottom: 10px;
+          margin-bottom: 3px;
           color: #68afad;
           text-transform: uppercase;
         }
         .p_desc{
           //display: none;
-          font-size: 14px;
+          font-size: 18px;
+          @include mobile_l{
+            font-size: 12px;
+          }
         }
         .we_bott{
           position: absolute;
@@ -850,20 +1244,30 @@ body {
     }
   }
 }
-  .wrapp_items {
+.wrapp_advantages {
     overflow: hidden;
     margin-bottom: 50px;
     padding: 50px 0;
     height: auto;
-    // background: url(../img/turntable-1109588_1920.jpg) center center no-repeat fixed;
+    .adv_title{
+      text-align: center;
+      color: #fff;
+      font-size: $fs_body;
+      text-transform: uppercase;
+      p{
+        display: inline-block;
+        padding: 10px 0;
+        border-bottom: 1px solid #fff;
+      }
+    }
     .bx_head{
-      height: 300px;
+      height: 200px;
       .bx_li{
-        height: 300px;
+        height: 200px;
         .bx_block{
-          margin: 10% auto;
-          width: 450px;
+          margin: 4% auto;
           text-align: center;
+          //padding-top: 10px;
           .bx_par{
             color: #fff;
             font-size: 32px;
@@ -873,17 +1277,12 @@ body {
           .buttons-group{
             overflow: hidden;
             height: auto;
-            padding: 25px;
             .bx_link{
               display: inline-block;
               padding: 15px;
-              border: 1px solid #fff;
               color: #fff;
               font-size: 20px;
-              width: 40%;
               text-align: center;
-              margin-right: 12px;
-              @include bradius(4px);
             }
             .bx_link_order{
               display: inline-block;
@@ -900,7 +1299,6 @@ body {
       }
     }
   }
-
 .main_wach_serv {
   text-align: center;
   padding: 45px;
@@ -924,7 +1322,8 @@ body {
 //servises1
 .filter_bg {
   .one {
-    background: url("../img/audience-868074_1920.jpg") no-repeat fixed;
+    //background: url("../img/audience-868074_1920.jpg") no-repeat fixed;
+    background: url("http://hotelatagra.com/wp-content/uploads/night-club-wallpaper-by-photomontage-on-deviantART.jpg") no-repeat fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;

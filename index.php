@@ -32,13 +32,14 @@ ini_set('display_startup_errors', TRUE);
                 infiniteLoop: true,     // показывать первый слайд за последним
                 auto: true,             // сделать автоматический переход
                 pager: false,
-                pause: 3000,            // время между сменой слайдов в м-сек
+                pause: 4200,            // время между сменой слайдов в м-сек
                 speed: 500           // длительность перехода слайда в м-сек
             });
         });
 </script>
 </head>
 <body>
+<?php include("include/loader.php"); ?>
 <?php include("include/modal.php"); ?>
 <?php include("include/modal_price.php"); ?>
 <?php include("include/side_fixed.php"); ?>
@@ -73,7 +74,7 @@ ini_set('display_startup_errors', TRUE);
             </div>
         </div>
     </section>
-    <section id="main_about">
+    <section class="main_about">
         <div class="container">
             <div class="main_about_header">
                 <p class="corot wow fadeInDown" data-wow-delay=".4s">коротко о том</p>
@@ -227,39 +228,49 @@ ini_set('display_startup_errors', TRUE);
 <!--            </div>-->
         </div>
     </section>
-    <div class="wrapp_items">
+    <section class="wrapp_advantages">
+        <div class="container">
+            <div class="adv_title">
+                <p>Наши преимущества</p>
+            </div>
+        </div>
         <ul class="bx_head">
             <li class="bx_li">
                 <div class="bx_block">
-                    <p class="bx_par">Добро пожаловать к нам</p>
+                    <p class="bx_par">Быстро</p>
                     <div class="buttons-group">
-                        <a href="" class="bx_link">перейти1</a>
-                        <a href="" class="bx_link_order">перейти</a>
+                        <p class="bx_link">- Создание ролика за 3 дня -</p>
                     </div>
                 </div>
             </li>
             <li class="bx_li">
                 <div class="bx_block">
-                    <p class="bx_par">Добро пожаловать к Варьке</p>
+                    <p class="bx_par">Креативно</p>
                     <div class="buttons-group">
-                        <a href="" class="bx_link">перейти1</a>
-                        <a href="" class="bx_link_order">перейти</a>
+                        <p class="bx_link">- Всегда следуем тренду -</p>
                     </div>
                 </div>
             </li>
             <li class="bx_li">
                 <div class="bx_block">
-                    <p class="bx_par">Добро пожаловать к Паше</p>
+                    <p class="bx_par">Бюджетно</p>
                     <div class="buttons-group">
-                        <a href="" class="bx_link">перейти1</a>
-                        <a href="" class="bx_link_order">перейти</a>
+                        <p class="bx_link">- Наши цены ниже, чем по рынку -</p>
+                    </div>
+                </div>
+            </li>
+            <li class="bx_li">
+                <div class="bx_block">
+                    <p class="bx_par">Профессионально</p>
+                    <div class="buttons-group">
+                        <p class="bx_link">- Вы получаете продук абсолютного качества -</p>
                     </div>
                 </div>
             </li>
         </ul>
-    </div>
+    </section>
     <div class="main_wach_serv">
-        <a href="test.html" class="follow_serv">Посмотреть услуги</a>
+        <a href="servises.php" class="follow_serv">Посмотреть примеры</a>
     </div>
 </div>
 <?php include("include/footer.php"); ?>

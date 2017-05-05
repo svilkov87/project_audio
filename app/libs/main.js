@@ -1,4 +1,19 @@
+
+// loader start
+// loader end
+
 $(document).ready(function(){
+
+    $(window).on("load",function(){ "use strict";
+        $(".loader").fadeOut(1700);
+    });
+
+    // $(window).scroll(function() {
+    //     // var s = $(".wrapp_advantages").scrollLeft();
+    //     var offset = $(".bx_par").position();
+    //     console.log(offset);
+    //     // if(offset >)
+    // });
 
     // параллакс
   // $(window).scroll(function(){
@@ -73,7 +88,7 @@ $(document).ready(function(){
         var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
         var color2 = "rgb("+r2+","+g2+","+b2+")";
 
-        $('.wrapp_items').css({
+        $('.wrapp_advantages').css({
             background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
             background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
 
@@ -143,23 +158,11 @@ $(document).ready(function(){
     //Плавный скролл до блока .div по клику на .scroll
   //Документация: https://github.com/flesler/jquery.scrollTo
   $("#fa-angle-down").click(function() {
-    $.scrollTo($("#main_about"), 800, {
+    $.scrollTo($(".main_about"), 800, {
       offset: 0
     });
   });
 
-    $(".serv").click(function() {
-    $.scrollTo($(".one-footer"), 800, {
-      offset: 0
-    });
-  });
-    $(".serv2").click(function() {
-    $.scrollTo($(".two-footer"), 800, {
-      offset: 0
-    });
-  });
-
-    
     //modal
     var modal = document.getElementById('myModlal'),
         btnModal = document.getElementById('linkModal'),

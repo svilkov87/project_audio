@@ -41,6 +41,7 @@ include("include/connection.php");
 </head>
 <body>
 <?php include("include/button_top.php"); ?>
+<?php include("include/loader.php"); ?>
 <?php include("include/modal.php"); ?>
 <?php include("include/side_fixed.php"); ?>
 <div class="filter_bg">
