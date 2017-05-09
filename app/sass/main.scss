@@ -528,9 +528,12 @@
     background-color: #fefefe;
     margin: 1% auto;
     padding: 15px;
-    width: 40%;
+    width: 60%;
     height: auto;
     overflow: hidden;
+    @include mobile_l{
+      width: 90%;
+    }
     p{
       padding: 5px 0;
     }
