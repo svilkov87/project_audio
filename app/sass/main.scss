@@ -1331,253 +1331,71 @@ body {
     background-size: cover;
     background-position: center center;
     height: 600px;
+    .wrapp_title_one{
+      margin-top: 200px;
+      text-align: center;
+      .header_one{
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 34px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      .p_one{
+        color: #fff;
+        margin-bottom: 15px;
+      }
+      #fa-angle-down-one{
+        color: #fff;
+        font-size: 24px;
+      }
+    }
   }
 }
 .two{
-  background: url("http://hotelatagra.com/wp-content/uploads/night-club-wallpaper-by-photomontage-on-deviantART.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-  //background-position: center center;
-  .two-inner{
-    .two-header{
-      background: #fff;
-      height: 250px;
-      display: none;
+  background: #fff;
+  padding: 20px;
+  .two_inner{
+    .two_header{
+      text-align: center;
+      line-height: 75px;
     }
-    .block-content{
-      height: auto;
-      .wrapp_content{
-        height: auto;
-        margin: 0 auto;
-        padding: 35px 0;
-        .block_serv_desc{
-          border: 1px solid #fff;
-          @include bradius(5px);
-          padding: 5px;
-          width: 50%;
-          margin: 0 auto;
-          color: #fff;
-          font-size: 30px;
-          text-align: center;
-          font-weight: bold;
-          @include mobile_s {
-            width: 100%;
-            font-size: 18px;
-          }
-          @include mobile_m{
-            width: 100%;
-            font-size: 18px;
-          }
-          @include mobile_l{
-            width: 100%;
-            font-size: 18px;
-          }
-        }
-        .block_desc{
-          width: 150px;
-          height: 150px;
-          @include bradius(50%);
-          margin: 45px auto;
-          color: #fff;
-          text-align: center;
-          background: rgba(186, 72, 176, 0.17);
-          font-size: 25px;
-          font-weight: bold;
-          &:hover{
-            background: rgba(148, 62, 139, 0.43);
-            border: 1px solid #ccc;
-            @include transition(.5s);
-          }
-          span{
-            line-height: 150px;
-          }
-        }
-        .left-block-footer{
-          @include bradius(5px);
-          margin-top: 25px;
-          border: 1px solid #aec9b3;
-          padding: 10px;
-          background-color: rgb(189, 223, 116);
-          .left-block-head{
-            text-align: center;
-            h1{
-              font-size: 24px;
-              background: rgba(255,255,255,.5);
-              color: rgba(0,0,0,.88);
-              padding: 15px 0;
-              margin-bottom: 15px;
-            }
-          }
-          .img-wrapp-footer{
-            text-align: center;
-            .img-left-footer{
-              width: 150px;
-              padding: 10px;
-              margin-bottom: 15px;
-              background-color: #fff;
-              @include bradius(50%);
-            }
-          }
-          .footer-price{
-            display: block;
-            text-align: center;
-            margin-top: 25px;
-            font-size: 25px;
-            color: #b24040;
-            font-weight: bold;
-          }
-        }
-        .wrapp-price{
-          text-align: center;
-          margin-top: 5px;
-          .footer-price{
-            color: #fff;
-            padding: 10px 0;
-            margin-top: 2px;
-            background-color: #57b460;
-            text-transform: uppercase;
-            font-size: 24px;
-            &:hover {
-              background-color: #4e9c4e;
-              @include transition(.5s);
-            }
-          }
-        }
-        .right-block-footer{
-          padding-top: 25px;
-          //overflow: hidden;
-          span{
-            padding: 10px;
-            font-size: 26px;
-            margin-bottom: 14px;
-            font-weight: bold;
-            display: inline-block;
-            border: 1px solid #ccc;
-          }
-          .audio{
-            width: 95%;
-            margin: 10px 5px;
-            outline: 1px solid rgba(174, 201, 179, 0.59);
-            &:hover {
-              cursor: pointer;
-              @include bsh(0px 0px 15px 0px rgba(50, 50, 50, 0.40));
-              @include transition(.5s);
-            }
-          }
-        }
-      }
-
-      h1{
-        text-align: center;
-        font-size: 45px;
-        display: block;
-        margin-bottom: 3%;
-        background: rgba(255, 255, 255, 0.5);
-        color: rgba(0, 0, 0, 0.88);
-        padding: 15px 0;
-        @include bradius(5px);
-        text-transform: uppercase;
-        @include mobile_s {
-          font-size: 45px;
-          margin-bottom: 25%;
-        }
-        @include mobile_m{
-          font-size: 45px;
-          margin-bottom: 25%;
-        }
-        @include mobile_l{
-          font-size: 45px;
-          margin-bottom: 25%;
-        }
-      }
-      .serv2{
-        color: #fff;
-        text-align: center;
-        display: block;
-        font-size: 35px;
-        margin-top: 55px;
-        cursor: pointer;
-      }
-    }
-    .two-footer{
-      background: #fff;
-      height: auto;
-      .wrapp-footer{
-        margin: 0 auto;
+    .block_content{
+      .wrapp_item{
         overflow: hidden;
-        height: auto;
-        padding: 35px 0;
-        .left-block-footer{
-          @include bradius(5px);
-          // margin-top: 150px;
-          border: 1px solid #aec9b3;
-          padding: 10px;
-          background-color: rgba(189, 223, 116, 0.36);
-          .left-block-head{
-            text-align: center;
-            h1{
-              font-size: 24px;
-              color: #000;
-            }
-          }
-          .img-wrapp-footer{
-            text-align: center;
-            .img-left-footer{
-              width: 150px;
-              padding: 10px;
-              margin-bottom: 15px;
-              background-color: #fff;
-              @include bradius(50%);
-            }
-          }
-          .footer-price{
-            display: block;
-            text-align: center;
-            margin-top: 25px;
-            font-size: 25px;
-            color: #b24040;
-            font-weight: bold;
+        position: relative;
+        border: 1px solid #ccc;
+
+        .item_image{
+          img{
+
           }
         }
-        .wrapp-price{
-          text-align: center;
-          margin-top: 5px;
-          .footer-price{
-            color: #fff;
-            padding: 10px 0;
-            margin-top: 2px;
-            background-color: #57b460;
-            text-transform: uppercase;
-            font-size: 24px;
-            &:hover {
-              background-color: #4e9c4e;
-              @include transition(.5s);
-            }
-          }
+        .top_block{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          padding: 20px;
+          background: #fff;
+                  &:hover .top_body{
+          bottom: 0;
         }
-        .wrapp_audio{
-          margin-bottom: 10px;
-          padding: 7px;
-          border: 1px solid #ccc;
-          @include bradius(5px);
-          span{
-            padding: 10px;
-            width: 100%;
-            font-size: 22px;
-            margin-bottom: 14px;
-            display: inline-block;
-            text-transform: uppercase;
-            color: #000;
-          }
-          .audio{
-            width: 100%;
-            //margin: 10px 5px;
-            outline: 1px solid rgba(174, 201, 179, 0.59);
-            &:hover {
-              cursor: pointer;
-              @include bsh(0px 0px 15px 0px rgba(50, 50, 50, 0.90));
-              @include transition(.5s);
+          .top_head{
+            h4{
+              text-transform: uppercase;
+              margin-bottom: 10px;
             }
+            p{
+              text-transform: uppercase;
+              color: orange;
+            }
+          }
+          .top_body{
+            position: absolute;
+            bottom: -35px;
+            padding: 20px 0;
+            @include transition(.3s);
           }
         }
       }
