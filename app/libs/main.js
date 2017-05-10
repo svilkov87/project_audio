@@ -126,6 +126,34 @@ $(document).ready(function(){
     $(".menu").fadeToggle(500);
   });
 
+    // показать/скрыть конпку воспроизведения
+  $(".wrapp_item").mouseenter(function(){
+    $(".span_play").addClass('play_prew');
+  });
+    $(".wrapp_item").mouseleave(function(){
+        setTimeout (function(){
+            $(".span_play").removeClass('play_prew');
+        }, 300);
+  });
+    // воспроизведение роликов
+    $(".span_play").click(function () {
+        var sound = $('audio', $(this));
+        sound[0].play();
+
+        $('audio').on('play', function() {
+            $('audio').addClass('stoped').removeClass('playing');
+            $(this).removeClass('stoped').addClass('playing');
+            $('.stoped').each(function() {
+                $(this).trigger('pause');
+                $(this)[0].currentTime = 0;
+            })
+        });
+
+        $(".top_block").css({
+            "bottom": "0"
+        });
+    });
+
     // форма отправки заказа
     $('.btn_modal').click(function(e){
         e.preventDefault();
