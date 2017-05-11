@@ -1515,6 +1515,21 @@ body {
                 100% { -moz-transform: scale(1); transform: scale(1); }
               }
             }
+            .get_order{
+              //display: none;
+              opacity: 0;
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              left: 0;
+              text-align: center;
+              background: #ff3217;
+              @include transition(.5s);
+              .p_get_ord{
+                padding: 20px;
+                color: #fff;
+              }
+            }
           }
         }
       }

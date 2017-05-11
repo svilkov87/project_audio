@@ -127,12 +127,12 @@ $(document).ready(function(){
   });
 
 //11.05 аудио-плеер
-  var mainWrapp = $(".wrapp_item"),
-  chidPlay = mainWrapp.find(".span_play"),
-  chidPause = mainWrapp.find(".span_pause");
-  // topBlock = mainWrapp.find(".top_block");
+    var mainWrapp = $(".wrapp_item"),
+        chidPlay = mainWrapp.find(".span_play"),
+        chidPause = mainWrapp.find(".span_pause"),
+        tBlockPos = mainWrapp.find(".top_block");
 
-    // показать/скрыть конпку воспроизведения
+  // показать/скрыть конпку воспроизведения
   mainWrapp.mouseenter(function(){
     $(this).find(".span_play").addClass('play_prew');
   });
@@ -142,28 +142,53 @@ $(document).ready(function(){
 
     // воспроизведение роликов
     chidPlay.click(function () {
+        $(this).css({
+            "display": "none"
+        });
+        setTimeout(function(){
+            $('.get_order').css({
+                "opacity": "1"
+            });
+        }, 1000);
+
+        $(this).css({
+            "display": "none"
+        });
+        $(this).next(".span_pause").css({
+            "display": "block"
+        });
+
         var sound = $('audio', $(this));
         sound[0].play();
 
-        //при воспроизведении поднимает весь блок, меняем плэй на паузу
+
         var topBlock = sound.parents(".top_block").css({
-          "bottom": "-30px"
+            "bottom": "0"
         });
 
-        chidPlay.css({
-          "display": "none"
-        });
-        chidPause.css({
-          "display": "block"
-        });
-        chidPause.click(function(){
-          sound[0].pause();
-          chidPlay.css({
-            "display": "block"
-          });
-          chidPause.css({
-            "display": "none"
-          });
+
+        // var cord= topBlock.position();
+        // console.log(cord);
+        // if (cord.top > 300){
+        //     $('.get_order').css({
+        //         "opacity": "1"
+        //     });
+        // }
+
+        chidPause.click(function () {
+            $(this).parents(".top_block").css({
+                "bottom": "-260px"
+            });
+            $('.get_order').css({
+                "opacity": "0"
+            });
+            $(this).css({
+                "display": "none"
+            });
+            $(this).prev(".span_play").css({
+                "display": "block"
+            });
+            sound[0].pause();
         });
 
         //запрещаем одновременное воспроизведение
