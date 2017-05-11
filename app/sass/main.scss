@@ -1423,6 +1423,28 @@ body {
               opacity: 1 !important;
               right: 25px !important;
             }
+            .span_pause{
+              display: none;
+              border: 1px solid;
+              line-height: 35px;
+              width: 35px;
+              position: absolute;
+              top: 25px;
+              right: 25px;
+              cursor: pointer;
+              text-align: center;
+              @include bradius(50%);
+              @include transition(.4s);
+              &:hover{
+                border-color: #ff593b;
+              }
+              &:hover .fa-pause{
+                color: #ff593b;
+              }
+              .fa-plause{
+                @include transition(.4s);
+              }
+            }
           }
           .top_body{
             background: #ff630d;
