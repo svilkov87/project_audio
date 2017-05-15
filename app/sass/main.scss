@@ -429,6 +429,9 @@
     width: 70%;
     height: auto;
     overflow: hidden;
+    @include mobile_l{
+      width: 95%;
+    }
     .close{
       float: right;
       font-size: $fsz_menu;
@@ -885,7 +888,8 @@ body {
           }
         }
         i{
-          color: $navclr
+          color: $navclr;
+          font-size: 14px;
         }
 
         a {
@@ -1325,8 +1329,8 @@ body {
 //servises1
 .filter_bg {
   .one {
-    //background: url("../img/audience-868074_1920.jpg") no-repeat fixed;
-    background: url("http://hotelatagra.com/wp-content/uploads/night-club-wallpaper-by-photomontage-on-deviantART.jpg") no-repeat fixed;
+    background: url("http://teenmp3.ru/uploads/images/d/j/_/dj_vigo_antonyo_my_first_positive_party_track_4_2012.jpg") no-repeat fixed;
+    //background: url("http://hotelatagra.com/wp-content/uploads/night-club-wallpaper-by-photomontage-on-deviantART.jpg") no-repeat fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -1367,7 +1371,7 @@ body {
         position: relative;
         border: 1px solid #ccc;
         &:hover .top_block{
-          bottom: -200px;
+          bottom: 0;
         }
         .item_image{
           img{
@@ -1385,7 +1389,6 @@ body {
           .top_head{
             height: 90px;
             padding: 20px;
-            //border: 1px solid #ccc;
             h4{
               text-transform: uppercase;
               margin-bottom: 10px;
@@ -1396,13 +1399,12 @@ body {
             }
             .span_play{
               display: block;
-              border: 1px solid;
+              border: 1px solid #ccc;
               line-height: 35px;
               width: 35px;
-              opacity: 0;
               position: absolute;
               top: 25px;
-              right: -35px;
+              right: 25px;
               cursor: pointer;
               text-align: center;
               @include bradius(50%);
@@ -1414,19 +1416,16 @@ body {
                 color: #ff593b;
               }
               .fa-play{
+                color: #ccc;
                 @include transition(.4s);
               }
               audio{
                 display: none;
               }
             }
-            .play_prew{
-              opacity: 1 !important;
-              right: 25px !important;
-            }
             .span_pause{
               display: none;
-              border: 1px solid;
+              border: 1px solid #ccc;
               line-height: 35px;
               width: 35px;
               position: absolute;
@@ -1442,7 +1441,8 @@ body {
               &:hover .fa-pause{
                 color: #ff593b;
               }
-              .fa-plause{
+              .fa-pause{
+                color: #ccc;
                 @include transition(.4s);
               }
             }
@@ -1525,10 +1525,11 @@ body {
               left: 0;
               text-align: center;
               background: #ff3217;
-              @include transition(.5s);
+              @include transition(4s);
               .p_get_ord{
                 padding: 20px;
                 color: #fff;
+                cursor: pointer;
               }
             }
           }

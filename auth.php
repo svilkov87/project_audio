@@ -23,7 +23,8 @@ if (isset($_POST['do_auth'])) {
         header("Location: lk.php?id=".$_SESSION['user_id']);
     }
     else {
-        $WorngAuthData = "Неверные данные";
+//        $WorngAuthData = "Неверные данные";
+        echo "Неверные данные";
     }
 }
 //echo "<pre>";

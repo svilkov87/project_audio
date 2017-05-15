@@ -8,24 +8,16 @@ $(document).ready(function(){
         $(".loader").fadeOut(1700);
     });
 
-    // $(window).scroll(function() {
-    //     // var s = $(".wrapp_advantages").scrollLeft();
-    //     var offset = $(".bx_par").position();
-    //     console.log(offset);
-    //     // if(offset >)
-    // });
-
     // параллакс
-  // $(window).scroll(function(){
-  //   var st = $(this).scrollTop();
-  //
-  //   // console.log(st);
-  //
-  //     $(".wrapp_items").css({
-  //         "transform": "translate(0%, " + st /20 + "%"
-  //     });
-  //
-  // });
+    $(window).scroll(function () {
+        var st = $(this).scrollTop();
+
+        // console.log(st);
+        $(".one").css({
+            "filter": "grayscale(" + st / 200 + ")"
+        });
+    });
+
 
     //выпадающий блок "о нас"
   $(".about_us").click(function(e){
@@ -130,75 +122,51 @@ $(document).ready(function(){
     var mainWrapp = $(".wrapp_item"),
         chidPlay = mainWrapp.find(".span_play"),
         chidPause = mainWrapp.find(".span_pause"),
-        tBlockPos = mainWrapp.find(".top_block");
+        tBlockPos = mainWrapp.find(".t_body_bott");
 
   // показать/скрыть конпку воспроизведения
   mainWrapp.mouseenter(function(){
-    $(this).find(".span_play").addClass('play_prew');
+    $(this).find(".span_play").hide();
+      $(this).find(".span_pause").show();
+      var sound = $('audio', $(this));
+      sound[0].play();
+      var getOrder = $(this).find('.get_order').css({
+          "opacity": "1"
+      });
   });
-  mainWrapp.mouseleave(function(){
-    $(this).find(".span_play").removeClass('play_prew');
-  });
+    mainWrapp.mouseleave(function () {
+        $(this).find(".span_pause").hide();
+        $(this).find(".span_play").show();
+        var sound = $('audio', $(this));
+        sound[0].pause();
+        var hideOrder = $(this).find('.get_order').css({
+            "opacity": "0"
+        });
+    });
 
     // воспроизведение роликов
     chidPlay.click(function () {
-        $(this).css({
-            "display": "none"
-        });
 
-        $(this).next(".span_pause").css({
-            "display": "block"
-        });
-
-        var sound = $('audio', $(this));
-        sound[0].play();
-
-        setTimeout(function(){
-          $('.get_order').css({
-            "opacity": "1"
-          });
-        }, 2000);
-
-
-        // var topBlock = sound.parents(".top_block").css({
-        //     "bottom": "0"
+        // $(this).hide();
+        //
+        // $(this).next(".span_pause").show();
+        //
+        // var sound = $('audio', $(this));
+        // sound[0].play();
+        //
+        // var getOrder = $(this).parents(mainWrapp).find('.get_order').css({
+        //     "opacity": "1"
+        //   });
+        // var ParentMain = $(this).parents(mainWrapp);
+        //
+        // var otherGetOrders = mainWrapp.not(ParentMain).find('.get_order').css({
+        //     "opacity": "0"
         // });
-        var topBlock = sound.parents(".top_block").show();
-        // var otherBocks = $('.top_block').not(topBlock).css({
-        //     "bottom": "-260px"
-        // });
-        // .hover(function(){
-        //   $(this).css({
-        //         "bottom": "90px"
-        //     });
-        // });
-
-
-
-        // var cord= topBlock.position();
-        // console.log(cord);
-        // if (cord.top > 300){
-        //     $('.get_order').css({
-        //         "opacity": "1"
-        //     });
-        // }
 
         chidPause.click(function () {
-            // $(this).parents(".top_block").css({
-            //     "bottom": "-260px"
-            // });
-            $(this).next(".t_body_head").hide();
-
-            $('.get_order').css({
-              "opacity": "0"
-            });
-            $(this).css({
-              "display": "none"
-            });
-            $(this).prev(".span_play").css({
-              "display": "block"
-            });
-            sound[0].pause();
+            // $(this).hide();
+            // $(this).prev(".span_play").show();
+            // sound[0].pause();
           });
 
         //запрещаем одновременное воспроизведение
