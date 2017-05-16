@@ -1329,29 +1329,48 @@ body {
 //servises1
 .filter_bg {
   .one {
-    background: url("http://teenmp3.ru/uploads/images/d/j/_/dj_vigo_antonyo_my_first_positive_party_track_4_2012.jpg") no-repeat fixed;
-    //background: url("http://hotelatagra.com/wp-content/uploads/night-club-wallpaper-by-photomontage-on-deviantART.jpg") no-repeat fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    height: 600px;
-    .wrapp_title_one{
-      margin-top: 200px;
-      text-align: center;
-      .header_one{
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 34px;
-        font-weight: bold;
-        margin-bottom: 15px;
-      }
-      .p_one{
-        color: #fff;
-        margin-bottom: 15px;
-      }
-      #fa-angle-down-one{
-        color: #fff;
-        font-size: 24px;
+    .one_inner {
+      position: relative;
+      background: url("../img/microphone-1003559_1920.jpg") no-repeat fixed;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      height: 600px;
+      .wrapp_title_one{
+        position: absolute;
+        top: 20%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        background: rgba(0,0,0, .3);
+        border: 1px solid #ccc;
+        @include bradius(50%);
+        .prev_head_one{
+          position: absolute;
+          top: 100px;
+          right: 0;
+          left: 0;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 16px;         
+        }
+        .header_one{
+          position: absolute;
+          top: 130px;
+          right: 0;
+          left: 0;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 22px;
+          font-weight: bold;
+        }
+        #fa-angle-down-one{
+          color: #fff;
+          font-size: 24px;
+        }
       }
     }
   }
@@ -1365,17 +1384,24 @@ body {
       line-height: 75px;
     }
     .block_content{
+      margin-top: 20px;
       .wrapp_item{
         height: 350px;
+        margin-bottom: 10px;
         overflow: hidden;
         position: relative;
-        border: 1px solid #ccc;
         &:hover .top_block{
           bottom: 0;
         }
+        &:hover .item_image>img{
+          padding: 30px;
+        }
         .item_image{
+          text-align: center;
           img{
-            width: 100%;
+            width: 150px;
+            height: 150px;
+            @include transition(.4s);
           }
         }
         .top_block{
@@ -1448,7 +1474,7 @@ body {
             }
           }
           .top_body{
-            background: #ff630d;
+            background: #fff;
             height: 260px;
             .t_body_head{
               position: relative;
@@ -1456,13 +1482,13 @@ body {
                 position: absolute;
                 top: 20px;
                 left: 20px;
-                color: #fff;
+                color: #000;
               }
               .p_price{
                 position: absolute;
                 top: 20px;
                 right: 20px;
-                color: #fff;
+                color: #000;
               }
             }
             .t_body_bott{
@@ -1477,7 +1503,7 @@ body {
                   margin: 0 auto;
                   border: 4px solid;
                   border-radius: 50%;
-                  border-color: rgb(255, 255, 255);
+                  border-color: #4ec287;
                   animation: cssload-scale 1035ms infinite linear;
                   -o-animation: cssload-scale 1035ms infinite linear;
                   -ms-animation: cssload-scale 1035ms infinite linear;
@@ -1524,7 +1550,7 @@ body {
               right: 0;
               left: 0;
               text-align: center;
-              background: #ff3217;
+              background: #5792eb;
               @include transition(4s);
               .p_get_ord{
                 padding: 20px;

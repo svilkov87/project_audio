@@ -13,8 +13,10 @@ $(document).ready(function(){
         var st = $(this).scrollTop();
 
         // console.log(st);
-        $(".one").css({
-            "filter": "grayscale(" + st / 200 + ")"
+        $(".one_inner").css({
+          "filter": "grayscale(" + st / 300 + ")"
+          // "bottom" : "translate3d(0px, " + st/ 100  + "%, .01px)"
+          // "-webkit-transform" : "translate3d(0px, " + st/ 100  + "%, .01px)"
         });
     });
 
