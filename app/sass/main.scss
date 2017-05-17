@@ -634,27 +634,37 @@
   //display: none;
   position: fixed;
   height: 100vh;
-  //width: 400px;
+  z-index: 1050;
   min-width: 235px;
-  background: #fff;
-  right: -400px;
-  border-left: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.63);
+  right: -190px;
   @include transition(.3s);
   @include mobile_s {
     width: 150px;
+  }
+  #show_side{
+    position: absolute;
+    color: #fff;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    z-index: 1050000;
   }
   .x{
     position: absolute;
     top: 15px;
     right: 15px;
     cursor: pointer;
+    color: #fff;
   }
   .side_logo{
-    display: inline-block;
+    display: block;
     padding: 15px;
-    color: #000;
+    color: #fff;
+    text-align: center;
   }
   .ul_side{
+    margin-top: 25px;
     .li_side{
       position: relative;
       padding-left: 15px;
@@ -662,13 +672,14 @@
         position: absolute;
         top: 9px;
         left: 15px;
-        color: #7d7979;
+        color: #fff;
       }
       a{
         display: block;
         padding: 10px;
-        margin-left: 15px;
-        color: #7d7979;
+        margin-left: 25px;
+        color: #fff;
+        text-decoration: none;
       }
     }
   }
@@ -965,7 +976,7 @@ body {
     }
   }
 .wrapp_head{
-  height: 600px;
+  height: 95vh;
   overflow: hidden;
   background-image: url(../img/turntable-1109588_1920.jpg);
   background-attachment: fixed;
@@ -989,7 +1000,7 @@ body {
       left: 0;
       right: 0;
       margin: auto;
-      top: 20%;
+      top: 15%;
       border: 1px solid rgba(156, 156, 156, 0.7);
       background: rgba(0, 0, 0, 0.4);
       .front_inner{
@@ -1352,7 +1363,7 @@ body {
       -webkit-background-size: cover;
       background-size: cover;
       background-position: center center;
-      height: 600px;
+      height: 95vh;
       .wrapp_title_one{
         position: absolute;
         top: 20%;

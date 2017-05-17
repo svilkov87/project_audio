@@ -44,7 +44,6 @@ ini_set('display_startup_errors', TRUE);
 <?php include("include/side_fixed.php"); ?>
 <!-- /modal -->
 <div class="filter_bg">
-    <?php include("include/nav.php"); ?>
     <section class="wrapp_head">
         <div class="wrapp_header wow fadeIn" data-wow-delay="0.2s">
             <div class="front wow fadeIn">

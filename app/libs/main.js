@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 
     //выпадающий блок "о нас"
-  $(".about_us").click(function(e){
+  $("#show_side").click(function(e){
     e.preventDefault();
     $(".side_fixed").addClass('fixed_go_left');
     $(".filter_bg").css({

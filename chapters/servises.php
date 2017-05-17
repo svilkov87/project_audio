@@ -17,7 +17,6 @@ include("include/connection.php");
 <?php include("include/modal.php"); ?>
 <?php include("include/side_fixed.php"); ?>
 <div class="filter_bg">
-<?php include("include/nav.php"); ?>
 <section class="one">
     <div class="one_inner">
         <div class="container">

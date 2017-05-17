@@ -1,4 +1,5 @@
 <div class="side_fixed">
+    <i class="fa fa-chevron-right" id="show_side" aria-hidden="true"></i>
     <i class="fa fa-times x" aria-hidden="true"></i>
     <a href="home" class="side_logo">vsemroliki</a>
     <ul class="ul_side">
