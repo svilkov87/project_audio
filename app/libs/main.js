@@ -13,7 +13,7 @@ $(document).ready(function(){
         var st = $(this).scrollTop();
 
         // console.log(st);
-        $(".one_inner").css({
+        $(".one, .wrapp_head").css({
           "filter": "grayscale(" + st / 300 + ")"
           // "bottom" : "translate3d(0px, " + st/ 100  + "%, .01px)"
           // "-webkit-transform" : "translate3d(0px, " + st/ 100  + "%, .01px)"
@@ -21,24 +21,20 @@ $(document).ready(function(){
     });
 
 
-    //выпадающий блок "о нас"
-  $("#show_side").click(function(e){
-    e.preventDefault();
-    $(".side_fixed").addClass('fixed_go_left');
-    $(".filter_bg").css({
-      'filter'         : 'blur(3px)',
-      '-webkit-filter' : 'blur(3px)',
-      '-moz-filter'    : 'blur(3px)',
-      '-o-filter'      : 'blur(3px)',
-      '-ms-filter'     : 'blur(3px)'
+    //меню справа
+    $("#show_side").click(function () {
+        $(".side_fixed").toggleClass('fixed_go_left');
+        $(this).toggleClass('rotate_down_side');
+        $(".filter_bg").toggleClass('filter_blur');
+        // $(".filter_bg").css({
+        //     'filter': 'blur(3px)',
+        //     '-webkit-filter': 'blur(3px)',
+        //     '-moz-filter': 'blur(3px)',
+        //     '-o-filter': 'blur(3px)',
+        //     '-ms-filter': 'blur(3px)'
+        // });
     });
-    $(".x").click(function(){
-        $(".side_fixed").removeClass('fixed_go_left');
-        $(".filter_bg").css({
-          "filter": "none"
-        });
-    });
-  });
+
 
     //gradient animations
     var colors = new Array(

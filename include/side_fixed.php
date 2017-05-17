@@ -1,31 +1,41 @@
 <div class="side_fixed">
     <i class="fa fa-chevron-right" id="show_side" aria-hidden="true"></i>
-    <i class="fa fa-times x" aria-hidden="true"></i>
-    <a href="home" class="side_logo">vsemroliki</a>
     <ul class="ul_side">
         <li class="li_side">
-            <i class="fa fa-home" aria-hidden="true"></i>
-            <a href="home">Главная</a>
+            <a href="home">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span>Главная</span>
+            </a>
         </li>
         <li class="li_side">
-            <i class="fa fa-headphones" aria-hidden="true"></i>
-            <a href="servises">Примеры работ</a>
+            <a href="servises">
+                <i class="fa fa-headphones" aria-hidden="true"></i>
+                <span>Примеры работ</span>
+            </a>
         </li>
         <li class="li_side" id="linkModal">
-            <i class="fa fa-comment-o" aria-hidden="true"></i>
-            <a href="#">Связаться с нами</a>
+            <a href="#">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <span>Связаться с нами</span>
+            </a>
         </li>
         <li class="li_side">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <a href="actions">Акции</a>
+            <a href="actions">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <span>акции</span>
+            </a>
         </li>
         <li class="li_side">
-            <i class="fa fa-sign-in" aria-hidden="true"></i>
-            <a href="lk">Личный кабинет</a>
+            <a href="lk">
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <span>личный кабинет</span>
+            </a>
         </li>
         <li class="li_side">
-            <i class="fa fa-user-plus" aria-hidden="true"></i>
-            <a href="reg">Регистрация</a>
+            <a href="reg">
+                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                <span>Регистрация</span>
+            </a>
         </li>
     </ul>
 </div>

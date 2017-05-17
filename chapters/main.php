@@ -38,6 +38,7 @@ ini_set('display_startup_errors', TRUE);
 </script>
 </head>
 <body>
+<?php include("include/button_top.php"); ?>
 <?php include("include/loader.php"); ?>
 <?php include("include/modal.php"); ?>
 <?php include("include/modal_price.php"); ?>
@@ -151,45 +152,47 @@ ini_set('display_startup_errors', TRUE);
         </div>
     </section>
     <section class="wrapp_advantages">
-        <div class="container">
-            <div class="adv_title">
-                <p>Наши преимущества</p>
+        <div class="adv_inner">
+            <div class="container">
+                <div class="adv_title">
+                    <p>Наши преимущества</p>
+                </div>
             </div>
+            <ul class="bx_head">
+                <li class="bx_li">
+                    <div class="bx_block">
+                        <p class="bx_par">Быстро</p>
+                        <div class="buttons-group">
+                            <p class="bx_link">- Создание ролика за 3 дня -</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="bx_li">
+                    <div class="bx_block">
+                        <p class="bx_par">Креативно</p>
+                        <div class="buttons-group">
+                            <p class="bx_link">- Всегда следуем тренду -</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="bx_li">
+                    <div class="bx_block">
+                        <p class="bx_par">Бюджетно</p>
+                        <div class="buttons-group">
+                            <p class="bx_link">- Наши цены ниже, чем по рынку -</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="bx_li">
+                    <div class="bx_block">
+                        <p class="bx_par">Профессионально</p>
+                        <div class="buttons-group">
+                            <p class="bx_link">- Вы получаете продук абсолютного качества -</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <ul class="bx_head">
-            <li class="bx_li">
-                <div class="bx_block">
-                    <p class="bx_par">Быстро</p>
-                    <div class="buttons-group">
-                        <p class="bx_link">- Создание ролика за 3 дня -</p>
-                    </div>
-                </div>
-            </li>
-            <li class="bx_li">
-                <div class="bx_block">
-                    <p class="bx_par">Креативно</p>
-                    <div class="buttons-group">
-                        <p class="bx_link">- Всегда следуем тренду -</p>
-                    </div>
-                </div>
-            </li>
-            <li class="bx_li">
-                <div class="bx_block">
-                    <p class="bx_par">Бюджетно</p>
-                    <div class="buttons-group">
-                        <p class="bx_link">- Наши цены ниже, чем по рынку -</p>
-                    </div>
-                </div>
-            </li>
-            <li class="bx_li">
-                <div class="bx_block">
-                    <p class="bx_par">Профессионально</p>
-                    <div class="buttons-group">
-                        <p class="bx_link">- Вы получаете продук абсолютного качества -</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
     </section>
     <div class="main_wach_serv">
         <a href="servises" class="follow_serv">Посмотреть примеры</a>

@@ -18,15 +18,29 @@ include("include/connection.php");
 <?php include("include/side_fixed.php"); ?>
 <div class="filter_bg">
 <section class="one">
-    <div class="one_inner">
-        <div class="container">
-            <div class="row">
-                <div class="wrapp_title_one">
-                <p class="prev_head_one">послушай примеры и</p>
-                    <h1 class="header_one">Выбери свой ролик</h1>
-                    <i class="fa fa-angle-down wow fadeIn" data-wow-delay="1s" id="fa-angle-down-one"
-                    aria-hidden="true"></i>
+    <div class="wrapp_header wow fadeIn" data-wow-delay="0.2s">
+        <div class="front wow fadeIn">
+            <div class="front_inner">
+                <div class="voicing wow fadeInDown" data-wow-delay="0.4s">
+                    <p>Недорогая&nbsp;Озвучка</p>
                 </div>
+                <div class="youre wow fadeInRight" data-wow-delay="0.4s">
+                    <p>Для тех</p>
+                </div>
+                <div class="youre_dream wow fadeInLeft" data-wow-delay="0.4s">
+                    <p>кто не хочет усложнять</p>
+                </div>
+                <div class="price_block wow fadeInUp" data-wow-delay="1.2s">
+                    <div class="price_block_inner">
+                        <img src="dist/img/Check File-96.png" alt="alt" class="price_icon">
+                    </div>
+                    <div class="block_hov">
+                        <p class="p1">посмотреть</p>
+                        <p class="p2">прайс</p>
+                    </div>
+                </div>
+                <i class="fa fa-angle-down wow fadeIn" data-wow-delay="1s" id="fa-angle-down-one"
+                   aria-hidden="true"></i>
             </div>
         </div>
     </div>
