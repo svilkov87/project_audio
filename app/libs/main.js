@@ -219,6 +219,13 @@ $(document).ready(function(){
     });
   });
 
+    $("#fa-angle-down-one").click(function() {
+    $.scrollTo($(".two"), 800, {
+      offset: 0
+    });
+  });
+    
+
     //modal
     var modal = document.getElementById('myModlal'),
         btnModal = document.getElementById('linkModal'),

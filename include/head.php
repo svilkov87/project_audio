@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="app/libs/font-awesome-4.2.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="app/css/bootstrap.min.css">
 	<link rel="stylesheet" href="app/css/animate.css">
-	<link rel="stylesheet" href="app/css/main-42e6bb877a.css">
+	<link rel="stylesheet" href="app/css/main-2c3bd33a53.css">
 	<script type="text/javascript" src="app/libs/wow.min.js"></script>
 	<script type="text/javascript">
 	    new WOW().init();

@@ -635,7 +635,7 @@
   position: fixed;
   height: 100vh;
   //width: 400px;
-  min-width: 200px;
+  min-width: 235px;
   background: #fff;
   right: -400px;
   border-left: 1px solid #fff;
@@ -656,9 +656,18 @@
   }
   .ul_side{
     .li_side{
+      position: relative;
+      padding-left: 15px;
+      i{
+        position: absolute;
+        top: 9px;
+        left: 15px;
+        color: #7d7979;
+      }
       a{
         display: block;
         padding: 10px;
+        margin-left: 15px;
         color: #7d7979;
       }
     }
@@ -1079,12 +1088,17 @@ body {
   height: auto;
   overflow: hidden;
   padding: 50px 0;
+  //background: #e9eaec;
+  background: url("../img/headphone-1868612_1920.jpg") no-repeat center;
+  background-size: cover;
   .we_do{
-    padding-bottom: 35px;
+    padding-bottom: 85px;
+
     overflow: hidden;
     .we_image{
       img{
         width: 100%;
+        display: none;
       }
       .we_items{
 
@@ -1095,10 +1109,11 @@ body {
     .we_ul{
       .we_li{
         height: 60px;
-        margin-bottom: 2px;
+        margin-bottom: 15px;
         padding: 10px;
         overflow: hidden;
         position: relative;
+        background: #fff;
         &:hover .we_bott{
           right: 0;
           opacity: 1;
@@ -1107,6 +1122,7 @@ body {
           width: 40px;
           float: left;
           margin-right: 10px;
+          display: none;
         }
         .p_head{
           margin-bottom: 3px;
@@ -1309,6 +1325,7 @@ body {
 .main_wach_serv {
   text-align: center;
   padding: 45px;
+  margin-bottom: 45px;
   .follow_serv {
     padding: 10px;
     background: #fff;
@@ -1346,7 +1363,7 @@ body {
         width: 300px;
         height: 300px;
         background: rgba(0,0,0, .3);
-        border: 1px solid #ccc;
+        border: 1px solid #5a5454;
         @include bradius(50%);
         .prev_head_one{
           position: absolute;
@@ -1368,20 +1385,30 @@ body {
           font-weight: bold;
         }
         #fa-angle-down-one{
+          cursor: pointer;
           color: #fff;
-          font-size: 24px;
+          font-size: 35px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -65px;
         }
       }
     }
   }
 }
 .two{
-  background: #fff;
-  padding: 20px;
+  background: #ededed;
+  padding: 100px 0;
   .two_inner{
     .two_header{
       text-align: center;
-      line-height: 75px;
+      p{
+        font-size: 30px;
+        line-height: 1;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+      }
     }
     .block_content{
       margin-top: 20px;
@@ -1390,18 +1417,39 @@ body {
         margin-bottom: 10px;
         overflow: hidden;
         position: relative;
-        &:hover .top_block{
+        background: #ffffff;
+        width: 99%;
+        &:hover {
+          @include bsh(0px 0px 50px 0px rgba(50, 50, 50, 0.75));
+          padding: 10%;
+        }
+        &:hover .top_block {
           bottom: 0;
+          background: transparent;
+        }
+        &:hover .top_head {
+          background: #fff !important;
+          .h4_head{
+            color: #000 !important;
+          }
+          .top_p{
+            color: orangered !important;
+          }
+        }
+        &:hover .top_body{
+          background: transparent;
         }
         &:hover .item_image>img{
           padding: 30px;
+          opacity: 0.3;
         }
         .item_image{
           text-align: center;
+          margin-top: 50px;
           img{
-            width: 150px;
-            height: 150px;
-            @include transition(.4s);
+            width: 90px;
+            height: 90px;
+            @include transition(.2s);
           }
         }
         .top_block{
@@ -1415,17 +1463,20 @@ body {
           .top_head{
             height: 90px;
             padding: 20px;
+            background: #e4e3b0;
             h4{
               text-transform: uppercase;
               margin-bottom: 10px;
+              color: #000;
             }
             p{
               text-transform: uppercase;
-              color: #ff593b;
+              //color: #ff593b;
+              color: #000;
             }
             .span_play{
               display: block;
-              border: 1px solid #ccc;
+              border: 1px solid #000;
               line-height: 35px;
               width: 35px;
               position: absolute;
@@ -1442,7 +1493,7 @@ body {
                 color: #ff593b;
               }
               .fa-play{
-                color: #ccc;
+                color: #000;
                 @include transition(.4s);
               }
               audio{
@@ -1451,7 +1502,7 @@ body {
             }
             .span_pause{
               display: none;
-              border: 1px solid #ccc;
+              border: 1px solid #000;
               line-height: 35px;
               width: 35px;
               position: absolute;
@@ -1468,13 +1519,13 @@ body {
                 color: #ff593b;
               }
               .fa-pause{
-                color: #ccc;
+                color: #000;
                 @include transition(.4s);
               }
             }
           }
           .top_body{
-            background: #fff;
+            //background: #fff;
             height: 260px;
             .t_body_head{
               position: relative;
@@ -1486,8 +1537,8 @@ body {
               }
               .p_price{
                 position: absolute;
-                top: 20px;
-                right: 20px;
+                top: 50px;
+                left: 20px;
                 color: #000;
               }
             }
@@ -1689,9 +1740,8 @@ body {
       float: left;
       .about--li-footer{
         padding: 7px 0;
-        font-size: 18px;
+        font-size: 16px;
         text-transform: uppercase;
-        //float: right;
         margin-right: 5px;
         a{
           color: #545454;

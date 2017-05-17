@@ -4,10 +4,11 @@
             <div class="col-md-4 col-sm-4">
                 <div class="row">
                     <ul class="about-ul-footer">
-                        <li class="about--li-footer"><a href="index.php">главная</a></li>
-                        <li class="about--li-footer"><a href="servises.php">услуги</a></li>
-                        <li class="about--li-footer"><a href="lk.php">Линый кабинет</a></li>
-                        <li class="about--li-footer"><a href="#">Спецпредложения</a></li>
+                        <li class="about--li-footer"><a href="home">главная</a></li>
+                        <li class="about--li-footer"><a href="servises">услуги</a></li>
+                        <li class="about--li-footer"><a href="actions">специальные предложения</a></li>
+                        <li class="about--li-footer"><a href="lk">личный кабинет</a></li>
+                        <li class="about--li-footer"><a href="servises">регистрация</a></li>
                     </ul>
                 </div>
             </div>
