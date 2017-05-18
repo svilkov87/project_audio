@@ -1142,55 +1142,77 @@ body {
   height: auto;
   overflow: hidden;
   padding: 50px 0;
-  //background: #e9eaec;
-  background: url("../img/headphone-1868612_1920.jpg") no-repeat center;
-  background-size: cover;
-  .we_do{
+  background: #e9eaec;
+  .we_do {
     padding-bottom: 85px;
-
     overflow: hidden;
-    .we_image{
-      img{
-        width: 100%;
-        display: none;
-      }
-      .we_items{
-
+    .we_left_1 {
+      height: 350px;
+      background: #8b56ff;
+      color: #fff;
+      text-align: center;
+      .left_1_inner {
+        padding-top: 115px;
+        .l_1_header {
+          font-size: 30px;
+          text-transform: uppercase;
+        }
+        .l_1_desc {
+          margin-top: 20px;
+          font-size: 20px;
+        }
       }
     }
   }
-  .we_items{
-    .we_ul{
-      .we_li{
+    .we_right_1 {
+      height: 350px;
+      background: #fff;
+      color: #000;
+      text-align: left;
+      .right_1_inner {
+        padding-top: 50px;
+        padding-left: 35px;
+        .r_1_header {
+          font-size: 30px;
+          text-transform: uppercase;
+        }
+        .r_1_desc {
+          margin-top: 20px;
+          font-size: 20px;
+        }
+      }
+
+    .we_ul {
+      .we_li {
         height: 60px;
         margin-bottom: 15px;
         padding: 10px;
         overflow: hidden;
         position: relative;
         background: #fff;
-        &:hover .we_bott{
+        &:hover .we_bott {
           right: 0;
           opacity: 1;
         }
-        .img_previev{
+        .img_previev {
           width: 40px;
           float: left;
           margin-right: 10px;
           display: none;
         }
-        .p_head{
+        .p_head {
           margin-bottom: 3px;
           color: #68afad;
           text-transform: uppercase;
         }
-        .p_desc{
+        .p_desc {
           //display: none;
           font-size: 18px;
-          @include mobile_l{
+          @include mobile_l {
             font-size: 12px;
           }
         }
-        .we_bott{
+        .we_bott {
           position: absolute;
           padding: 20px;
           top: 0;
@@ -1203,11 +1225,11 @@ body {
           background: #f0f0f0;
           @include bradius(3px);
           @include transition(.3s);
-          .span_price{
+          .span_price {
             color: #000;
             @include transition(.3s);
           }
-          .go_examples{
+          .go_examples {
             color: #000;
             text-decoration: none;
             display: inline;

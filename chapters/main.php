@@ -74,7 +74,7 @@ ini_set('display_startup_errors', TRUE);
         </div>
     </section>
     <section class="main_about">
-        <div class="container">
+        <div class="container-fluid">
             <div class="main_about_header">
                 <p class="corot wow fadeInDown" data-wow-delay=".4s">коротко о том</p>
                 <p class="what_we_do wow fadeInDown" data-wow-delay=".5s">что мы делаем</p>
@@ -83,72 +83,103 @@ ini_set('display_startup_errors', TRUE);
             <div class="row">
                 <div class="we_do">
                     <div class="col-md-6 col-sm-6">
-                        <div class="we_image wow fadeInLeft" data-wow-delay="0.6s">
-                            <img src="dist/img/headphone-1868612_1920.jpg" alt="alt">
+                        <div class="row">
+                            <div class="we_left_1 wow fadeIn" data-wow-delay=".8s">
+                                <div class="left_1_inner">
+                                    <p class="l_1_header">О нашей компании</p>
+                                    <p class="l_1_desc">Описание деятельности компании</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6">
-                        <div class="we_items wow fadeInRight" data-wow-delay="0.6s">
-                            <ul class="we_ul">
-                                <li class="we_li">
-                                    <img class="img_previev" src="dist/img/Microphone Filled-100.png" alt="">
-                                    <div class="p_head">Озвучка роликов</div>
-                                    <div class="p_desc">Голос без фоновой музыки</div>
-                                    <div class="we_bott">
-                                        <span class="span_price">от 300р</span>
-                                        <a href="#" class="go_examples">примеры</a>
-                                    </div>
-                                </li>
-                                <li class="we_li">
-                                    <img class="img_previev" src="dist/img/Blog_Filled-50.png" alt="">
-                                    <div class="p_head">Сценарии</div>
-                                    <div class="p_desc">Придумываем текст ролика</div>
-                                    <div class="we_bott">
-                                        <span class="span_price">от 300р</span>
-                                        <a href="#" class="go_examples">примеры</a>
-                                    </div>
-                                </li>
-                                <li class="we_li">
-                                    <img class="img_previev" src="dist/img/Survey Filled-100.png" alt="alt">
-                                    <div class="p_head">Простой ролик</div>
-                                    <div class="p_desc">Голос на фоне музыки</div>
-                                    <div class="we_bott">
-                                        <span class="span_price">от 790р</span>
-                                        <a href="#" class="go_examples">примеры</a>
-                                    </div>
-                                </li>
-                                <li class="we_li">
-                                    <img class="img_previev" src="dist/img/Saturation Filled-100.png" alt="">
-                                    <div class="p_head">Ролик с эффектами</div>
-                                    <div class="p_desc">голос на музыке + шумы и дополнительные звуки</div>
-                                    <div class="we_bott">
-                                        <span class="span_price">от 890р</span>
-                                        <a href="#" class="go_examples">примеры</a>
-                                    </div>
-                                </li>
-                                <li class="we_li">
-                                    <img class="img_previev" src="dist/img/Great%20Britain%20Filled-100.png" alt="">
-                                    <div class="p_head">Озвучка на английском языке</div>
-                                    <div class="p_desc">Do y speak in English?</div>
-                                    <div class="we_bott">
-                                        <span class="span_price">от 500р</span>
-                                        <a href="#" class="go_examples">примеры</a>
-                                    </div>
-                                </li>
-                                <li class="we_li">
-                                    <img class="img_previev" src="dist/img/Voice Recognition Scan Filled-100.png" alt="">
-                                    <div class="p_head">Вокал</div>
-                                    <div class="p_desc">записываем уникальный вокал</div>
-                                    <div class="we_bott">
-                                        <span class="span_price">от 500р</span>
-                                        <a href="#" class="go_examples">примеры</a>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="row">
+                            <div class="we_right_1 wow fadeIn" data-wow-delay="1s">
+                                <div class="right_1_inner">
+                                    <p class="r_1_header">VSEMROLIKI</p>
+                                    <p class="r_1_desc">Наша компания предоставляет услуги по...</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--<div class="hello_there">-->
+            <!--<div class="row">-->
+            <!--<div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.4s">-->
+            <!--<div class="main_about_items">-->
+            <!--<div class="items_top">-->
+            <!--<div class="img_block">-->
+            <!--<img src="img/Clock-96.png">-->
+            <!--</div>-->
+            <!--<div class="main_block_desc">-->
+            <!--<span>Быстро</span>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="items_bottom">-->
+            <!--<p>слоган</p>-->
+            <!--</div>-->
+            <!--<div class="items_b_bottom">-->
+            <!--<p>описание</p>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">-->
+            <!--<div class="main_about_items">-->
+            <!--<div class="items_top">-->
+            <!--<div class="img_block">-->
+            <!--<img src="img/Christmas%20Star-96.png">-->
+            <!--</div>-->
+            <!--<div class="main_block_desc">-->
+            <!--<span>Креативно</span>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="items_bottom">-->
+            <!--<p>слоган</p>-->
+            <!--</div>-->
+            <!--<div class="items_b_bottom">-->
+            <!--<p>описание</p>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.8s">-->
+            <!--<div class="main_about_items">-->
+            <!--<div class="items_top">-->
+            <!--<div class="img_block">-->
+            <!--<img src="img/Money%20Box-96.png">-->
+            <!--</div>-->
+            <!--<div class="main_block_desc">-->
+            <!--<span>Бюджетно</span>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="items_bottom">-->
+            <!--<p>слоган</p>-->
+            <!--</div>-->
+            <!--<div class="items_b_bottom">-->
+            <!--<p>описание</p>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="1s">-->
+            <!--<div class="main_about_items">-->
+            <!--<div class="items_top">-->
+            <!--<div class="img_block">-->
+            <!--<img src="img/Microphone-96%20(1).png">-->
+            <!--</div>-->
+            <!--<div class="main_block_desc">-->
+            <!--<span>Профессионально</span>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="items_bottom">-->
+            <!--<p>слоган</p>-->
+            <!--</div>-->
+            <!--<div class="items_b_bottom">-->
+            <!--<p>описание</p>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
         </div>
     </section>
     <section class="wrapp_advantages">
