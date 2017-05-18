@@ -35,6 +35,54 @@ $(document).ready(function(){
         // });
     });
 
+    //скролл side главная страница
+    $(window).scroll(function(){
+        var $sections = $('.we_do');
+        $sections.each(function(i,el){
+        var top  = $(el).offset().top-100;
+        var bottom = top +$(el).height();
+        var scroll = $(window).scrollTop();
+        var id = $(el).attr('id');
+      if( scroll > top && scroll < bottom){
+            $('a.active').removeClass('active');
+      $('a[href="#'+id+'"]').addClass('active');
+
+        }
+    })
+ });
+
+var sScroll = $(".side_scroll").hide();
+$(".side_scroll").on("click","a", function (event) {
+        // исключаем стандартную реакцию браузера
+        event.preventDefault();
+ 
+        // получем идентификатор блока из атрибута href
+        var id  = $(this).attr('href'),
+ 
+        // находим высоту, на которой расположен блок
+            top = $(id).offset().top;
+         
+        // анимируем переход к блоку, время: 800 мс
+        $('body,html').animate({scrollTop: top}, 800);
+    });
+
+//test
+$(window).scroll(function(){
+  var wHeight = $(window).scrollTop(),
+    elHeight = $('#about_company').offset().top;
+    haftEl = elHeight/1.5;
+
+    if (wHeight >= haftEl) {
+      sScroll.fadeIn(1000);
+    }
+    else{
+      sScroll.fadeOut();
+    }
+  console.log(elHeight);
+});
+
+  
+
 
     //gradient animations
     var colors = new Array(

@@ -1,4 +1,14 @@
 <div class="side_fixed">
+    <div class="side_scroll">
+        <span class="sp_circle">
+            <a href="#about_company">ab</a>
+        </span>
+        <span class="sp_circle">       
+            <a href="#why_we">wh</a>
+        </span>
+        <a href="#block3" class=""> 3 </a>
+        <a href="#block4"> 4 </a>
+    </div>
     <i class="fa fa-chevron-right" id="show_side" aria-hidden="true"></i>
     <ul class="ul_side">
         <li class="li_side">

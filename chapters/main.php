@@ -81,7 +81,7 @@ ini_set('display_startup_errors', TRUE);
                 <h1 class="wow fadeInDown" data-wow-delay=".6s">Озвучка, запись и монтаж аудиороликов</h1>
             </div>
             <div class="row">
-                <div class="we_do">
+                <div class="we_do" id="about_company">
                     <div class="col-md-4 col-sm-6">
                         <div class="row">
                             <div class="we_left_1 wow fadeIn" data-wow-delay=".8s">
@@ -103,6 +103,28 @@ ini_set('display_startup_errors', TRUE);
                         </div>
                     </div>
                 </div>
+                <div class="we_do" id="why_we">
+                    <div class="col-md-5 col-sm-6">
+                        <div class="row">
+                            <div class="why_right_1 wow fadeIn" data-wow-delay="1s">
+                                <div class="right_1_inner">
+                                    <p class="r_1_header">VSEMROLIKI</p>
+                                    <p class="r_1_desc">Наша компания предоставляет услуги по...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-6">
+                        <div class="row">
+                            <div class="why_left_1 wow fadeIn" data-wow-delay=".8s">
+                                <div class="left_1_inner">
+                                    <p class="l_1_header">почему мы?</p>
+                                    <p class="l_1_desc">Описание деятельности компании</p>
+                                </div>
+                            </div>                       
+                        </div>
+                    </div>
+                </div>  
             </div>
             <!--<div class="hello_there">-->
             <!--<div class="row">-->

@@ -394,6 +394,9 @@
 /* for index 4 only */
 /* ========================== loader =========================== */
 
+
+
+
 //button_top
 #top {
   position: fixed;
@@ -642,6 +645,39 @@
   @include mobile_s {
     width: 150px;
   }
+  .side_scroll{
+    position: absolute;
+    z-index: 105050;
+    left: -70px;
+    top: 25%;
+    width: 50px;
+    text-align: center;
+
+      a{
+        text-decoration: none;    
+        .sp_circle{
+          display: block;
+          width: 45px;
+          height: 45px;
+          margin-bottom: 10px;
+          background: #fff;
+          text-align: center;
+          border: 1px solid #ccc;
+          @include bradius(50%);
+          @include transition(.2s);
+        &:hover{
+        width: 65px;
+        height: 65px;
+        }
+      }
+      a.active{
+        color: #f95;
+        width: 25px;
+        height: 25px;        
+      } 
+    } 
+  }
+
   #show_side {
     position: absolute;
     color: #fff;
@@ -729,6 +765,35 @@
   z-index: 999999999999999999999999;
   right: 0;
   @include transition(.3s);
+  .side_scroll{
+  position: absolute;
+  z-index: 105050;
+  right:45px;
+  top: 25%;
+  width: 50px;
+  text-align: center;
+    a{
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+        background: #fff;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid #ccc;
+        @include bradius(50%);
+        @include transition(.2s);
+        &:hover{
+          width: 25px;
+          height: 25px;
+        }
+    }
+    a.active{
+      color: #f95;
+      width: 25px;
+      height: 25px;        
+    }  
+}
 }
 .side_fixed_b{
   display: none;
@@ -1138,109 +1203,11 @@ body {
     }
   }
 }
+
 .main_about {
   height: auto;
   overflow: hidden;
   background: #e9eaec;
-  .we_do {
-    overflow: hidden;
-    .we_left_1 {
-      height: 350px;
-      background: #8b56ff;
-      color: #fff;
-      text-align: center;
-      .left_1_inner {
-        padding-top: 115px;
-        .l_1_header {
-          font-size: 30px;
-          text-transform: uppercase;
-        }
-        .l_1_desc {
-          margin-top: 20px;
-          font-size: 20px;
-        }
-      }
-    }
-  }
-    .we_right_1 {
-      height: 350px;
-      background: #fff;
-      color: #000;
-      text-align: left;
-      .right_1_inner {
-        padding-top: 50px;
-        padding-left: 35px;
-        .r_1_header {
-          font-size: 30px;
-          text-transform: uppercase;
-        }
-        .r_1_desc {
-          margin-top: 20px;
-          font-size: 20px;
-        }
-      }
-
-    .we_ul {
-      .we_li {
-        height: 60px;
-        margin-bottom: 15px;
-        padding: 10px;
-        overflow: hidden;
-        position: relative;
-        background: #fff;
-        &:hover .we_bott {
-          right: 0;
-          opacity: 1;
-        }
-        .img_previev {
-          width: 40px;
-          float: left;
-          margin-right: 10px;
-          display: none;
-        }
-        .p_head {
-          margin-bottom: 3px;
-          color: #68afad;
-          text-transform: uppercase;
-        }
-        .p_desc {
-          //display: none;
-          font-size: 18px;
-          @include mobile_l {
-            font-size: 12px;
-          }
-        }
-        .we_bott {
-          position: absolute;
-          padding: 20px;
-          top: 0;
-          opacity: 0;
-          right: -400px;
-          width: 100%;
-          text-align: center;
-          height: 100%;
-          border: 1px solid #ccc;
-          background: #f0f0f0;
-          @include bradius(3px);
-          @include transition(.3s);
-          .span_price {
-            color: #000;
-            @include transition(.3s);
-          }
-          .go_examples {
-            color: #000;
-            text-decoration: none;
-            display: inline;
-            padding: 10px;
-            border: 1px solid #ccc;
-            background: #fff;
-            @include transition(.3s);
-            @include bradius(3px);
-          }
-        }
-      }
-    }
-  }
   .main_about_header {
     text-align: center;
     font-size: $fsz_menu;
@@ -1263,6 +1230,84 @@ body {
       font-weight: lighter;
     }
   }
+  #about_company {
+    overflow: hidden;
+    .we_left_1 {
+      height: 350px;
+      background: #8b56ff;
+      color: #fff;
+      text-align: center;
+      .left_1_inner {
+        padding-top: 115px;
+        .l_1_header {
+          font-size: 30px;
+          text-transform: uppercase;
+        }
+        .l_1_desc {
+          margin-top: 20px;
+          font-size: 20px;
+        }
+      }
+    }
+    .we_right_1 {
+      height: 350px;
+      background: #fff;
+      color: #000;
+      text-align: left;
+      .right_1_inner {
+        padding-top: 50px;
+        padding-left: 35px;
+        .r_1_header {
+          font-size: 30px;
+          text-transform: uppercase;
+        }
+        .r_1_desc {
+          margin-top: 20px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  #why_we {
+    overflow: hidden;
+    .why_left_1 {
+      height: 350px;
+      background: #8b56ff;
+      color: #fff;
+      text-align: center;
+      .left_1_inner {
+        padding-top: 115px;
+        .l_1_header {
+          font-size: 30px;
+          text-transform: uppercase;
+        }
+        .l_1_desc {
+          margin-top: 20px;
+          font-size: 20px;
+        }
+      }
+    }
+    .why_right_1 {
+      height: 350px;
+      background: #fff;
+      color: #000;
+      text-align: left;
+      .right_1_inner {
+        padding-top: 50px;
+        padding-left: 35px;
+        .r_1_header {
+          font-size: 30px;
+          text-transform: uppercase;
+        }
+        .r_1_desc {
+          margin-top: 20px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+
   .hello_there{
     overflow: hidden;
     font-size: $fsz_menu;
