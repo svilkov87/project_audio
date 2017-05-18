@@ -82,7 +82,7 @@ ini_set('display_startup_errors', TRUE);
             </div>
             <div class="row">
                 <div class="we_do">
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-4 col-sm-6">
                         <div class="row">
                             <div class="we_left_1 wow fadeIn" data-wow-delay=".8s">
                                 <div class="left_1_inner">
@@ -92,7 +92,7 @@ ini_set('display_startup_errors', TRUE);
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-8 col-sm-6">
                         <div class="row">
                             <div class="we_right_1 wow fadeIn" data-wow-delay="1s">
                                 <div class="right_1_inner">
