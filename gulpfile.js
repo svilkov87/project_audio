@@ -2,15 +2,6 @@
 
 var gulp = require('gulp'),// подключение галп
 	sass = require('gulp-sass'),
-    //hash
-    rev_append = require('gulp-rev-append'),
-    rev = require('gulp-rev'),//
-    revCollector = require('gulp-rev-collector'),
-    revOutdated = require('gulp-rev-outdated'),
-    gutil  = require('gulp-util'),
-    rimraf = require('rimraf'),
-    path = require('path'),
-    through = require('through2'),
 	//concatCss = require('gulp-concat-css'),//присоединяем все файлы css в один
 	rename = require('gulp-rename'),//переименовываем конкат и миниф файл
 	cleanCSS = require('gulp-clean-css'),//минифицируем
@@ -35,57 +26,17 @@ var gulp = require('gulp'),// подключение галп
 	  });
 	});
 
-//hash
-gulp.task('rev_append', function() {
-    gulp.src('app/*.html')
-        .pipe(rev_append())
-        .pipe(gulp.dest('app/'));
-});
 
-gulp.task('rev', function () {
-    return gulp.src('app/sass/**/*.scss')
-        .pipe(sass())
-        .pipe(cleanCSS()) //минифицируем css
-        .pipe(rev())
-        // .pipe(connect.reload())
-        .pipe(gulp.dest('app/css/'))
-        .pipe(rev.manifest())
-        .pipe(gulp.dest('app/manifests/'));
-});
+// gulp.task(function () {
+//     return gulp.src('app/sass/**/*.scss')
+//         .pipe(sass())
+//         .pipe(cleanCSS()) //минифицируем css
+//         .pipe(connect.reload())
+//         .pipe(gulp.dest('app/css/'))
+// });
 
 
-gulp.task('rev_collector', ['rev'], function () {
-    return gulp.src(['app/manifests/**/*.json', 'app/*.html'])//
-        .pipe( revCollector({
-            replaceReved: true
-        }) )
-        .pipe( gulp.dest('app/') );
-});
-
-function cleaner() {
-    return through.obj(function(file, enc, cb){
-        rimraf( path.resolve( (file.cwd || process.cwd()), file.path), function (err) {
-            if (err) {
-                this.emit('error', new gutil.PluginError('Cleanup old files', err));
-            }
-            this.push(file);
-            cb();
-        }.bind(this));
-    });
-}
-
-gulp.task('cleanHash', ['rev_collector'], function() {
-    gulp.src( ['app/**/*.*'], {read: false})
-        .pipe( revOutdated(1) ) // leave 1 latest asset file for every file name prefix.
-        .pipe( cleaner() );
-
-    return;
-});
-
-gulp.task('rev_all', ['rev_collector', 'rev', 'cleanHash']);
-
-//sass и css
-gulp.task('sass', ['rev_all'], function () {
+gulp.task('sass',  function () {
   return gulp.src(['app/sass/**/*.sass', 'app/sass/**/*.scss'])//путь к папке с файлами, м которыми будем работать
     .pipe(autoprefixer({
         browsers: ['last 15 versions']
@@ -93,11 +44,10 @@ gulp.task('sass', ['rev_all'], function () {
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(cleanCSS()) //минифицируем css
     .pipe(rename('libs.min.css'))//как назовем скомпилированный min- файл
-    .pipe(gulp.dest('app/css'))//куда выкладываем итоговый файл
-    .pipe(connect.reload());
-});
+    .pipe(connect.reload())
+    .pipe(gulp.dest('app/css'));//куда выкладываем итоговый файл
 
-//сжимаем библиотеки css
+});
 
 //js
 gulp.task('scripts', function() {
@@ -119,7 +69,6 @@ gulp.task('html', function () {
 gulp.task('watch', function () {
     // gulp.watch('app/css/*css', ['css']) //следим за изменениями всех css, и при их изменении запускаем таск css
 	gulp.watch(['app/sass/**/*.sass', 'app/sass/**/*.scss'], ['sass']) //следим за изменениями всех css, и при их изменении запускаем таск css
-	// gulp.watch('app/jade/index.jade', ['jade'])
 	gulp.watch('app/libs/*.js', ['scripts'])
 	gulp.watch('app/*.html', ['html']);
 });

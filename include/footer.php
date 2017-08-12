@@ -6,9 +6,6 @@
                     <ul class="about-ul-footer">
                         <li class="about--li-footer"><a href="home">главная</a></li>
                         <li class="about--li-footer"><a href="servises">услуги</a></li>
-                        <li class="about--li-footer"><a href="actions">специальные предложения</a></li>
-                        <li class="about--li-footer"><a href="lk">личный кабинет</a></li>
-                        <li class="about--li-footer"><a href="servises">регистрация</a></li>
                     </ul>
                 </div>
             </div>
@@ -19,15 +16,6 @@
                 <div class="link_vk">
                     <a href="https://vk.com/vsemroliki">
                         <img src="dist/img/vkontakte.png" alt="">
-                    </a>
-                    <a href="https://vk.com/vsemroliki">
-                        <img src="dist/img/linkedin.png" alt="">
-                    </a>
-                    <a href="https://vk.com/vsemroliki">
-                        <img src="dist/img/twitter.png" alt="">
-                    </a>
-                    <a href="https://vk.com/vsemroliki">
-                        <img src="dist/img/facebook.png" alt="">
                     </a>
                 </div>
             </div>

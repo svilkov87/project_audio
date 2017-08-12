@@ -22,7 +22,7 @@ ini_set('display_startup_errors', TRUE);
     <link href="libs/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
     <script>
         $(document).ready(function(){
-            $('.bx_head').bxSlider({
+            $('.wh_we_slide').bxSlider({
                 mode: 'horizontal',           // тип перехода между слайдами может быть 'horizontal', 'vertical', 'fade'
                 captions: true,         // отображение title
                 easing: 'easeInOutQuad', // анимация слайда
@@ -42,10 +42,10 @@ ini_set('display_startup_errors', TRUE);
 <?php include("include/loader.php"); ?>
 <?php include("include/modal.php"); ?>
 <?php include("include/modal_price.php"); ?>
-<?php include("include/side_fixed.php"); ?>
 <!-- /modal -->
 <div class="filter_bg">
     <section class="wrapp_head">
+        <?php include("include/side_fixed.php"); ?>
         <div class="wrapp_header wow fadeIn" data-wow-delay="0.2s">
             <div class="front wow fadeIn">
                 <div class="front_inner">
@@ -74,184 +74,142 @@ ini_set('display_startup_errors', TRUE);
         </div>
     </section>
     <section class="main_about">
-        <div class="container-fluid">
+        <div class="container">
             <div class="main_about_header">
-                <p class="corot wow fadeInDown" data-wow-delay=".4s">коротко о том</p>
-                <p class="what_we_do wow fadeInDown" data-wow-delay=".5s">что мы делаем</p>
-                <h1 class="wow fadeInDown" data-wow-delay=".6s">Озвучка, запись и монтаж аудиороликов</h1>
+                <p class="what_we_do wow fadeInDown" data-wow-delay=".5s">Что мы делаем</p>
             </div>
             <div class="row">
-                <div class="we_do" id="about_company">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="row">
-                            <div class="we_left_1 wow fadeIn" data-wow-delay=".8s">
-                                <div class="left_1_inner">
-                                    <p class="l_1_header">О нашей компании</p>
-                                    <p class="l_1_desc">Описание деятельности компании</p>
-                                </div>
+                <div class="we_do" id="why_we">
+                    <div class="col-md-4">
+                        <div class="wrapp">
+                            <div class="circle">
+                                <img src="app/img/icons8-Record-96.png" alt="rec" class="image_cir">
                             </div>
+                            <h3>Озвучка</h3>
+                            <p>В нашей базе есть мужские, женские и детские голоса. В зависимости от вашей задачи, мы сами подберем диктора, или можем выслать вам демо на выбор. </p>
+                            <div class="see_more"><a href="/servises">Узнать больше</a></div>
                         </div>
                     </div>
-                    <div class="col-md-8 col-sm-6">
-                        <div class="row">
-                            <div class="we_right_1 wow fadeIn" data-wow-delay="1s">
-                                <div class="right_1_inner">
-                                    <p class="r_1_header">VSEMROLIKI</p>
-                                    <p class="r_1_desc">Наша компания предоставляет услуги по...</p>
-                                </div>
+                    <div class="col-md-4">
+                        <div class="wrapp">
+                            <div class="circle">
+                                <img src="app/img/icons8-Knowledge Sharing-96.png" alt="rec" class="image_cir">
                             </div>
+                            <h3>СценариЙ</h3>
+                            <p>Мы напишем для вас информационный, игровой, стихотворный или вокальный сценарии. Сценарий - основа ролика. Именно от него зависит конечный продукт.</p>
+                            <div class="see_more"><a href="/servises">Узнать больше</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="wrapp">
+                            <div class="circle">
+                                <img src="app/img/Microphone-96.png" alt="rec" class="image_cir">
+                            </div>
+                            <h3>Монтаж роликов</h3>
+                            <p>Монтаж - это то, что превращает озвучку и музыку в единое целое. Если добавить к этому разнообразные шумы и звуки, ролик станет еще эффектнее.</p>
+                            <div class="see_more"><a href="/servises">Узнать больше</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="we_do" id="why_we">
-                    <div class="col-md-5 col-sm-6">
-                        <div class="row">
-                            <div class="why_right_1 wow fadeIn" data-wow-delay="1s">
-                                <div class="right_1_inner">
-                                    <p class="r_1_header">VSEMROLIKI</p>
-                                    <p class="r_1_desc">Наша компания предоставляет услуги по...</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7 col-sm-6">
-                        <div class="row">
-                            <div class="why_left_1 wow fadeIn" data-wow-delay=".8s">
-                                <div class="left_1_inner">
-                                    <p class="l_1_header">почему мы?</p>
-                                    <p class="l_1_desc">Описание деятельности компании</p>
-                                </div>
-                            </div>                       
-                        </div>
-                    </div>
-                </div>  
             </div>
-            <!--<div class="hello_there">-->
-            <!--<div class="row">-->
-            <!--<div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.4s">-->
-            <!--<div class="main_about_items">-->
-            <!--<div class="items_top">-->
-            <!--<div class="img_block">-->
-            <!--<img src="img/Clock-96.png">-->
-            <!--</div>-->
-            <!--<div class="main_block_desc">-->
-            <!--<span>Быстро</span>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--<div class="items_bottom">-->
-            <!--<p>слоган</p>-->
-            <!--</div>-->
-            <!--<div class="items_b_bottom">-->
-            <!--<p>описание</p>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">-->
-            <!--<div class="main_about_items">-->
-            <!--<div class="items_top">-->
-            <!--<div class="img_block">-->
-            <!--<img src="img/Christmas%20Star-96.png">-->
-            <!--</div>-->
-            <!--<div class="main_block_desc">-->
-            <!--<span>Креативно</span>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--<div class="items_bottom">-->
-            <!--<p>слоган</p>-->
-            <!--</div>-->
-            <!--<div class="items_b_bottom">-->
-            <!--<p>описание</p>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.8s">-->
-            <!--<div class="main_about_items">-->
-            <!--<div class="items_top">-->
-            <!--<div class="img_block">-->
-            <!--<img src="img/Money%20Box-96.png">-->
-            <!--</div>-->
-            <!--<div class="main_block_desc">-->
-            <!--<span>Бюджетно</span>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--<div class="items_bottom">-->
-            <!--<p>слоган</p>-->
-            <!--</div>-->
-            <!--<div class="items_b_bottom">-->
-            <!--<p>описание</p>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="1s">-->
-            <!--<div class="main_about_items">-->
-            <!--<div class="items_top">-->
-            <!--<div class="img_block">-->
-            <!--<img src="img/Microphone-96%20(1).png">-->
-            <!--</div>-->
-            <!--<div class="main_block_desc">-->
-            <!--<span>Профессионально</span>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--<div class="items_bottom">-->
-            <!--<p>слоган</p>-->
-            <!--</div>-->
-            <!--<div class="items_b_bottom">-->
-            <!--<p>описание</p>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
         </div>
     </section>
-    <section class="wrapp_advantages">
-        <div class="adv_inner">
-            <div class="container">
-                <div class="adv_title">
-                    <p>Наши преимущества</p>
+    <section class="main_us">
+        <div class="container">
+            <div class="row">
+                <div class="main_about_us">
+                    <p class="what_we_do wow fadeInDown" data-wow-delay=".5s">О нас</p>
+                </div>
+                <div class="content_us">
+                    <div class="col-md-6">
+                        <div class="item_us"><span>Мы </span>не предлагаем вам статусные дорогие ролики, которые стоят баснословных денег. Мы сделаем для
+                            вас простые ролики по очень доступным ценам.</div>
+                        <div class="hr"></div>
+                        <div class="item_us">Наши сценаристы пишут недорогие и креативные тексты для вашей рекламы или другого аудио.</div>
+                        <div class="hr"></div>
+                        <div class="item_us">У нас есть команда дикторов (мужские, женские и детские голоса), которые постараются озвучить
+                            ваш ролик в кротчайшие сроки, и сделают это профессионально.</div>
+                        <div class="hr"></div>
+                        <div class="item_us">                        Наши монтажеры подберут к вашему ролику подходящее музыкальное сопровождение и звуковые эффекты.
+                        </div>
+                        <div class="hr"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bg_studio">
+                            <img src="app/img/idance-disco-500-watt-channel-recording-studio-equipment-blue-and-silver-3546-441751-1-zoom.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <ul class="bx_head">
-                <li class="bx_li">
-                    <div class="bx_block">
-                        <p class="bx_par">Быстро</p>
-                        <div class="buttons-group">
-                            <p class="bx_link">- Создание ролика за 3 дня -</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="bx_li">
-                    <div class="bx_block">
-                        <p class="bx_par">Креативно</p>
-                        <div class="buttons-group">
-                            <p class="bx_link">- Всегда следуем тренду -</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="bx_li">
-                    <div class="bx_block">
-                        <p class="bx_par">Бюджетно</p>
-                        <div class="buttons-group">
-                            <p class="bx_link">- Наши цены ниже, чем по рынку -</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="bx_li">
-                    <div class="bx_block">
-                        <p class="bx_par">Профессионально</p>
-                        <div class="buttons-group">
-                            <p class="bx_link">- Вы получаете продук абсолютного качества -</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
         </div>
+
+    </section>
+    <section class="main_why_we">
+        <div class="container">
+            <div class="row">
+                <div class="main_about_we">
+                    <p class="what_we_do wow fadeInDown" data-wow-delay=".5s">Почему мы?</p>
+                </div>
+                <div class="content">
+                    <div class="col-md-12">
+                        <div class="wh_we_slide">
+                            <div class="cont_item wow fadeInLeft" data-wow-delay=".5s">
+                                <div class="img_block"><img src="app/img/Money%20Box-96.png" alt="alt"></div>
+                                <div class="desc">
+                                    <h4>Бюджетно</h4>
+                                    <p>Наши цены ниже, чем по рынку</p>
+                                </div>
+                            </div>
+                            <div class="cont_item wow fadeInLeft" data-wow-delay=".8s">
+                                <div class="img_block"><img src="app/img/icons8-Speed-96.png" alt="alt"></div>
+                                <div class="desc">
+                                    <h4>Быстро</h4>
+                                    <p>Возможность создания ролика за один час</p>
+                                </div>
+                            </div>
+                            <div class="cont_item wow fadeInLeft" data-wow-delay="1.1s">
+                                <div class="img_block"><img src="app/img/icons8-Engineering-96.png" alt="alt"></div>
+                                <div class="desc">
+                                    <h4>Достойно</h4>
+                                    <p>Вы получаете профессиональный продукт</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="col-md-6">-->
+                    <!--<div class="few_reasons">Несколько причин, чтобы выбрать нас:</div>-->
+                    <!--<div class="cont_item wow fadeInLeft" data-wow-delay=".5s">-->
+                    <!--<div class="img_block"><img src="img/Money%20Box-96.png" alt="alt"></div>-->
+                    <!--<div class="desc">-->
+                    <!--<h4>Бюджетно</h4>-->
+                    <!--<p>Наши цены ниже, чем по рынку</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="cont_item wow fadeInLeft" data-wow-delay=".8s">-->
+                    <!--<div class="img_block"><img src="img/icons8-Speed-96.png" alt="alt"></div>-->
+                    <!--<div class="desc">-->
+                    <!--<h4>Быстро</h4>-->
+                    <!--<p>Возможность создания ролика за один час</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="cont_item wow fadeInLeft" data-wow-delay="1.1s">-->
+                    <!--<div class="img_block"><img src="img/icons8-Engineering-96.png" alt="alt"></div>-->
+                    <!--<div class="desc">-->
+                    <!--<h4>Достойно</h4>-->
+                    <!--<p>Вы получаете профессиональный продукт</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+
     </section>
     <div class="main_wach_serv">
         <a href="servises" class="follow_serv">Посмотреть примеры</a>
     </div>
-</div>
 <?php include("include/footer.php"); ?>
+</div>
 <?php include("include/scripts.php"); ?>
 </body>
 </html>

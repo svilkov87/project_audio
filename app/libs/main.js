@@ -21,20 +21,6 @@ $(document).ready(function(){
     });
 
 
-    //меню справа
-    $("#show_side").click(function () {
-        $(".side_fixed").toggleClass('fixed_go_left');
-        $(this).toggleClass('rotate_down_side');
-        $(".filter_bg").toggleClass('filter_blur');
-        // $(".filter_bg").css({
-        //     'filter': 'blur(3px)',
-        //     '-webkit-filter': 'blur(3px)',
-        //     '-moz-filter': 'blur(3px)',
-        //     '-o-filter': 'blur(3px)',
-        //     '-ms-filter': 'blur(3px)'
-        // });
-    });
-
     //скролл side главная страница
     $(window).scroll(function(){
         var $sections = $('.we_do');
@@ -164,6 +150,19 @@ $(window).scroll(function(){
     $(".menu").fadeToggle(500);
   });
 
+    // показать меню
+  $(".fa-bars").click(function(){
+    $(".ul_side").fadeToggle(500);
+  });
+
+    // показать прйси
+  $(".price_block").click(function(){
+    $(".modalPrice").addClass('active');
+      $(".closePrice").click(function(){
+          $(".modalPrice").removeClass('active');
+      });
+  });
+
 //аудио-плеер
     var mainWrapp = $(".wrapp_item"),
         chidPlay = mainWrapp.find(".span_play"),
@@ -193,26 +192,8 @@ $(window).scroll(function(){
     // воспроизведение роликов
     chidPlay.click(function () {
 
-        // $(this).hide();
-        //
-        // $(this).next(".span_pause").show();
-        //
-        // var sound = $('audio', $(this));
-        // sound[0].play();
-        //
-        // var getOrder = $(this).parents(mainWrapp).find('.get_order').css({
-        //     "opacity": "1"
-        //   });
-        // var ParentMain = $(this).parents(mainWrapp);
-        //
-        // var otherGetOrders = mainWrapp.not(ParentMain).find('.get_order').css({
-        //     "opacity": "0"
-        // });
-
         chidPause.click(function () {
-            // $(this).hide();
-            // $(this).prev(".span_play").show();
-            // sound[0].pause();
+
           });
 
         //запрещаем одновременное воспроизведение
@@ -241,7 +222,7 @@ $(window).scroll(function(){
             $.ajax({
                 url: "../../ajax/upload.php",
                 type: "POST",
-                data: $('.myform').serialize(),
+                data: $('#order_form').serialize(),
                 dataType: "html"
             }).done(function(){
                 // $('#myModlal').css("display" , "none");
@@ -255,10 +236,60 @@ $(window).scroll(function(){
         });
     });
 
+
+    // форма отправки брифа
+    $('.btn_breif').click(function(e){
+        e.preventDefault();
+        var comp = $('#company').val(),
+            gServ = $('#good_service').val(),
+            customers = $('#customers').val(),
+            main_message = $('#main_message').val(),
+            adv = $('#advantages').val(),
+            contacts = $('#contacts').val(),
+            tScreen = $('#type_screen').val(),
+            wishes = $('#wishes').val(),
+            opt = $('#optionally').val(),
+            chrono = $('#chrono').val(),
+            dFinish = $('#date_finish').val(),
+            lpr = $('#contacts_lpr').val();
+
+        if( comp == "" || gServ == "" || customers == ""|| main_message == "" || adv == "" || contacts == "" || tScreen == "" || wishes == ""  || opt == ""|| chrono == "" || dFinish == "" || lpr == "" ){
+            $('.breif_err_block').css("display" , "block");
+            $.scrollTo($(".wrapp_breif"), 400, {
+                offset: 0
+            });
+        }
+        else {
+            $('.breif_err_block').css("display" , "none");
+            $.ajax({
+                url: "../../ajax/breif.php",
+                type: "POST",
+                data: $('#breif_forms').serialize(),
+                dataType: "html"
+            }).done(function(){
+                // $('#myModlal').css("display" , "none");
+                $('.breif_modal_forms').css("display" , "none");
+                $('.breif_modal_confirm').css("display" , "block");
+                // alert('data');
+            });
+        }
+        $('#name, #s_name, #modal_field').focus(function(){
+            $('.breif_err_block').css("display" , "none");
+        });
+    });
+
     //Плавный скролл до блока .div по клику на .scroll
   //Документация: https://github.com/flesler/jquery.scrollTo
   $("#fa-angle-down").click(function() {
     $.scrollTo($(".main_about"), 800, {
+      offset: 0
+    });
+  });
+
+    //показать бриф
+    $(".breif").click(function() {
+        $(".wrapp_breif").slideToggle(100);
+    $.scrollTo($(".wrapp_breif"), 400, {
       offset: 0
     });
   });
@@ -268,25 +299,21 @@ $(window).scroll(function(){
       offset: 0
     });
   });
+
     
 
-    //modal
-    var modal = document.getElementById('myModlal'),
-        btnModal = document.getElementById('linkModal'),
-        close = document.getElementsByClassName('close')[0];
 
-    btnModal.onclick = function () {
-        modal.style.display = "block";
-    }
-    close.onclick = function () {
-        modal.style.display = "none";
-    }
-    //закрытие модал, если юзер кликает на bg
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+    //связаться с нами
+    $('.linkModal').click(function() {
+        $('#myModlal').addClass('active_connect');
+        $('.modal_content').addClass('go_there');
+        $('.close').click(function() {
+            $('#myModlal').removeClass('active_connect');
+            $('.modal_content').removeClass('go_there');
+        });
+    });
+
+
 
   // показать кнопку наверх
   $(window).scroll(function() {
@@ -339,3 +366,4 @@ window.onclick = function (event) {
         myPrice.style.display = "none";
     }
 }
+
