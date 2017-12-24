@@ -1,3 +1,20 @@
+<?php
+include("include/connection.php");
+## проверка ошибок
+error_reporting(E_ALL | E_STRICT);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
+
+//выбор всех заказов от зареганых клиентов
+$st = $pdo->query('SELECT * FROM `price`');
+$allPrices = $st->fetchAll();
+
+   // echo "<pre>";
+   // var_dump($allPrices);
+   // echo "</pre>";
+
+?>
+
 <div id="myPrice" class="modalPrice">
     <div class="price_content">
         <span class="closePrice">&times;</span>
@@ -8,22 +25,12 @@
                     <h1>Прайс-лист</h1>
                 </div>
                 <div class="modal_wrapp">
-                    <p>Сценарий информационный – 300 руб.</p>
-                    <p>Сценарий игровой – 400 руб.</p>
-                    <p>Сценарий вокальный – 600 руб.</p>
-                    <p>Сценарий стихотворный – 500 руб.</p>
-                    <p>Озвучка ролика Женский голос - 300 руб.</p>
-                    <p>Озвучка ролика Мужской голос - 400 руб.</p>
-                    <p>Озвучка ролика Детский голос – 600 руб.</p>
-                    <p>Озвучка на английском языке - 500 руб.</p>
-                    <p>Вокал - 500 руб.</p>
-                    <p>Озвучка автоответчика *(женский голос) – 400 руб.</p>
-                    <p>Ролик информационный ** (женский голос) - 790 руб.</p>
-                    <p>Ролик информационный (мужской голос) - 890 руб.</p>
-                    <p>Ролик с эффектами (шумы, звуки) – 1100 руб.</p>
-                    <p>Ролик игровой (2 голоса м и ж) – 1190 руб.</p>
-                    <p>Ролик игровой (3 голоса) – 1490 руб.</p>
-                    <p>Озвучка игр, презентаций, видео, радиопрограмм – цена договорная.</p>
+                    <?php foreach ($allPrices as $item):?>
+                    <div class="modal_wrapp__item">
+                        <span class="modal_wrapp__service"><?php echo $item['service_name']; ?></span>
+                        <span class="modal_wrapp__price"><?php echo $item['price']; ?> р</span>
+                    </div>
+                    <?php endforeach; ?>
                     <div class="note">* цены на озвучку и сценарии указаны до 30 сек.</div>
                     <div class="note">** цены на ролики – с вашим сценарием.</div>
                 </div>

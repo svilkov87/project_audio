@@ -7,10 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans+Condensed:300" rel="stylesheet">-->
     <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
+    <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <!-- <script src="libs/jquery/jquery-1.11.1.min.js"></script> -->
     <link rel="stylesheet" href="css/libs.min.css">
+    <!--[if lt IE 9]-->
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+    <!--[endif]-->
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script> -->
+    <script src="libs/main.js"></script>
     <script type="text/javascript" src="libs/wow.min.js"></script>
     <script type="text/javascript">
         new WOW().init();
@@ -29,7 +44,7 @@
         </ul>
     </div>
 </div>
-<i class="fa fa-chevron-up" aria-hidden="true" id="top" style="display: inline;"></i>
+<i class="fa fa-chevron-up" aria-hidden="true" id="top"></i>
 <!--modal-->
 <div id="myModlal" class="modal">
     <div class="modal_content">
@@ -133,9 +148,6 @@
 </section>
 <section class="two">
     <div class="two_inner">
-        <!--<div class="two_header">-->
-            <!--<p>Примеры наших работ</p>-->
-        <!--</div>-->
         <div class="block_content">
             <div class="container">
                 <div class="desc_examples">
@@ -372,11 +384,46 @@
                 </div>
                 <div class="desc_examples">
                     <h4>Сценарий</h4>
-                    <p>
-                        Для составления сценария, вам будет нужно заполнить специальную форму - <span class="breif">бриф</span>.
-                    </p>
+                    <p>Для составления сценария, вам будет нужно заполнить специальную форму - <span class="breif">бриф</span>.</p>
                     <p>*После утвеждрения сценария и монтажа ролика в соответствие с ним, любые изменения и корректировки делаются за отдельную плату. </p>
+                    <div class="desc_items">
+                        <p class="desc_items__header">Примеры сценариев:</p>
+                        <ul class="desc_items__ul">
+                            <li class="desc_items__li desc_items__li_info">Информационный
+                                <ul class="wrapper_desc">
+                                    <li class="wrapper_desc__item">LOUNGE_BAR_ПРОВАНС приглашает жителей Канаша оценить новый интерьер,приятную обстановку и изысканные блюда европейской и японской кухни. Отмечайте у нас свадьбы,юбилеи,дни рождения и корпоративные праздники. Для вас и ваших гостей - 
+КАРАОКЕ, мангал и умеренные цены.Заказывайте столики по телефону:</li>
+                                    <li class="wrapper_desc__item">У вас Рено? Добро пожаловать в «Рено Логан Клуб». Техническое обслуживание и 
+компьютерная диагностика, кузовной ремонт, запчасти. Телефон сорок-четыре 
+сорок-пять восемьдесят-четыре. Ставровская семь. логан клуб тридцать три 
+точка ру</li>
+                                    <li class="wrapper_desc__item">А что тебе может принести чужая победа? Евро-2016  - в твоем кармане! Приходи в СпортБет, делай ставки на матчи чемпионата и выигрывай по-крупному. Букмекерская контора СпортБет. Наш адрес:   ...
+
+</li>
+                                    <li class="wrapper_desc__item">Стойте! Теперь не нужно никуда идти! заказывать и выбирать товары вы можете  не выходя из дома. У сети магазинов «Глория» появился свой сайт  www.orion10.ru. Бытовая техника, мебель, компьютеры, электроинструменты - все в онлайне на orion10.ru! Заходите и покупайте. это очень удобно  orion10.ru.</li>
+                                </ul>
+                            </li>
+                            <li class="desc_items__li desc_items__li_game">Игровой
+                                 <ul class="wrapper_desc">
+                                    <li class="wrapper_desc__item">LOUNGE_BAR_ПРОВАНС приглашает жителей Канаша оценить новый интерьер,приятную обстановку и изысканные блюда европейской и японской кухни. Отмечайте у нас свадьбы,юбилеи,дни рождения и корпоративные праздники. Для вас и ваших гостей - 
+КАРАОКЕ, мангал и умеренные цены.Заказывайте столики по телефону:</li>
+                                    <li class="wrapper_desc__item">У вас Рено? Добро пожаловать в «Рено Логан Клуб». Техническое обслуживание и 
+компьютерная диагностика, кузовной ремонт, запчасти. Телефон сорок-четыре 
+сорок-пять восемьдесят-четыре. Ставровская семь. логан клуб тридцать три 
+точка ру</li>
+                                    <li class="wrapper_desc__item">А что тебе может принести чужая победа? Евро-2016  - в твоем кармане! Приходи в СпортБет, делай ставки на матчи чемпионата и выигрывай по-крупному. Букмекерская контора СпортБет. Наш адрес:   ...
+
+</li>
+                                    <li class="wrapper_desc__item">Стойте! Теперь не нужно никуда идти! заказывать и выбирать товары вы можете  не выходя из дома. У сети магазинов «Глория» появился свой сайт  www.orion10.ru. Бытовая техника, мебель, компьютеры, электроинструменты - все в онлайне на orion10.ru! Заходите и покупайте. это очень удобно  orion10.ru.</li>
+                                    <li class="wrapper_desc__item">Решили строиться - вам сюда. ШУмерля, СУрский проезд, 14 А. База строительных материалов «Топ сбыт». Продажа кирпичей, щебня, гравмассы, песка, цемента, керамблока, пиломатериалов, технической соли, каменного угля. Бесплатная доставка. Низкие цены. Оперативность. «Топ сбыт», район городской больницы.</li>
+                                </ul>
+                            </li>
+                            <li class="desc_items__li desc_items__li_image">Имиджевый</li>
+                            <li class="desc_items__li desc_items__li_vocal">Вокальный</li>
+                        </ul>                        
+                    </div>
                 </div>
+                <div class="breif_position"></div>
                 <div class="wrapp_breif">
                     <div class="breif_header">
                         <h2>Все поля обязательны к заполнению</h2>
@@ -483,14 +530,5 @@
     </div>
 </div>
 </div>
-<!--[if lt IE 9]-->
-<script src="libs/html5shiv/es5-shim.min.js"></script>
-<script src="libs/html5shiv/html5shiv.min.js"></script>
-<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-<script src="libs/respond/respond.min.js"></script>
-<!--[endif]-->
-<script src="libs/jquery/jquery-1.11.1.min.js"></script>
-<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
-<script src="libs/main.js"></script>
 </body>
 </html>

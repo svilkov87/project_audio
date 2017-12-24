@@ -17,7 +17,6 @@ ini_set('display_startup_errors', TRUE);
     <meta charset="UTF-8">
     <title>Главная</title>
     <?php include("include/head.php"); ?>
-    <script src="libs/jquery/jquery-1.11.1.min.js"></script>
     <script src="libs/jquery.bxslider/jquery.bxslider.min.js"></script>
     <link href="libs/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
     <script>
@@ -208,8 +207,7 @@ ini_set('display_startup_errors', TRUE);
     <div class="main_wach_serv">
         <a href="servises" class="follow_serv">Посмотреть примеры</a>
     </div>
-<?php include("include/footer.php"); ?>
+     <?php include("include/footer.php"); ?>
 </div>
-<?php include("include/scripts.php"); ?>
 </body>
 </html>
