@@ -137,13 +137,13 @@ $(document).ready(function(){
     });
 
     //показать бриф
-    // var breifPosition = $('.breif_position').offset().top; // позиция элемента брифа
+    var breifPosition = $('.breif_position').offset().top; // позиция элемента брифа
 
-    // console.log(breifPosition);
-    // $(".breif").on("click", function() {
-    //     $('html, body').animate({ scrollTop: breifPosition }, 500);
-    //     $(".wrapp_breif").slideToggle(100);
-    // });
+    console.log(breifPosition);
+    $(".breif").on("click", function() {
+        $('html, body').animate({ scrollTop: breifPosition }, 500);
+        $(".wrapp_breif").slideToggle(100);
+    });
 
     // форма отправки брифа
 
