@@ -137,11 +137,9 @@ $(document).ready(function(){
     });
 
     //показать бриф
-    var breifPosition = $('.breif_position').offset().top; // позиция элемента брифа
-
-    console.log(breifPosition);
+    var breifPosition = $('.breif_position').offset();
     $(".breif").on("click", function() {
-        $('html, body').animate({ scrollTop: breifPosition }, 500);
+        $('html, body').animate({ scrollTop: breifPosition.top }, 500);
         $(".wrapp_breif").slideToggle(100);
     });
 
@@ -213,10 +211,10 @@ $(document).ready(function(){
     });
 
     //связаться с нами
-    $('.linkModal').click(function() {
+    $('.linkModal').on("click", function() {
         $('#myModlal').addClass('active_connect');
         $('.modal_content').addClass('go_there');
-        $('.close').click(function() {
+        $('.close').on("click", function() {
             $('#myModlal').removeClass('active_connect');
             $('.modal_content').removeClass('go_there');
         });
@@ -250,6 +248,21 @@ $(document).ready(function(){
         else{
             $('.nav').removeClass("fixed");
         }
+    });
+
+    //сценарии аккордеон
+    $('.side_li').hover(
+        function () {
+            $('div:first', this).fadeIn(150);
+        },
+        function () {
+            $('div:first', this).fadeOut(10);
+        }
+    );
+
+    $('.desc_items__li').on( 'click', function () {
+        $(this).children('.desc_items_text').toggleClass('active_text');
+        $(this).children('.wrapper_desc').toggleClass('active');
     });
 
 });

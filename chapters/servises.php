@@ -150,28 +150,32 @@ $vocalScripts = $st->fetchAll();
                         <div class="desc_items">
                         <p class="desc_items__header">Примеры сценариев:</p>
                         <ul class="desc_items__ul">
-                            <li class="desc_items__li desc_items__li_info">Информационный
+                            <li class="desc_items__li">
+                                <span class="desc_items_text">Информационный</span>
                                 <ul class="wrapper_desc">
                                     <?php foreach ($infoScripts as $key): ?>
                                     <li class="wrapper_desc__item"><?php echo $key['example_text']; ?></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
-                            <li class="desc_items__li desc_items__li_game">Игровой
+                            <li class="desc_items__li">
+                                <span class="desc_items_text">Игровой</span>
                                  <ul class="wrapper_desc">
                                     <?php foreach ($gameScripts as $key): ?>
                                     <li class="wrapper_desc__item"><?php echo $key['example_text']; ?></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
-                            <li class="desc_items__li desc_items__li_image">Имиджевый
+                            <li class="desc_items__li">
+                                <span class="desc_items_text">Имиджевый</span>
                                 <ul class="wrapper_desc">
                                     <?php foreach ($imageScripts as $key): ?>
                                     <li class="wrapper_desc__item"><?php echo $key['example_text']; ?></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
-                            <li class="desc_items__li desc_items__li_vocal">Вокальный
+                            <li class="desc_items__li">
+                                <span class="desc_items_text">Вокальный</span>
                                 <ul class="wrapper_desc">
                                     <?php foreach ($vocalScripts as $key): ?>
                                     <li class="wrapper_desc__item"><?php echo $key['example_text']; ?></li>

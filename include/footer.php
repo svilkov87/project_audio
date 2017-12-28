@@ -14,9 +14,26 @@
         <div class="col-md-4 col-sm-4">
             <div class="row">
                 <div class="link_vk">
-                    <a href="https://vk.com/vsemroliki">
-                        <img src="dist/img/vkontakte.png" alt="">
-                    </a>
+                    <span class="link_vk__wrapp">
+                        <img src="app/img/vkontakte.png" alt="">
+                        <div class="link_vk__hover_block">
+                            <span class="link_vk__desc">
+                                <a href="https://vk.com/vsemroliki" target="_blank">группа вконтакте</a>
+                            </span>
+                        </div>
+                    </span>
+                    <span class="link_vk__wrapp" href="https://vk.com/vsemroliki">
+                        <img src="app/img/icons8-whatsapp-48.png" alt="">
+                        <div class="link_vk__hover_block">
+                            <span class="link_vk__desc">+7 (910) 141 70 50</span>
+                        </div>
+                    </span>
+                    <span class="link_vk__wrapp" href="https://vk.com/vsemroliki">
+                        <img src="app/img/icons8-viber-48.png" alt="">
+                        <div class="link_vk__hover_block">
+                            <span class="link_vk__desc">+7 (910) 141 70 50</span>
+                        </div>
+                    </span>
                 </div>
             </div>
         </div>
