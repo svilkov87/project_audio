@@ -17,24 +17,6 @@ ini_set('display_startup_errors', TRUE);
     <meta charset="UTF-8">
     <title>Главная</title>
     <?php include("include/head.php"); ?>
-    <script src="libs/jquery.bxslider/jquery.bxslider.min.js"></script>
-    <link href="libs/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
-    <script>
-        $(document).ready(function(){
-            $('.wh_we_slide').bxSlider({
-                mode: 'horizontal',           // тип перехода между слайдами может быть 'horizontal', 'vertical', 'fade'
-                captions: true,         // отображение title
-                easing: 'easeInOutQuad', // анимация слайда
-                controls: false,         // отображение стрелки - вперед, назад
-                startSlide: 0,          // Показ начнется с заданного слайда
-                infiniteLoop: true,     // показывать первый слайд за последним
-                auto: true,             // сделать автоматический переход
-                pager: false,
-                pause: 4200,            // время между сменой слайдов в м-сек
-                speed: 500           // длительность перехода слайда в м-сек
-            });
-        });
-</script>
 </head>
 <body>
 <?php include("include/button_top.php"); ?>
@@ -45,29 +27,15 @@ ini_set('display_startup_errors', TRUE);
 <div class="filter_bg">
     <section class="wrapp_head">
         <?php include("include/side_fixed.php"); ?>
-        <div class="wrapp_header wow fadeIn" data-wow-delay="0.2s">
-            <div class="front wow fadeIn">
-                <div class="front_inner">
-                    <div class="voicing wow fadeInDown" data-wow-delay="0.4s">
-                        <p>Недорогая&nbsp;Озвучка</p>
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <h1 class="header__title wow fadeIn" data-wow-delay="0.4s">Озвучка, запись и монтаж аудио роликов</h1>
+                    <div class="header__description wow fadeIn" data-wow-delay="0.6s">Аудио ролики от 790 рублей</div>
+                    <div class="header__button-block">
+                        <div class="header__button_about wow fadeIn" data-wow-delay="0.8s">О нас</div>
+                        <div class="header__button-price price_block wow fadeIn" data-wow-delay="1s">Посмотреть прайс</div>
                     </div>
-                    <div class="youre wow fadeInRight" data-wow-delay="0.4s">
-                        <p>Для тех</p>
-                    </div>
-                    <div class="youre_dream wow fadeInLeft" data-wow-delay="0.4s">
-                        <p>кто не хочет усложнять</p>
-                    </div>
-                    <div class="price_block wow fadeInUp" data-wow-delay="1.2s">
-                        <div class="price_block_inner">
-                            <img src="dist/img/Check File-96.png" alt="alt" class="price_icon">
-                        </div>
-                        <div class="block_hov">
-                            <p class="p1">посмотреть</p>
-                            <p class="p2">прайс</p>
-                        </div>
-                    </div>
-                    <i class="fa fa-angle-down wow fadeIn" data-wow-delay="1s" id="fa-angle-down"
-                    aria-hidden="true"></i>
                 </div>
             </div>
         </div>
@@ -81,32 +49,29 @@ ini_set('display_startup_errors', TRUE);
                 <div class="we_do" id="why_we">
                     <div class="col-md-4">
                         <div class="wrapp">
-                            <div class="circle">
-                                <img src="app/img/icons8-Record-96.png" alt="rec" class="image_cir">
-                            </div>
                             <h3>Озвучка</h3>
                             <p>В нашей базе есть мужские, женские и детские голоса. В зависимости от вашей задачи, мы сами подберем диктора, или можем выслать вам демо на выбор. </p>
-                            <div class="see_more"><a href="/servises">Узнать больше</a></div>
+                            <a href="/servises#two">
+                                <div class="see_more">Узнать больше</div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="wrapp">
-                            <div class="circle">
-                                <img src="app/img/icons8-Knowledge Sharing-96.png" alt="rec" class="image_cir">
-                            </div>
                             <h3>СценариЙ</h3>
                             <p>Мы напишем для вас информационный, игровой, стихотворный или вокальный сценарии. Сценарий - основа ролика. Именно от него зависит конечный продукт.</p>
-                            <div class="see_more"><a href="/servises">Узнать больше</a></div>
+                            <a href="/servises#scenario">
+                                <div class="see_more">Узнать больше</div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="wrapp">
-                            <div class="circle">
-                                <img src="app/img/Microphone-96.png" alt="rec" class="image_cir">
-                            </div>
                             <h3>Монтаж роликов</h3>
                             <p>Монтаж - это то, что превращает озвучку и музыку в единое целое. Если добавить к этому разнообразные шумы и звуки, ролик станет еще эффектнее.</p>
-                            <div class="see_more"><a href="/servises">Узнать больше</a></div>
+                            <a href="/servises">
+                                <div class="see_more">Узнать больше</div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +85,7 @@ ini_set('display_startup_errors', TRUE);
                     <p class="what_we_do wow fadeInDown" data-wow-delay=".5s">О нас</p>
                 </div>
                 <div class="content_us">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-md-offset-3">
                         <div class="item_us"><span>Мы </span>не предлагаем вам статусные дорогие ролики, которые стоят баснословных денег. Мы сделаем для
                             вас простые ролики по очень доступным ценам.</div>
                         <div class="hr"></div>
@@ -133,11 +98,11 @@ ini_set('display_startup_errors', TRUE);
                         </div>
                         <div class="hr"></div>
                     </div>
-                    <div class="col-md-6">
+<!--                     <div class="col-md-6">
                         <div class="bg_studio">
                             <img src="app/img/idance-disco-500-watt-channel-recording-studio-equipment-blue-and-silver-3546-441751-1-zoom.jpg" alt="">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -209,5 +174,24 @@ ini_set('display_startup_errors', TRUE);
     </div>
      <?php include("include/footer.php"); ?>
 </div>
+<?php include("include/scripts.php"); ?>
+    <script src="libs/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <link href="libs/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
+    <script>
+        $(document).ready(function(){
+            $('.wh_we_slide').bxSlider({
+                mode: 'horizontal',           // тип перехода между слайдами может быть 'horizontal', 'vertical', 'fade'
+                captions: true,         // отображение title
+                easing: 'easeInOutQuad', // анимация слайда
+                controls: false,         // отображение стрелки - вперед, назад
+                startSlide: 0,          // Показ начнется с заданного слайда
+                infiniteLoop: true,     // показывать первый слайд за последним
+                auto: true,             // сделать автоматический переход
+                pager: false,
+                pause: 4200,            // время между сменой слайдов в м-сек
+                speed: 500           // длительность перехода слайда в м-сек
+            });
+        });
+</script>
 </body>
 </html>

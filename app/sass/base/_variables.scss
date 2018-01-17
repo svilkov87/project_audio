@@ -14,13 +14,25 @@ $lk_bg_nav: #888f52;
 $lk_bg_nav_hover: #6b7239;
 
 
+//default
+$padding_default: 20px;
+$transition_default: .2s;
+
 //nav
-$lh_nav: 75px;
+$lh_nav: 60px;
 
 //side
-$bg_side: #fff;
+$bg_side: transparent;
 $bg_side_active: #8bbfff;
-$a_clr: #000;
-$a_clr_active: #465773;
-$a_clr_active_hover: #617ba7;
+$a_clr: #fff;
+$a_clr_active: orangered;
+$a_clr_active_hover: #464646;
 
+//examples
+
+$item_height: 350px;
+
+//footer
+$bg_footer: #141c28;
+$clr_footer: #afafaf;
+$clr_footer_hover: #fff;

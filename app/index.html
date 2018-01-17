@@ -25,46 +25,7 @@
   crossorigin="anonymous"></script> -->
     <!-- <script src="libs/jquery/jquery-1.11.1.min.js"></script> -->
     <link rel="stylesheet" href="css/libs.min.css">
-    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script> -->
-    <script src="libs/main.js"></script>
-    <script type="text/javascript" src="libs/wow.min.js"></script>
-    <script type="text/javascript">
-        new WOW().init();
-    </script>
-    <script src="libs/jquery.bxslider/jquery.bxslider.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.wh_we_slide').bxSlider({
-                mode: 'horizontal',           // тип перехода между слайдами может быть 'horizontal', 'vertical', 'fade'
-                captions: true,         // отображение title
-                easing: 'easeInOutQuad', // анимация слайда
-                controls: false,         // отображение стрелки - вперед, назад
-                startSlide: 0,          // Показ начнется с заданного слайда
-                infiniteLoop: true,     // показывать первый слайд за последним
-                auto: true,             // сделать автоматический переход
-                pager: false,
-                pause: 4200,            // время между сменой слайдов в м-сек
-                speed: 500           // длительность перехода слайда в м-сек
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-            $('.center').bxSlider({
-                mode: 'horizontal',           // тип перехода между слайдами может быть 'horizontal', 'vertical', 'fade'
-                captions: true,         // отображение title
-                easing: 'easeInOutQuad', // анимация слайда
-                controls: false,         // отображение стрелки - вперед, назад
-                startSlide: 0,          // Показ начнется с заданного слайда
-                infiniteLoop: true,     // показывать первый слайд за последним
-                auto: true,             // сделать автоматический переход
-                pager: false,
-                pause: 4200,            // время между сменой слайдов в м-сек
-                speed: 500           // длительность перехода слайда в м-сек
-            });
-        });
-    </script>
+    
     <link href="libs/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
 </head>
 <body>
@@ -209,7 +170,7 @@
                     <div class="logo_left">
                         <img src="img/microphone.png" alt="mic" class="img_logo">
                         <div class="logo">ВСЕМРОЛИКИ</div>
-                        <div class="mail">info@vsemroliki.ru</div>
+                        <!-- <div class="mail">info@vsemroliki.ru</div> -->
                     </div>
                     <i class="fa fa-bars" aria-hidden="true"></i>
                     <ul class="ul_side">
@@ -237,8 +198,22 @@
                 </div>
             </div>
         </div>
-        <div class="wrapp_header wow fadeIn" data-wow-delay="0.2s">
-            <div class="front wow fadeIn">
+        <!-- <div class="wrapp_header wow fadeIn" data-wow-delay="0.2s"> -->
+            <!-- new -->
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="header__title wow fadeIn" data-wow-delay="0.4s">Озвучка, запись и монтаж аудио роликов</h1>
+                        <div class="header__description wow fadeIn" data-wow-delay="0.6s">Аудио ролики от 790 рублей</div>
+                        <div class="header__button-block">
+                            <div class="header__button_about wow fadeIn" data-wow-delay="0.8s">О нас</div>
+                            <div class="header__button-price price_block wow fadeIn" data-wow-delay="1s">Посмотреть прайс</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /new -->
+<!--             <div class="front wow fadeIn">
                 <div class="front_inner">
                     <div class="voicing wow fadeInDown" data-wow-delay="0.4s">
                         <p>Недорогая&nbsp;Озвучка</p>
@@ -261,8 +236,8 @@
                     <i class="fa fa-angle-down wow fadeIn" data-wow-delay="1s" id="fa-angle-down"
                     aria-hidden="true"></i>
                 </div>
-            </div>
-        </div>
+            </div> -->
+        <!-- </div> -->
     </section>
     <section class="main_about">
         <div class="container">
@@ -273,32 +248,27 @@
                 <div class="we_do" id="why_we">
                     <div class="col-md-4">
                         <div class="wrapp">
-                            <div class="circle">
-                                <img src="img/icons8-Record-96.png" alt="rec" class="image_cir">
-                            </div>
                             <h3>Озвучка</h3>
                             <p>В нашей базе есть мужские, женские и детские голоса. В зависимости от вашей задачи, мы сами подберем диктора, или можем выслать вам демо на выбор</p>
-                            <div class="see_more linkModal">Узнать больше</div>
-                        </div>
+                            <a href="test.html#two">
+                                <div class="see_more">Узнать больше</div>
+                            </a>                        </div>
                     </div>
                     <div class="col-md-4">
                         <div class="wrapp">
-                            <div class="circle">
-                                <img src="img/icons8-Knowledge Sharing-96.png" alt="rec" class="image_cir">
-                            </div>
                             <h3>СценариЙ</h3>
                             <p>Praesent magna neque, dapibus sit amet eros sed, aliquam interdum felis. Nulla rhoncus ipsum dui.</p>
-                            <div class="see_more linkModal">Узнать больше</div>
-                        </div>
+                            <a href="test.html#two">
+                                <div class="see_more">Узнать больше</div>
+                            </a>                        </div>
                     </div>
                     <div class="col-md-4">
                         <div class="wrapp">
-                            <div class="circle">
-                                <img src="img/Microphone-96.png" alt="rec" class="image_cir">
-                            </div>
                             <h3>Монтаж роликов</h3>
                             <p>Praesent magna neque, dapibus sit amet eros sed, aliquam interdum felis. Nulla rhoncus ipsum dui.</p>
-                            <div class="see_more linkModal">Узнать больше</div>
+                            <a href="test.html#two">
+                                <div class="see_more">Узнать больше</div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -312,7 +282,7 @@
                     <p class="what_we_do wow fadeInDown" data-wow-delay=".5s">О нас</p>
                 </div>
                 <div class="content_us">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-md-offset-3">
                         <div class="item_us"><span>Мы </span>не предлагаем вам статусные дорогие ролики, которые стоят баснословных денег. Мы сделаем для
                             вас простые ролики по очень доступным ценам.</div>
                         <div class="hr"></div>
@@ -325,11 +295,11 @@
                         </div>
                         <div class="hr"></div>
                     </div>
-                    <div class="col-md-6">
+<!--                     <div class="col-md-6">
                         <div class="bg_studio">
                             <img src="img/idance-disco-500-watt-channel-recording-studio-equipment-blue-and-silver-3546-441751-1-zoom.jpg" alt="">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -455,14 +425,17 @@
         <a href="test.html" class="follow_serv">Посмотреть примеры</a>
     </div>
     <div class="footer">
+        <div id="map" style="width: 100%; height: 350px"></div>
         <div class="container">
             <div class="block_footer">
-                <div class="col-md-4 col-sm-4">
+                <div class="col-md-12">
                     <div class="row">
                         <ul class="about-ul-footer">
-                            <li class="about--li-footer"><a href="#">услуги</a></li>
-                            <li class="about--li-footer"><a href="#">как заказть</a></li>
-                            <li class="about--li-footer"><a href="#">Спецпредложения</a></li>
+                            <li class="about--li-footer"><a href="index.html">главная</a></li>
+                            <li class="about--li-footer"><a href="test.html">услуги</a></li>
+                            <li class="about--li-footer price_block"><a href="#">прайс-лист</a></li>
+                            <li class="about--li-footer linkModal"><a href="#">связаться с нами</a></li>
+                            <li class="about--li-footer">info@vsemroliki.ru</li>
                         </ul>
                     </div>
                 </div>
@@ -489,12 +462,57 @@
             <div class="col-md-4 col-sm-4">
                 <div class="row">
                     <div class="dev">
-                        <span>Разработка:&nbsp;svilkov87@mail.ru</span>
+                        <span>разработка:&nbsp;svilkov49@gmail.com</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script> -->
+    <script src="libs/main.js"></script>
+    <script type="text/javascript" src="libs/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap,
+                myPlacemark;
+
+        function init(){
+            myMap = new ymaps.Map("map", {
+                center: [56.330241, 43.996186
+                ],
+                zoom: 16
+            });
+
+            myPlacemark = new ymaps.Placemark([56.330241, 43.996186], {
+                hintContent: 'Москва!',
+                balloonContent: 'Столица России'
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+    <script src="libs/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.wh_we_slide').bxSlider({
+                mode: 'horizontal',           // тип перехода между слайдами может быть 'horizontal', 'vertical', 'fade'
+                captions: true,         // отображение title
+                easing: 'easeInOutQuad', // анимация слайда
+                controls: false,         // отображение стрелки - вперед, назад
+                startSlide: 0,          // Показ начнется с заданного слайда
+                infiniteLoop: true,     // показывать первый слайд за последним
+                auto: true,             // сделать автоматический переход
+                pager: false,
+                pause: 4200,            // время между сменой слайдов в м-сек
+                speed: 500           // длительность перехода слайда в м-сек
+            });
+        });
+    </script>
 </body>
 </html>

@@ -8,7 +8,7 @@ ini_set('display_startup_errors', TRUE);
 session_start();
 
 ### Если роутера нет - это главная страница
-if (empty($_GET['route']) || $_GET['route'] == 'home') {
+if (empty($_GET['route']) || $_GET['route'] == '') {
 
     include_once "chapters/main.php";
     die();

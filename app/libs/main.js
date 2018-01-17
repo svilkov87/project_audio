@@ -1,17 +1,17 @@
-$(document).ready(function(){
-
-    $(window).on("load",function(){ "use strict";
-        $(".loader").fadeOut(1700);
+    $(window).on('load',function(){
+        $('.loader').fadeOut(500);
     });
 
-    // параллакс
-    $(window).scroll(function () {
-        var st = $(this).scrollTop();
+$(document).ready(function(){
 
-        // console.log(st);
-        $(".one, .wrapp_head").css({
-          "filter": "grayscale(" + st / 300 + ")"
-        });
+    //фикс навбар
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 5){
+            $('.side_fixed').addClass("fixed");
+        }
+        else{
+            $('.side_fixed').removeClass("fixed");
+        }
     });
 
     //скролл side главная страница
@@ -185,28 +185,21 @@ $(document).ready(function(){
 
     //Плавный скролл до блока .div по клику на .scroll
     //Документация: https://github.com/flesler/jquery.scrollTo
-    $("#fa-angle-down").on("click", function() {
-        $.scrollTo($(".main_about"), 800, {
-          offset: 0
+    $(".header__button_about").on("click", function() {
+        $.scrollTo($(".main_about"), 600, {
+          offset: -60
         });
     });
 
-    // var mainAboutPosition = $('.main_abou').offset().top; // позиция элемента брифа
-    //     console.log(mainAboutPosition);
-    // $("#fa-angle-down").on("click", function() {
-    //     $('html, body').animate({ scrollTop: mainAboutPosition }, 500);
-    // });
-
-    $(".go").click(function() {
-        // alert('test');
-        $.scrollTo($("#products"), 800, {
-          offset: 0
+    $('.to_examples').on("click", function() {
+        $.scrollTo($(".two"), 600, {
+          offset: -60
         });
     });
 
-    $('#fa-angle-down-one').on("click", function() {
-        $.scrollTo($(".two"), 800, {
-          offset: 0
+    $('.to_scripts').on("click", function() {
+        $.scrollTo($("#scenario"), 600, {
+          offset: -60
         });
     });
 
