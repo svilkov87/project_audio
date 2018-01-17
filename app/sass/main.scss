@@ -1527,6 +1527,20 @@ body {
     }
     .block_content{
       margin-top: 20px;
+      .record {
+        padding: 40px 0;
+        text-align: center;
+        .record__title {
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 30px;
+        }
+        .record__description {
+          padding: 10px 0;
+          max-width: 550px;
+          margin: 0 auto;
+        }
+      }
       .desc_examples{
         padding: 40px 0;
         text-align: left;
@@ -1624,13 +1638,11 @@ body {
       }
       .wrapp_item{
         height: $item_height;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         overflow: hidden;
         position: relative;
         background: #ffffff;
-        width: 99%;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+        @include bsh(0px 0px 1px 0px rgba(50, 50, 50, 0.75));
         &:hover {
           @include bsh(0px 0px 50px 0px rgba(50, 50, 50, 0.75));
           padding: 10%;

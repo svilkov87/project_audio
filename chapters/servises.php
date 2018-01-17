@@ -78,45 +78,42 @@ $vocalScripts = $st->fetchAll();
         <div class="two_inner">
             <div class="block_content">
                 <div class="container">
-                    <div class="desc_examples">
-                        <h4>Озвучка</h4>
-                        <p>Озвучка бывает различных видов: информационная, игровая, пародия или вокал.</p>
-                        <p>Кроме того, наши дикторы могут начитать вам текст на английском языке.</p>
+                    <div class="record">
+                        <div class="record__title">Озвучка</div>
+                        <div class="record__description">Озвучка бывает различных видов: информационная, игровая, пародия или вокал. Кроме того, наши дикторы могут начитать вам текст на английском языке.</div>
                     </div>
                     <!-- new examples -->
                     <div class="row">
                     <?php foreach ($allExamples as $item):?>
                         <div class="col-md-4 col-sm-4">
-                            <div class="row">
-                                <div class="wrapp_item">
-                                    <div class="item_image">
-                                        <img src="app/img/headphone-1129896_640.png">
+                            <div class="wrapp_item">
+                                <div class="item_image">
+                                    <img src="app/img/headphone-1129896_640.png">
+                                </div>
+                                <div class="top_block">
+                                    <div class="top_head">
+                                        <h4 class="h4_head"><?php echo $item['audio_name']; ?></h4>
+                                        <p class="top_p"><?php echo $item['audio_description']; ?></p>
+                                        <div class="span_play">
+                                            <i class="fa fa-play" aria-hidden="true"></i>
+                                            <audio class="sound" src="app/audio/<?php echo $item['audio_track']; ?>" preload="auto" controls></audio>
+                                        </div>
+                                        <div class="span_pause">
+                                            <i class="fa fa-pause" aria-hidden="true"></i>
+                                        </div>
                                     </div>
-                                    <div class="top_block">
-                                        <div class="top_head">
-                                            <h4 class="h4_head"><?php echo $item['audio_name']; ?></h4>
-                                            <p class="top_p"><?php echo $item['audio_description']; ?></p>
-                                            <div class="span_play">
-                                                <i class="fa fa-play" aria-hidden="true"></i>
-                                                <audio class="sound" src="app/audio/<?php echo $item['audio_track']; ?>" preload="auto" controls></audio>
-                                            </div>
-                                            <div class="span_pause">
-                                                <i class="fa fa-pause" aria-hidden="true"></i>
+                                    <div class="top_body">
+                                        <div class="t_body_head">
+                                            <p class="p_desc">Стоимость</p>
+                                            <p class="p_price">от <?php echo $item['price']; ?>р</p>
+                                        </div>
+                                        <div class="t_body_bott">
+                                            <div class="cssload-container">
+                                                <div class="cssload-tube-tunnel"></div>
                                             </div>
                                         </div>
-                                        <div class="top_body">
-                                            <div class="t_body_head">
-                                                <p class="p_desc">Стоимость</p>
-                                                <p class="p_price">от <?php echo $item['price']; ?>р</p>
-                                            </div>
-                                            <div class="t_body_bott">
-                                                <div class="cssload-container">
-                                                    <div class="cssload-tube-tunnel"></div>
-                                                </div>
-                                            </div>
-                                            <div class="get_order linkModal">
-                                                <p class="p_get_ord">Сформировать заказ</p>
-                                            </div>
+                                        <div class="get_order linkModal">
+                                            <p class="p_get_ord">Сформировать заказ</p>
                                         </div>
                                     </div>
                                 </div>
