@@ -123,119 +123,120 @@ $vocalScripts = $st->fetchAll();
                     </div>
                     <!-- /new examples -->
                     <!-- scenario -->
-                    <div class="desc_examples" id="scenario">
+                    <div class="scenario" id="scenario">
                         <h4>Сценарий</h4>
                         <p>Для составления сценария, вам будет нужно заполнить специальную форму - <span class="breif">бриф</span>.</p>
-                        <p>*После утвеждрения сценария и монтажа ролика в соответствие с ним, любые изменения и корректировки делаются за отдельную плату.</p>
+                        <p>* После утвеждрения сценария и монтажа ролика в соответствие с ним, любые изменения и корректировки делаются за отдельную плату.</p>
+                        <div class="breif_position">
+                            <div class="col-md-6 col-md-offset-3">
+                                <div class="wrapp_breif">
+                                    <div class="breif_header">
+                                        <h2>Все поля обязательны к заполнению</h2>
+                                    </div>
+                                    <div class="breif_wrapp">
+                                        <div class="breif_err_block">
+                                            <p class="p_err_breif">Не все поля заполнены</p>
+                                        </div>
+                                        <div class="breif_modal_confirm">
+                                            Спасибо!
+                                        </div>
+                                        <div class="breif_modal_forms">
+                                            <form action="" method="post" id="breif_forms">
+                                                <div class="breif_f_item">
+                                                    <p>Наименование компании:</p>
+                                                    <input class="breif_inputs" type="text" name="company" id="company">
+                                                </div>
+                                                <div class="breif_f_item">
+                                                    <p>Товар/услуга, которая рекламируется в ролике:</p>
+                                                    <input class="breif_inputs" type="text" name="good_service" id="good_service">
+                                                </div>
+                                                <div class="breif_f_item">
+                                                    <p>Потенциальные покупатели на которых рассчитан ролик:</p>
+                                                    <input class="breif_inputs" type="text" name="customers" id="customers">
+                                                </div>
+
+                                                <div class="breif_f_item">
+                                                    <p>Главное сообщение, которое должно прозвучать в ролике:</p>
+                                                    <input class="breif_inputs" type="text" name="main_message" id="main_message">
+                                                </div>
+                                                <div class="breif_f_item">
+                                                    <p>Конкурентные преимущества вашей услуги, товара (Чем ваш товар выгодно отличается от конкурентов):</p>
+                                                    <input class="breif_inputs" type="text" name="advantages" id="advantages">
+                                                </div>
+                                                <div class="breif_f_item">
+                                                    <p>Координаты (адрес, телефон, сайт), которые должны прозвучать в ролике:</p>
+                                                    <input class="breif_inputs" type="text" name="contacts" id="contacts">
+                                                </div>
+                                                <div class="breif_f_item">
+                                                    <p>Тип сценария (информационный, игровой, песенный).</p>
+                                                    <input class="breif_inputs" type="text" name="type_screen" id="type_screen">
+                                                </div>
+                                                <div class="breif_f_item">
+                                                    <p>Пожелания по тональности сообщения, музыке, голосу (юмор, лирика, пафос, солидно, жизнерадостно, рационально, серьезно, по деловому, другое).</p>
+                                                    <textarea class="breif_textarea" name="wishes" id="wishes" cols="30" rows="10"></textarea>
+                                                </div>
+                                                <div class="breif_f_item">
+                                                    <p>Нужно ли дополнительное оформление (шумы, звуки). Если да, то какие?</p>
+                                                    <input class="breif_inputs" type="text" name="optionallyty" id="optionallyty">
+                                                </div>
+
+                                                <div class="breif_f_item">
+                                                    <p>Хронометраж</p>
+                                                    <input class="breif_inputs" type="text" name="chrono" id="chrono">
+                                                </div>
+
+                                                <div class="breif_f_item">
+                                                    <p>Дата, когда вы хотите получить готовый материал.</p>
+                                                    <input class="breif_inputs" type="text" name="date_finish" id="date_finish">
+                                                </div>
+
+                                                <div class="breif_f_item">
+                                                    <p>КОНТАКТЫ: Телефон, почта, Skype, того кто принимает решение по утверждению роликка</p>
+                                                    <textarea class="breif_textarea" name="contacts_lpr" id="contacts_lpr" cols="30" rows="10"></textarea>
+                                                </div>
+                                                <button type="submit" name="enter_breif" class="btn_breif">Отправить данные</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="desc_items">
-                        <p class="desc_items__header">Примеры сценариев:</p>
-                        <ul class="desc_items__ul">
-                            <li class="desc_items__li">
-                                <span class="desc_items_text">Информационный</span>
-                                <ul class="wrapper_desc">
-                                    <?php foreach ($infoScripts as $key): ?>
-                                    <li class="wrapper_desc__item"><?php echo $key['example_text']; ?></li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </li>
-                            <li class="desc_items__li">
-                                <span class="desc_items_text">Игровой</span>
-                                 <ul class="wrapper_desc">
-                                    <?php foreach ($gameScripts as $key): ?>
-                                    <li class="wrapper_desc__item"><?php echo $key['example_text']; ?></li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </li>
-                            <li class="desc_items__li">
-                                <span class="desc_items_text">Имиджевый</span>
-                                <ul class="wrapper_desc">
-                                    <?php foreach ($imageScripts as $key): ?>
-                                    <li class="wrapper_desc__item"><?php echo $key['example_text']; ?></li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </li>
-                            <li class="desc_items__li">
-                                <span class="desc_items_text">Вокальный</span>
-                                <ul class="wrapper_desc">
-                                    <?php foreach ($vocalScripts as $key): ?>
-                                    <li class="wrapper_desc__item"><?php echo $key['example_text']; ?></li>
-                                    <?php endforeach; ?>
-                                </ul>                                
-                            </li>
-                        </ul>                        
-                    </div>
-                    </div>
-                    <div class="breif_position"></div>
-                    <div class="col-md-6 col-md-offset-3">
-                        <div class="wrapp_breif">
-                            <div class="breif_header">
-                                <h2>Все поля обязательны к заполнению</h2>
-                            </div>
-                            <div class="breif_wrapp">
-                                <div class="breif_err_block">
-                                    <p class="p_err_breif">Не все поля заполнены</p>
-                                </div>
-                                <div class="breif_modal_confirm">
-                                    Спасибо!
-                                </div>
-                                <div class="breif_modal_forms">
-                                    <form action="" method="post" id="breif_forms">
-                                        <div class="breif_f_item">
-                                            <p>Наименование компании:</p>
-                                            <input class="breif_inputs" type="text" name="company" id="company">
-                                        </div>
-                                        <div class="breif_f_item">
-                                            <p>Товар/услуга, которая рекламируется в ролике:</p>
-                                            <input class="breif_inputs" type="text" name="good_service" id="good_service">
-                                        </div>
-                                        <div class="breif_f_item">
-                                            <p>Потенциальные покупатели на которых рассчитан ролик:</p>
-                                            <input class="breif_inputs" type="text" name="customers" id="customers">
-                                        </div>
-
-                                        <div class="breif_f_item">
-                                            <p>Главное сообщение, которое должно прозвучать в ролике:</p>
-                                            <input class="breif_inputs" type="text" name="main_message" id="main_message">
-                                        </div>
-                                        <div class="breif_f_item">
-                                            <p>Конкурентные преимущества вашей услуги, товара (Чем ваш товар выгодно отличается от конкурентов):</p>
-                                            <input class="breif_inputs" type="text" name="advantages" id="advantages">
-                                        </div>
-                                        <div class="breif_f_item">
-                                            <p>Координаты (адрес, телефон, сайт), которые должны прозвучать в ролике:</p>
-                                            <input class="breif_inputs" type="text" name="contacts" id="contacts">
-                                        </div>
-                                        <div class="breif_f_item">
-                                            <p>Тип сценария (информационный, игровой, песенный).</p>
-                                            <input class="breif_inputs" type="text" name="type_screen" id="type_screen">
-                                        </div>
-                                        <div class="breif_f_item">
-                                            <p>Пожелания по тональности сообщения, музыке, голосу (юмор, лирика, пафос, солидно, жизнерадостно, рационально, серьезно, по деловому, другое).</p>
-                                            <textarea class="breif_textarea" name="wishes" id="wishes" cols="30" rows="10"></textarea>
-                                        </div>
-                                        <div class="breif_f_item">
-                                            <p>Нужно ли дополнительное оформление (шумы, звуки). Если да, то какие?</p>
-                                            <input class="breif_inputs" type="text" name="optionallyty" id="optionallyty">
-                                        </div>
-
-                                        <div class="breif_f_item">
-                                            <p>Хронометраж</p>
-                                            <input class="breif_inputs" type="text" name="chrono" id="chrono">
-                                        </div>
-
-                                        <div class="breif_f_item">
-                                            <p>Дата, когда вы хотите получить готовый материал.</p>
-                                            <input class="breif_inputs" type="text" name="date_finish" id="date_finish">
-                                        </div>
-
-                                        <div class="breif_f_item">
-                                            <p>КОНТАКТЫ: Телефон, почта, Skype, того кто принимает решение по утверждению роликка</p>
-                                            <textarea class="breif_textarea" name="contacts_lpr" id="contacts_lpr" cols="30" rows="10"></textarea>
-                                        </div>
-                                        <button type="submit" name="enter_breif" class="btn_breif">Отправить данные</button>
-                                    </form>
-                                </div>
-                            </div>
+                            <p class="desc_items__header">Примеры сценариев:</p>
+                            <ul class="desc_items__ul">
+                                <li class="desc_items__li">
+                                    <span class="desc_items_text active_text">Информационный</span>
+                                    <ul class="wrapper_desc active">
+                                        <?php foreach ($infoScripts as $key): ?>
+                                        <li class="wrapper_desc__item"><?php echo $key['example_text']; ?></li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                </li>
+                                <li class="desc_items__li">
+                                    <span class="desc_items_text">Игровой</span>
+                                     <ul class="wrapper_desc">
+                                        <?php foreach ($gameScripts as $key): ?>
+                                        <li class="wrapper_desc__item"><?php echo $key['example_text']; ?></li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                </li>
+                                <li class="desc_items__li">
+                                    <span class="desc_items_text">Имиджевый</span>
+                                    <ul class="wrapper_desc">
+                                        <?php foreach ($imageScripts as $key): ?>
+                                        <li class="wrapper_desc__item"><?php echo $key['example_text']; ?></li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                </li>
+                                <li class="desc_items__li">
+                                    <span class="desc_items_text">Вокальный</span>
+                                    <ul class="wrapper_desc">
+                                        <?php foreach ($vocalScripts as $key): ?>
+                                        <li class="wrapper_desc__item"><?php echo $key['example_text']; ?></li>
+                                        <?php endforeach; ?>
+                                    </ul>                                
+                                </li>
+                            </ul>                        
                         </div>
                     </div>
                     <!-- /scenario -->

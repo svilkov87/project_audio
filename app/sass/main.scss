@@ -1541,7 +1541,7 @@ body {
           margin: 0 auto;
         }
       }
-      .desc_examples{
+      .scenario {
         padding: 40px 0;
         text-align: left;
         h4{
@@ -1562,32 +1562,51 @@ body {
             }
           }
         }
+        .breif_position {
+          padding: $padding_default 0;
+        }
         .desc_items{
           .desc_items__header{
-
+            font-size: 30px;
+            line-height: 48px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            display: block;
+            font-weight: bold;
           }
           .desc_items__ul{
             display: inline-grid;
             @include transition(.4s);
             .desc_items__li{
               .desc_items_text{
-                padding: 10px;
+                position: relative;
+                padding: 10px 35px 10px 10px;
                 margin-bottom: 10px;
-                border: 1px solid #1c9ae1;
-                color: #1c9ae1;
+                color: $a_clr_active;
+                border: 3px solid $a_clr_active;
                 display: inline-block;
                 cursor: pointer;
                 text-transform: uppercase;
-                @include bradius(3px);
+                &:after {
+                  content: '';
+                  position: absolute;
+                  top: 13px;  
+                  right: 15px;
+                  width: 10px;
+                  height: 10px;
+                  background: $a_clr_active;
+                }
               }
               .active_text{
-                color: orangered;
-                border: 1px solid orangered;
+                border: 3px solid $a_clr_active_hover;
+                color: $a_clr_active_hover;
+                &:after {
+                  background: #61abea;
+                }
               }
               .wrapper_desc{
                 display: none;
                 padding: 10px;
-                @include bradius(5px);
                 @include transition(.6s);
                 .wrapper_desc__item{
                   padding: 10px;
@@ -1611,7 +1630,7 @@ body {
               .active {
                 display: block;
                 margin: 10px 0;
-                border: 1px solid #ccc;
+                border: 3px solid #ccc;
                 animation: blue_bg 2s ease-in-out;
                 @include transition(.6s);
                 @keyframes blue_bg {
@@ -1844,10 +1863,11 @@ body {
       .wrapp_breif{
         display: none;
         height: auto;
+        padding: 15px;
         overflow: hidden;
         border: 1px solid #ccc;
         .breif_header{
-          padding: 10px;
+          padding: 10px 0;
           h2{
             padding: 10px 0;
             display: inline-block;
@@ -1855,7 +1875,6 @@ body {
           }
         }
         .breif_wrapp{
-          padding: 10px;
           .breif_err_block{
             display: none;
             .p_err_breif{
@@ -1870,7 +1889,6 @@ body {
           }
           .breif_modal_forms{
             .breif_f_item{
-              padding: 10px;
               @include smart_vert_hor{
                 padding: 5px;
               }
@@ -1879,29 +1897,32 @@ body {
               }
               .breif_inputs{
                 width: 100%;
+                outline: 0;
+                border: none;
+                border-bottom: 1px solid rgba(204,204,204,.68);
+                height: 35px;
+                margin: 5px auto;
                 padding: 5px;
-                border: 1px solid #ccc;
-                outline: none;
-                @include bradius(5px);
+                font-size: 16px;
+                color: #6e8096;
               }
               .breif_textarea{
                 width: 100%;
                 padding: 5px;
+                margin: 15px 0;
                 border: 1px solid #ccc;
                 outline: none;
-                @include bradius(5px);
               }
             }
             .btn_breif{
-              border: 1px solid #cec9c9;
+              border: none;
               padding: 15px;
               background: $a_clr_active;
               width: 100%;
               color: #fff;
-              @include transition(.3s);
+              @include transition($transition_default);
               &:hover{
-                background: #ccc;
-                color: #000;
+                background: $a_clr_active_hover;
               }
             }
           }

@@ -378,40 +378,94 @@
                         </div>
                     </div>
                 </div>
-                <div class="desc_examples" id="scenario">
+                <div class="scenario" id="scenario">
                     <h4>Сценарий</h4>
                     <p>Для составления сценария, вам будет нужно заполнить специальную форму - <span class="breif">бриф</span>.</p>
                     <p>*После утвеждрения сценария и монтажа ролика в соответствие с ним, любые изменения и корректировки делаются за отдельную плату. </p>
+                    <div class="breif_position">
+                        <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="wrapp_breif">
+                                <div class="breif_header">
+                                    <h2>Все поля обязательны к заполнению</h2>
+                                </div>
+                                <div class="breif_wrapp">
+                                    <div class="breif_err_block">
+                                        <p class="p_err_breif">Не все поля заполнены</p>
+                                    </div>
+                                    <div class="breif_modal_confirm">
+                                        Спасибо!
+                                    </div>
+                                    <div class="breif_modal_forms">
+                                        <form action="">
+                                            <div class="breif_f_item">
+                                                <p>Наименование компании:</p>
+                                                <input class="breif_inputs" type="text" name="company" id="company">
+                                            </div>
+                                            <div class="breif_f_item">
+                                                <p>Товар/услуга, которая рекламируется в ролике:</p>
+                                                <input class="breif_inputs" type="text" name="good_service" id="good_service">
+                                            </div>
+                                            <div class="breif_f_item">
+                                                <p>Потенциальные покупатели на которых рассчитан ролик:</p>
+                                                <input class="breif_inputs" type="text" name="customers" id="customers">
+                                            </div>
+                                            <div class="breif_f_item">
+                                                <p>Конкурентные преимущества вашей услуги, товара (Чем ваш товар выгодно отличается от конкурентов):</p>
+                                                <input class="breif_inputs" type="text" name="advantages" id="advantages">
+                                            </div>
+                                            <div class="breif_f_item">
+                                                <p>Координаты (адрес, телефон, сайт), которые должны прозвучать в ролике:</p>
+                                                <input class="breif_inputs" type="text" name="contacts" id="contacts">
+                                            </div>
+                                            <div class="breif_f_item">
+                                                <p>Тип сценария (информационный, игровой, песенный).</p>
+                                                <input class="breif_inputs" type="text" name="type_screen" id="type_screen">
+                                            </div>
+                                            <div class="breif_f_item">
+                                                <p>Пожелания по тональности сообщения, музыке, голосу (юмор, лирика, пафос, солидно, жизнерадостно, рационально, серьезно, по деловому, другое).</p>
+                                                <textarea class="breif_textarea" name="wishes" id="wishes" cols="30" rows="10"></textarea>
+                                            </div>
+                                            <div class="breif_f_item">
+                                                <p>Нужно ли дополнительное оформление (шумы, звуки). Если да, то какие?</p>
+                                                <input class="breif_inputs" type="text" name="optionally" id="optionally">
+                                            </div>
+
+                                            <div class="breif_f_item">
+                                                <p>Дата, когда вы хотите получить готовый материал.</p>
+                                                <input class="breif_inputs" type="text" name="date_finish" id="date_finish">
+                                            </div>
+
+                                            <div class="breif_f_item">
+                                                <p>КОНТАКТЫ: Телефон, почта, Skype, того кто принимает решение по утверждению роликка</p>
+                                                <textarea class="breif_textarea" name="contacts_lpr" id="contacts_lpr" cols="30" rows="10"></textarea>
+                                            </div>
+                                            <button type="submit" name="enter" class="btn_breif">Отправить данные</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                     <div class="desc_items">
                         <p class="desc_items__header">Примеры сценариев:</p>
                         <ul class="desc_items__ul">
                             <li class="desc_items__li">
-                                <span class="desc_items_text">Информационный</span>
-                                <ul class="wrapper_desc">
-                                    <li class="wrapper_desc__item">LOUNGE_BAR_ПРОВАНС приглашает жителей Канаша оценить новый интерьер,приятную обстановку и изысканные блюда европейской и японской кухни. Отмечайте у нас свадьбы,юбилеи,дни рождения и корпоративные праздники. Для вас и ваших гостей - 
-КАРАОКЕ, мангал и умеренные цены.Заказывайте столики по телефону:</li>
-                                    <li class="wrapper_desc__item">У вас Рено? Добро пожаловать в «Рено Логан Клуб». Техническое обслуживание и 
-компьютерная диагностика, кузовной ремонт, запчасти. Телефон сорок-четыре 
-сорок-пять восемьдесят-четыре. Ставровская семь. логан клуб тридцать три 
-точка ру</li>
-                                    <li class="wrapper_desc__item">А что тебе может принести чужая победа? Евро-2016  - в твоем кармане! Приходи в СпортБет, делай ставки на матчи чемпионата и выигрывай по-крупному. Букмекерская контора СпортБет. Наш адрес:   ...
-
-</li>
+                                <span class="desc_items_text active_text">Информационный</span>
+                                <ul class="wrapper_desc active">
+                                    <li class="wrapper_desc__item">LOUNGE_BAR_ПРОВАНС приглашает жителей Канаша оценить новый интерьер,приятную обстановку и изысканные блюда европейской и японской кухни. Отмечайте у нас свадьбы,юбилеи,дни рождения и корпоративные праздники. Для вас и ваших гостей - КАРАОКЕ, мангал и умеренные цены.Заказывайте столики по телефону:</li>
+                                    <li class="wrapper_desc__item">У вас Рено? Добро пожаловать в «Рено Логан Клуб». Техническое обслуживание и компьютерная диагностика, кузовной ремонт, запчасти. Телефон сорок-четыре сорок-пять восемьдесят-четыре. Ставровская семь. логан клуб тридцать три точка ру</li>
+                                    <li class="wrapper_desc__item">А что тебе может принести чужая победа? Евро-2016  - в твоем кармане! Приходи в СпортБет, делай ставки на матчи чемпионата и выигрывай по-крупному. Букмекерская контора СпортБет. Наш адрес:   ...</li>
                                     <li class="wrapper_desc__item">Стойте! Теперь не нужно никуда идти! заказывать и выбирать товары вы можете  не выходя из дома. У сети магазинов «Глория» появился свой сайт  www.orion10.ru. Бытовая техника, мебель, компьютеры, электроинструменты - все в онлайне на orion10.ru! Заходите и покупайте. это очень удобно  orion10.ru.</li>
                                 </ul>
                             </li>
                             <li class="desc_items__li">
-                                <span class="desc_items_text">Игровой</span>
+                                 <span class="desc_items_text">Игровой</span>
                                  <ul class="wrapper_desc">
-                                    <li class="wrapper_desc__item">LOUNGE_BAR_ПРОВАНС приглашает жителей Канаша оценить новый интерьер,приятную обстановку и изысканные блюда европейской и японской кухни. Отмечайте у нас свадьбы,юбилеи,дни рождения и корпоративные праздники. Для вас и ваших гостей - 
-КАРАОКЕ, мангал и умеренные цены.Заказывайте столики по телефону:</li>
-                                    <li class="wrapper_desc__item">У вас Рено? Добро пожаловать в «Рено Логан Клуб». Техническое обслуживание и 
-компьютерная диагностика, кузовной ремонт, запчасти. Телефон сорок-четыре 
-сорок-пять восемьдесят-четыре. Ставровская семь. логан клуб тридцать три 
-точка ру</li>
-                                    <li class="wrapper_desc__item">А что тебе может принести чужая победа? Евро-2016  - в твоем кармане! Приходи в СпортБет, делай ставки на матчи чемпионата и выигрывай по-крупному. Букмекерская контора СпортБет. Наш адрес:   ...
-
-</li>
+                                    <li class="wrapper_desc__item">LOUNGE_BAR_ПРОВАНС приглашает жителей Канаша оценить новый интерьер,приятную обстановку и изысканные блюда европейской и японской кухни. Отмечайте у нас свадьбы,юбилеи,дни рождения и корпоративные праздники. Для вас и ваших гостей - КАРАОКЕ, мангал и умеренные цены.Заказывайте столики по телефону:</li>
+                                    <li class="wrapper_desc__item">У вас Рено? Добро пожаловать в «Рено Логан Клуб». Техническое обслуживание и компьютерная диагностика, кузовной ремонт, запчасти. Телефон сорок-четыре сорок-пять восемьдесят-четыре. Ставровская семь. логан клуб тридцать три точка ру</li>
+                                    <li class="wrapper_desc__item">А что тебе может принести чужая победа? Евро-2016  - в твоем кармане! Приходи в СпортБет, делай ставки на матчи чемпионата и выигрывай по-крупному. Букмекерская контора СпортБет. Наш адрес:   ...</li>
                                     <li class="wrapper_desc__item">Стойте! Теперь не нужно никуда идти! заказывать и выбирать товары вы можете  не выходя из дома. У сети магазинов «Глория» появился свой сайт  www.orion10.ru. Бытовая техника, мебель, компьютеры, электроинструменты - все в онлайне на orion10.ru! Заходите и покупайте. это очень удобно  orion10.ru.</li>
                                     <li class="wrapper_desc__item">Решили строиться - вам сюда. ШУмерля, СУрский проезд, 14 А. База строительных материалов «Топ сбыт». Продажа кирпичей, щебня, гравмассы, песка, цемента, керамблока, пиломатериалов, технической соли, каменного угля. Бесплатная доставка. Низкие цены. Оперативность. «Топ сбыт», район городской больницы.</li>
                                 </ul>
@@ -423,69 +477,6 @@
                                 <span class="desc_items_text">Вокальный</span>
                             </li>
                         </ul>                        
-                    </div>
-                </div>
-                <div class="breif_position"></div>
-                <div class="col-md-6 col-md-offset-3">
-                    <div class="wrapp_breif">
-                        <div class="breif_header">
-                            <h2>Все поля обязательны к заполнению</h2>
-                        </div>
-                        <div class="breif_wrapp">
-                            <div class="breif_err_block">
-                                <p class="p_err_breif">Не все поля заполнены</p>
-                            </div>
-                            <div class="breif_modal_confirm">
-                                Спасибо!
-                            </div>
-                            <div class="breif_modal_forms">
-                                <form action="">
-                                    <div class="breif_f_item">
-                                        <p>Наименование компании:</p>
-                                        <input class="breif_inputs" type="text" name="company" id="company">
-                                    </div>
-                                    <div class="breif_f_item">
-                                        <p>Товар/услуга, которая рекламируется в ролике:</p>
-                                        <input class="breif_inputs" type="text" name="good_service" id="good_service">
-                                    </div>
-                                    <div class="breif_f_item">
-                                        <p>Потенциальные покупатели на которых рассчитан ролик:</p>
-                                        <input class="breif_inputs" type="text" name="customers" id="customers">
-                                    </div>
-                                    <div class="breif_f_item">
-                                        <p>Конкурентные преимущества вашей услуги, товара (Чем ваш товар выгодно отличается от конкурентов):</p>
-                                        <input class="breif_inputs" type="text" name="advantages" id="advantages">
-                                    </div>
-                                    <div class="breif_f_item">
-                                        <p>Координаты (адрес, телефон, сайт), которые должны прозвучать в ролике:</p>
-                                        <input class="breif_inputs" type="text" name="contacts" id="contacts">
-                                    </div>
-                                    <div class="breif_f_item">
-                                        <p>Тип сценария (информационный, игровой, песенный).</p>
-                                        <input class="breif_inputs" type="text" name="type_screen" id="type_screen">
-                                    </div>
-                                    <div class="breif_f_item">
-                                        <p>Пожелания по тональности сообщения, музыке, голосу (юмор, лирика, пафос, солидно, жизнерадостно, рационально, серьезно, по деловому, другое).</p>
-                                        <textarea class="breif_textarea" name="wishes" id="wishes" cols="30" rows="10"></textarea>
-                                    </div>
-                                    <div class="breif_f_item">
-                                        <p>Нужно ли дополнительное оформление (шумы, звуки). Если да, то какие?</p>
-                                        <input class="breif_inputs" type="text" name="optionally" id="optionally">
-                                    </div>
-
-                                    <div class="breif_f_item">
-                                        <p>Дата, когда вы хотите получить готовый материал.</p>
-                                        <input class="breif_inputs" type="text" name="date_finish" id="date_finish">
-                                    </div>
-
-                                    <div class="breif_f_item">
-                                        <p>КОНТАКТЫ: Телефон, почта, Skype, того кто принимает решение по утверждению роликка</p>
-                                        <textarea class="breif_textarea" name="contacts_lpr" id="contacts_lpr" cols="30" rows="10"></textarea>
-                                    </div>
-                                    <button type="submit" name="enter" class="btn_breif">Отправить данные</button>
-                                </form>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
